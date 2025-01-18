@@ -9,6 +9,7 @@ CATHOVEN_URL = 'https://enterpriseapi.cathoven.com/cefr/process_text'
 CATHOVEN_CLIENT_ID = '41b95a1e-89cf-4194-ad44-da6a542da143'
 CATHOVEN_CLIENT_SECRET = '313f758a-a846-4e25-8656-b80e012f7216'
 
+
 class Video:
     """
     A YouTube video.
@@ -26,7 +27,7 @@ class Video:
     video_language: str  # or make a language object?
 
 
-# attributes from transcript api response
+    # attributes from transcript api response
     transcripts: list[(Transcript, Transcript)]  # a tuple of transcript and translated transcript
 
     # attributes from cathoven api response
@@ -38,10 +39,7 @@ class Video:
     native_language: str  # need to get this from user...
     view_count: int
 
-    def __init__(
-            self,
-            videoId: str,
-            native_language: str):
+    def __init__(self, videoId: str, native_language: str) -> None:
         self.videoId = videoId
         self.native_language = native_language
         self.transcripts = []

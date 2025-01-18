@@ -19,20 +19,22 @@ class User:
     topics: list[str]  # get from user input
     saved_videos: list[Video]
     native_language: str
-    # target_language: str (if there's time)
+    target_language: str # (if there's time)
 
     def __init__(self,
                  email: str,
                  password: str,
                  level: float,
                  topics: list[str],
-                 native_language: str) -> None:
+                 native_language: str,
+                 target_language: str) -> None:
         self.email = email
         self.password = password
         self.level = level
         self.topics = topics
         self.saved_videos = []
         self.native_language = native_language
+        self.target_language = target_language
 
     def add_topic(self, topic: str) -> None:
         self.topics.append(topic)

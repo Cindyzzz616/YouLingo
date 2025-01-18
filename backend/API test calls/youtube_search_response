@@ -1,3 +1,22 @@
+# list of search results
+{
+  "kind": "youtube#videoListResponse",
+  "etag": etag,
+  "nextPageToken": string,
+  "prevPageToken": string,
+  "pageInfo": {
+    "totalResults": integer,
+    "resultsPerPage": integer
+  },
+  "items": [
+    video Resource... (next part)
+  ]
+}
+
+
+
+# search result example
+
 [
     {
         'kind': 'youtube#searchResult',
