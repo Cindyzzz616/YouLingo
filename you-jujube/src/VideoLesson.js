@@ -26,7 +26,7 @@ const VideoLesson = () => {
         if (data.success) {
           setVideoInfo(data.data);
           console.log(videoInfo);
-          navigate(`/video/${videoId}`);
+          // navigate(`/video/${videoId}`);
         } else {
           console.error("Error fetching video info:", data.error);
         }

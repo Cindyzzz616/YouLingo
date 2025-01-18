@@ -17,14 +17,26 @@ CORS(app)  # Enable CORS
 # Initialize Firestore client
 db = firestore.Client.from_service_account_json("serviceAccountKey.json")
 
-def convert_to_firestore_format(data):
-    # Convert data to a format that Firestore can store with no array within an array
-    if isinstance(data, dict):
-        return {k: convert_to_firestore_format(v) for k, v in data.items()}
-    elif isinstance(data, list):
-        return [convert_to_firestore_format(item) for item in data]
-    else:
-        return data
+def transform_for_firestore(data):
+    def clean_data(value):
+        """
+        Recursively cleans the data to ensure it is compatible with Firestore.
+        Removes unsupported types or converts them into supported formats.
+        """
+        if isinstance(value, dict):
+            return {k: clean_data(v) for k, v in value.items()}
+        elif isinstance(value, list):
+            return [clean_data(v) for v in value]
+        elif isinstance(value, (str, int, float, bool)) or value is None:
+            return value
+        else:
+            # Convert any unsupported types (e.g., custom objects) to strings
+            return str(value)
+
+    return clean_data(data)
+
+
+
 
 @app.route("/videos", methods=["GET"])
 def get_videos():
@@ -59,7 +71,7 @@ def check_video():
         print(f"Extracted video_id: {video_id}", flush=True)  # Print the video_id for debugging
         
         # Check if video ID exists in Firestore
-        videos_ref = db.collection("videos")
+        videos_ref = db.collection("video")
         query = videos_ref.where("id", "==", video_id).stream()
         video_doc = next(query, None)
         
@@ -85,13 +97,15 @@ def check_video():
                     "video_language": video.video_language,
                     "transcripts": video.transcripts,
                     "final_levels": video.final_levels,
-                    "native_language": video.native_language,
-                    "view_count": video.view_count
+                    "native_language": video.native_language
                 }
                 
-                # Convert video_data to Firestore-compatible format
-                firestore_data = convert_to_firestore_format(video_data)
-                
+                # Transform video_data to Firestore-compatible format
+                firestore_data = transform_for_firestore(video_data)
+
+                # Log the data before saving
+                print(f"Data to be saved to Firestore: {firestore_data}", flush=True)
+
                 # Save video_data to Firestore
                 videos_ref.document(video_id).set(firestore_data)
                 
