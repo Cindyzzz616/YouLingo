@@ -44,6 +44,7 @@ class Video:
         self.native_language = native_language
         self.transcripts = []
         self.view_count = 0
+        self.final_levels = {}  # Initialize final_levels as an empty dictionary
 
     def add_video_details(self) -> str | None:
         params = {
@@ -60,10 +61,10 @@ class Video:
             self.title = video['snippet']['title']
             self.description = video['snippet']['description']
             self.duration = video['contentDetails']['duration']
-            self.thumbnails = video['snippet']['default']
+            self.thumbnails = video['snippet']['thumbnails']  # Correctly access the thumbnails field
             self.channelId = video['snippet']['channelId']
             self.channelTitle = video['snippet']['channelTitle']
-            self.video_language = video['snippet']['defaultLanguage']
+            self.video_language = video['snippet'].get('defaultLanguage', 'en')  # Provide a default value if not present
         else:
             return 'Video not found'
 
