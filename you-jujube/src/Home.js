@@ -9,7 +9,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchVideos = async () => {
-      const videoData = await getVideos();
+      const videoData = await getVideos("cats"); // TODO: Replace with user's selected theme
       setVideos(videoData);
     };
 

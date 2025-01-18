@@ -1,60 +1,29 @@
-export const getVideos = async () => {
-  // Replace with actual API call to fetch videos
-  return [
-    {
-      id: "1",
-      title: "Learn React in 30 Minutes",
-      channel: "CodeAcademy",
-      languageDifficulty: "Beginner",
-      description: "A quick tutorial on React basics.",
-      thumbnail:
-        "https://designshack.net/wp-content/uploads/placeholder-image-368x247.png",
-    },
-    {
-      id: "2",
-      title: "Advanced React Patterns",
-      channel: "ReactPro",
-      languageDifficulty: "Advanced",
-      description: "Deep dive into advanced React patterns.",
-      thumbnail:
-        "https://designshack.net/wp-content/uploads/placeholder-image-368x247.png",
-    },
-    {
-      id: "3",
-      title: "JavaScript Fundamentals",
-      channel: "JSWorld",
-      languageDifficulty: "Beginner",
-      description: "Learn the basics of JavaScript.",
-      thumbnail:
-        "https://designshack.net/wp-content/uploads/placeholder-image-368x247.png",
-    },
-    {
-      id: "4",
-      title: "Node.js Crash Course",
-      channel: "NodeMaster",
-      languageDifficulty: "Intermediate",
-      description: "A comprehensive guide to Node.js.",
-      thumbnail:
-        "https://designshack.net/wp-content/uploads/placeholder-image-368x247.png",
-    },
-    {
-      id: "5",
-      title: "CSS Grid Layout",
-      channel: "CSSWizard",
-      languageDifficulty: "Intermediate",
-      description: "Master CSS Grid layout with this tutorial.",
-      thumbnail:
-        "https://designshack.net/wp-content/uploads/placeholder-image-368x247.png",
-    },
-    {
-      id: "6",
-      title: "CSS Grid Layout",
-      channel: "CSSWizard",
-      languageDifficulty: "Intermediate",
-      description: "Master CSS Grid layout with this tutorial.",
-      thumbnail:
-        "https://designshack.net/wp-content/uploads/placeholder-image-368x247.png",
-    },
-    // Add more video objects as needed
-  ];
+export const getVideos = async (searchQuery) => {
+  const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
+  const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=${searchQuery}&key=${API_KEY}`;
+
+  try {
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+
+    if (data.items && data.items.length > 0) {
+      // Map API results to the desired format
+      return data.items.map((item, index) => ({
+        id: item.id.videoId || `placeholder-${index}`,
+        title: item.snippet.title || "No Title",
+        channel: item.snippet.channelTitle || "Unknown Channel",
+        languageDifficulty: "Beginner", // TODO: Use API to get language difficulty
+        description: item.snippet.description || "No Description",
+        thumbnail:
+          item.snippet.thumbnails?.default?.url ||
+          "https://designshack.net/wp-content/uploads/placeholder-image-368x247.png",
+      }));
+    } else {
+      console.error("No videos found.");
+      return [];
+    }
+  } catch (error) {
+    console.error("Error fetching videos:", error);
+    return [];
+  }
 };
