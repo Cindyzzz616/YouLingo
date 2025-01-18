@@ -6,6 +6,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Home";
 import Explore from "./Explore";
 import { useAuth0 } from "@auth0/auth0-react";
+import YouTubeVideos from './components/video';
 
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
@@ -67,6 +68,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/youtube" element={<YouTubeVideos />} />
         <Route path="/home" element={<Home />} />
         <Route
           path="/explore"
