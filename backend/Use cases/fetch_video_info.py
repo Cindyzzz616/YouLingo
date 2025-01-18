@@ -1,5 +1,6 @@
-from backend.Entities import Video
+from typing import List
 
+from backend.Entities import Video
 
 class FetchVideoInfo:
     """
@@ -8,17 +9,15 @@ class FetchVideoInfo:
 
     video: Video
 
-    def __init__(self, video: Video) -> None:
+    def __init__(self, video: Video, user: User) -> None:
         self.video = video
 
-    def get_transcript(self) -> str:
-        # temporary return - should probably have a getter for transcript
-        # should we call the transcript api here or in the video entity? probably here?
-        # since the number of calls to the transcript api is limited, we should only call it when a video
-        # is clicked on (not when a batch of video is displayed)
-        return self.video.transcript
+    def get_transcripts(self) -> List[(dict[str, str], dict[str, str] | None)] | str:
+        # reformat the transcripts to be displayed?
+        return self.video.transcripts
 
-    def get_video_info(self) -> dict:
-        # gotta figure out the return type
-        transcript = self.get_transcript
-        return
+
+    def get_difficulty(self) -> int:
+        """Returns the general difficulty level of the video as an integer."""
+        return self.video.final_levels['general']
+

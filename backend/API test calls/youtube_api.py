@@ -6,7 +6,7 @@ api_key = 'AIzaSyBT2UKWCmrb9DcK_OLGSegbkd8WDE3-XBI'
 youtube = build('youtube', 'v3', developerKey=api_key)
 
 def get_video_details(video_id):
-    request = youtube.videos().list(
+    request = youtube.saved_videos().list(
         part='snippet,contentDetails,statistics',
         id=video_id
     )
