@@ -1,0 +1,420 @@
+# process_text:
+# {'sentences': {'0': {'id': [0, 1, 2, 3, 4, 5, 6, 7, 8], 'word': ['Hi',
+# 'everyone', ',', 'welcome', 'back', 'to', 'the', 'channel', '!'], 'lemma':
+# ['hello', 'everyone', ',', 'welcome', 'back', 'to', 'the', 'channel', '!'],
+# 'pos': ['INTJ', 'PRON', 'PUNCT', 'VERB', 'ADP', 'ADP', 'DET', 'NOUN',
+# 'PUNCT'], 'whitespace': [True, False, True, True, True, True, True, False,
+# True], 'weight': [0.17123098208140972, 0.13082618853853079, 0.0,
+# 0.18189065414115407, 0.1858257521055442, 0.0, 0.0, 0.33022642313336126,
+# 0.0], 'CEFR_vocabulary': [-1.0, 1.0, -2.0, 2.0, 1.0, 0.0, 0.0, 1.0, -2.0],
+# 'form': ['do'], 'tense1': ['do'], 'tense2': ['ind. (present)'],
+# 'CEFR_tense': [0.0], 'tense_span': [[3]], 'clause_form': [], 'clause': [],
+# 'CEFR_clause': [], 'clause_span': [], 'CEFR_sentence': 1.1}, '1': {'id': [
+# 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23], 'word': [
+# 'Today', ',', 'we', "'re", 'going', 'to', 'talk', 'about', 'how', 'to',
+# 'take', 'care', 'of', 'houseplants', '.'], 'lemma': ['today', ',', 'we',
+# 'be', 'go', 'to', 'talk', 'about', 'how', 'to', 'take', 'care', 'of',
+# 'houseplant', '.'], 'pos': ['NOUN', 'PUNCT', 'PRON', 'AUX', 'VERB', 'PART',
+# 'VERB', 'ADP', 'CONJ', 'PART', 'VERB', 'NOUN', 'ADP', 'NOUN', 'PUNCT'],
+# 'whitespace': [False, True, False, True, True, True, True, True, True,
+# True, True, True, True, False, True], 'weight': [0.1303772452456463, 0.0,
+# 0.0, 0.0, 0.1330926980126404, 0.0, 0.10897880273638219, 0.0, 0.0, 0.0,
+# 0.09706468553671388, 0.19073581272003878, 0.0, 0.33975075574857844, 0.0],
+# 'CEFR_vocabulary': [0.0, -2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+# 2.0, 0.0, 6.0, -2.0], 'form': ['are doing', 'to do', 'to do'], 'tense1': [
+# 'be doing', 'do', 'do'], 'tense2': ['ind. (present)', 'inf.', 'inf.'],
+# 'CEFR_tense': [0.5, 0.0, 0.0], 'tense_span': [[12, 13], [14, 15], [18,
+# 19]], 'clause_form': ['how'], 'clause': ['ncl'], 'clause_span': [[17, 18,
+# 19, 20, 21, 22]], 'CEFR_clause': [3.0], 'CEFR_sentence': 2.5}, '2': {'id':
+# [24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41,
+# 42, 43, 44, 45, 46], 'word': ['Houseplants', 'are', 'a', 'great', 'way',
+# 'to', 'bring', 'life', 'and', 'color', 'into', 'your', 'home', ',', 'but',
+# 'they', 'do', 'need', 'proper', 'care', 'to', 'thrive', '.'], 'lemma': [
+# 'houseplant', 'be', 'a', 'great', 'way', 'to', 'bring', 'life', 'and',
+# 'color', 'into', 'your', 'home', ',', 'but', 'they', 'do', 'need',
+# 'proper', 'care', 'to', 'thrive', '.'], 'pos': ['NOUN', 'VERB', 'DET',
+# 'ADJ', 'NOUN', 'PART', 'VERB', 'NOUN', 'CONJ', 'NOUN', 'ADP', 'PRON',
+# 'NOUN', 'PUNCT', 'CONJ', 'PRON', 'AUX', 'VERB', 'ADJ', 'NOUN', 'PART',
+# 'VERB', 'PUNCT'], 'whitespace': [True, True, True, True, True, True, True,
+# True, True, True, True, True, False, True, True, True, True, True, True,
+# True, True, False, True], 'weight': [0.2926163701764836, 0.0, 0.0,
+# 0.04316560435885026, 0.05261028699464163, 0.0, 0.04005655719025834,
+# 0.09830440244909039, 0.0, 0.11426687145901135, 0.0, 0.0,
+# 0.0879438806368687, 0.0, 0.0, 0.0, 0.0, 0.047299264889888205,
+# 0.06151023036426968, 0.08996270166826957, 0.0, 0.07226382981236827, 0.0],
+# 'CEFR_vocabulary': [6.0, 0.0, 0.0, 0.0, 1.0, 0.0, 1.0, 0.0, 0.0, 0.0, 0.0,
+# 0.0, 0.0, -2.0, 0.0, 0.0, 0.0, 0.0, 2.0, 2.0, 0.0, 4.0, -2.0], 'form': [
+# 'are', 'to do', 'do do', 'to do'], 'tense1': ['do', 'do', 'do', 'do'],
+# 'tense2': ['ind. (present)', 'inf.', 'ind. (present)', 'inf.'],
+# 'CEFR_tense': [0.0, 0.0, 0.0, 0.0], 'tense_span': [[25], [29, 30], [40,
+# 41], [44, 45]], 'clause_form': ['but'], 'clause': ['cc'], 'clause_span': [[
+# 38, 41]], 'CEFR_clause': [0.0], 'CEFR_sentence': 3.3}, '3': {'id': [47, 48,
+# 49, 50, 51, 52, 53, 54], 'word': ['First', ',', 'let', "'s", 'talk',
+# 'about', 'watering', '.'], 'lemma': ['first', ',', 'let', 'us', 'talk',
+# 'about', 'watering', '.'], 'pos': ['ADV', 'PUNCT', 'VERB', 'PRON', 'VERB',
+# 'ADP', 'NOUN', 'PUNCT'], 'whitespace': [False, True, False, True, True,
+# True, False, True], 'weight': [0.1773908932030197, 0.0,
+# 0.18293927850487388, 0.14892189173849116, 0.14100603670638587, 0.0,
+# 0.3497418998472294, 0.0], 'CEFR_vocabulary': [0.0, -2.0, 1.0, 0.0, 0.0,
+# 0.0, 5.0, -2.0], 'form': ['do', 'do'], 'tense1': ['do', 'do'], 'tense2': [
+# 'imp.', 'inf.'], 'CEFR_tense': [0.0, 0.0], 'tense_span': [[49], [51]],
+# 'clause_form': [], 'clause': [], 'CEFR_clause': [], 'clause_span': [],
+# 'CEFR_sentence': 1.6}, '4': {'id': [55, 56, 57, 58, 59, 60, 61, 62, 63, 64,
+# 65, 66, 67, 68], 'word': ['Most', 'houseplants', 'only', 'need', 'water',
+# 'when', 'the', 'top', 'inch', 'of', 'soil', 'feels', 'dry', '.'], 'lemma':
+# ['most', 'houseplant', 'only', 'need', 'water', 'when', 'the', 'top',
+# 'inch', 'of', 'soil', 'feel', 'dry', '.'], 'pos': ['ADJ', 'NOUN', 'ADV',
+# 'VERB', 'NOUN', 'CONJ', 'DET', 'ADJ', 'NOUN', 'ADP', 'NOUN', 'VERB', 'ADJ',
+# 'PUNCT'], 'whitespace': [True, True, True, True, True, True, True, True,
+# True, True, True, True, False, True], 'weight': [0.0, 0.2233373073234441,
+# 0.0, 0.11391531263431942, 0.1756885232227774, 0.0, 0.0,
+# 0.06890862323430919, 0.07269473295011207, 0.0, 0.14244229912526374,
+# 0.08830392248524933, 0.11470927902452478, 0.0], 'CEFR_vocabulary': [0.0,
+# 6.0, 0.0, 0.0, 0.0, 3.0, 0.0, 2.0, 2.0, 0.0, 3.0, 0.0, 1.0, -2.0], 'form':
+# ['do', 'does'], 'tense1': ['do', 'do'], 'tense2': ['ind. (present)',
+# 'ind. (present)'], 'CEFR_tense': [0.0, 0.0], 'tense_span': [[58], [66]],
+# 'clause_form': ['when'], 'clause': ['advcl'], 'clause_span': [[60, 61, 62,
+# 63, 64, 65, 66, 67]], 'CEFR_clause': [1.0], 'CEFR_sentence': 2.6},
+# '5': {'id': [69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83,
+# 84], 'word': ['Overwatering', 'is', 'a', 'common', 'mistake', ',', 'so',
+# 'always', 'check', 'the', 'soil', 'before', 'adding', 'more', 'water',
+# '.'], 'lemma': ['overwatering', 'be', 'a', 'common', 'mistake', ',', 'so',
+# 'always', 'check', 'the', 'soil', 'before', 'add', 'more', 'water', '.'],
+# 'pos': ['NOUN', 'VERB', 'DET', 'ADJ', 'NOUN', 'PUNCT', 'CONJ', 'ADV',
+# 'VERB', 'DET', 'NOUN', 'ADP', 'VERB', 'ADJ', 'NOUN', 'PUNCT'],
+# 'whitespace': [True, True, True, True, False, True, True, True, True, True,
+# True, True, True, True, False, True], 'weight': [0.20935001997626415, 0.0,
+# 0.0, 0.06206776515890961, 0.1013896947042675, 0.0, 0.0,
+# 0.08178455958754818, 0.12072304603854891, 0.0, 0.1983059178685856, 0.0,
+# 0.09924864014946588, 0.0, 0.12713035651641016, 0.0], 'CEFR_vocabulary': [
+# 5.0, 0.0, 0.0, 2.0, 1.0, -2.0, 1.0, 0.0, 0.0, 0.0, 3.0, 0.0, 1.0, 0.0, 0.0,
+# -2.0], 'form': ['is', 'do', 'doing'], 'tense1': ['do', 'do', 'do'],
+# 'tense2': ['ind. (present)', 'inf.', 'ger.'], 'CEFR_tense': [0.0, 0.0,
+# 1.0], 'tense_span': [[70], [77], [81]], 'clause_form': [], 'clause': [],
+# 'CEFR_clause': [], 'clause_span': [], 'CEFR_sentence': 2.5}, '6': {'id': [
+# 85, 86, 87, 88, 89, 90, 91], 'word': ['Next', ',', 'let', "'s", 'discuss',
+# 'sunlight', '.'], 'lemma': ['next', ',', 'let', 'us', 'discuss',
+# 'sunlight', '.'], 'pos': ['ADV', 'PUNCT', 'VERB', 'PRON', 'VERB', 'NOUN',
+# 'PUNCT'], 'whitespace': [False, True, False, True, True, False, True],
+# 'weight': [0.16577778500407744, 0.0, 0.18367422611100007,
+# 0.1427691554497813, 0.18497416597335992, 0.32280466746178127, 0.0],
+# 'CEFR_vocabulary': [1.0, -2.0, 1.0, 0.0, 1.0, 3.0, -2.0], 'form': ['do',
+# 'do'], 'tense1': ['do', 'do'], 'tense2': ['imp.', 'inf.'], 'CEFR_tense': [
+# 0.0, 0.0], 'tense_span': [[87], [89]], 'clause_form': [], 'clause': [],
+# 'CEFR_clause': [], 'clause_span': [], 'CEFR_sentence': 1.7}, '7': {'id': [
+# 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107],
+# 'word': ['Some', 'plants', 'need', 'bright', ',', 'indirect', 'light', ',',
+# 'while', 'others', 'can', 'survive', 'in', 'low-light', 'conditions', '.'],
+# 'lemma': ['some', 'plant', 'need', 'bright', ',', 'indirect', 'light', ',',
+# 'while', 'other', 'can', 'survive', 'in', 'low-light', 'condition', '.'],
+# 'pos': ['DET', 'NOUN', 'VERB', 'ADJ', 'PUNCT', 'ADJ', 'NOUN', 'PUNCT',
+# 'CONJ', 'NOUN', 'AUX', 'VERB', 'ADP', 'ADJ', 'NOUN', 'PUNCT'],
+# 'whitespace': [True, True, True, False, True, True, False, True, True,
+# True, True, True, True, True, False, True], 'weight': [0.0,
+# 0.21038536120072138, 0.11773630288972514, 0.128403055898468, 0.0,
+# 0.1069420105398121, 0.11685800533751303, 0.0, 0.0, 0.0, 0.0,
+# 0.128375612052747, 0.0, 0.1223528007890767, 0.06894685129193662, 0.0],
+# 'CEFR_vocabulary': [0.0, 0.0, 0.0, 1.0, -2.0, 4.0, 1.0, -2.0, 1.0, 2.0,
+# 0.0, 3.0, 0.0, 6.0, 2.0, -2.0], 'form': ['do', 'can do'], 'tense1': ['do',
+# 'do'], 'tense2': ['ind. (present)', 'inf.'], 'CEFR_tense': [0.0, 0.5],
+# 'tense_span': [[94], [102, 103]], 'clause_form': ['while'], 'clause': [
+# 'advcl'], 'clause_span': [[100, 101, 102, 103, 104, 105, 106]],
+# 'CEFR_clause': [1.0], 'CEFR_sentence': 2.8}, '8': {'id': [108, 109, 110,
+# 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125,
+# 126], 'word': ['Be', 'sure', 'to', 'research', 'what', 'kind', 'of',
+# 'light', 'your', 'plant', 'prefers', 'and', 'place', 'it', 'in', 'the',
+# 'right', 'spot', '.'], 'lemma': ['be', 'sure', 'to', 'research', 'what',
+# 'kind', 'of', 'light', 'your', 'plant', 'prefer', 'and', 'place', 'it',
+# 'in', 'the', 'right', 'spot', '.'], 'pos': ['VERB', 'ADJ', 'PART', 'VERB',
+# 'PRON', 'NOUN', 'ADP', 'NOUN', 'PRON', 'NOUN', 'VERB', 'CONJ', 'VERB',
+# 'PRON', 'ADP', 'DET', 'ADJ', 'NOUN', 'PUNCT'], 'whitespace': [True, True,
+# True, True, True, True, True, True, True, True, True, True, True, True,
+# True, True, True, False, True], 'weight': [0.0, 0.1128758263373826, 0.0,
+# 0.08266185302132785, 0.0, 0.060208208023440735, 0.0, 0.16895478125395738,
+# 0.0, 0.2433992318170084, 0.07982260138989983, 0.0, 0.06128022109627529,
+# 0.0, 0.0, 0.0, 0.10491938007777052, 0.0858778969829374, 0.0],
+# 'CEFR_vocabulary': [0.0, 1.0, 0.0, 3.0, 2.0, 0.0, 0.0, 1.0, 0.0, 0.0, 1.0,
+# 0.0, 3.0, 0.0, 0.0, 0.0, 0.0, 2.0, -2.0], 'form': ['do', 'to do', 'does',
+# 'to do'], 'tense1': ['do', 'do', 'do', 'do'], 'tense2': ['imp.', 'inf.',
+# 'ind. (present)', 'inf.'], 'CEFR_tense': [0.0, 0.0, 0.0, 0.0],
+# 'tense_span': [[108], [110, 111], [118], [110, 120]], 'clause_form': [
+# 'what'], 'clause': ['ncl'], 'clause_span': [[112, 113, 114, 115, 116, 117,
+# 118]], 'CEFR_clause': [3.0], 'CEFR_sentence': 2.4}, '9': {'id': [127, 128,
+# 129, 130, 131, 132, 133, 134, 135], 'word': ['Finally', ',', 'remember',
+# 'to', 'clean', 'the', 'leaves', 'occasionally', '.'], 'lemma': ['finally',
+# ',', 'remember', 'to', 'clean', 'the', 'leaf', 'occasionally', '.'],
+# 'pos': ['ADV', 'PUNCT', 'VERB', 'PART', 'VERB', 'DET', 'NOUN', 'ADV',
+# 'PUNCT'], 'whitespace': [False, True, True, True, True, True, True, False,
+# True], 'weight': [0.16668137182182372, 0.0, 0.22319595571848957, 0.0,
+# 0.15848070304328896, 0.0, 0.30808796790915277, 0.143554001507245, 0.0],
+# 'CEFR_vocabulary': [1.0, -2.0, 0.0, 0.0, 0.0, 0.0, 2.0, 3.0, -2.0], 'form':
+# ['do', 'to do'], 'tense1': ['do', 'do'], 'tense2': ['imp.', 'inf.'],
+# 'CEFR_tense': [0.0, 0.0], 'tense_span': [[129], [130, 131]], 'clause_form':
+# [], 'clause': [], 'CEFR_clause': [], 'clause_span': [], 'CEFR_sentence':
+# 1.8}, '10': {'id': [136, 137, 138, 139, 140, 141, 142, 143, 144], 'word': [
+# 'Dust', 'can', 'block', 'sunlight', 'and', 'slow', 'down', 'growth', '.'],
+# 'lemma': ['dust', 'can', 'block', 'sunlight', 'and', 'slow', 'down',
+# 'growth', '.'], 'pos': ['NOUN', 'AUX', 'VERB', 'NOUN', 'CONJ', 'VERB',
+# 'ADP', 'NOUN', 'PUNCT'], 'whitespace': [True, True, True, True, True, True,
+# True, False, True], 'weight': [0.3402716429337701, 0.0,
+# 0.12986575484458968, 0.20869835480642052, 0.0, 0.10806276359314414, 0.0,
+# 0.2131014838220756, 0.0], 'CEFR_vocabulary': [2.0, 0.0, 3.0, 3.0, 0.0, 5.0,
+# 1.0, 3.0, -2.0], 'form': ['can do', 'can do'], 'tense1': ['do', 'do'],
+# 'tense2': ['inf.', 'inf.'], 'CEFR_tense': [0.5, 0.5], 'tense_span': [[137,
+# 138], [137, 141]], 'clause_form': [], 'clause': [], 'CEFR_clause': [],
+# 'clause_span': [], 'CEFR_sentence': 2.6}, '11': {'id': [145, 146, 147, 148,
+# 149, 150, 151, 152], 'word': ['That', "'s", 'it', 'for', 'today', "'s",
+# 'tips', '!'], 'lemma': ['that', 'be', 'it', 'for', 'today', "'s", 'tip',
+# '!'], 'pos': ['PRON', 'VERB', 'PRON', 'ADP', 'NOUN', 'PART', 'NOUN',
+# 'PUNCT'], 'whitespace': [False, True, True, True, False, True, False,
+# True], 'weight': [0.0, 0.0, 0.0, 0.0, 0.36388640364163727,
+# 0.19878270986229485, 0.4373308864960679, 0.0], 'CEFR_vocabulary': [1.0,
+# 0.0, 0.0, 0.0, 0.0, 0.0, 2.0, -2.0], 'form': ['is'], 'tense1': ['do'],
+# 'tense2': ['ind. (present)'], 'CEFR_tense': [0.0], 'tense_span': [[146]],
+# 'clause_form': [], 'clause': [], 'CEFR_clause': [], 'clause_span': [],
+# 'CEFR_sentence': 1.0}, '12': {'id': [153, 154, 155, 156, 157, 158, 159,
+# 160, 161, 162, 163, 164, 165, 166, 167, 168], 'word': ['Thanks', 'for',
+# 'watching', ',', 'and', 'do', "n't", 'forget', 'to', 'subscribe', 'for',
+# 'more', 'plant', 'care', 'advice', '.'], 'lemma': ['thank', 'for', 'watch',
+# ',', 'and', 'do', 'not', 'forget', 'to', 'subscribe', 'for', 'more',
+# 'plant', 'care', 'advice', '.'], 'pos': ['NOUN', 'ADP', 'VERB', 'PUNCT',
+# 'CONJ', 'AUX', 'ADV', 'VERB', 'PART', 'VERB', 'ADP', 'ADJ', 'NOUN', 'NOUN',
+# 'NOUN', 'PUNCT'], 'whitespace': [True, True, False, True, True, False,
+# True, True, True, True, True, True, True, True, False, True], 'weight': [
+# 0.14229597181090295, 0.0, 0.1611833646573751, 0.0, 0.0, 0.0, 0.0,
+# 0.07905726152054354, 0.0, 0.14538615224334198, 0.0, 0.0,
+# 0.23965947014558886, 0.14442226832218838, 0.0879955113000592, 0.0],
+# 'CEFR_vocabulary': [4.0, 0.0, 0.0, -2.0, 0.0, 0.0, 0.0, 0.0, 0.0, 4.0, 0.0,
+# 0.0, 0.0, 2.0, 1.0, -2.0], 'form': ['doing', 'do do', 'to do'], 'tense1': [
+# 'do', 'do', 'do'], 'tense2': ['ger.', 'ind. (present)', 'inf.'],
+# 'CEFR_tense': [1.0, 0.0, 0.0], 'tense_span': [[155], [158, 160], [161,
+# 162]], 'clause_form': [], 'clause': [], 'CEFR_clause': [], 'clause_span': [
+# ], 'CEFR_sentence': 2.7}, '13': {'id': [169, 170, 171, 172, 173], 'word': [
+# 'See', 'you', 'next', 'time', '!'], 'lemma': ['see', 'you', 'next', 'time',
+# '!'], 'pos': ['VERB', 'PRON', 'ADJ', 'NOUN', 'PUNCT'], 'whitespace': [True,
+# True, True, False, False], 'weight': [0.3626899084006265, 0.0,
+# 0.3540216914491895, 0.2832884001501841, 0.0], 'CEFR_vocabulary': [0.0, 0.0,
+# 0.0, 0.0, -2.0], 'form': ['do'], 'tense1': ['do'], 'tense2': ['imp.'],
+# 'CEFR_tense': [0.0], 'tense_span': [[169]], 'clause_form': [], 'clause': [
+# ], 'CEFR_clause': [], 'clause_span': [], 'CEFR_sentence': 0.3}},
+# 'text_tagged': "<CEFR_A0>Hi</CEFR_A0> <CEFR_A2>everyone</CEFR_A2>,
+# <CEFR_B1>welcome</CEFR_B1> <CEFR_A2>back</CEFR_A2> <CEFR_A1>to</CEFR_A1>
+# <CEFR_A1>the</CEFR_A1> <CEFR_A2>channel</CEFR_A2>!
+# <CEFR_A1>Today</CEFR_A1>, <CEFR_A1>we</CEFR_A1><CEFR_A1>'re</CEFR_A1>
+# <CEFR_A1>going</CEFR_A1> <CEFR_A1>to</CEFR_A1> <CEFR_A1>talk</CEFR_A1>
+# <CEFR_A1>about</CEFR_A1> <CEFR_A1>how</CEFR_A1> <CEFR_A1>to</CEFR_A1>
+# <CEFR_A1>take</CEFR_A1> <CEFR_B1>care</CEFR_B1> <CEFR_A1>of</CEFR_A1>
+# <CEFR_D>houseplants</CEFR_D>. <CEFR_D>Houseplants</CEFR_D>
+# <CEFR_A1>are</CEFR_A1> <CEFR_A1>a</CEFR_A1> <CEFR_A1>great</CEFR_A1>
+# <CEFR_A2>way</CEFR_A2> <CEFR_A1>to</CEFR_A1> <CEFR_A2>bring</CEFR_A2>
+# <CEFR_A1>life</CEFR_A1> <CEFR_A1>and</CEFR_A1> <CEFR_A1>color</CEFR_A1>
+# <CEFR_A1>into</CEFR_A1> <CEFR_A1>your</CEFR_A1> <CEFR_A1>home</CEFR_A1>,
+# <CEFR_A1>but</CEFR_A1> <CEFR_A1>they</CEFR_A1> <CEFR_A1>do</CEFR_A1>
+# <CEFR_A1>need</CEFR_A1> <CEFR_B1>proper</CEFR_B1> <CEFR_B1>care</CEFR_B1>
+# <CEFR_A1>to</CEFR_A1> <CEFR_C1>thrive</CEFR_C1>. <CEFR_A1>First</CEFR_A1>,
+# <CEFR_A2>let</CEFR_A2><CEFR_A1>'s</CEFR_A1> <CEFR_A1>talk</CEFR_A1>
+# <CEFR_A1>about</CEFR_A1> <CEFR_C2>watering</CEFR_C2>.
+# <CEFR_A1>Most</CEFR_A1> <CEFR_D>houseplants</CEFR_D>
+# <CEFR_A1>only</CEFR_A1> <CEFR_A1>need</CEFR_A1> <CEFR_A1>water</CEFR_A1>
+# <CEFR_B2>when</CEFR_B2> <CEFR_A1>the</CEFR_A1> <CEFR_B1>top</CEFR_B1>
+# <CEFR_B1>inch</CEFR_B1> <CEFR_A1>of</CEFR_A1> <CEFR_B2>soil</CEFR_B2>
+# <CEFR_A1>feels</CEFR_A1> <CEFR_A2>dry</CEFR_A2>.
+# <CEFR_C2>Overwatering</CEFR_C2> <CEFR_A1>is</CEFR_A1> <CEFR_A1>a</CEFR_A1>
+# <CEFR_B1>common</CEFR_B1> <CEFR_A2>mistake</CEFR_A2>, <CEFR_A2>so</CEFR_A2>
+# <CEFR_A1>always</CEFR_A1> <CEFR_A1>check</CEFR_A1> <CEFR_A1>the</CEFR_A1>
+# <CEFR_B2>soil</CEFR_B2> <CEFR_A1>before</CEFR_A1> <CEFR_A2>adding</CEFR_A2>
+# <CEFR_A1>more</CEFR_A1> <CEFR_A1>water</CEFR_A1>. <CEFR_A2>Next</CEFR_A2>,
+# <CEFR_A2>let</CEFR_A2><CEFR_A1>'s</CEFR_A1> <CEFR_A2>discuss</CEFR_A2>
+# <CEFR_B2>sunlight</CEFR_B2>. <CEFR_A1>Some</CEFR_A1>
+# <CEFR_A1>plants</CEFR_A1> <CEFR_A1>need</CEFR_A1>
+# <CEFR_A2>bright</CEFR_A2>, <CEFR_C1>indirect</CEFR_C1>
+# <CEFR_A2>light</CEFR_A2>, <CEFR_A2>while</CEFR_A2>
+# <CEFR_B1>others</CEFR_B1> <CEFR_A1>can</CEFR_A1> <CEFR_B2>survive</CEFR_B2>
+# <CEFR_A1>in</CEFR_A1> <CEFR_D>low-light</CEFR_D>
+# <CEFR_B1>conditions</CEFR_B1>. <CEFR_A1>Be</CEFR_A1>
+# <CEFR_A2>sure</CEFR_A2> <CEFR_A1>to</CEFR_A1> <CEFR_B2>research</CEFR_B2>
+# <CEFR_B1>what</CEFR_B1> <CEFR_A1>kind</CEFR_A1> <CEFR_A1>of</CEFR_A1>
+# <CEFR_A2>light</CEFR_A2> <CEFR_A1>your</CEFR_A1> <CEFR_A1>plant</CEFR_A1>
+# <CEFR_A2>prefers</CEFR_A2> <CEFR_A1>and</CEFR_A1> <CEFR_B2>place</CEFR_B2>
+# <CEFR_A1>it</CEFR_A1> <CEFR_A1>in</CEFR_A1> <CEFR_A1>the</CEFR_A1>
+# <CEFR_A1>right</CEFR_A1> <CEFR_B1>spot</CEFR_B1>.
+# <CEFR_A2>Finally</CEFR_A2>, <CEFR_A1>remember</CEFR_A1>
+# <CEFR_A1>to</CEFR_A1> <CEFR_A1>clean</CEFR_A1> <CEFR_A1>the</CEFR_A1>
+# <CEFR_B1>leaves</CEFR_B1> <CEFR_B2>occasionally</CEFR_B2>.
+# <CEFR_B1>Dust</CEFR_B1> <CEFR_A1>can</CEFR_A1> <CEFR_B2>block</CEFR_B2>
+# <CEFR_B2>sunlight</CEFR_B2> <CEFR_A1>and</CEFR_A1> <CEFR_C2>slow</CEFR_C2>
+# <CEFR_A2>down</CEFR_A2> <CEFR_B2>growth</CEFR_B2>.
+# <CEFR_A2>That</CEFR_A2><CEFR_A1>'s</CEFR_A1> <CEFR_A1>it</CEFR_A1>
+# <CEFR_A1>for</CEFR_A1> <CEFR_A1>today</CEFR_A1><CEFR_A1>'s</CEFR_A1>
+# <CEFR_B1>tips</CEFR_B1>! <CEFR_C1>Thanks</CEFR_C1> <CEFR_A1>for</CEFR_A1>
+# <CEFR_A1>watching</CEFR_A1>, <CEFR_A1>and</CEFR_A1>
+# <CEFR_A1>do</CEFR_A1><CEFR_A1>n't</CEFR_A1> <CEFR_A1>forget</CEFR_A1>
+# <CEFR_A1>to</CEFR_A1> <CEFR_C1>subscribe</CEFR_C1> <CEFR_A1>for</CEFR_A1>
+# <CEFR_A1>more</CEFR_A1> <CEFR_A1>plant</CEFR_A1> <CEFR_B1>care</CEFR_B1>
+# <CEFR_A2>advice</CEFR_A2>. <CEFR_A1>See</CEFR_A1> <CEFR_A1>you</CEFR_A1>
+# <CEFR_A1>next</CEFR_A1> <CEFR_A1>time</CEFR_A1>!", 'wordlists': {'-1.0': {
+# 'lemma': ['hello'], 'pos': ['INTJ'], 'size': [1]}, '0.0': {'lemma': ['to',
+# 'the', 'and', 'be', 'for', 'need', 'of', 'plant', 'a', 'about', 'can',
+# 'do', 'in', 'it', 'more', 'talk', 'today', 'us', 'water', 'your', "'s",
+# 'always', 'be', 'before', 'but', 'check', 'clean', 'color', 'feel',
+# 'first', 'forget', 'go', 'great', 'home', 'how', 'into', 'kind', 'life',
+# 'most', 'next', 'not', 'only', 'remember', 'right', 'see', 'some', 'take',
+# 'they', 'time', 'to', 'watch', 'we', 'you'], 'pos': ['PART', 'DET', 'CONJ',
+# 'VERB', 'ADP', 'VERB', 'ADP', 'NOUN', 'DET', 'ADP', 'AUX', 'AUX', 'ADP',
+# 'PRON', 'ADJ', 'VERB', 'NOUN', 'PRON', 'NOUN', 'PRON', 'PART', 'ADV',
+# 'AUX', 'ADP', 'CONJ', 'VERB', 'VERB', 'NOUN', 'VERB', 'ADV', 'VERB',
+# 'VERB', 'ADJ', 'NOUN', 'CONJ', 'ADP', 'NOUN', 'NOUN', 'ADJ', 'ADJ', 'ADV',
+# 'ADV', 'VERB', 'ADJ', 'VERB', 'DET', 'VERB', 'PRON', 'NOUN', 'ADP', 'VERB',
+# 'PRON', 'PRON'], 'size': [7, 5, 4, 4, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 2, 2,
+# 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1,
+# 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]}, '1.0': {'lemma': ['let', 'light',
+# 'add', 'advice', 'back', 'bright', 'bring', 'channel', 'discuss', 'down',
+# 'dry', 'everyone', 'finally', 'mistake', 'next', 'prefer', 'so', 'sure',
+# 'that', 'way', 'while'], 'pos': ['VERB', 'NOUN', 'VERB', 'NOUN', 'ADP',
+# 'ADJ', 'VERB', 'NOUN', 'VERB', 'ADP', 'ADJ', 'PRON', 'ADV', 'NOUN', 'ADV',
+# 'VERB', 'CONJ', 'ADJ', 'PRON', 'NOUN', 'CONJ'], 'size': [2, 2, 1, 1, 1, 1,
+# 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]}, '2.0': {'lemma': ['care',
+# 'common', 'condition', 'dust', 'inch', 'leaf', 'other', 'proper', 'spot',
+# 'tip', 'top', 'welcome', 'what'], 'pos': ['NOUN', 'ADJ', 'NOUN', 'NOUN',
+# 'NOUN', 'NOUN', 'NOUN', 'ADJ', 'NOUN', 'NOUN', 'ADJ', 'VERB', 'PRON'],
+# 'size': [3, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]}, '3.0': {'lemma': ['soil',
+# 'sunlight', 'block', 'growth', 'occasionally', 'place', 'research',
+# 'survive', 'when'], 'pos': ['NOUN', 'NOUN', 'VERB', 'NOUN', 'ADV', 'VERB',
+# 'VERB', 'VERB', 'CONJ'], 'size': [2, 2, 1, 1, 1, 1, 1, 1, 1]}, '4.0': {
+# 'lemma': ['indirect', 'subscribe', 'thank', 'thrive'], 'pos': ['ADJ',
+# 'VERB', 'NOUN', 'VERB'], 'size': [1, 1, 1, 1]}, '5.0': {'lemma': [
+# 'overwatering', 'slow', 'watering'], 'pos': ['NOUN', 'VERB', 'NOUN'],
+# 'size': [1, 1, 1]}, '6.0': {'lemma': ['houseplant', 'low-light'], 'pos': [
+# 'NOUN', 'ADJ'], 'size': [3, 1]}}, 'topic_vocabulary': {'Animals': {},
+# 'Appearance': {'Colours': ['bright_ADJ', 'color_NOUN'], 'Skin': [
+# 'spot_NOUN'], 'Wearing clothes': ['take_VERB']}, 'Communication': {},
+# 'Culture': {'Broadcasting': ['spot_NOUN'], 'Parts of a book': [
+# 'leaf_NOUN'], 'Watching TV/Listening to the radio': ['watch_VERB',
+# 'channel_NOUN']}, 'Food and drink': {'Eating out': ['tip_NOUN'],
+# 'Non-alcoholic drinks': ['water_NOUN'], 'Taste and texture of food': [
+# 'dry_ADJ']}, 'Functions': {'Advice': ['advice_NOUN', 'tip_NOUN'],
+# 'Agreement': ['condition_NOUN'], 'Certainty': ['sure_ADJ'], 'Discussion': [
+# 'discuss_VERB'], 'Expressing an opinion': ['discuss_VERB', 'advice_NOUN'],
+# 'Forming an opinion': ['right_ADJ', 'take_VERB', 'feel_VERB',
+# 'mistake_NOUN', 'see_VERB'], 'Prefer': ['prefer_VERB'], 'Rules': [
+# 'condition_NOUN'], 'Suggestion': ['let_VERB', 'always_ADV']}, 'Health': {
+# 'Being ill': ['spot_NOUN', 'condition_NOUN'], 'Good health': [
+# 'thrive_VERB'], 'Healthcare': ['care_NOUN']}, 'Homes and buildings': {
+# 'Gardening': ['soil_NOUN'], 'House equipment': ['light_NOUN'], 'Housework':
+# ['clean_VERB'], 'Renting a home': ['let_VERB'], 'Types of building': [
+# 'home_NOUN'], 'Types of house': ['home_NOUN']}, 'Leisure': {'Online
+# shopping': ['condition_NOUN']}, 'Notions': {'Achieving success': [
+# 'thrive_VERB', 'take_VERB', 'go_VERB'], 'Cause and effect': [
+# 'indirect_ADJ', 'bring_VERB'], 'Change': ['growth_NOUN'], 'Predicting
+# success': ['bright_ADJ'], 'Unsuccessful people/things': ['mistake_NOUN']},
+# 'People': {'Clever': ['bright_ADJ'], 'Confident': ['sure_ADJ'], 'Exams and
+# assessment': ['take_VERB'], 'Family background': ['home_NOUN'], 'Feelings
+# in general': ['feel_VERB', 'channel_NOUN'], 'Moral': ['proper_ADJ'],
+# 'Raising children': ['care_NOUN'], 'Relatives': ['great_ADJ'], 'Teaching
+# and learning': ['research_VERB'], 'Thirst': ['dry_ADJ']}, 'Politics and
+# society': {'Helping others': ['subscribe_VERB'], 'Punishment': [
+# 'life_NOUN'], 'Race': ['color_NOUN'], 'War': ['take_VERB']}, 'Science and
+# technology': {'Computer programming': ['channel_NOUN'], 'Energy and
+# physical forces': ['light_NOUN'], 'Measurements': ['inch_NOUN'], 'Numbers':
+# ['add_VERB'], 'Study': ['research_VERB']}, 'Sport': {'Ball sports in
+# general': ['take_VERB'], 'Equine sports': ['tip_NOUN']}, 'The natural
+# world': {'Describing geographic regions': ['dry_ADJ'], 'Growing crops': [
+# 'soil_NOUN'], 'Plants': ['leaf_NOUN', 'plant_NOUN'], 'Rain': ['spot_NOUN'],
+# 'Rivers and lakes': ['channel_NOUN']}, 'Time and space': {'Days': [
+# 'today_NOUN'], 'Periods in history': ['time_NOUN'], 'The sun and the moon':
+# ['sunlight_NOUN'], 'Time periods': ['time_NOUN']}, 'Travel': {'Driving': [
+# 'slow_VERB'], 'Motoring problems and accidents': ['block_VERB'], 'Parts of
+# boats': ['color_NOUN'], 'Train and bus travel': ['take_VERB'], 'Travelling
+# by boat': ['channel_NOUN', 'water_NOUN']}, 'Work and business': {
+# 'Manufacturing': ['plant_NOUN'], 'Pay and conditions at work': [
+# 'condition_NOUN'], 'Payments': ['tip_NOUN'], 'The economy': [
+# 'growth_NOUN']}}, 'stats': {'sum_token': {'values': [1, 89, 23, 15, 11, 4,
+# 3, 4]}, 'cumsum_token': {'values': [0.0067, 0.6, 0.7533, 0.8533, 0.9267,
+# 0.9533, 0.9733, 1.0], 'constants': [4.373678312132454,
+# 1.0000000000000003e-05, 8.100236369382259, 7.789066780495132]}, 'sum_type':
+# {'values': [1, 53, 21, 13, 9, 4, 3, 2]}, 'cumsum_type': {'values': [0.0094,
+# 0.5094, 0.7075, 0.8302, 0.9151, 0.9528, 0.9811, 1.0], 'constants': [
+# 4.387786347053908, 1.0000000000000003e-05, 6.411358536522315,
+# 6.183545615526461]}, 'level': {'fit_curve': [3.9819484062192307],
+# 'ninety_five': [3.8749999999999973], 'fit_error': [0.014036938324388001]}},
+# 'tense_count': {'be doing_ind. (present)': {'form': ['are doing'], 'size':
+# [1], 'tense_term': ['Present continuous'], 'level': [0.5], 'span': [[[12,
+# 13]]], 'sentence_id': [[1]]}, 'do_ger.': {'form': ['doing'], 'size': [2],
+# 'tense_term': ['Gerund simple'], 'level': [1.0], 'span': [[[81], [155]]],
+# 'sentence_id': [[5, 12]]}, 'do_imp.': {'form': ['do'], 'size': [5],
+# 'tense_term': ['Imperative'], 'level': [0.0], 'span': [[[49], [87], [108],
+# [129], [169]]], 'sentence_id': [[3, 6, 8, 9, 13]]}, 'do_ind. (present)': {
+# 'form': ['do', 'does', 'do do', 'is', 'are'], 'size': [3, 2, 2, 2, 1],
+# 'tense_term': ['Present simple', 'Present simple', 'Present simple',
+# 'Present simple', 'Present simple'], 'level': [0.0, 0.0, 0.0, 0.0, 0.0],
+# 'span': [[[3], [58], [94]], [[66], [118]], [[40, 41], [158, 160]], [[70],
+# [146]], [[25]]], 'sentence_id': [[0, 4, 7], [4, 8], [2, 12], [5, 11],
+# [2]]}, 'do_inf.': {'form': ['to do', 'can do', 'do'], 'size': [8, 3, 3],
+# 'tense_term': ['Infinitive with "to"', 'Infinitive with modal verb: can',
+# 'Infinitive without "to"'], 'level': [0.0, 0.5, 0.0], 'span': [[[14, 15],
+# [18, 19], [29, 30], [44, 45], [110, 111], [110, 120], [130, 131], [161,
+# 162]], [[102, 103], [137, 138], [137, 141]], [[51], [77], [89]]],
+# 'sentence_id': [[1, 1, 2, 2, 8, 8, 9, 12], [7, 10, 10], [3, 5, 6]]}},
+# 'tense_term_count': {'Gerund simple': {'form': ['doing'], 'size': [2],
+# 'tense': ['do_ger.'], 'level': [1.0], 'span': [[[81], [155]]],
+# 'sentence_id': [[5, 12]]}, 'Imperative': {'form': ['do'], 'size': [5],
+# 'tense': ['do_imp.'], 'level': [0.0], 'span': [[[49], [87], [108], [129],
+# [169]]], 'sentence_id': [[3, 6, 8, 9, 13]]}, 'Infinitive with "to"': {
+# 'form': ['to do'], 'size': [8], 'tense': ['do_inf.'], 'level': [0.0],
+# 'span': [[[14, 15], [18, 19], [29, 30], [44, 45], [110, 111], [110, 120],
+# [130, 131], [161, 162]]], 'sentence_id': [[1, 1, 2, 2, 8, 8, 9, 12]]},
+# 'Infinitive with modal verb: can': {'form': ['can do'], 'size': [3],
+# 'tense': ['do_inf.'], 'level': [0.5], 'span': [[[102, 103], [137, 138],
+# [137, 141]]], 'sentence_id': [[7, 10, 10]]}, 'Infinitive without "to"': {
+# 'form': ['do'], 'size': [3], 'tense': ['do_inf.'], 'level': [0.0], 'span':
+# [[[51], [77], [89]]], 'sentence_id': [[3, 5, 6]]}, 'Present continuous': {
+# 'form': ['are doing'], 'size': [1], 'tense': ['be doing_ind. (present)'],
+# 'level': [0.5], 'span': [[[12, 13]]], 'sentence_id': [[1]]}, 'Present
+# simple': {'form': ['do', 'does', 'do do', 'is', 'are'], 'size': [3, 2, 2,
+# 2, 1], 'tense': ['do_ind. (present)', 'do_ind. (present)', 'do_ind. (
+# present)', 'do_ind. (present)', 'do_ind. (present)'], 'level': [0.0, 0.0,
+# 0.0, 0.0, 0.0], 'span': [[[3], [58], [94]], [[66], [118]], [[40, 41], [158,
+# 160]], [[70], [146]], [[25]]], 'sentence_id': [[0, 4, 7], [4, 8], [2, 12],
+# [5, 11], [2]]}}, 'tense_stats': {'sum_token': {'values': [26, 4, 2, 0, 0,
+# 0, 0, 0, 0, 0, 0]}, 'cumsum_token': {'values': [0.8125, 0.9375, 1.0, 1.0,
+# 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0], 'constants': [0.004045790616082387,
+# 1.0000000000000003e-05, 28.788952994338224, 22.172824862587674]}, 'level':
+# {'fit_curve': [0.7177562151946849], 'ninety_five': [0.5999999999999996],
+# 'fit_error': [0.017091653970966382]}, 'tense_summary': {'tense': [
+# 'do_inf.', 'do_ind. (present)', 'do_imp.', 'do_ger.', 'be doing_ind. (
+# present)'], 'level': [0.0, 0.0, 0.0, 1.0, 0.5], 'count': [14, 10, 5, 2, 1],
+# 'ratio': [0.44, 0.31, 0.16, 0.06, 0.03]}, 'tense_term_summary': {
+# 'tense_term': ['Gerund simple', 'Infinitive with modal verb: can', 'Present
+# continuous', 'Present simple', 'Infinitive with "to"', 'Imperative',
+# 'Infinitive without "to"'], 'level': [1.0, 0.5, 0.5, 0.0, 0.0, 0.0, 0.0],
+# 'level_diff': [2.4, 2.9, 2.9, 3.4, 3.4, 3.4, 3.4], 'count': [2, 3, 1, 10,
+# 8, 5, 3], 'ratio': [0.06, 0.09, 0.03, 0.31, 0.25, 0.16, 0.09]}},
+# 'clause_count': {'advcl': {'clause_form': ['when_1.0', 'while_1.0'],
+# 'size': [1, 1], 'clause_span': [[[60, 61, 62, 63, 64, 65, 66, 67]], [[100,
+# 101, 102, 103, 104, 105, 106]]], 'sentence_id': [[4], [7]]}, 'cc': {
+# 'clause_form': ['but_0.0'], 'size': [1], 'clause_span': [[[38, 41]]],
+# 'sentence_id': [[2]]}, 'ncl': {'clause_form': ['how_3.0', 'what_3.0'],
+# 'size': [1, 1], 'clause_span': [[[17, 18, 19, 20, 21, 22]], [[112, 113,
+# 114, 115, 116, 117, 118]]], 'sentence_id': [[1], [8]]}}, 'clause_stats': {
+# 'sum_token': {'values': [1, 2, 0, 2, 0, 0]}, 'cumsum_token': {'values': [
+# 0.2, 0.6, 0.6, 1.0, 1.0, 1.0]}, 'level': {'ninety_five': [3.0]},
+# 'p_clausal': 0.35714285714285715, 'mean_clause': 1.0, 'mean_length': 10.7,
+# 'length_level': 1.5084494627258633, 'n_words': 150}, 'final_levels': {
+# 'general_level': 3.4, 'vocabulary_level': 4.0, 'tense_level': 0.7,
+# 'clause_level': 3.0, 'sentence_level': 2.8}, 'final_levels_str': {
+# 'general_level': 'B2.4', 'vocabulary_level': 'C1.0', 'tense_level': 'A1.7',
+# 'clause_level': 'B2.0', 'sentence_level': 'B1.8'}, 'exam_stats': {'actfl':
+# 'Advanced Mid', 'british_council': 'Upper intermediate',
+# 'cambridge_scale_score': 168, 'exam_grades': ['PET Grade A', 'FCE Grade
+# C'], 'ielts': 5.5}, 'allowed_remaining': {'remaining_coins': 48,
+# 'max_coins': 48, 'next_refill': 603884}}
+
+# difficulty:
+# {'scores': {'catile': 594, 'decoding': 33, 'vocabulary': 59, 'sentences':
+# 61, 'patterns': 100}, 'difficult_words': ['overwatering', 'houseplant',
+# 'low-light', 'watering', 'indirect', 'subscribe', 'thrive', 'sunlight',
+# 'research', 'occasionally'], 'longest_sentence': 'Houseplants are a great
+# way to bring life and color into your home, but they do need proper care to
+# thrive.', 'mean_sent_length': 10.71, 'word_count': 150, 'age': ['7-8',
+# '8-9'], 'grade': [2, 3], 'allowed_remaining': {'remaining_coins': 46,
+# 'max_coins': 46, 'next_refill': 603338}}
