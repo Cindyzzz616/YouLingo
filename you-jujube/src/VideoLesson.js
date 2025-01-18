@@ -78,6 +78,34 @@ const VideoLesson = () => {
           <p>{videoUrl}</p>
         </div>
       )}
+      {videoInfo && (
+        <div style={{ marginTop: "20px" }}>
+          <h2>Video Information:</h2>
+          <p>
+            <strong>Title:</strong> {videoInfo.title}
+          </p>
+          <p>
+            <strong>Description:</strong> {videoInfo.description}
+          </p>
+          <p>
+            <strong>Duration:</strong> {videoInfo.duration}
+          </p>
+          <p>
+            <strong>Channel Title:</strong> {videoInfo.channelTitle}
+          </p>
+          <p>
+            <strong>Video Language:</strong> {videoInfo.video_language}
+          </p>
+          <p>
+            <strong>Final Levels:</strong>{" "}
+            {JSON.stringify(videoInfo.final_levels)}
+          </p>
+          <p>
+            <strong>Transcripts:</strong>{" "}
+            {JSON.stringify(videoInfo.transcripts)}
+          </p>
+        </div>
+      )}
     </div>
   );
 };

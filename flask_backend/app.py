@@ -72,7 +72,7 @@ def check_video():
         
         # Check if video ID exists in Firestore
         videos_ref = db.collection("video")
-        query = videos_ref.where("id", "==", video_id).stream()
+        query = videos_ref.where("videoId", "==", video_id).stream()
         video_doc = next(query, None)
         
         if video_doc:
