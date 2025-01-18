@@ -5,6 +5,8 @@ import Navbar from "./components/Navbar";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Home";
 import Explore from "./Explore";
+import VideoLesson from "./VideoLesson";
+import MyVideos from "./MyVideos";
 import { useAuth0 } from "@auth0/auth0-react";
 import YouTubeVideos from './components/video';
 
@@ -22,6 +24,8 @@ const App = () => {
           path="/explore"
           element={isAuthenticated ? <Explore /> : <Navigate to="/home" />}
         />
+        <Route path="/video_lesson" element={<VideoLesson />} />
+        <Route path="/my_videos" element={<MyVideos />} />
       </Routes>
     </div>
   );
