@@ -3,8 +3,6 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { db, getDoc, setDoc, doc } from "./firebase-config";
 import UserForm from "./components/UserForm";
 import "./App.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGear } from "@fortawesome/free-solid-svg-icons";
 
 const Settings = () => {
   const [userData, setUserData] = useState(null);

@@ -10,6 +10,7 @@ import MyVideos from "./MyVideos";
 import { useAuth0 } from "@auth0/auth0-react";
 import YouTubeVideos from './components/video';
 import LearnVideo from './LearnVideo';
+import Settings from './Settings';
 
 const App = () => {
   const { isAuthenticated } = useAuth0();
@@ -28,6 +29,7 @@ const App = () => {
         /> */}
         <Route path="/video_lesson" element={<VideoLesson />} />
         <Route path="/my_videos" element={<MyVideos />} />
+        <Route path="/settings" element={<Settings />} />
       </Routes>
     </div>
   );
