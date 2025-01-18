@@ -3,6 +3,7 @@ import os
 from flask import Flask, jsonify, request
 from google.cloud import firestore
 import re
+from flask_cors import CORS
 
 # Add the backend directory to the Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -11,9 +12,19 @@ from backend.Entities.Video import Video
 
 # Initialize Flask app
 app = Flask(__name__)
+CORS(app)  # Enable CORS
 
 # Initialize Firestore client
 db = firestore.Client.from_service_account_json("serviceAccountKey.json")
+
+def convert_to_firestore_format(data):
+    # Convert data to a format that Firestore can store with no array within an array
+    if isinstance(data, dict):
+        return {k: convert_to_firestore_format(v) for k, v in data.items()}
+    elif isinstance(data, list):
+        return [convert_to_firestore_format(item) for item in data]
+    else:
+        return data
 
 @app.route("/videos", methods=["GET"])
 def get_videos():
@@ -78,15 +89,25 @@ def check_video():
                     "view_count": video.view_count
                 }
                 
+                # Convert video_data to Firestore-compatible format
+                firestore_data = convert_to_firestore_format(video_data)
+                
                 # Save video_data to Firestore
-                videos_ref.document(video_id).set(video_data)
+                videos_ref.document(video_id).set(firestore_data)
                 
                 print(f"Fetched and saved video details for video_id: {video_id}", flush=True)  # Print success message
+                
+                # Retrieve all data fields from Firestore
+                video_doc = videos_ref.document(video_id).get()
+                if video_doc.exists:
+                    video_data = video_doc.to_dict()
+                
                 return jsonify({"success": True, "exists": False, "data": video_data}), 200
             except Exception as e:
                 print(f"Failed to fetch video details for video_id: {video_id}, error: {str(e)}", flush=True)  # Print error message
                 return jsonify({"success": False, "error": f"Failed to fetch video details: {str(e)} (video_id: {video_id})"}), 500
     except Exception as e:
+        print(f"Exception occurred: {str(e)}", flush=True)  # Print exception message
         return jsonify({"success": False, "error": f"{str(e)} (video_id: {video_id})"}), 500
 
 if __name__ == "__main__":
