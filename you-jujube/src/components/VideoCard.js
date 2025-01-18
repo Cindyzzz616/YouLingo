@@ -3,6 +3,7 @@ import { Card, CardImg, CardBody, CardTitle, CardText } from "reactstrap";
 import { Link } from "react-router-dom";
 import { fetchVideoCount } from '../services/viewCounterService';
 import { useAuth0 } from '@auth0/auth0-react';
+import he from 'he';
 
 const VideoCard = ({ video }) => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -39,12 +40,12 @@ const VideoCard = ({ video }) => {
       }}
     >
       <CardImg top width="100%" src={video.thumbnail} alt={video.title} />
-      <CardBody>
-        <CardTitle tag="h5">{video.title}</CardTitle>
+      <CardBody>  
+        <CardTitle tag="h5">{he.decode(video.title)}</CardTitle>
         <CardText>Channel: {video.channel}</CardText>
         <CardText>Language Difficulty: {video.languageDifficulty}</CardText>
         <CardText>Times Watched: {count}</CardText>
-        <CardText>{video.description}</CardText>
+        <CardText><i>{video.description}</i></CardText>
       </CardBody>
     </Card>
     </Link>
