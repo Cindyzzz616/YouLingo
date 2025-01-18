@@ -24,11 +24,11 @@ const Navbar = () => {
               Home
             </NavLink>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <NavLink tag={Link} to="/explore">
               Explore
             </NavLink>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <NavLink tag={Link} to="/video_lesson">
               Video Lesson

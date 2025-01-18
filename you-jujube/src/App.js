@@ -9,6 +9,7 @@ import VideoLesson from "./VideoLesson";
 import MyVideos from "./MyVideos";
 import { useAuth0 } from "@auth0/auth0-react";
 import YouTubeVideos from './components/video';
+import LearnVideo from './LearnVideo';
 
 const App = () => {
   const { isAuthenticated } = useAuth0();
@@ -20,10 +21,11 @@ const App = () => {
         <Route path="/" element={<Navigate to="/home" />} />
         <Route path="/youtube" element={<YouTubeVideos />} />
         <Route path="/home" element={<Home />} />
-        <Route
+        <Route path="/video/:videoId" element={<LearnVideo />} />
+        {/* <Route
           path="/explore"
           element={isAuthenticated ? <Explore /> : <Navigate to="/home" />}
-        />
+        /> */}
         <Route path="/video_lesson" element={<VideoLesson />} />
         <Route path="/my_videos" element={<MyVideos />} />
       </Routes>
