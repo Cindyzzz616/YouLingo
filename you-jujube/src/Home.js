@@ -11,6 +11,26 @@ const Home = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
 
   useEffect(() => {
+    const fetchUserData = async () => {
+      if (isAuthenticated && user) {
+        try {
+          const userRef = doc(db, "users", user.sub);
+          const userSnap = await getDoc(userRef);
+          if (userSnap.exists()) {
+            setUserData(userSnap.data());
+          } else {
+            console.log("No user data found. Please fill the form.");
+          }
+        } catch (error) {
+          console.error("Error fetching user data from Firebase:", error);
+        }
+      }
+    };
+
+    fetchUserData();
+  }, [isAuthenticated, user]);
+
+  useEffect(() => {
     const fetchVideos = async () => {
       if (userData?.themes && userData.themes.length > 0) {
         const videoData = {};
