@@ -21,6 +21,8 @@ Make sure you have the following installed on your machine:
 
 - Node.js
 - npm (Node Package Manager)
+- Python
+- pip (Python Package Installer)
 
 ### Installation
 
@@ -31,21 +33,41 @@ git clone https://github.com/your-username/YouLingo.git
 cd YouLingo/you-jujube
 ```
 
-2. Install the dependencies:
+2. Install the dependencies for the frontend:
 
 ```sh
 npm install
 ```
 
+3. Install the dependencies for the backend:
+
+```sh
+cd ../flask_backend
+pip install -r requirements.txt
+```
+
 ### Running the Application
 
-To run the application in a development environment, use the following command:
+#### Running the Frontend
+
+To run the frontend application in a development environment, use the following command:
 
 ```sh
 npm start
 ```
 
 This will start the development server and open the application in your default web browser. The application will automatically reload if you make any changes to the source code.
+
+#### Running the Backend
+
+To run the Flask backend, use the following command:
+
+```sh
+cd ../flask_backend
+flask run
+```
+
+This will start the Flask server. Make sure you have your `serviceAccountKey.json` file in the `flask_backend` directory and your `.env` file properly configured.
 
 ### Folder Structure
 
@@ -57,6 +79,9 @@ This will start the development server and open the application in your default 
   - `Explore.js`: The explore page component.
   - `VideoLesson.js`: The video lesson page component.
   - `MyVideos.js`: The my videos page component.
+- `flask_backend/`: Contains the Flask backend code.
+  - `app.py`: The main Flask application file.
+  - `requirements.txt`: The dependencies for the Flask application.
 
 ### Authentication
 
