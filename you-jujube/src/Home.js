@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import VideoCard from "./components/VideoCard";
 import { getVideos } from "./services/videoService";
+import UserForm from "./components/UserForm";
 
 const Home = () => {
   const [videos, setVideos] = useState([]);
+  const [userData, setUserData] = useState(null);
 
   useEffect(() => {
     const fetchVideos = async () => {
@@ -14,8 +16,20 @@ const Home = () => {
     fetchVideos();
   }, []);
 
+  const handleFormSubmit = (data) => {
+    setUserData(data);
+  };
+
+  if (!userData) {
+    return (
+      <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <UserForm onSubmit={handleFormSubmit} />
+      </div>
+    );
+  }
+
   return (
-    <div>
+    <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
       <div
         className="video-feed"
         style={{
