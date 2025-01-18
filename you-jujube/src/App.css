@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #f4f4f9;
   color: #333;
 }
@@ -16,9 +16,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px;
   min-height: 100vh;
   background-color: #ececec;
+}
+
+/* Navbar styling */
+.navbar {
+  width: 100%;
 }
 
 /* Welcome Section */
@@ -47,7 +51,7 @@ body {
 
 /* Button styling */
 button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
   color: white;
   padding: 15px 30px;
   font-size: 1.2rem;

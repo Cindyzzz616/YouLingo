@@ -1,12 +1,14 @@
-// import logo from './logo.svg';
-// import './App.css';
-
-import React, { useEffect, useState } from 'react';
-import AuthButtons from './components/Auth';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import { Route, Routes, Navigate } from "react-router-dom";
+import "./App.css";
+import Navbar from "./components/Navbar";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./Home";
+import Explore from "./Explore";
+import { useAuth0 } from "@auth0/auth0-react";
 
 import { initializeApp } from "firebase/app";
-import { getFirestore, collection, addDoc, getDocs } from 'firebase/firestore';
+import { getFirestore, collection, addDoc, getDocs } from "firebase/firestore";
 // import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -18,7 +20,7 @@ const firebaseConfig = {
   storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
   messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
   appId: process.env.REACT_APP_FIREBASE_APP_ID,
-  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
+  measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
@@ -28,28 +30,29 @@ const db = getFirestore(app);
 
 const App = () => {
   const [data, setData] = useState(null);
+  const { isAuthenticated } = useAuth0();
 
   // Function to add data to Firestore
   const addData = async () => {
     try {
-      await addDoc(collection(db, 'user'), {
-        name: 'Test User',
-        level: 'beginner',
+      await addDoc(collection(db, "user"), {
+        name: "Test User",
+        level: "beginner",
       });
-      console.log('Document added!');
+      console.log("Document added!");
     } catch (error) {
-      console.error('Error adding document: ', error);
+      console.error("Error adding document: ", error);
     }
   };
 
   // Function to get data from Firestore
   const getData = async () => {
     try {
-      const querySnapshot = await getDocs(collection(db, 'user'));
-      const data = querySnapshot.docs.map(doc => doc.data());
+      const querySnapshot = await getDocs(collection(db, "user"));
+      const data = querySnapshot.docs.map((doc) => doc.data());
       setData(data);
     } catch (error) {
-      console.error('Error getting documents: ', error);
+      console.error("Error getting documents: ", error);
     }
   };
 
@@ -61,15 +64,15 @@ const App = () => {
 
   return (
     <div className="app-container">
-      <div className="welcome-section">
-        <h1>Welcome to You-Jujube!!</h1>
-        <p>Hello world!</p>
-      </div>
-
-      <div className="auth-container">
-        <AuthButtons />
-      </div>
-
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Navigate to="/home" />} />
+        <Route path="/home" element={<Home />} />
+        <Route
+          path="/explore"
+          element={isAuthenticated ? <Explore /> : <Navigate to="/home" />}
+        />
+      </Routes>
       <div className="data-section">
         <button onClick={addData}>Add Test Data</button>
         <button onClick={getData}>Get Test Data</button>
@@ -82,26 +85,3 @@ const App = () => {
 };
 
 export default App;
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-// export default App;
