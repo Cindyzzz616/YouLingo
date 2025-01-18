@@ -2,6 +2,7 @@ import requests
 
 # Endpoint URL
 url = 'https://enterpriseapi.cathoven.com/cefr/process_text'
+url_difficulty = 'https://enterpriseapi.cathoven.com/catile/difficulty'
 
 # Your credentials
 client_id = '41b95a1e-89cf-4194-ad44-da6a542da143'
@@ -21,6 +22,8 @@ text = ('Hi everyone, welcome back to the channel! Today, we’re going to talk 
         'can block sunlight and slow down growth. That’s it for today’s tips! '
         'Thanks for watching, and don’t forget to subscribe for more plant '
         'care advice. See you next time!')
+
+# process_text endpoint...
 
 # Request payload
 payload = {
@@ -49,6 +52,25 @@ payload = {
 
 # Make the request
 response = requests.post(url, data=payload)
+
+# Check the response
+if response.status_code == 200:
+    analysis_result = response.json()
+    print(analysis_result)
+else:
+    print(f'Error: {response.status_code}')
+
+
+# difficulty endpoint...
+
+payload_difficulty = {
+    'client_id': client_id,
+    'client_secret': client_secret,
+    'text': text
+}
+
+# Make the request
+response = requests.post(url_difficulty, data=payload)
 
 # Check the response
 if response.status_code == 200:
