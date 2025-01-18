@@ -3,6 +3,7 @@
 
 import React, { useEffect, useState } from 'react';
 import AuthButtons from './components/Auth';
+import './App.css';
 
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc, getDocs } from 'firebase/firestore';
@@ -59,14 +60,23 @@ const App = () => {
   }, []);
 
   return (
-    <div>
-      <AuthButtons />
-      <h1>Firebase Firestore Test</h1>
-      <button onClick={addData}>Add Test Data</button>
-      <button onClick={getData}>Get Test Data</button>
+    <div className="app-container">
+      <div className="welcome-section">
+        <h1>Welcome to You-Jujube!!</h1>
+        <p>Hello world!</p>
+      </div>
 
-      <h2>Data from Firestore:</h2>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <div className="auth-container">
+        <AuthButtons />
+      </div>
+
+      <div className="data-section">
+        <button onClick={addData}>Add Test Data</button>
+        <button onClick={getData}>Get Test Data</button>
+
+        <h2>Data from Firestore:</h2>
+        <pre>{JSON.stringify(data, null, 2)}</pre>
+      </div>
     </div>
   );
 };
