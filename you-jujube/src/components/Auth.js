@@ -24,6 +24,7 @@ export const LoginButton = () => {
           email: user.email || "",
           picture: user.picture || "",
           createdAt: new Date().toISOString(),
+          history: {},
         });
         console.log("User added to Firebase!");
       } else {

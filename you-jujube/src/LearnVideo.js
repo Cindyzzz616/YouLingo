@@ -24,13 +24,19 @@ const LearnVideo = () => {
   };
 
   return (
-    <Container className="mt-5">
+    <Container 
+      style={{
+        flexDirection: 'column',
+        justifyContent: 'center',
+        alignItems: 'center',
+        textAlign: 'center',
+      }}>
       <Row>
         <Col xs="12" md="8" className="mx-auto">
           <Card>
             <CardBody>
               <YouTube videoId={videoId} opts={opts} />
-              <CardTitle className="mt-3">Language Difficulty Level</CardTitle>
+              <CardTitle className="mt-3" style={{ fontWeight: 'bold' }}>Language Difficulty Level</CardTitle>
               <CardText>Intermediate</CardText>
               <CardTitle className="mt-4">Transcript</CardTitle>
               <CardText>
