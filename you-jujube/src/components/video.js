@@ -3,10 +3,11 @@ import React, { useEffect, useState } from 'react';
 const YouTubeVideos = () => {
   const [videos, setVideos] = useState([]);
   const SEARCH_QUERY = 'funny cats';
+  const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
 
   useEffect(() => {
     // Fetch videos from YouTube API
-    fetch("https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=${SEARCH_QUERY}&key=AIzaSyCI_1R2nEhLASofzsD0YI5msfFUoRKbcVU")
+    fetch(`https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=${SEARCH_QUERY}&key=${API_KEY}`)
       .then(res => res.json())
       .then(data => {
         setVideos(data.items || []); // Update state with video items
