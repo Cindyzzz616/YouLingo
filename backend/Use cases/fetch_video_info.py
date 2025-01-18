@@ -9,15 +9,16 @@ class FetchVideoInfo:
 
     video: Video
 
-    def __init__(self, video: Video, user: User) -> None:
+    def __init__(self, video: Video) -> None:
         self.video = video
 
     def get_transcripts(self) -> List[(dict[str, str], dict[str, str] | None)] | str:
         # reformat the transcripts to be displayed?
         return self.video.transcripts
 
-
     def get_difficulty(self) -> int:
         """Returns the general difficulty level of the video as an integer."""
         return self.video.final_levels['general']
+
+    # def get_similarity(self) -> int:
 
