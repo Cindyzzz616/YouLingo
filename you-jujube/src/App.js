@@ -2,6 +2,7 @@
 // import './App.css';
 
 import React, { useEffect, useState } from 'react';
+import AuthButtons from './components/Auth';
 
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, addDoc, getDocs } from 'firebase/firestore';
@@ -59,6 +60,7 @@ const App = () => {
 
   return (
     <div>
+      <AuthButtons />
       <h1>Firebase Firestore Test</h1>
       <button onClick={addData}>Add Test Data</button>
       <button onClick={getData}>Get Test Data</button>
