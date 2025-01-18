@@ -39,6 +39,11 @@ const Navbar = () => {
               My Videos
             </NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink tag={Link} to="/settings">
+              Settings
+            </NavLink>
+          </NavItem>
         </Nav>
         <div className="d-flex align-items-center">
           {isAuthenticated ? (

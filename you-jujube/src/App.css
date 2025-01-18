@@ -49,6 +49,43 @@ body {
   margin-top: 10px;
 }
 
+/* Settings */
+.settings-container {
+  position: relative; /* Position relative to the screen */
+  top: 80px;          /* Distance from the top */
+  left: 20px;         /* Distance from the left */
+  width: 500px;       /* Set a width for the container */
+  padding: 30px;      /* Add some padding */
+  background-color: #f9f9f9; /* Light background for visibility */
+  border: 1px solid #ddd;    /* Optional border */
+  border-radius: 20px;        /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+/* Interests */
+.interests-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* space between the boxes */
+  justify-content: center;
+}
+
+.interest-box {
+  background-color: #f0f0f0;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  min-width: 120px;
+  max-width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.interest-box:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
 /* Button styling */
 button {
   background-color: #4caf50;
@@ -66,6 +103,26 @@ button:hover {
   background-color: #45a049;
   transform: translateY(-2px);
 }
+
+/* Gear icon */
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.icon-button:hover {
+  background-color: #0056b3;
+}
+
 
 /* Auth section */
 .auth-container {
