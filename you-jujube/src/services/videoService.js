@@ -1,6 +1,6 @@
 export const getVideos = async (searchQuery) => {
   const API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
-  const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=${searchQuery}&key=${API_KEY}`;
+  const apiUrl = `https://www.googleapis.com/youtube/v3/search?part=snippet&type=video&q=${searchQuery}&maxResults=6&key=${API_KEY}`;
 
   try {
     const response = await fetch(apiUrl);
