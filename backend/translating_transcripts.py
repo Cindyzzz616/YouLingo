@@ -20,17 +20,26 @@ for transcript in transcript_list:
         transcript.translation_languages,
     )
 
+    transcript_data = transcript.fetch()
+    transcript_string = '';
+
+    # for the actual thing, add a regex filter so things like [Music] won't be included
+    for line in transcript_data:
+        transcript_string = transcript_string + line['text'] + ' '
+
+    print(transcript_string)
+
     # fetch the actual transcript data
-    print(transcript.fetch())
+    print(transcript_data)
 
     # translating the transcript will return another transcript object
     print(transcript.translate('fr').fetch())
 
-# you can also directly filter for the language you are looking for, using the transcript list
-transcript = transcript_list.find_transcript(['de', 'en'])
-
-# or just filter for manually created transcripts
-# transcript = transcript_list.find_manually_created_transcript(['de', 'en'])
-
-# or automatically generated ones
-transcript = transcript_list.find_generated_transcript(['de', 'en'])
+# # you can also directly filter for the language you are looking for, using the transcript list
+# transcript = transcript_list.find_transcript(['de', 'en'])
+#
+# # or just filter for manually created transcripts
+# # transcript = transcript_list.find_manually_created_transcript(['de', 'en'])
+#
+# # or automatically generated ones
+# transcript = transcript_list.find_generated_transcript(['de', 'en'])

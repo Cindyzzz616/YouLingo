@@ -23,6 +23,7 @@ text = ('Hi everyone, welcome back to the channel! Today, we’re going to talk 
         'Thanks for watching, and don’t forget to subscribe for more plant '
         'care advice. See you next time!')
 
+
 # process_text endpoint...
 
 # Request payload
