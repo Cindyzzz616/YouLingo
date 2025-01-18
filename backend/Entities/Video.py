@@ -1,4 +1,3 @@
-from backend.Entities import Transcript
 from youtube_transcript_api import YouTubeTranscriptApi
 import requests
 
@@ -24,26 +23,30 @@ class Video:
     # do we need these?
     channelId: str
     channelTitle: str
-    video_language: str  # or make a language object?
+    video_language: str
 
 
     # attributes from transcript api response
-    transcripts: list[(Transcript, Transcript)]  # a tuple of transcript and translated transcript
+    transcripts: list[(list[dict[str, float | str]], list[dict[str, float | str]])]
+    # a tuple of transcript and translated transcript
+    # TODO change the data type ^
 
     # attributes from cathoven api response
     final_levels: dict[str, float]
+    wordlists: dict
+    tenses: dict
+    clauses: dict
+    phrases: dict
+
     # sentences - might be useful bc it gives the difficulty breakdown of each word in a sentence
-    # wordlists - could also be helpful to build a user-specific lexicon
 
     # other attributes
     native_language: str  # need to get this from user...
-    view_count: int
 
     def __init__(self, videoId: str, native_language: str) -> None:
         self.videoId = videoId
         self.native_language = native_language
         self.transcripts = []
-        self.view_count = 0
 
     def add_video_details(self) -> str | None:
         params = {
@@ -101,16 +104,13 @@ class Video:
             'custom_dictionary': {},  # Add custom vocabulary levels if needed
             'return_final_levels': True,
             "outputs": [
-                "sentences",
                 "wordlists",
-                "vocabulary_stats",
-                "tense_count",
                 "tense_term_count",
-                "tense_stats",
                 "clause_count",
-                "clause_stats",
                 "final_levels"
             ]
+            # somehow "phrase_count" is not in the list of allowed output params - we'll have to see what happens
+            # removed sentences, vocabulary_stats, tense_count, tense_stats, clause_stats
         }
 
         response = requests.post(CATHOVEN_URL, data=payload)
@@ -118,5 +118,9 @@ class Video:
         if response.status_code == 200:
             analysis_result = response.json()
             self.final_levels = analysis_result['final_levels']
+            self.wordlists = analysis_result['wordlists']
+            self.tenses = analysis_result['tense_term_count']
+            self.clauses = analysis_result['clause_count']
+            self.phrases = analysis_result['phrase_count']  # might not exist
         else:
             return f'Error: {response.status_code}'
