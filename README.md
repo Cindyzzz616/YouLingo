@@ -13,6 +13,11 @@ The integer part of the float can be converted to CEFR level as following:
 • 4 -> C1
 • 5 -> C2
 
+TODO
+- deal with cases where there's no available transcript or translation
+- rank videos based on matching score
+- *levelling up when video is watched x times*
+
 # Background to include
 - language acquisition theory - 5 hypotheses
   - how does our app put this in practice? how did we figure out the grammar/theory part so the user doesn't have to?

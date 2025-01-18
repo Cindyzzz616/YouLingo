@@ -23,7 +23,6 @@ class User:
     lexicon: dict[str, dict[str, float | int]]  # cefr and frequency are the two keys in the nexted dict
     tenses: dict[str, int]
     clauses: dict[str, int]
-    phrases: dict[str, int]
 
     # TODO make more lexicons for clause type, etc
 
@@ -73,9 +72,3 @@ class User:
             self.clauses[clause] += 1
         else:
             self.clauses[clause] = 1
-
-    def add_to_phrases(self, phrase: str) -> None:
-        if phrase in self.phrases.keys():
-            self.phrases[phrase] += 1
-        else:
-            self.phrases[phrase] = 1
