@@ -112,3 +112,34 @@ pre {
     opacity: 1;
   }
 }
+
+/* Video feed styling */
+.video-feed {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.video-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.video-card img {
+  width: 100%;
+  height: auto;
+}
+
+.video-info {
+  padding: 10px;
+}
+
+.video-info h3 {
+  margin: 0 0 10px;
+}
+
+.video-info p {
+  margin: 5px 0;
+}

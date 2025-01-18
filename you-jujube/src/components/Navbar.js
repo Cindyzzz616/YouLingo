@@ -29,6 +29,16 @@ const Navbar = () => {
               Explore
             </NavLink>
           </NavItem>
+          <NavItem>
+            <NavLink tag={Link} to="/video_lesson">
+              Video Lesson
+            </NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink tag={Link} to="/my_videos">
+              My Videos
+            </NavLink>
+          </NavItem>
         </Nav>
         <div className="d-flex align-items-center">
           {isAuthenticated ? (
