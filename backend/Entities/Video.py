@@ -121,6 +121,6 @@ class Video:
             self.wordlists = analysis_result['wordlists']
             self.tenses = analysis_result['tense_term_count']
             self.clauses = analysis_result['clause_count']
-            self.phrases = analysis_result['phrase_count']  # might not exist
+            # self.phrases = analysis_result.get('phrase_count', {})  # Handle absence of phrase_count
         else:
             return f'Error: {response.status_code}'
