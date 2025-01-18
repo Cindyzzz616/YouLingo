@@ -1,38 +1,110 @@
-.App {
-  text-align: center;
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Main App Container */
+.app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 40px;
+  min-height: 100vh;
+  background-color: #ececec;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-color: #3f51b5;
   color: white;
+  padding: 40px 50px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
 }
 
-.App-link {
-  color: #61dafb;
+.welcome-section h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
+.welcome-section p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Button styling */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 10px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+/* Auth section */
+.auth-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 30px 0;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Data Section */
+.data-section {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 800px;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.data-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+pre {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  font-size: 1rem;
+  max-width: 100%;
+  overflow-x: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Simple animation for fade-in */
+@keyframes fadeIn {
   from {
-    transform: rotate(0deg);
+    opacity: 0;
   }
   to {
-    transform: rotate(360deg);
+    opacity: 1;
   }
 }
