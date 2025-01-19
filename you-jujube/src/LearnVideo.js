@@ -34,6 +34,11 @@ const LearnVideo = () => {
     },
   };
 
+  const convertToCEFR = (level) => {
+    const levels = ["A1", "A2", "B1", "B2", "C1", "C2", "Unknown"];
+    return levels[level] || "Unknown";
+  };  
+
   const recordHistory = async () => {
     console.log(`Recording video ${videoId} watch history...`);
 
@@ -96,10 +101,37 @@ const LearnVideo = () => {
             <CardBody style={{ textAlign: "left" }}>
               <YouTube videoId={videoId} opts={opts} onEnd={recordHistory} />
               <CardText>
-                <strong>Final Levels:</strong>
-                {JSON.stringify(videoInfo?.final_levels)}
+                <strong style={{ fontSize: "1.5rem", display: "block", marginBottom: "10px" }}>
+                  General Level:{" "}
+                  <span style={{ color: "#007bff" }}>
+                    {convertToCEFR(videoInfo.languageDifficulty?.general_level)}
+                  </span>
+                </strong>
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(2, auto)",
+                    gap: "10px",
+                    padding: "10px",
+                    border: "1px solid #e0e0e0",
+                    borderRadius: "8px",
+                    backgroundColor: "#f9f9f9",
+                  }}
+                >
+                  <div>
+                    <strong>Vocabulary Level:</strong> {videoInfo.languageDifficulty?.vocabulary_level ?? "N/A"}
+                  </div>
+                  <div>
+                    <strong>Tense Level:</strong> {videoInfo.languageDifficulty?.tense_level ?? "N/A"}
+                  </div>
+                  <div>
+                    <strong>Clause Level:</strong> {videoInfo.languageDifficulty?.clause_level ?? "N/A"}
+                  </div>
+                  <div>
+                    <strong>Sentence Level:</strong> {videoInfo.languageDifficulty?.sentence_level ?? "N/A"}
+                  </div>
+                </div>
               </CardText>
-              {/* TODO: use API for this */}
               <CardText>
                 <strong>Times Watched:</strong> {count}
               </CardText>
