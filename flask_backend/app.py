@@ -27,24 +27,6 @@ db = firestore.Client.from_service_account_json("serviceAccountKey.json")
 # # Initialize OpenAI API client
 # OpenAI.api_key = openai_api_key
 
-def transform_for_firestore(data):
-    def clean_data(value):
-        """
-        Recursively cleans the data to ensure it is compatible with Firestore.
-        Removes unsupported types or converts them into supported formats.
-        """
-        if isinstance(value, dict):
-            return {k: clean_data(v) for k, v in value.items()}
-        elif isinstance(value, list):
-            return [clean_data(v) for v in value]
-        elif isinstance(value, (str, int, float, bool)) or value is None:
-            return value
-        else:
-            # Convert any unsupported types (e.g., custom objects) to strings
-            return str(value)
-
-    return clean_data(data)
-
 @app.route("/videos", methods=["GET"])
 def get_videos():
     try:
@@ -88,7 +70,7 @@ def check_video():
         else:
             try:
                 # Create a Video object and fetch its details
-                video = Video(videoId=video_id, native_language="en")  # Assuming native_language is "en"
+                video = Video(videoId=video_id, native_language="fr")  # Assuming native_language is "en"
                 video.add_video_details()
                 video.add_transcripts()
                 video.add_difficulty()
@@ -108,14 +90,10 @@ def check_video():
                     "native_language": video.native_language
                 }
 
-                # Transform video_data to Firestore-compatible format
-                firestore_data = transform_for_firestore(video_data)
-
-                # Log the data before saving
-                print(f"Data to be saved to Firestore: {firestore_data}", flush=True)
+                print("video_data: ", video_data)
 
                 # Save video_data to Firestore
-                videos_ref.document(video_id).set(firestore_data)
+                videos_ref.document(video_id).set(video_data)
 
                 print(f"Fetched and saved video details for video_id: {video_id}", flush=True)  # Print success message
 
