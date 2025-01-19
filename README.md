@@ -4,17 +4,22 @@ This project is made for U of T Hacks 12 Hackathon.
 
 YouLingo is a web application designed to help users learn new languages by making YouTube videos into language lessons. Users can explore various videos, add their own video URLs, and manage their favorite videos.
 
+## Creators
+- Adrien Mery
+  - https://github.com/NOBODIDI
+- Rui Weng
+  - https://github.com/r-weng
+- Lucie Yang
+  - https://github.com/lucieyang1
+- Cindy Zhang
+  - https://github.com/Cindyzzz616
+
 ## Table of Contents
-1. [Background](#background)
-2. [Features](#features)
-3. [Technologies Used](#technologies-used)
-4. [Getting Started](#getting-started)
-5. [Demo](#demo) - ???
-6. [Challenges](#challenges) - ???
-7. [Future Work](#future-work) - ???
-8. [Contributors](#contributors) - ???
-9. [Acknowledgments](#acknowledgments) - ???
-10. [License](#license) - ???
+1. [Background](#1-background)
+2. [Features](#2-features)
+3. [Technologies Used](#3-technologies-used)
+4. [Getting Started](#4-getting-started)
+5. [Potential Improvements](#5-potential-improvements)
 
 ## 1. Background
 ### Hypotheses of Language Acquisition
@@ -78,10 +83,11 @@ In the application, these levels are represented by floating point numbers, whic
 
 ## 2. Features
 
-### User Database
-Like a typical media 
+NOTE: due to time constraints, some of these features have not been fully implemented. The following is a description of the intended design of the application
+with the core features available for demonstration.
 
-YouLingo also stores a range of linguistic competency data for each user. This includes:
+### User Database
+YouLingo allows users to input topics of interest as tags, and save videos as a list. It also stores a range of linguistic competency data for each user. This includes:
 * Overall CEFR level: This is stored as a floating point number from 0.0 to 5.0, representing levels from A1 to C2. Upon sign-up, the user 
 * Lexicon: This is a list of the vocabulary that the user has accumulated from past videos. Each word has an associated CEFR score, and the application keeps
 a tally of the number of times the user has encountered that word.
@@ -120,9 +126,27 @@ This in turn changes the videos recommended to them, as discussed below.
 
 
 ### Video Recommendation
+The user's home page is populated by a series of recommendations based on the user's topics of interest, their CEFR level and the similarity between the 
+video's language content and the user's knowledge base.
 
+### Viewing Videos
+Each video is accompanied by the following components:
+- A transcript in the user's target language, and a translation into the language of the user's choice.
+- [intended but not implemented] A matching score that indicates the video's similarity to the 
+linguistic information that the user has already encountered. This breaks down into three categories:
+  - vocabulary
+  - tenses
+  - clause types
+- A general difficulty score, rated in terms of CEFR levels. This is also expanded into the same categories as above.
+- A button to save the video.
+- A counter that keeps track of the number of times the user has watched the video.
+  
+### Saving Videos
+Saved videos can be retrieved under a My Videos tab.
 
 ### Quizzing
+A short quiz is generated for each video, and the user can input their answer to be assessed on their comprehension and production abilities.
+
 
 ## 3. Technologies Used
 
@@ -142,6 +166,10 @@ This in turn changes the videos recommended to them, as discussed below.
   - https://github.com/jdepoix/youtube-transcript-api
 - YouTube Data API v.3 by Google
   - https://www.googleapis.com/youtube/v3
+- Google Cloud Firestore
+  - https://cloud.google.com/firestore
+- OpenAI GPT-4 API
+  - https://platform.openai.com
 
 ## 4. Getting Started
 
@@ -216,6 +244,15 @@ This will start the Flask server. Make sure you have your `serviceAccountKey.jso
 ### Authentication
 
 This application uses Auth0 for authentication. Make sure to configure your Auth0 credentials in the application.
+
+
+## 5. Potential Improvements
+There are some features we did not have time to implement, but we look forward to growing this project in the future!
+- Transcript highlighting: the transcript can be colour-coded according to the user's familiarity with the words, as well
+as words that are far beyond the user's current level. The same can be done with difficult sentence structures and
+grammatical formulations. Based on that, YouLingo will recommend parts of the video that the user should review and 
+parts that can be skipped over.
+- 
 
 ### Contributing
 
