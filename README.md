@@ -1,9 +1,7 @@
 # YouLingo: YouTube Language Acquisition
 
-![Screenshot 2025-01-19 at 6.05.13 AM.png](..%2F..%2FDesktop%2FScreenshot%202025-01-19%20at%206.05.13%E2%80%AFAM.png)
-
-This project is made for U of T Hacks 12 Hackathon. Our take on this year's theme, Perspective, is an application that takes a different look
-at media consumption beyond a form of entertainment, as well as challenge pre-conceived ideas about language learning - that it has to confined to
+This project was created for U of T Hacks 12 Hackathon. Our take on this year's theme, Perspective, is an application that takes a different look
+at media consumption beyond a form of entertainment, and challenges pre-conceived ideas about language learning - that it has to be confined to
 textbooks and classrooms. The result of this is YouLingo, a web application designed to help users learn new languages by making YouTube videos into 
 custom language lessons. Users can explore various videos, add their own video URLs, and manage their favorite videos.
 
@@ -26,7 +24,7 @@ custom language lessons. Users can explore various videos, add their own video U
 
 ## 1. Background
 ### Hypotheses of Language Acquisition
-This application is based on the language acquisition theory posited by Stephen Krashen, an renowned American linguist who has written more than 500 articles and books on the second language acquisition and related fields. [1]
+This application is based on the language acquisition theory posited by Stephen Krashen, a renowned American linguist who has written more than 500 articles and books on the second language acquisition and related fields. [1]
 In his theory, he outlined six hypotheses about how to effectively gain fluency in a second language. They are:  
 1. **The Acquisition-Learning Hypothesis:** learning a language involves consciously obtaining knowledge _about_ a language, while the
 process of acquisition is unconscious and involves direct interaction _with_ a language. The former approach is used in formal
@@ -59,7 +57,8 @@ pressure to perform in a grammatically impeccable manner.
 or skimmed through. When users are ready, it also provides the potential for them to practice other aspects of the language - for
 example, they can read the transcripts and hone their production abilities with the quizzes the app generates. Overall, they
 are grounded in the practice of content consumption to ensure sufficient input.
-4. This hypothesis is implemented by the flagship feature of our application.
+4. This hypothesis is implemented by the flagship feature of our application, the recommendation system that compares videos with the user's
+knowledge base using a variety of quantifiable linguistic metrics.
 5. Similar to the second hypothesis, this principle emphasizes the importance of a good environment and emotional state in efficacy
 of acquisition. Our application provides content tailored to the user's preferences and expertise, so they can feel at ease with
 the subject of the materials.
@@ -122,7 +121,7 @@ a tally of the number of times the user has encountered that word.
   | Sentences inside parentheses  |
 
 [intended but not implemented] Like the lexicon, the record of the types of tenses and clauses also keeps track of the number of times they have been encountered by the user.
-Each time the user watches a video, new words, tenses and clause types are added to their knowledge base, and the tally for existing words, tenses and clauses increases.
+Each time the user watches a video, new words, tenses and clause types are added to their knowledge base, and the tally for existing entries increases.
 As the user accumulate experience, their overall CEFR level increases automatically based on the tally and average CEFR score of the words in their lexicon, as well as 
 their familiarity with tenses and clause types. This in turn increases the average difficulty of videos recommended to them, as discussed below.
 
@@ -146,7 +145,7 @@ with the same set of available tenses and clause types as the one in the user da
 - A button to save the video.
   
 ### Saving Videos
-Saved videos can be retrieved under a My Videos tab. This encourages users to review videos to ensure sufficient repetition.
+Saved videos can be retrieved under a "My Videos" tab. This encourages users to review videos to ensure sufficient repetition.
 [intended but not implemented] Videos would be considered as complete after a custom number of replays and the user would be 
 allowed to add newer, more challenging videos to their rotation.
 
@@ -155,9 +154,7 @@ A short quiz is generated for each video, and the user can input their answer to
 
 
 ## 3. Technologies Used
-
-### Libraries Used
-
+### Libraries
 - React
 - React Router
 - Reactstrap
@@ -165,7 +162,7 @@ A short quiz is generated for each video, and the user can input their answer to
 - Bootstrap
 - React Icons
 
-### APIs Used
+### APIs
 - CEFR Statistics API by Cathoven
   - https://enterpriseapi.cathoven.com/cefr
 - YouTube Transcript API by jedpoix
@@ -178,9 +175,7 @@ A short quiz is generated for each video, and the user can input their answer to
   - https://platform.openai.com
 
 ## 4. Getting Started
-
 ### Prerequisites
-
 Make sure you have the following installed on your machine:
 
 - Node.js
@@ -189,7 +184,6 @@ Make sure you have the following installed on your machine:
 - pip (Python Package Installer)
 
 ### Installation
-
 1. Clone the repository:
 
 ```sh
@@ -211,7 +205,6 @@ pip install -r requirements.txt
 ```
 
 ### Running the Application
-
 #### Running the Frontend
 
 To run the frontend application in a development environment, use the following command:
@@ -223,7 +216,6 @@ npm start
 This will start the development server and open the application in your default web browser. The application will automatically reload if you make any changes to the source code.
 
 #### Running the Backend
-
 To run the Flask backend, use the following command:
 
 ```sh
@@ -234,7 +226,6 @@ flask run
 This will start the Flask server. Make sure you have your `serviceAccountKey.json` file in the `flask_backend` directory and your `.env` file properly configured.
 
 ### Folder Structure
-
 - `src/`: Contains the source code for the application.
   - `components/`: Contains reusable React components.
   - `services/`: Contains service files for API calls.
@@ -248,9 +239,7 @@ This will start the Flask server. Make sure you have your `serviceAccountKey.jso
   - `requirements.txt`: The dependencies for the Flask application.
 
 ### Authentication
-
 This application uses Auth0 for authentication. Make sure to configure your Auth0 credentials in the application.
-
 
 ## 5. Potential Improvements
 There are some features we did not have time to implement, but we look forward to growing this project in the future!
@@ -267,5 +256,4 @@ personalized recommendations based on their watch history and behaviours.
 custom materials, or generating audio/video scripts altogether.
 
 ### Contributing
-
 If you would like to contribute to this project, please fork the repository and submit a pull request.
