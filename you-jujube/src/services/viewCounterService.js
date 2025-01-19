@@ -36,7 +36,7 @@ export const fetchHistory = async (userId) => {
         // Fetch video details for each video in history
         const videoDataPromises = videoIds.map(async (videoId) => {
             const videoRef = collection(db, 'video');
-            const q = query(videoRef, where('id', '==', videoId)); // Assuming 'id' is the field for video ID
+            const q = query(videoRef, where('videoId', '==', videoId)); // Assuming 'id' is the field for video ID
             const querySnapshot = await getDocs(q);
             
             if (!querySnapshot.empty) {
@@ -45,7 +45,7 @@ export const fetchHistory = async (userId) => {
     
             // Return video data in the desired format
             return {
-                id: videoData.id,
+                videoId: videoData.videoId,
                 title: videoData.title,
                 description: videoData.description,
                 final_levels: videoData.final_levels,
@@ -55,7 +55,7 @@ export const fetchHistory = async (userId) => {
                 watchedCount: history[videoId], // Add watch count from history
             };
             } else {
-            console.log(`Video with ID ${videoId} not found in 'videos' collection.`);
+            console.log(`Video with ID ${videoId} not found in 'video' collection.`);
             return null; // Handle case where video is not found
             }
         });

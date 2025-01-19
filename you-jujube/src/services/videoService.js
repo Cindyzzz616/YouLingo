@@ -1,4 +1,4 @@
-import { db, addDoc, collection } from "../firebase-config";
+import { db, addDoc, doc, setDoc, collection } from "../firebase-config";
 import { getDocs, query, where } from "firebase/firestore";
 import { checkVideoDifficulty } from "./videoDifficultyService";
 
@@ -20,7 +20,10 @@ export const getVideos = async (searchQuery) => {
     const existingVideos = [];
 
     querySnapshot.forEach((doc) => {
-      existingVideos.push(doc.data()); 
+      existingVideos.push({
+        id: doc.id,
+        ...doc.data(),
+      });
     });
 
     if (existingVideos.length > 0) {
@@ -35,10 +38,10 @@ export const getVideos = async (searchQuery) => {
       // Map API results to the desired format
       return data.items.map(async (item, index) => {
         const videoData = {
-          id: item.id.videoId || `placeholder-${index}`,
+          videoId: item.id.videoId || `placeholder-${index}`,
           title: item.snippet.title || "No Title",
-          channel: item.snippet.channelTitle || "Unknown Channel",
-          final_levels: checkVideoDifficulty(item.id.videoId),
+          channelTitle: item.snippet.channelTitle || "Unknown Channel",
+          final_levels: await checkVideoDifficulty(item.id.videoId),
           description: item.snippet.description || "No Description",
           theme: searchQuery,
           thumbnail:
@@ -48,7 +51,7 @@ export const getVideos = async (searchQuery) => {
       
         try {
           // Upload video data to Firestore
-          await addDoc(videosCollection, videoData);
+          await setDoc(doc(videosCollection, item.id.videoId), videoData);
           console.log(`Video ${videoData.title} uploaded successfully`);
         } catch (e) {
           console.error("Error adding video: ", e);
