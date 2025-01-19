@@ -1,27 +1,3 @@
-# Cathoven levels key
-final_levels:
-- general
-- vocab
-- tense
-- clause
-
-
-TODO
-- deal with cases where there's no available transcript or translation
-- rank videos based on matching score
-- *levelling up when video is watched x times*
-
-# Background to include
-- language acquisition theory - 5 hypotheses
-  - how does our app put this in practice? how did we figure out the grammar/theory part so the user doesn't have to?
-- the apis we used
-    - youtube
-    - transcript
-    - cathoven
-- how we're incrementing the difficulty using analysis from cathoven
-
-
-
 # YouLingo: YouTube Language Acquisition
 
 This project is made for U of T Hacks 12 Hackathon.
@@ -104,10 +80,45 @@ In the application, these levels are represented by floating point numbers, whic
 
 ### User Database
 YouLingo stores a range of linguistic competency data for each user. This includes:
-- Overall CEFR level: This is stored as a floating point number from 0.0 to 5.0, representing levels from A1 to C2. 
-- Lexicon: This is a 
+* Overall CEFR level: This is stored as a floating point number from 0.0 to 5.0, representing levels from A1 to C2. Upon sign-up, the user 
+* Lexicon: This is a list of the vocabulary that the user has accumulated from past videos. Each word has an associated CEFR score, and the application keeps
+a tally of the number of times the user has encountered that word.
+* Record of Tenses: Similar to the Lexicon, this is a record of the tenses the user has encountered. The following tenses are tracked by the application:
+
+  | Available Tenses              |                           |
+  |-------------------------------|---------------------------|
+  | Infinitive                    | Present simple            |
+  | Infinitive passive            | Past simple               |
+  | Infinitive continuous         | Present continuous        |
+  | Infinitive perfect            | Present perfect           |
+  | Infinitive perfect passive    | Past perfect              |
+  | Infinitive perfect continuous | Present perfect continuous |
+  | Unbound modal verb            | Present perfect passive   |
+  | Imperative                    | Present continuous passive |
+  | Gerund simple                 | Gerund perfect            |
+  | Past participle simple        | Past perfect continuous   |
+  | Gerund perfect passive        | Past perfect passive      |
+  | Gerund perfect continuous     | Past continuous passive   |
+  | Gerund perfect passive        |                           |
+
+* Record of Clauses: This is a record of the types of clauses the user has encountered. They include:
+
+  | Available Clause Types        |
+  |-------------------------------|
+  | Adjective clauses             |
+  | Adverbial clauses             |
+  | Relative clauses              |
+  | Noun clauses                  |
+  | Sentences inside parentheses  |
+
+The record of the types of tenses and clauses also keeps track of the number of times they have been encountered by the user.
+As the user watches more videos, new words, tenses and clauses are added to their knowledge base, and the tally for existing words, tenses and clauses increases.
+As the user accumulate experience, their overall CEFR level increases automatically based on the tally and average score of the words in their lexicon.
+This in turn changes the videos recommended to them, as discussed below.
+
 
 ### Video Recommendation
+
 
 ### Quizzing
 

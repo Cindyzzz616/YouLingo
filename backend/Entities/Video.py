@@ -177,17 +177,17 @@ class Video:
             else:
                 return f'Error: {response.status_code}'
 
-videoId = '59CmEKAjBzY'
-vid = Video(videoId, 'fr')
-vid.add_video_details()
-vid.add_transcripts()
-print(vid.original_transcript)
-print(vid.translated_transcript)
-vid.add_difficulty()
-print(vid.transcript_text)
-print(vid)
-print(vid.final_levels)
-print(vid.wordlists)
-print(vid.tenses)
-print(vid.clauses)
+# videoId = '59CmEKAjBzY'
+# vid = Video(videoId, 'fr')
+# vid.add_video_details()
+# vid.add_transcripts()
+# print(vid.original_transcript)
+# print(vid.translated_transcript)
+# vid.add_difficulty()
+# print(vid.transcript_text)
+# print(vid)
+# print(vid.final_levels)
+# print(vid.wordlists)
+# print(vid.tenses)
+# print(vid.clauses)
 # print(vid.allowed_remaining)
