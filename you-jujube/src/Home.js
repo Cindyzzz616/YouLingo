@@ -36,12 +36,16 @@ const Home = () => {
       if (userData?.themes && userData.themes.length > 0) {
         const videoData = {};
         for (const theme of userData.themes) {
+          console.log("Fetching videos for theme:", theme);
           const fetchedVideos = await getVideos(theme);
           for (const video of fetchedVideos) {
             try {
-              video.languageDifficulty = await checkVideoDifficulty(video.id);
+              console.log("Video:", video);
+              console.log("Checking video difficulty for video:", video.id);
+              video.final_levels = await checkVideoDifficulty(video.id);
+              console.log("Video difficulty:", video.final_levels);
             } catch (error) {
-              video.languageDifficulty = "unknown";
+              video.final_levels = "unknown";
             }
           }
           videoData[theme] = fetchedVideos;

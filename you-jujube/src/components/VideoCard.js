@@ -8,6 +8,7 @@ import he from 'he';
 const VideoCard = ({ video }) => {
   const { user, isAuthenticated, isLoading } = useAuth0();
   const [count, setCount] = useState(0);
+  console.log("video", video);
 
   const convertToCEFR = (level) => {
     const intLevel = parseInt(level, 10);
@@ -33,7 +34,12 @@ const VideoCard = ({ video }) => {
 
   return (
     <Link
-    to={`/video/${video.id}`} 
+    to={{
+      pathname: `/video/${video.id}`,
+      state: {
+        videoInfo: video,
+      },
+    }} 
     style={{
       textDecoration: "none", 
       display: "block",      

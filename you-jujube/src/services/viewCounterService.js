@@ -35,7 +35,7 @@ export const fetchHistory = async (userId) => {
     
         // Fetch video details for each video in history
         const videoDataPromises = videoIds.map(async (videoId) => {
-            const videoRef = collection(db, 'videos');
+            const videoRef = collection(db, 'video');
             const q = query(videoRef, where('id', '==', videoId)); // Assuming 'id' is the field for video ID
             const querySnapshot = await getDocs(q);
             
@@ -48,7 +48,7 @@ export const fetchHistory = async (userId) => {
                 id: videoData.id,
                 title: videoData.title,
                 description: videoData.description,
-                languageDifficulty: videoData.languageDifficulty,
+                final_levels: videoData.final_levels,
                 channel: videoData.channel,
                 thumbnail: videoData.thumbnail || "https://designshack.net/wp-content/uploads/placeholder-image-368x247.png", // Fallback thumbnail
                 difficultWords: videoData.difficultWords || [], // Assuming 'difficultWords' exists in the video data

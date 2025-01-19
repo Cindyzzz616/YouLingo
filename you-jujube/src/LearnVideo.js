@@ -21,6 +21,7 @@ const LearnVideo = () => {
   const { videoId } = useParams();
   const location = useLocation();
   const { videoInfo } = location.state || {};
+  console.log("videoInfo", videoInfo);
   const { user, isAuthenticated, isLoading } = useAuth0();
   const [count, setCount] = useState(0);
   const [questions, setQuestions] = useState("");

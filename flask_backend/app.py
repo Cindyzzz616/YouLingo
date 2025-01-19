@@ -49,7 +49,7 @@ def transform_for_firestore(data):
 def get_videos():
     try:
         # Reference to the "videos" collection
-        videos_ref = db.collection("videos")
+        videos_ref = db.collection("video")
         docs = videos_ref.stream()
 
         # Collect all video documents
