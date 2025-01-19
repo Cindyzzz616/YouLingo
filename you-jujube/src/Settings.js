@@ -24,13 +24,13 @@ const Settings = () => {
             }
             if (!fetchedData.level || fetchedData.level === "NA") {
               // Set default level if not already set or is "NA"
-              await setDoc(userRef, { level: "Beginner" }, { merge: true });
-              fetchedData.level = "Beginner";
+              await setDoc(userRef, { level: "A1" }, { merge: true });
+              fetchedData.level = "A1";
             }
             setUserData(fetchedData);
           } else {
             // Initialize user data for new users
-            const initialData = { language: "English", level: "Beginner" };
+            const initialData = { language: "English", level: "A1" };
             await setDoc(userRef, initialData);
             setUserData(initialData);
           }          
