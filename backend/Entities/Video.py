@@ -28,8 +28,10 @@ class Video:
 
     # attributes from transcript api response
     # transcripts: list[(list[dict[str, float | str]], list[dict[str, float | str]])]
-    original_transcript: list[dict[str, float | str]]
-    translated_transcript: list[dict[str, float | str]]
+    original_transcript_list: list[dict[str, float | str]]
+    original_transcript: dict[int, dict[str, float | str]]
+    translated_transcript_list: list[dict[str, float]]
+    translated_transcript: dict[int, dict[str, float | str]]
     # a tuple of transcript and translated transcript
     # TODO change the data type ^
 
@@ -48,7 +50,19 @@ class Video:
     def __init__(self, videoId: str, native_language: str) -> None:
         self.videoId = videoId
         self.native_language = native_language
-        self.transcripts = []
+
+        self.title = 'No title available'
+        self.description = 'No description available'
+        self.duration = 'No duration available'
+        self.thumbnails = {}
+        self.channelId = 'No channel ID available'
+        self.channelTitle = 'No channel title available'
+        self.video_language = 'en'
+        self.original_transcript_list = []
+        self.translated_transcript_list = []
+        self.original_transcript = {}
+        self.translated_transcript = {}
+
 
     def add_video_details(self) -> str | None:
         params = {
@@ -75,13 +89,17 @@ class Video:
     def add_transcripts(self) -> str | None:
         try:
             transcript_list = YouTubeTranscriptApi.list_transcripts(self.videoId)
-            self.original_transcript = []
-            self.translated_transcript = []
             for transcript in transcript_list:
                 if transcript.language_code == 'en':
-                    self.original_transcript = transcript.fetch()
+                    self.original_transcript_list = transcript.fetch()
+                    i = 0
+                    for line in self.original_transcript_list:
+                        self.original_transcript[i] = line
                 if transcript.is_translatable:
-                    self.translated_transcript = transcript.translate(self.native_language).fetch()
+                    self.translated_transcript_list = transcript.translate(self.native_language).fetch()
+                    i = 0
+                    for line in self.translated_transcript_list:
+                        self.translated_transcript[i] = line
         except Exception as e:
             return f"Error: {str(e)}"
 
