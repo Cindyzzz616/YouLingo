@@ -79,7 +79,9 @@ In the application, these levels are represented by floating point numbers, whic
 ## 2. Features
 
 ### User Database
-YouLingo stores a range of linguistic competency data for each user. This includes:
+Like a typical media 
+
+YouLingo also stores a range of linguistic competency data for each user. This includes:
 * Overall CEFR level: This is stored as a floating point number from 0.0 to 5.0, representing levels from A1 to C2. Upon sign-up, the user 
 * Lexicon: This is a list of the vocabulary that the user has accumulated from past videos. Each word has an associated CEFR score, and the application keeps
 a tally of the number of times the user has encountered that word.
