@@ -1,13 +1,24 @@
+import os
+
 from youtube_transcript_api import YouTubeTranscriptApi
 import requests
 
-YOUTUBE_API_KEY = 'AIzaSyBT2UKWCmrb9DcK_OLGSegbkd8WDE3-XBI'
-YOUTUBE_URL = 'https://www.googleapis.com/youtube/v3/videos'
+YOUTUBE_API_KEY="AIzaSyBT2UKWCmrb9DcK_OLGSegbkd8WDE3-XBI"
+YOUTUBE_URL="https://www.googleapis.com/youtube/v3/videos"
 
-CATHOVEN_URL = 'https://enterpriseapi.cathoven.com/cefr/process_text'
-CATHOVEN_CLIENT_ID = '41b95a1e-89cf-4194-ad44-da6a542da143'
-CATHOVEN_CLIENT_SECRET = '313f758a-a846-4e25-8656-b80e012f7216'
+CATHOVEN_URL="https://enterpriseapi.cathoven.com/cefr/process_text"
+CATHOVEN_CLIENT_ID="41b95a1e-89cf-4194-ad44-da6a542da143"
+CATHOVEN_CLIENT_SECRET="313f758a-a846-4e25-8656-b80e012f7216"
 
+# YOUTUBE_API_KEY=os.getenv("YOUTUBE_API_KEY")
+# if not YOUTUBE_API_KEY:
+#     raise ValueError("API_KEY not found in environment variables!")
+#
+# YOUTUBE_URL="https://www.googleapis.com/youtube/v3/videos"
+#
+# CATHOVEN_URL="https://enterpriseapi.cathoven.com/cefr/process_text"
+# CATHOVEN_CLIENT_ID="41b95a1e-89cf-4194-ad44-da6a542da143"
+# CATHOVEN_CLIENT_SECRET="313f758a-a846-4e25-8656-b80e012f7216"
 
 class Video:
     """
@@ -42,6 +53,8 @@ class Video:
     tenses: dict
     clauses: dict
     phrases: dict
+
+    # allowed_remaining: dict
 
     # sentences - might be useful bc it gives the difficulty breakdown of each word in a sentence
 
@@ -159,6 +172,7 @@ class Video:
                 self.wordlists = analysis_result['wordlists']
                 self.tenses = analysis_result['tense_term_count']
                 self.clauses = analysis_result['clause_count']
+                # self.allowed_remaining = analysis_result['allowed_remaining']
                 # self.phrases = analysis_result.get('phrase_count', {})  # Handle absence of phrase_count
             else:
                 return f'Error: {response.status_code}'
@@ -176,3 +190,4 @@ print(vid.final_levels)
 print(vid.wordlists)
 print(vid.tenses)
 print(vid.clauses)
+# print(vid.allowed_remaining)

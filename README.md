@@ -5,13 +5,6 @@ final_levels:
 - tense
 - clause
 
-The integer part of the float can be converted to CEFR level as following:
-• 0 -> A1
-• 1 -> A2
-• 2 -> B1
-• 3 -> B2
-• 4 -> C1
-• 5 -> C2
 
 TODO
 - deal with cases where there's no available transcript or translation
@@ -27,13 +20,27 @@ TODO
     - cathoven
 - how we're incrementing the difficulty using analysis from cathoven
 
+
+
 # YouLingo: YouTube Language Acquisition
 
 This project is made for U of T Hacks 12 Hackathon.
 
 YouLingo is a web application designed to help users learn new languages by making YouTube videos into language lessons. Users can explore various videos, add their own video URLs, and manage their favorite videos.
 
-## Background
+## Table of Contents
+1. [Background](#background)
+2. [Features](#features)
+3. [Technologies Used](#technologies-used)
+4. [Getting Started](#getting-started)
+5. [Demo](#demo) - ???
+6. [Challenges](#challenges) - ???
+7. [Future Work](#future-work) - ???
+8. [Contributors](#contributors) - ???
+9. [Acknowledgments](#acknowledgments) - ???
+10. [License](#license) - ???
+
+## 1. Background
 ### Hypotheses of Language Acquisition
 This application is based on the language acquisition theory posited by Stephen Krashen, an renowned American linguist who has written more than 500 articles and books on the second language acquisition and related fields. [1]
 In his theory, he outlined six hypotheses about how to effectively gain fluency in a second language. They are:  
@@ -73,17 +80,40 @@ are grounded in the practice of content consumption to ensure sufficient input.
 of acquisition. Our application provides content tailored to the user's preferences and expertise, so they can feel at ease with
 the subject of the materials.
 6. While our application does not focus on reading, the principles from the sixth hypothesis can be generalized to listening materials.
-As mentioned
+As mentioned, we provide users with a large amount of video data that strategically introduce new vocabulary in real-life contexts.
 
 ### Why CEFR?
+At the present stage, we assess the language level of users and the difficulty of videos using the CEFR framework. This system is chosen
+because it is used around the world and is a shorthand for quantifying the linguistic complexity of materials. It has six broad levels
+as outlined below:
+- **A1:** Can understand and use familiar everyday expressions and very basic phrases aimed at the satisfaction of needs of a concrete type. Can introduce him/herself and others and can ask and answer questions about personal details such as where he/she lives, people he/she knows and things he/she has. Can interact in a simple way provided the other person talks slowly and clearly and is prepared to help.
+- **A2:** Can understand sentences and frequently used expressions related to areas of most immediate relevance (e.g. very basic personal and family information, shopping, local geography, employment). Can communicate in simple and routine tasks requiring a simple and direct exchange of information on familiar and routine matters.  Can describe in simple terms aspects of his/her background, immediate environment and matters in areas of immediate need.
+- **B1:** Can understand the main points of clear standard input on familiar matters regularly encountered in work, school, leisure, etc. Can deal with most situations likely to arise whilst travelling in an area where the language is spoken.  Can produce simple connected text on topics which are familiar or of personal interest. Can describe experiences and events, dreams, hopes & ambitions and briefly give reasons and explanations for opinions and plans.
+- **B2:** Can understand the main ideas of complex text on both concrete and abstract topics, including technical discussions in his/her field of specialisation. Can interact with a degree of fluency and spontaneity that makes regular interaction with native speakers quite possible without strain for either party. Can produce clear, detailed text on a wide range of subjects and explain a viewpoint on a topical issue giving the advantages and disadvantages of various options.
+- **C1:** Can understand a wide range of demanding, longer texts, and recognise implicit meaning. Can express him/herself fluently and spontaneously without much obvious searching for expressions. Can use language flexibly and effectively for social, academic and professional purposes. Can produce clear, well-structured, detailed text on complex subjects, showing controlled use of organisational patterns, connectors and cohesive devices.
+- **C2:** Can understand with ease virtually everything heard or read. Can summarise information from different spoken and written sources, reconstructing arguments and accounts in a coherent presentation. Can express him/herself spontaneously, very fluently and precisely, differentiating finer shades of meaning even in more complex situations. [3]  
 
+In the application, these levels are represented by floating point numbers, which makes it possible to specify the difficulty of a video, word, tense or clause to a greater precision.
 
 ### Sources  
 [1] https://rossier.usc.edu/faculty-research/directory/stephen-krashen  
-[2] https://sites.ualberta.ca/~obilash/krashen.html#:~:text=Application%20for%20Teaching-,The%20Acquisition%2DLearning%20hypothesis,of%20just%20'learning'%20it.
+[2] https://sites.ualberta.ca/~obilash/krashen.html#:~:text=Application%20for%20Teaching-,The%20Acquisition%2DLearning%20hypothesis,of%20just%20'learning'%20it.  
+[3] https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions
 
+## 2. Features
 
-## Libraries Used
+### User Database
+YouLingo stores a range of linguistic competency data for each user. This includes:
+- Overall CEFR level: This is stored as a floating point number from 0.0 to 5.0, representing levels from A1 to C2. 
+- Lexicon: This is a 
+
+### Video Recommendation
+
+### Quizzing
+
+## 3. Technologies Used
+
+### Libraries Used
 
 - React
 - React Router
@@ -92,7 +122,7 @@ As mentioned
 - Bootstrap
 - React Icons
 
-## APIs Used
+### APIs Used
 - CEFR Statistics API by Cathoven
   - https://enterpriseapi.cathoven.com/cefr
 - YouTube Transcript API by jedpoix
@@ -100,7 +130,7 @@ As mentioned
 - YouTube Data API v.3 by Google
   - https://www.googleapis.com/youtube/v3
 
-## Getting Started
+## 4. Getting Started
 
 ### Prerequisites
 
