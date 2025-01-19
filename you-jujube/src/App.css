@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Helvetica", "sans-serif";
   background-color: #f4f4f9;
   color: #333;
 }
@@ -49,80 +49,104 @@ body {
   margin-top: 10px;
 }
 
-/* Settings */
-.settings-container {
-  position: relative; /* Position relative to the screen */
-  top: 80px;          /* Distance from the top */
-  left: 20px;         /* Distance from the left */
-  width: 500px;       /* Set a width for the container */
-  padding: 30px;      /* Add some padding */
-  background-color: #f9f9f9; /* Light background for visibility */
-  border: 1px solid #ddd;    /* Optional border */
-  border-radius: 20px;        /* Rounded corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+/* Settings page */
+.settings-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
-/* Interests */
+
+.settings-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 75px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 98%;
+}
+
+.settings-container {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  position: absolute;
+  top: 205px;
+  left: 15px;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 98%;
+  height: 80%;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  color: #4caf50;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #4caf50;
+  margin-bottom: 10px;
+}
+
+/* User Info Section */
+.user-info p {
+  margin: 8px 0;
+  font-size: 1rem;
+}
+
+/* Interests Section */
+.user-interests {
+  margin-top: 20px;
+}
+
 .interests-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px; /* space between the boxes */
-  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
 }
 
 .interest-box {
-  background-color: #f0f0f0;
-  padding: 15px;
+  background-color: #e8f5e9;
+  color: #4caf50;
+  padding: 10px 15px;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  font-size: 16px;
-  font-weight: bold;
-  text-align: center;
-  min-width: 120px;
-  max-width: 200px;
-  transition: transform 0.3s ease;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.interest-box:hover {
-  transform: scale(1.05); /* Slight zoom effect on hover */
-}
-
-/* Button styling */
-button {
+/* Button Styling */
+/* Add interest button */
+.add-interest-btn {
   background-color: #4caf50;
   color: white;
-  padding: 15px 30px;
-  font-size: 1.2rem;
+  padding: 10px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  margin: 10px;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
+.add-interest-btn:hover {
   background-color: #45a049;
-  transform: translateY(-2px);
+  transform: scale(1.03);
 }
 
-/* Gear icon */
-.icon-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.add-interest-btn:active {
+  background-color: #3e8e41;
+  transform: scale(0.98);
 }
-
-.icon-button:hover {
-  background-color: #0056b3;
-}
-
 
 /* Auth section */
 .auth-container {
