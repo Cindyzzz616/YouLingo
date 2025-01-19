@@ -10,6 +10,7 @@ const Home = () => {
   const [videos, setVideos] = useState({});
   const [userData, setUserData] = useState(null);
   const { user, isAuthenticated, isLoading } = useAuth0();
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchUserData = async () => {
@@ -36,17 +37,24 @@ const Home = () => {
       if (userData?.themes && userData.themes.length > 0) {
         const videoData = {};
         for (const theme of userData.themes) {
+          console.log("Fetching videos for theme:", theme);
           const fetchedVideos = await getVideos(theme);
+          await new Promise(resolve => setTimeout(resolve, 5000));
+          console.log("Fetched videos:", fetchedVideos);
           for (const video of fetchedVideos) {
             try {
-              video.languageDifficulty = await checkVideoDifficulty(video.id);
+              console.log("Video:", video);
+              console.log("Checking video difficulty for video:", video.id);
+              video.final_levels = await checkVideoDifficulty(video.id);
+              console.log("Video difficulty:", video.final_levels);
             } catch (error) {
-              video.languageDifficulty = "unknown";
+              video.final_levels = "unknown";
             }
           }
           videoData[theme] = fetchedVideos;
         }
         setVideos(videoData);
+        setLoading(false);
       }
     };
 
@@ -74,7 +82,7 @@ const Home = () => {
     );
   };
 
-  if (isLoading) {
+  if (isLoading || loading) {
     return <div>Loading ...</div>;
   }
 

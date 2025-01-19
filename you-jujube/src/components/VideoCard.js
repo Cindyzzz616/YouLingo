@@ -3,11 +3,16 @@ import { Card, CardImg, CardBody, CardTitle, CardText } from "reactstrap";
 import { Link } from "react-router-dom";
 import { fetchVideoCount } from '../services/viewCounterService';
 import { useAuth0 } from '@auth0/auth0-react';
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 import he from 'he';
 
 const VideoCard = ({ video }) => {
   const { user, isAuthenticated, isLoading } = useAuth0();
   const [count, setCount] = useState(0);
+  const [videoInfo, setVideoInfo] = useState(null);
+  const navigate = useNavigate();
+  console.log("video", video);
 
   const convertToCEFR = (level) => {
     const intLevel = parseInt(level, 10);
@@ -27,18 +32,66 @@ const VideoCard = ({ video }) => {
 
   }, [video.id, isAuthenticated, user?.sub]);
 
+  const handleVideoClick = async (video) => {
+    const videoId = video.id;
+    if (videoId) {
+      try {
+        const response = await axios.post("http://localhost:5000/check_video", {
+          youtube_link: "https://www.youtube.com/watch?v=" + videoId,
+        });
+        const data = response.data;
+        if (data.success) {
+          setVideoInfo(data.data);
+          console.log(videoInfo);
+          navigate(`/video/${videoId}`, { state: { videoInfo: data.data } });
+        } else {
+          console.error("Error fetching video info:", data.error);
+        }
+      } catch (error) {
+        if (error.response) {
+          // The request was made and the server responded with a status code
+          // that falls out of the range of 2xx
+          console.error("Response error:", error.response.data);
+        } else if (error.request) {
+          // The request was made but no response was received
+          console.error("Request error:", error.request);
+        } else {
+          // Something happened in setting up the request that triggered an Error
+          console.error("Error:", error.message);
+        }
+        console.error("Config error:", error.config);
+      }
+    } else {
+      console.error("Invalid URL");
+    }
+  };
+
   if (isLoading) {
     return <div>Loading...</div>; 
   }
 
   return (
-    <Link
-    to={`/video/${video.id}`} 
+  //   <Link
+  //   to={{
+  //     pathname: `/video/${video.id}`,
+  //     state: { videoInfo: video }
+  //   }}
+  //   style={{
+  //     textDecoration: "none",
+  //     display: "block",
+  //   }}
+  // >
+    <button
+    onClick={() => handleVideoClick(video)}
     style={{
-      textDecoration: "none", 
-      display: "block",      
+      background: "none",
+      border: "none",
+      padding: 0,
+      cursor: "pointer",
+      display: "block",
+      textDecoration: "none",
     }}
-    >
+  >
     <Card 
       className="video-card"
       style={{
@@ -54,7 +107,7 @@ const VideoCard = ({ video }) => {
         <CardText><i>{video.description}</i></CardText>
       </CardBody>
     </Card>
-    </Link>
+    </button>
   );
 };
 
