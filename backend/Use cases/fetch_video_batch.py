@@ -62,7 +62,7 @@ class FetchVideoBatch:
                 video_obj.add_difficulty()
                 duration_in_seconds = isodate.parse_duration(video_obj.duration).total_seconds()
                 if abs(video_obj.final_levels['general'] - self.user.level) < DIFFICULTY_RANGE \
-                        and video_obj.video_language == self.user.target_language \
+                        and video_obj.video_language == 'en' \
                         and duration_in_seconds < MAX_DURATION:
                     batch.append(self.fetch_searched_videos(topic, 1)[0])
                     need_new_video = False
