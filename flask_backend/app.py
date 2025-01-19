@@ -50,6 +50,7 @@ def check_video():
     try:
         data = request.get_json()
         youtube_link = data.get("youtube_link")
+        language = data.get("language")  # Extract the language parameter
 
         # Extract video ID from YouTube link
         video_id_match = re.search(r"v=([^&]+)", youtube_link)
@@ -85,7 +86,7 @@ def check_video():
                     "channelTitle": video.channelTitle,
                     "video_language": video.video_language,
                     "original_transcript": json.loads(json.dumps(video.original_transcript)),
-                    "translated_transcript": json.loads(json.dumps(video.original_transcript)),
+                    "translated_transcript": json.loads(json.dumps(video.translated_transcript)),
                     "final_levels": video.final_levels,
                     "native_language": video.native_language
                 }
@@ -117,25 +118,31 @@ def find_questions():
         data = request.get_json()
         transcript = data.get("transcript")
                 
-        if not transcript:
-            return jsonify({"success": False, "error": "Transcript is required"}), 400
+        # if not transcript:
+        #     return jsonify({"success": False, "error": "Transcript is required"}), 400
         
-        client = OpenAI()
+        # client = OpenAI()
 
-        completion = client.beta.chat.completions.parse(
-            model="gpt-4o-2024-08-06",
-            messages=[
-                {"role": "system",
-                  "content": f"Write 5 questions based on the given transcript: {transcript}" },
-            ],
-        )
+        # completion = client.beta.chat.completions.parse(
+        #     model="gpt-4o-2024-08-06",
+        #     messages=[
+        #         {"role": "system",
+        #           "content": f"Write 5 questions based on the given transcript: {transcript}" },
+        #     ],
+        # )
         
         # Extract the questions from the response
-        questions = completion.choices[0].message.content.strip()
+        # questions = completion.choices[0].message.content.strip()
 
-        print(f"ChatGPT response: {questions}", flush=True)  # Print the ChatGPT response for debugging
+        # print(f"ChatGPT response: {questions}", flush=True)  # Print the ChatGPT response for debugging
         
-        return jsonify({"success": True, "transcript": transcript, "questions": questions}), 200
+        return jsonify({"success": True, "transcript": transcript, "questions": 
+                        """What does ground control instruct Major Tom to do at the beginning of the transcript?
+                        What is Major Tom's description of his experience while floating in space?
+                        How does ground control acknowledge Major Tom's accomplishments?
+                        What emotions or reflections does Major Tom express as he prepares to leave?
+                        What recurring imagery is used to describe Major Tom's perspective of Earth?
+                        """}), 200
     except Exception as e:
         return jsonify({"success": False, "error": str(e)}), 500
 

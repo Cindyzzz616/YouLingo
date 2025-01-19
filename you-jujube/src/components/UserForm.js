@@ -51,6 +51,23 @@ const UserForm = ({ onSubmit }) => {
         onSubmit={handleSubmit}
         style={{ paddingTop: "20px", maxWidth: "400px", margin: "0 auto" }}
       >
+                <FormGroup>
+          <Label for="language">What is your native language?</Label>
+          <Input
+            type="select"
+            name="language"
+            id="language"
+            required
+            style={{ width: "400px" }}
+          >
+            <option value="">Select a language</option>
+            <option value="English">English</option>
+            <option value="Spanish">Spanish</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+            <option value="Chinese">Chinese</option>
+          </Input>
+        </FormGroup>
         <FormGroup>
           <Label for="language">What language would you like to learn?</Label>
           <Input

@@ -219,13 +219,17 @@ const LearnVideo = () => {
                 Translated Transcript
               </CardTitle>
               <CardText>
-                <pre>{translatedTranscriptText}</pre>
+                <pre style={{ whiteSpace: "pre-wrap", wordWrap: "break-word" }}>
+                {translatedTranscriptText}
+                </pre>
               </CardText>
               <CardTitle className="mt-4" style={{ fontWeight: "bold" }}>
                 Original Transcript
               </CardTitle>
               <CardText>
-                <pre>{originalTranscriptText}</pre>
+                <pre style={{ whiteSpace: "pre-wrap", wordWrap: "break-word" }}>
+                {originalTranscriptText}
+                </pre>
               </CardText>
               <CardTitle className="mt-4" style={{ fontWeight: "bold" }}>
                 Questions

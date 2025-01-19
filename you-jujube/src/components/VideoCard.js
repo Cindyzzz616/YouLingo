@@ -101,7 +101,7 @@ const VideoCard = ({ video }) => {
       <CardImg top width="100%" src={video.thumbnail} alt={video.title} />
       <CardBody>  
         <CardTitle tag="h5">{he.decode(video.title)}</CardTitle>
-        <CardText>Channel: {video.channel}</CardText>
+        {/* <CardText>Channel: {video.channel}</CardText> */}
         <CardText>Language Difficulty: {convertToCEFR(video.final_levels.general_level)}</CardText>
         <CardText>Times Watched: {count}</CardText>
         <CardText><i>{video.description}</i></CardText>
