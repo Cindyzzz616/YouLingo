@@ -6,7 +6,7 @@ import { fetchHistory } from "./services/viewCounterService";
 import { useAuth0 } from '@auth0/auth0-react';
 
 const MyVideos = () => {
-  const { user } = useAuth0();
+  const { user, isAuthenticated } = useAuth0();
   const [videoHistory, setVideoHistory] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -33,9 +33,8 @@ const MyVideos = () => {
     }
   }, [user]);
 
-  if (loading) {
-    return <div>Loading...</div>;
-  }
+  if (!isAuthenticated) return <p>Please log in to view your videos.</p>;
+  if (loading) return <p>Loading...</p>;
 
   return (
     <div style={{ maxWidth: "1200px", margin: "0 auto" }}>
