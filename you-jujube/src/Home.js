@@ -3,7 +3,8 @@ import VideoCard from "./components/VideoCard";
 import { getVideos } from "./services/videoService";
 import UserForm from "./components/UserForm";
 import { useAuth0 } from '@auth0/auth0-react';
-import { db, getDoc, setDoc, doc } from "./firebase-config"; 
+import { db, getDoc, setDoc, doc } from "./firebase-config";
+import { checkVideoDifficulty } from "./services/videoDifficultyService";
 
 const Home = () => {
   const [videos, setVideos] = useState({});
@@ -36,6 +37,13 @@ const Home = () => {
         const videoData = {};
         for (const theme of userData.themes) {
           const fetchedVideos = await getVideos(theme);
+          for (const video of fetchedVideos) {
+            try {
+              video.languageDifficulty = await checkVideoDifficulty(video.id);
+            } catch (error) {
+              video.languageDifficulty = "unknown";
+            }
+          }
           videoData[theme] = fetchedVideos;
         }
         setVideos(videoData);

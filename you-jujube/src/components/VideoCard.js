@@ -9,6 +9,12 @@ const VideoCard = ({ video }) => {
   const { user, isAuthenticated, isLoading } = useAuth0();
   const [count, setCount] = useState(0);
 
+  const convertToCEFR = (level) => {
+    const intLevel = parseInt(level, 10);
+    const levels = ["A1", "A2", "B1", "B2", "C1", "C2", "Unknown"];
+    return levels[intLevel] || "Unknown";
+  };  
+
   useEffect(() => {
     if (isAuthenticated && user?.sub) {
       const getVideoCount = async () => {
@@ -43,7 +49,7 @@ const VideoCard = ({ video }) => {
       <CardBody>  
         <CardTitle tag="h5">{he.decode(video.title)}</CardTitle>
         <CardText>Channel: {video.channel}</CardText>
-        <CardText>Language Difficulty: {video.languageDifficulty}</CardText>
+        <CardText>Language Difficulty: {convertToCEFR(video.final_levels.general_level)}</CardText>
         <CardText>Times Watched: {count}</CardText>
         <CardText><i>{video.description}</i></CardText>
       </CardBody>

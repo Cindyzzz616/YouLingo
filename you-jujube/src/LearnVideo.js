@@ -7,6 +7,11 @@ import {
   CardBody,
   CardTitle,
   CardText,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Button,
 } from "reactstrap";
 import YouTube from "react-youtube";
 import { useParams, useLocation } from "react-router-dom";
@@ -23,9 +28,10 @@ const LearnVideo = () => {
   const { videoInfo } = location.state || {};
   const { user, isAuthenticated, isLoading } = useAuth0();
   const [count, setCount] = useState(0);
-  const [questions, setQuestions] = useState("");
+  const [questions, setQuestions] = useState([]);
+  const [responses, setResponses] = useState({});
 
-  const transcript = videoInfo?.transcripts || "";
+  const transcript = videoInfo?.transcripts || "No transcript available.";
   const secondHalfTranscript = getSecondHalfOfTranscript(transcript);
 
   // YouTube player options
@@ -36,6 +42,12 @@ const LearnVideo = () => {
       autoplay: 1, // Autoplay the video
     },
   };
+
+  const convertToCEFR = (level) => {
+    const intLevel = parseInt(level, 10);
+    const levels = ["A1", "A2", "B1", "B2", "C1", "C2", "Unknown"];
+    return levels[intLevel] || "Unknown";
+  };  
 
   const recordHistory = async () => {
     console.log(`Recording video ${videoId} watch history...`);
@@ -89,7 +101,7 @@ const LearnVideo = () => {
             transcript: secondHalfTranscript,
           }
         );
-        setQuestions(response.data.questions);
+        setQuestions(response.data.questions.split("\n"));
       } catch (error) {
         console.error("Error fetching questions:", error);
       }
@@ -99,6 +111,40 @@ const LearnVideo = () => {
       fetchQuestions();
     }
   }, [secondHalfTranscript]);
+
+  const handleResponseChange = (index, value) => {
+    setResponses((prevResponses) => ({
+      ...prevResponses,
+      [index]: value,
+    }));
+  };
+
+  const handleSubmit = async () => {
+    try {
+      const userRef = doc(db, "users", user.sub);
+      const userDoc = await getDoc(userRef);
+
+      if (userDoc.exists()) {
+        const userData = userDoc.data();
+        const videoResponses = userData.videoResponses || {};
+
+        videoResponses[videoId] = {
+          questions: questions,
+          responses: responses,
+        };
+
+        await updateDoc(userRef, {
+          videoResponses: videoResponses,
+        });
+
+        console.log("Responses saved successfully.");
+      } else {
+        console.log("User document does not exist.");
+      }
+    } catch (error) {
+      console.error("Error saving responses:", error);
+    }
+  };
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -119,10 +165,37 @@ const LearnVideo = () => {
             <CardBody style={{ textAlign: "left" }}>
               <YouTube videoId={videoId} opts={opts} onEnd={recordHistory} />
               <CardText>
-                <strong>Final Levels:</strong>
-                {JSON.stringify(videoInfo?.final_levels)}
+                <strong style={{ fontSize: "1.5rem", display: "block", marginBottom: "10px" }}>
+                  General Level:{" "}
+                  <span style={{ color: "#007bff" }}>
+                    {convertToCEFR(videoInfo.final_levels?.general_level)}
+                  </span>
+                </strong>
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumns: "repeat(2, auto)",
+                    gap: "10px",
+                    padding: "10px",
+                    border: "1px solid #e0e0e0",
+                    borderRadius: "8px",
+                    backgroundColor: "#f9f9f9",
+                  }}
+                >
+                  <div>
+                    <strong>Vocabulary Level:</strong> {videoInfo.final_levels?.vocabulary_level ?? "N/A"}
+                  </div>
+                  <div>
+                    <strong>Tense Level:</strong> {videoInfo.final_levels?.tense_level ?? "N/A"}
+                  </div>
+                  <div>
+                    <strong>Clause Level:</strong> {videoInfo.final_levels?.clause_level ?? "N/A"}
+                  </div>
+                  <div>
+                    <strong>Sentence Level:</strong> {videoInfo.final_levels?.sentence_level ?? "N/A"}
+                  </div>
+                </div>
               </CardText>
-              {/* TODO: use API for this */}
               <CardText>
                 <strong>Times Watched:</strong> {count}
               </CardText>
@@ -135,9 +208,25 @@ const LearnVideo = () => {
               <CardTitle className="mt-4" style={{ fontWeight: "bold" }}>
                 Questions
               </CardTitle>
-              <CardText>
-                <pre>{questions}</pre>
-              </CardText>
+              <Form>
+                {questions.map((question, index) => (
+                  <FormGroup key={index}>
+                    <Label for={`question-${index}`}>{question}</Label>
+                    <Input
+                      type="text"
+                      name={`question-${index}`}
+                      id={`question-${index}`}
+                      value={responses[index] || ""}
+                      onChange={(e) =>
+                        handleResponseChange(index, e.target.value)
+                      }
+                    />
+                  </FormGroup>
+                ))}
+                <Button color="primary" onClick={handleSubmit}>
+                  Submit
+                </Button>
+              </Form>
             </CardBody>
           </Card>
         </Col>

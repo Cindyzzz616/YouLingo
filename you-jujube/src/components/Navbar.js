@@ -10,6 +10,8 @@ import {
 } from "reactstrap";
 import { LoginButton, LogoutButton, Profile } from "./Auth";
 import { useAuth0 } from "@auth0/auth0-react";
+import yuo from '../assets/yuo.svg';
+import youlingo from '../assets/youlingo.svg';
 
 const Navbar = () => {
   const { isAuthenticated } = useAuth0();
@@ -17,7 +19,11 @@ const Navbar = () => {
   return (
     <ReactstrapNavbar color="light" light expand="md" className="w-100">
       <Container className="d-flex justify-content-between align-items-center">
-        <NavbarBrand href="/">YouLingo</NavbarBrand>
+        <NavbarBrand href="/">
+          <img src={yuo} alt="YouLingo Logo" style={{ height: '40px', marginRight: '10px' }} />
+          <img src={youlingo} alt="YouLingo Logo" style={{ height: '50px', marginTop: '10px', marginRight: '10px' }} />
+          {/* YouLingo */}
+        </NavbarBrand>
         <Nav className="d-flex flex-row align-items-center" navbar>
           <NavItem>
             <NavLink tag={Link} to="/">
