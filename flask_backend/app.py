@@ -4,6 +4,8 @@ from flask import Flask, jsonify, request
 from google.cloud import firestore
 import re
 from flask_cors import CORS
+from openai import OpenAI
+import json
 
 # Add the backend directory to the Python path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
@@ -16,6 +18,14 @@ CORS(app)  # Enable CORS
 
 # Initialize Firestore client
 db = firestore.Client.from_service_account_json("serviceAccountKey.json")
+
+# # Load API key from serviceAccountKey.json
+# with open("serviceAccountKey.json") as f:
+#     service_account_info = json.load(f)
+#     openai_api_key = service_account_info.get("openai_api_key")
+
+# # Initialize OpenAI API client
+# OpenAI.api_key = openai_api_key
 
 def transform_for_firestore(data):
     def clean_data(value):
@@ -34,9 +44,6 @@ def transform_for_firestore(data):
             return str(value)
 
     return clean_data(data)
-
-
-
 
 @app.route("/videos", methods=["GET"])
 def get_videos():
@@ -123,6 +130,35 @@ def check_video():
     except Exception as e:
         print(f"Exception occurred: {str(e)}", flush=True)  # Print exception message
         return jsonify({"success": False, "error": f"{str(e)} (video_id: {video_id})"}), 500
+
+
+@app.route("/find_questions", methods=["POST"])
+def find_questions():
+    try:
+        data = request.get_json()
+        transcript = data.get("transcript")
+                
+        if not transcript:
+            return jsonify({"success": False, "error": "Transcript is required"}), 400
+        
+        client = OpenAI()
+
+        completion = client.beta.chat.completions.parse(
+            model="gpt-4o-2024-08-06",
+            messages=[
+                {"role": "system",
+                  "content": f"Write 5 questions based on the given transcript: {transcript}" },
+            ],
+        )
+        
+        # Extract the questions from the response
+        questions = completion.choices[0].message.content.strip()
+
+        print(f"ChatGPT response: {questions}", flush=True)  # Print the ChatGPT response for debugging
+        
+        return jsonify({"success": True, "transcript": transcript, "questions": questions}), 200
+    except Exception as e:
+        return jsonify({"success": False, "error": str(e)}), 500
 
 if __name__ == "__main__":
     app.run(debug=True)

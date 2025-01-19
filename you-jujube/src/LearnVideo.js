@@ -14,16 +14,19 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { db, getDoc, setDoc, doc } from "./firebase-config";
 import { updateDoc, increment } from "firebase/firestore";
 import { fetchVideoCount } from "./services/viewCounterService";
+import { getSecondHalfOfTranscript } from "./utils";
+import axios from "axios";
 
 const LearnVideo = () => {
   const { videoId } = useParams();
   const location = useLocation();
   const { videoInfo } = location.state || {};
-  console.log("Video Info:", videoInfo); // Ensure videoInfo is logged
   const { user, isAuthenticated, isLoading } = useAuth0();
   const [count, setCount] = useState(0);
+  const [questions, setQuestions] = useState("");
 
-  const transcript = videoInfo.transcripts;
+  const transcript = videoInfo?.transcripts || "";
+  const secondHalfTranscript = getSecondHalfOfTranscript(transcript);
 
   // YouTube player options
   const opts = {
@@ -77,6 +80,26 @@ const LearnVideo = () => {
     }
   }, [videoId, isAuthenticated, user?.sub]);
 
+  useEffect(() => {
+    const fetchQuestions = async () => {
+      try {
+        const response = await axios.post(
+          "http://localhost:5000/find_questions",
+          {
+            transcript: secondHalfTranscript,
+          }
+        );
+        setQuestions(response.data.questions);
+      } catch (error) {
+        console.error("Error fetching questions:", error);
+      }
+    };
+
+    if (secondHalfTranscript) {
+      fetchQuestions();
+    }
+  }, [secondHalfTranscript]);
+
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -107,7 +130,13 @@ const LearnVideo = () => {
                 Transcript
               </CardTitle>
               <CardText>
-                <pre>{transcript}</pre>
+                <pre>{secondHalfTranscript}</pre>
+              </CardText>
+              <CardTitle className="mt-4" style={{ fontWeight: "bold" }}>
+                Questions
+              </CardTitle>
+              <CardText>
+                <pre>{questions}</pre>
               </CardText>
             </CardBody>
           </Card>
