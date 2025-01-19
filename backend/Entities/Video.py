@@ -28,10 +28,12 @@ class Video:
 
     # attributes from transcript api response
     # transcripts: list[(list[dict[str, float | str]], list[dict[str, float | str]])]
-    original_transcript: list[dict[str, float | str]]
-    translated_transcript: list[dict[str, float | str]]
-    # a tuple of transcript and translated transcript
-    # TODO change the data type ^
+    original_transcript_list: list[dict[str, float | str]]
+    original_transcript: dict[int, dict[str, float | str]]
+    translated_transcript_list: list[dict[str, float]]
+    translated_transcript: dict[int, dict[str, float | str]]
+
+    transcript_text: str
 
     # attributes from cathoven api response
     final_levels: dict[str, float]
@@ -48,7 +50,19 @@ class Video:
     def __init__(self, videoId: str, native_language: str) -> None:
         self.videoId = videoId
         self.native_language = native_language
-        self.transcripts = []
+
+        self.title = 'No title available'
+        self.description = 'No description available'
+        self.duration = 'No duration available'
+        self.thumbnails = {}
+        self.channelId = 'No channel ID available'
+        self.channelTitle = 'No channel title available'
+        self.video_language = 'en'
+        self.original_transcript_list = []
+        self.translated_transcript_list = []
+        self.original_transcript = {}
+        self.translated_transcript = {}
+
 
     def add_video_details(self) -> str | None:
         params = {
@@ -75,13 +89,19 @@ class Video:
     def add_transcripts(self) -> str | None:
         try:
             transcript_list = YouTubeTranscriptApi.list_transcripts(self.videoId)
-            self.original_transcript = []
-            self.translated_transcript = []
             for transcript in transcript_list:
                 if transcript.language_code == 'en':
-                    self.original_transcript = transcript.fetch()
+                    self.original_transcript_list = transcript.fetch()
+                    i = 0
+                    for line in self.original_transcript_list:
+                        self.original_transcript[i] = line
+                        i += 1
                 if transcript.is_translatable:
-                    self.translated_transcript = transcript.translate(self.native_language).fetch()
+                    self.translated_transcript_list = transcript.translate(self.native_language).fetch()
+                    i = 0
+                    for line in self.translated_transcript_list:
+                        self.translated_transcript[i] = line
+                        i += 1
         except Exception as e:
             return f"Error: {str(e)}"
 
@@ -89,14 +109,20 @@ class Video:
         if not self.original_transcript:
             return 'No transcript available'
         else:
-            transcript_text = ''
-            for line in self.original_transcript:
-                transcript_text = transcript_text + line['text'] + ' '
+            self.transcript_text = ''
+            word_count = 0
+            for line in self.original_transcript_list:
+                word_count += len(line['text'].split(' '))
+                if word_count < 500:
+                    self.transcript_text = self.transcript_text + line['text'] + ' '
+                else:
+                    break
+
 
             payload = {
                 'client_id': CATHOVEN_CLIENT_ID,
                 'client_secret': CATHOVEN_CLIENT_SECRET,
-                'text': transcript_text,
+                'text': self.transcript_text,
                 'v': 2,  # Version of the CEFR Analyser
                 'propn_as_lowest': True,
                 'intj_as_lowest': True,
@@ -124,13 +150,14 @@ class Video:
                 # self.phrases = analysis_result.get('phrase_count', {})  # Handle absence of phrase_count
             else:
                 return f'Error: {response.status_code}'
-#
-# videoId = '1aA1WGON49E'
+
+# videoId = '59CmEKAjBzY'
 # vid = Video(videoId, 'fr')
 # vid.add_video_details()
 # vid.add_transcripts()
 # print(vid.original_transcript)
 # print(vid.translated_transcript)
 # vid.add_difficulty()
+# print(vid.transcript_text)
 # print(vid)
 # print(vid.final_levels)
