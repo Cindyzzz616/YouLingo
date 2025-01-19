@@ -24,8 +24,6 @@ class User:
     tenses: dict[str, int]
     clauses: dict[str, int]
 
-    # TODO make more lexicons for clause type, etc
-
     def __init__(self,
                  email: str,
                  password: str,
@@ -55,20 +53,20 @@ class User:
     def increment_level(self) -> None:
         self.level += 0.1
 
-    def add_word_to_lexicon(self, word: str, cefr: float) -> None:
-        if word in self.lexicon.keys():
-            self.lexicon[word]['freq'] += 1
-        else:
-            self.lexicon[word] = {'freq': 1, 'cefr': cefr}
-
-    def add_to_tenses(self, tense: str) -> None:
-        if tense in self.tenses.keys():
-            self.tenses[tense] += 1
-        else:
-            self.tenses[tense] = 1
-
-    def add_to_clauses(self, clause: str) -> None:
-        if clause in self.clauses.keys():
-            self.clauses[clause] += 1
-        else:
-            self.clauses[clause] = 1
+    # def add_word_to_lexicon(self, word: str, cefr: float) -> None:
+    #     if word in self.lexicon.keys():
+    #         self.lexicon[word]['freq'] += 1
+    #     else:
+    #         self.lexicon[word] = {'freq': 1, 'cefr': cefr}
+    #
+    # def add_to_tenses(self, tense: str) -> None:
+    #     if tense in self.tenses.keys():
+    #         self.tenses[tense] += 1
+    #     else:
+    #         self.tenses[tense] = 1
+    #
+    # def add_to_clauses(self, clause: str) -> None:
+    #     if clause in self.clauses.keys():
+    #         self.clauses[clause] += 1
+    #     else:
+    #         self.clauses[clause] = 1
