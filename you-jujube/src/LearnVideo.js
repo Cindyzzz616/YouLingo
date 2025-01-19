@@ -19,7 +19,7 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { db, getDoc, setDoc, doc } from "./firebase-config";
 import { updateDoc, increment } from "firebase/firestore";
 import { fetchVideoCount } from "./services/viewCounterService";
-import { getSecondHalfOfTranscript } from "./utils";
+import { extractTranscript } from "./utils";
 import axios from "axios";
 
 const LearnVideo = () => {
@@ -31,9 +31,14 @@ const LearnVideo = () => {
   const [questions, setQuestions] = useState([]);
   const [responses, setResponses] = useState({});
 
-  const transcript = videoInfo?.transcripts || "No transcript available.";
-  const secondHalfTranscript = getSecondHalfOfTranscript(transcript);
-
+  const transcript = JSON.stringify(videoInfo.translated_transcript);
+  const translatedTranscriptText = extractTranscript(
+    videoInfo.translated_transcript
+  );
+  const originalTranscriptText = extractTranscript(
+    videoInfo.original_transcript
+  );
+  console.log(videoInfo);
   // YouTube player options
   const opts = {
     height: "390",
@@ -47,7 +52,7 @@ const LearnVideo = () => {
     const intLevel = parseInt(level, 10);
     const levels = ["A1", "A2", "B1", "B2", "C1", "C2", "Unknown"];
     return levels[intLevel] || "Unknown";
-  };  
+  };
 
   const recordHistory = async () => {
     console.log(`Recording video ${videoId} watch history...`);
@@ -98,7 +103,7 @@ const LearnVideo = () => {
         const response = await axios.post(
           "http://localhost:5000/find_questions",
           {
-            transcript: secondHalfTranscript,
+            transcript: transcript,
           }
         );
         setQuestions(response.data.questions.split("\n"));
@@ -107,10 +112,10 @@ const LearnVideo = () => {
       }
     };
 
-    if (secondHalfTranscript) {
+    if (transcript) {
       fetchQuestions();
     }
-  }, [secondHalfTranscript]);
+  }, [transcript]);
 
   const handleResponseChange = (index, value) => {
     setResponses((prevResponses) => ({
@@ -165,7 +170,13 @@ const LearnVideo = () => {
             <CardBody style={{ textAlign: "left" }}>
               <YouTube videoId={videoId} opts={opts} onEnd={recordHistory} />
               <CardText>
-                <strong style={{ fontSize: "1.5rem", display: "block", marginBottom: "10px" }}>
+                <strong
+                  style={{
+                    fontSize: "1.5rem",
+                    display: "block",
+                    marginBottom: "10px",
+                  }}
+                >
                   General Level:{" "}
                   <span style={{ color: "#007bff" }}>
                     {convertToCEFR(videoInfo.final_levels?.general_level)}
@@ -183,16 +194,20 @@ const LearnVideo = () => {
                   }}
                 >
                   <div>
-                    <strong>Vocabulary Level:</strong> {videoInfo.final_levels?.vocabulary_level ?? "N/A"}
+                    <strong>Vocabulary Level:</strong>{" "}
+                    {videoInfo.final_levels?.vocabulary_level ?? "N/A"}
                   </div>
                   <div>
-                    <strong>Tense Level:</strong> {videoInfo.final_levels?.tense_level ?? "N/A"}
+                    <strong>Tense Level:</strong>{" "}
+                    {videoInfo.final_levels?.tense_level ?? "N/A"}
                   </div>
                   <div>
-                    <strong>Clause Level:</strong> {videoInfo.final_levels?.clause_level ?? "N/A"}
+                    <strong>Clause Level:</strong>{" "}
+                    {videoInfo.final_levels?.clause_level ?? "N/A"}
                   </div>
                   <div>
-                    <strong>Sentence Level:</strong> {videoInfo.final_levels?.sentence_level ?? "N/A"}
+                    <strong>Sentence Level:</strong>{" "}
+                    {videoInfo.final_levels?.sentence_level ?? "N/A"}
                   </div>
                 </div>
               </CardText>
@@ -200,29 +215,36 @@ const LearnVideo = () => {
                 <strong>Times Watched:</strong> {count}
               </CardText>
               <CardTitle className="mt-4" style={{ fontWeight: "bold" }}>
-                Transcript
+                Translated Transcript
               </CardTitle>
               <CardText>
-                <pre>{secondHalfTranscript}</pre>
+                <pre>{translatedTranscriptText}</pre>
+              </CardText>
+              <CardTitle className="mt-4" style={{ fontWeight: "bold" }}>
+                Original Transcript
+              </CardTitle>
+              <CardText>
+                <pre>{originalTranscriptText}</pre>
               </CardText>
               <CardTitle className="mt-4" style={{ fontWeight: "bold" }}>
                 Questions
               </CardTitle>
               <Form>
-                {questions.map((question, index) => (
-                  <FormGroup key={index}>
-                    <Label for={`question-${index}`}>{question}</Label>
-                    <Input
-                      type="text"
-                      name={`question-${index}`}
-                      id={`question-${index}`}
-                      value={responses[index] || ""}
-                      onChange={(e) =>
-                        handleResponseChange(index, e.target.value)
-                      }
-                    />
-                  </FormGroup>
-                ))}
+                {Array.isArray(questions) &&
+                  questions.map((question, index) => (
+                    <FormGroup key={index}>
+                      <Label for={`question-${index}`}>{question}</Label>
+                      <Input
+                        type="text"
+                        name={`question-${index}`}
+                        id={`question-${index}`}
+                        value={responses[index] || ""}
+                        onChange={(e) =>
+                          handleResponseChange(index, e.target.value)
+                        }
+                      />
+                    </FormGroup>
+                  ))}
                 <Button color="primary" onClick={handleSubmit}>
                   Submit
                 </Button>
