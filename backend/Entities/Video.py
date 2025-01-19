@@ -19,7 +19,8 @@ class Video:
     title: str
     description: str
     duration: str
-    thumbnails: dict[str, str | int]  # will have to see how this works
+    thumbnails: dict[str, dict[str, int | str] | dict[str, int | str] | dict[str, int | str] | dict[str, int | str] | dict[str, int | str]]
+    # thumbnails: dict[str, str | int]  # will have to see how this works
     # do we need these?
     channelId: str
     channelTitle: str
@@ -54,7 +55,7 @@ class Video:
         self.title = 'No title available'
         self.description = 'No description available'
         self.duration = 'No duration available'
-        self.thumbnails = {}
+        self.thumbnails = {'default': {'url': 'https://i.ytimg.com/vi/Zp-Jhuhq0bQ/default.jpg', 'width': 120, 'height': 90}, 'medium': {'url': 'https://i.ytimg.com/vi/Zp-Jhuhq0bQ/mqdefault.jpg', 'width': 320, 'height': 180}, 'high': {'url': 'https://i.ytimg.com/vi/Zp-Jhuhq0bQ/hqdefault.jpg', 'width': 480, 'height': 360}, 'standard': {'url': 'https://i.ytimg.com/vi/Zp-Jhuhq0bQ/sddefault.jpg', 'width': 640, 'height': 480}, 'maxres': {'url': 'https://i.ytimg.com/vi/Zp-Jhuhq0bQ/maxresdefault.jpg', 'width': 1280, 'height': 720}}
         self.channelId = 'No channel ID available'
         self.channelTitle = 'No channel title available'
         self.video_language = 'en'
