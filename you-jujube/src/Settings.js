@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { db, getDoc, setDoc, doc } from "./firebase-config";
-import UserForm from "./components/UserForm";
-import "./App.css";
+import { updateDoc, arrayRemove } from "firebase/firestore";
+import "./App.css"; 
+import { Button } from "reactstrap";
 
 const Settings = () => {
   const [userData, setUserData] = useState(null);
@@ -40,59 +41,93 @@ const Settings = () => {
   };
 
   const handleThemeChange = async () => {
-    const newName = prompt("Add an interest");
-    if (newName) {
-        const updatedData = {...userData, name: newName};
-        setUserData(updatedData)
-        await handleFormSubmit(updatedData);
+    const newTheme = prompt("Add an interest:");
+    if (newTheme) {
+      const updatedThemes = userData.themes
+        ? [...userData.themes, newTheme]
+        : [newTheme];
+      const updatedData = { ...userData, themes: updatedThemes };
+      setUserData(updatedData);
+      await handleFormSubmit(updatedData);
     }
-  }
+  };
 
-  function renderInterests() {
-    const container = document.getElementById('interests-container');
-    const statusElement = document.getElementById('interest-status');
-  
-    if (userData.themes && userData.themes.length > 0) {
-      statusElement.textContent = '';  // Clear the "Not set" text
-      container.innerHTML = ''; // Clear any existing content
-  
-      userData.themes.forEach(interest => {
-        const interestBox = document.createElement('div');
-        interestBox.classList.add('interest-box');
-        interestBox.textContent = interest;
-        container.appendChild(interestBox);
-      });
-    } else {
-      statusElement.textContent = "Not set";  // Show "Not set" if no themes
-      container.innerHTML = '';  // Clear any existing content
+  const handleRemoveTheme = async (index) => {
+    if (userData?.themes) {
+      const themeToRemove = userData.themes[index];
+      const updatedThemes = userData.themes.filter((_, i) => i !== index);
+      const updatedData = { ...userData, themes: updatedThemes };
+      setUserData(updatedData);
+
+      try {
+        const userRef = doc(db, "users", user.sub);
+        await updateDoc(userRef, {
+          themes: arrayRemove(themeToRemove),
+        });
+        console.log("Theme removed from Firebase");
+      } catch (error) {
+        console.error("Error removing theme from Firebase:", error);
+      }
     }
-  }
+  };
 
   if (isLoading) return <p>Loading...</p>;
   if (!isAuthenticated) return <p>Please log in to view your settings.</p>;
 
   return (
-    <div className="settings-container">
-    <h1>Settings</h1>
-      {userData ? (
-        <div>
-            <h2>User</h2>
-            <p><strong>Name:</strong> {userData.name || user.name || "Not set"}</p>
-            <p><strong>Email:</strong> {userData.email || user.email || "Not set"}</p>
-            <h3>You're learning <strong>{userData.language || "Not set"}</strong></h3>
-            <p><strong>Level:</strong> {userData.level || "Not set"}</p>
-            <p><strong>Interests:</strong> {userData.themes || "Not set"}</p>
-            <div class="interests-container">
-                <div class="interest-box">Sports</div>
-                <div class="interest-box">Music</div>
-                <div class="interest-box">Traveling</div>
-                <div class="interest-box">Technology</div>
-            </div>
+    <div className="settings-page">
+        <div className="settings-bar">
+            <h1>Settings</h1>
         </div>
-      ) : (
-        <p>Loading user information...</p>
-      )}
-      <button onClick={handleThemeChange}>Add an interest</button>
+      <div className="settings-container">
+        {userData ? (
+          <div className="settings-content">
+            <div className="user-info">
+              <h2>User Details</h2>
+              <p>
+                <strong>Name:</strong> {userData.name || user.name || "Not set"}
+              </p>
+              <p>
+                <strong>Email:</strong>{" "}
+                {userData.email || user.email || "Not set"}
+              </p>
+              <p>
+                <strong>Language:</strong>{" "}
+                {userData.language || "Not set"}
+              </p>
+              <p>
+                <strong>Level:</strong> {userData.level || "Not set"}
+              </p>
+            </div>
+
+            <div className="user-interests">
+              <h2>Interests</h2>
+              <div className="interests-container">
+                {userData.themes && userData.themes.length > 0 ? (
+                  userData.themes.map((theme, index) => (
+                    <Button
+                        key={index}
+                        color="primary"
+                        outline
+                        style={{ marginRight: "5px", marginBottom: "5px" }}
+                        onClick={() => handleRemoveTheme(index)}
+                    >
+                        {theme} <span style={{ marginLeft: "5px" }}>x</span>
+                    </Button>
+                  ))
+                ) : (
+                  <p>No interests set yet.</p>
+                )}
+              </div>
+              <button className="add-interest-btn" onClick={handleThemeChange}>
+                Add an interest
+              </button>
+            </div>
+          </div>
+        ) : (
+          <p>Loading user information...</p>
+        )}
+      </div>
     </div>
   );
 };
