@@ -1,5 +1,6 @@
 import requests
 import random
+import isodate
 
 from backend.Entities import User
 from backend.Entities import Video
@@ -8,6 +9,7 @@ API_KEY = 'AIzaSyBT2UKWCmrb9DcK_OLGSegbkd8WDE3-XBI'
 SEARCH_URL = 'https://www.googleapis.com/youtube/v3/search'
 
 DIFFICULTY_RANGE = 0.5
+MAX_DURATION = 240.0
 
 
 class FetchVideoBatch:
@@ -58,8 +60,10 @@ class FetchVideoBatch:
                 video_obj.add_video_details()
                 video_obj.add_transcripts()
                 video_obj.add_difficulty()
+                duration_in_seconds = isodate.parse_duration(video_obj.duration).total_seconds()
                 if abs(video_obj.final_levels['general'] - self.user.level) < DIFFICULTY_RANGE \
-                        and video_obj.video_language == self.user.target_language:
+                        and video_obj.video_language == self.user.target_language \
+                        and duration_in_seconds < MAX_DURATION:
                     batch.append(self.fetch_searched_videos(topic, 1)[0])
                     need_new_video = False
         return batch
