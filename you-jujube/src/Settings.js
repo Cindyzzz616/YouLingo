@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { db, getDoc, setDoc, doc } from "./firebase-config";
 import { updateDoc, arrayRemove } from "firebase/firestore";
-import "./App.css"; 
+import "./App.css";
 import { Button } from "reactstrap";
 
 const Settings = () => {
@@ -15,13 +15,27 @@ const Settings = () => {
         try {
           const userRef = doc(db, "users", user.sub);
           const userDoc = await getDoc(userRef);
+          
           if (userDoc.exists()) {
-            setUserData(userDoc.data());
+            const fetchedData = userDoc.data();
+            if (!fetchedData.language) {
+              await setDoc(userRef, { language: "English" }, { merge: true });
+              fetchedData.language = "English";
+            }
+            if (!fetchedData.level || fetchedData.level === "NA") {
+              // Set default level if not already set or is "NA"
+              await setDoc(userRef, { level: "A1" }, { merge: true });
+              fetchedData.level = "A1";
+            }
+            setUserData(fetchedData);
           } else {
-            console.log("No user data found in Firebase.");
-          }
+            // Initialize user data for new users
+            const initialData = { language: "English", level: "A1" };
+            await setDoc(userRef, initialData);
+            setUserData(initialData);
+          }          
         } catch (error) {
-          console.error("Error fetching user data from Firebase:", error);
+          console.error("Error fetching user data:", error);
         }
       }
     };
@@ -29,44 +43,42 @@ const Settings = () => {
     fetchUserData();
   }, [isAuthenticated, user]);
 
-  const handleFormSubmit = async (data) => {
+  const saveUserData = async (data) => {
     try {
       const userRef = doc(db, "users", user.sub);
       await setDoc(userRef, data, { merge: true });
-      console.log("User data saved to Firebase");
       setUserData(data);
+      console.log("User data saved successfully.");
     } catch (error) {
-      console.error("Error saving user data to Firebase:", error);
+      console.error("Error saving user data:", error);
     }
   };
 
-  const handleThemeChange = async () => {
-    const newTheme = prompt("Add an interest:");
-    if (newTheme) {
-      const updatedThemes = userData.themes
-        ? [...userData.themes, newTheme]
-        : [newTheme];
-      const updatedData = { ...userData, themes: updatedThemes };
-      setUserData(updatedData);
-      await handleFormSubmit(updatedData);
+  const addInterest = async () => {
+    const newInterest = prompt("Enter a new interest:");
+    if (newInterest) {
+      const updatedInterests = userData.themes
+        ? [...userData.themes, newInterest]
+        : [newInterest];
+      const updatedData = { ...userData, themes: updatedInterests };
+      await saveUserData(updatedData);
     }
   };
 
-  const handleRemoveTheme = async (index) => {
+  const removeInterest = async (index) => {
     if (userData?.themes) {
       const themeToRemove = userData.themes[index];
       const updatedThemes = userData.themes.filter((_, i) => i !== index);
       const updatedData = { ...userData, themes: updatedThemes };
-      setUserData(updatedData);
-
       try {
         const userRef = doc(db, "users", user.sub);
         await updateDoc(userRef, {
           themes: arrayRemove(themeToRemove),
         });
-        console.log("Theme removed from Firebase");
+        setUserData(updatedData);
+        console.log("Interest removed successfully.");
       } catch (error) {
-        console.error("Error removing theme from Firebase:", error);
+        console.error("Error removing interest:", error);
       }
     }
   };
@@ -76,9 +88,9 @@ const Settings = () => {
 
   return (
     <div className="settings-page">
-        <div className="settings-bar">
-            <h1>Settings</h1>
-        </div>
+      <div className="settings-bar">
+        <h1>Settings</h1>
+      </div>
       <div className="settings-container">
         {userData ? (
           <div className="settings-content">
@@ -88,12 +100,10 @@ const Settings = () => {
                 <strong>Name:</strong> {userData.name || user.name || "Not set"}
               </p>
               <p>
-                <strong>Email:</strong>{" "}
-                {userData.email || user.email || "Not set"}
+                <strong>Email:</strong> {userData.email || user.email || "Not set"}
               </p>
               <p>
-                <strong>Language:</strong>{" "}
-                {userData.language || "Not set"}
+                <strong>Language:</strong> {userData.language || "English"}
               </p>
               <p>
                 <strong>Level:</strong> {userData.level || "Not set"}
@@ -106,22 +116,26 @@ const Settings = () => {
                 {userData.themes && userData.themes.length > 0 ? (
                   userData.themes.map((theme, index) => (
                     <Button
-                        key={index}
-                        color="primary"
-                        outline
-                        style={{ marginRight: "5px", marginBottom: "5px" }}
-                        onClick={() => handleRemoveTheme(index)}
+                      key={index}
+                      color="primary"
+                      outline
+                      style={{ marginRight: "5px", marginBottom: "5px" }}
+                      onClick={() => removeInterest(index)}
                     >
-                        {theme} <span style={{ marginLeft: "5px" }}>x</span>
+                      {theme} <span style={{ marginLeft: "5px" }}>x</span>
                     </Button>
                   ))
                 ) : (
                   <p>No interests set yet.</p>
                 )}
               </div>
-              <button className="add-interest-btn" onClick={handleThemeChange}>
-                Add an interest
-              </button>
+              <Button
+                className="add-interest-btn"
+                color="secondary"
+                onClick={addInterest}
+              >
+                Add an Interest
+              </Button>
             </div>
           </div>
         ) : (
