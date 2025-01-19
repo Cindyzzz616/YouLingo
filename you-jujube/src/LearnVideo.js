@@ -7,6 +7,11 @@ import {
   CardBody,
   CardTitle,
   CardText,
+  Form,
+  FormGroup,
+  Label,
+  Input,
+  Button,
 } from "reactstrap";
 import YouTube from "react-youtube";
 import { useParams, useLocation } from "react-router-dom";
@@ -23,7 +28,8 @@ const LearnVideo = () => {
   const { videoInfo } = location.state || {};
   const { user, isAuthenticated, isLoading } = useAuth0();
   const [count, setCount] = useState(0);
-  const [questions, setQuestions] = useState("");
+  const [questions, setQuestions] = useState([]);
+  const [responses, setResponses] = useState({});
 
   const transcript = videoInfo?.transcripts || "";
   const secondHalfTranscript = getSecondHalfOfTranscript(transcript);
@@ -89,7 +95,7 @@ const LearnVideo = () => {
             transcript: secondHalfTranscript,
           }
         );
-        setQuestions(response.data.questions);
+        setQuestions(response.data.questions.split("\n"));
       } catch (error) {
         console.error("Error fetching questions:", error);
       }
@@ -99,6 +105,40 @@ const LearnVideo = () => {
       fetchQuestions();
     }
   }, [secondHalfTranscript]);
+
+  const handleResponseChange = (index, value) => {
+    setResponses((prevResponses) => ({
+      ...prevResponses,
+      [index]: value,
+    }));
+  };
+
+  const handleSubmit = async () => {
+    try {
+      const userRef = doc(db, "users", user.sub);
+      const userDoc = await getDoc(userRef);
+
+      if (userDoc.exists()) {
+        const userData = userDoc.data();
+        const videoResponses = userData.videoResponses || {};
+
+        videoResponses[videoId] = {
+          questions: questions,
+          responses: responses,
+        };
+
+        await updateDoc(userRef, {
+          videoResponses: videoResponses,
+        });
+
+        console.log("Responses saved successfully.");
+      } else {
+        console.log("User document does not exist.");
+      }
+    } catch (error) {
+      console.error("Error saving responses:", error);
+    }
+  };
 
   if (isLoading) {
     return <div>Loading...</div>;
@@ -135,9 +175,25 @@ const LearnVideo = () => {
               <CardTitle className="mt-4" style={{ fontWeight: "bold" }}>
                 Questions
               </CardTitle>
-              <CardText>
-                <pre>{questions}</pre>
-              </CardText>
+              <Form>
+                {questions.map((question, index) => (
+                  <FormGroup key={index}>
+                    <Label for={`question-${index}`}>{question}</Label>
+                    <Input
+                      type="text"
+                      name={`question-${index}`}
+                      id={`question-${index}`}
+                      value={responses[index] || ""}
+                      onChange={(e) =>
+                        handleResponseChange(index, e.target.value)
+                      }
+                    />
+                  </FormGroup>
+                ))}
+                <Button color="primary" onClick={handleSubmit}>
+                  Submit
+                </Button>
+              </Form>
             </CardBody>
           </Card>
         </Col>
