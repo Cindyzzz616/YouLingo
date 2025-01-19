@@ -63,6 +63,12 @@ class Video:
         self.original_transcript = {}
         self.translated_transcript = {}
 
+        self.final_levels = {'general': 0.0, 'vocab': 0.0, 'tense': 0.0, 'clause': 0.0}
+        self.wordlists = {}
+        self.tenses = {}
+        self.clauses = {}
+
+
 
     def add_video_details(self) -> str | None:
         params = {
