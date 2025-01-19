@@ -102,8 +102,8 @@ def check_video():
                     "channelId": video.channelId,
                     "channelTitle": video.channelTitle,
                     "video_language": video.video_language,
-                    "original_transcript": video.original_transcript,
-                    "translated_transcript": video.translated_transcript,
+                    "original_transcript": json.loads(json.dumps(video.original_transcript)),
+                    "translated_transcript": json.loads(json.dumps(video.original_transcript)),
                     "final_levels": video.final_levels,
                     "native_language": video.native_language
                 }
