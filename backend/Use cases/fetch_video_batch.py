@@ -1,13 +1,16 @@
 import requests
 import random
 import isodate
+from dotenv import load_dotenv
+import os
 
 from backend.Entities import User
-from backend.Entities import Video
 
-API_KEY = 'AIzaSyBT2UKWCmrb9DcK_OLGSegbkd8WDE3-XBI'
+load_dotenv()
+API_KEY = os.getenv("YOUTUBE_API_KEY")
 SEARCH_URL = 'https://www.googleapis.com/youtube/v3/search'
 
+# can make customizable in the future
 DIFFICULTY_RANGE = 0.5
 MAX_DURATION = 240.0
 
@@ -19,15 +22,11 @@ class FetchVideoBatch:
 
     user: User
 
-    # also need to know how many videos to fetch - should we predetermine that?
-
     def __init__(self, user: User):
         self.user = user
 
-    # this doesn't filter by difficulty yet to save on api calls
+    # this doesn't filter by difficulty yet
     def fetch_searched_videos(self, query: str, max_results: int) -> list[dict]:
-        # or not take in a query but get it from self.user?
-        # make this return a list of Videos instead? whichever is easier to use
         batch = None
         params = {
             'part': 'snippet',
@@ -49,7 +48,6 @@ class FetchVideoBatch:
         return batch
 
     def fetch_recommended_videos(self) -> list[dict]:
-        # later - can customize the range of difficulty
         batch = []
         randomized_topics = random.sample(self.user.topics, 10)
         for topic in randomized_topics:

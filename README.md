@@ -1,8 +1,11 @@
 # YouLingo: YouTube Language Acquisition
 
-This project is made for U of T Hacks 12 Hackathon.
+![Screenshot 2025-01-19 at 6.05.13 AM.png](..%2F..%2FDesktop%2FScreenshot%202025-01-19%20at%206.05.13%E2%80%AFAM.png)
 
-YouLingo is a web application designed to help users learn new languages by making YouTube videos into language lessons. Users can explore various videos, add their own video URLs, and manage their favorite videos.
+This project is made for U of T Hacks 12 Hackathon. Our take on this year's theme, Perspective, is an application that takes a different look
+at media consumption beyond a form of entertainment, as well as challenge pre-conceived ideas about language learning - that it has to confined to
+textbooks and classrooms. The result of this is YouLingo, a web application designed to help users learn new languages by making YouTube videos into 
+custom language lessons. Users can explore various videos, add their own video URLs, and manage their favorite videos.
 
 ## Creators
 - Adrien Mery
@@ -25,20 +28,20 @@ YouLingo is a web application designed to help users learn new languages by maki
 ### Hypotheses of Language Acquisition
 This application is based on the language acquisition theory posited by Stephen Krashen, an renowned American linguist who has written more than 500 articles and books on the second language acquisition and related fields. [1]
 In his theory, he outlined six hypotheses about how to effectively gain fluency in a second language. They are:  
-1. **The Acquisition-Learning hypothesis:** learning a language involves consciously obtaining knowledge _about_ a language, while the
+1. **The Acquisition-Learning Hypothesis:** learning a language involves consciously obtaining knowledge _about_ a language, while the
 process of acquisition is unconscious and involves direct interaction _with_ a language. The former approach is used in formal
 language education, which often yields unsatisfactory results. In comparison, the latter approach is the process through which
 children come to master their native language.
-2. **The Monitor hypothesis:** when we are consciously learning a language, there is an internal monitor that judges and corrects the every
+2. **The Monitor Hypothesis:** when we are consciously learning a language, there is an internal monitor that judges and corrects the every
 utterance. As a result, fluency is sacrificed to maximize accuracy, which hinders the progress of the learner in the long run.
 3. **The Natural Order hypothesis:** children first acquire the comprehension capacities, then production capacities; they also master languages
 in spoken forms before learning the written forms. Therefore, the natural order of language acquisition is _listening_, _speaking_, _reading_,
 then _writing_. There are also orders of acquiring different grammatical structures. When adults follow the same order, they are able to
 communicate more fluently and effectively.
-4. **The Input hypothesis:** language input can only be helpful to a learner when they are comprehensible. When they wish to progress,
+4. **The Input Hypothesis:** language input can only be helpful to a learner when they are comprehensible. When they wish to progress,
 they must take small steps by consuming content that encompass the previous material with small additions. This can be described by the
 analogy "i+1", where i represents the current knowledge and 1 represents the small addition on that basis.
-5. **The Affective Filter hypothesis:** when learners are in stressful surroundings, their brains filter out the input
+5. **The Affective Filter Hypothesis:** when learners are in stressful surroundings, their brains filter out the input
 and render it useless. Their interest in the content they consume can also affect how well they internalize the language. 
 Therefore, it is important for them to be in a relaxed environment where they can engage with the materials of their choosing and make mistakes.
 6. **The Reading Hypothesis:** our vocabulary expands when we read materials from real-life contexts, rather than engage in rote
@@ -74,22 +77,21 @@ as outlined below:
 - **C1:** Can understand a wide range of demanding, longer texts, and recognise implicit meaning. Can express him/herself fluently and spontaneously without much obvious searching for expressions. Can use language flexibly and effectively for social, academic and professional purposes. Can produce clear, well-structured, detailed text on complex subjects, showing controlled use of organisational patterns, connectors and cohesive devices.
 - **C2:** Can understand with ease virtually everything heard or read. Can summarise information from different spoken and written sources, reconstructing arguments and accounts in a coherent presentation. Can express him/herself spontaneously, very fluently and precisely, differentiating finer shades of meaning even in more complex situations. [3]  
 
-In the application, these levels are represented by floating point numbers, which makes it possible to specify the difficulty of a video, word, tense or clause to a greater precision.
+In the application, these levels are represented by floating point numbers, which makes it possible to more precisely specify the difficulty of a video, word, tense or clause to a greater precision. A1 is quantified as 1.0, A2 as 2.0 and so on, up to C2 as 5.0.
 
 ### Sources  
 [1] https://rossier.usc.edu/faculty-research/directory/stephen-krashen  
-[2] https://sites.ualberta.ca/~obilash/krashen.html#:~:text=Application%20for%20Teaching-,The%20Acquisition%2DLearning%20hypothesis,of%20just%20'learning'%20it.  
+[2] https://sites.ualberta.ca/~obilash/krashen.html#:~:text=Application%20for%20Teaching-,The%20Acquisition%2DLearning%20hypothesis,of%20just%20'learning'%20it  
 [3] https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions
 
 ## 2. Features
-
-NOTE: due to time constraints, some of these features have not been fully implemented. The following is a description of the intended design of the application
-with the core features available for demonstration.
+_NOTE: due to time constraints, some of these features have not been fully implemented. The following is a description of the intended design of the application
+with the core features available for demonstration._
 
 ### User Database
 YouLingo allows users to input topics of interest as tags, and save videos as a list. It also stores a range of linguistic competency data for each user. This includes:
 * Overall CEFR level: This is stored as a floating point number from 0.0 to 5.0, representing levels from A1 to C2. Upon sign-up, the user 
-* Lexicon: This is a list of the vocabulary that the user has accumulated from past videos. Each word has an associated CEFR score, and the application keeps
+* Lexicon: This is a list of the vocabulary that the user has accumulated from videos they have watched. Each word has an associated CEFR score, and the application keeps
 a tally of the number of times the user has encountered that word.
 * Record of Tenses: Similar to the Lexicon, this is a record of the tenses the user has encountered. The following tenses are tracked by the application:
 
@@ -119,15 +121,16 @@ a tally of the number of times the user has encountered that word.
   | Noun clauses                  |
   | Sentences inside parentheses  |
 
-The record of the types of tenses and clauses also keeps track of the number of times they have been encountered by the user.
-As the user watches more videos, new words, tenses and clauses are added to their knowledge base, and the tally for existing words, tenses and clauses increases.
-As the user accumulate experience, their overall CEFR level increases automatically based on the tally and average score of the words in their lexicon.
-This in turn changes the videos recommended to them, as discussed below.
-
+[intended but not implemented] Like the lexicon, the record of the types of tenses and clauses also keeps track of the number of times they have been encountered by the user.
+Each time the user watches a video, new words, tenses and clause types are added to their knowledge base, and the tally for existing words, tenses and clauses increases.
+As the user accumulate experience, their overall CEFR level increases automatically based on the tally and average CEFR score of the words in their lexicon, as well as 
+their familiarity with tenses and clause types. This in turn increases the average difficulty of videos recommended to them, as discussed below.
 
 ### Video Recommendation
-The user's home page is populated by a series of recommendations based on the user's topics of interest, their CEFR level and the similarity between the 
-video's language content and the user's knowledge base.
+The user's home page is populated by a series of recommended videos based on the user's topics of interest, their CEFR level and [intended but
+not implemented] the similarity between the video's language content and the user's knowledge base. The precision of the recommendations can be
+adjusted (for example, users can choose to view videos with a general difficulty level that is within ±0.5 CEFR-score of their personal level,
+and with a word list that has an 80% overlap with their lexicon of familiar vocabulary). The videos are ranked based on these metrics, and new videos are shown upon refreshing the page.
 
 ### Viewing Videos
 Each video is accompanied by the following components:
@@ -137,15 +140,18 @@ linguistic information that the user has already encountered. This breaks down i
   - vocabulary
   - tenses
   - clause types
+with the same set of available tenses and clause types as the one in the user database.
 - A general difficulty score, rated in terms of CEFR levels. This is also expanded into the same categories as above.
-- A button to save the video.
 - A counter that keeps track of the number of times the user has watched the video.
+- A button to save the video.
   
 ### Saving Videos
-Saved videos can be retrieved under a My Videos tab.
+Saved videos can be retrieved under a My Videos tab. This encourages users to review videos to ensure sufficient repetition.
+[intended but not implemented] Videos would be considered as complete after a custom number of replays and the user would be 
+allowed to add newer, more challenging videos to their rotation.
 
 ### Quizzing
-A short quiz is generated for each video, and the user can input their answer to be assessed on their comprehension and production abilities.
+A short quiz is generated for each video, and the user can input their answer to be assessed on their reading and writing abilities.
 
 
 ## 3. Technologies Used
@@ -252,7 +258,13 @@ There are some features we did not have time to implement, but we look forward t
 as words that are far beyond the user's current level. The same can be done with difficult sentence structures and
 grammatical formulations. Based on that, YouLingo will recommend parts of the video that the user should review and 
 parts that can be skipped over.
-- 
+- Review reminder: YouLingo can remind the user to re-watch the videos at scheduled intervals, using principles like
+the Ebbinghaus forgetting curve.
+- Connection to YouTube: for users who are willing, YouLingo can be linked to their YouTube account, so they get even more 
+personalized recommendations based on their watch history and behaviours.
+- Like YouTube, YouLingo can display the most-viewed segments when hovering over the progress bar.
+- There can be further AI integration for advanced features like stitching together lines from different videos to make
+custom materials, or generating audio/video scripts altogether.
 
 ### Contributing
 

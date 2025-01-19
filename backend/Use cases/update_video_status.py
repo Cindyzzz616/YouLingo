@@ -17,9 +17,3 @@ class UpdateVideoStatus:
         # might be more complicated bc you need to update the database
         # should it return a bool to indicate whether the action was successful?
         self.user.saved_videos.append(self.video)
-
-    # def remove_video_from_saved(self) -> None:
-    #     self.user.saved_videos.remove(self.video)
-    #
-    # def update_view_count(self) -> None:
-    #     self.video.view_count += 1

@@ -1,24 +1,18 @@
-import os
-
 from youtube_transcript_api import YouTubeTranscriptApi
 import requests
 
-YOUTUBE_API_KEY="AIzaSyBT2UKWCmrb9DcK_OLGSegbkd8WDE3-XBI"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # Load .env file
+
+YOUTUBE_API_KEY = os.getenv("YOUTUBE_API_KEY")
+CATHOVEN_CLIENT_ID = os.getenv("CATHOVEN_CLIENT_ID")
+CATHOVEN_CLIENT_SECRET = os.getenv("CATHOVEN_CLIENT_SECRET")
+
 YOUTUBE_URL="https://www.googleapis.com/youtube/v3/videos"
-
 CATHOVEN_URL="https://enterpriseapi.cathoven.com/cefr/process_text"
-CATHOVEN_CLIENT_ID="41b95a1e-89cf-4194-ad44-da6a542da143"
-CATHOVEN_CLIENT_SECRET="313f758a-a846-4e25-8656-b80e012f7216"
 
-# YOUTUBE_API_KEY=os.getenv("YOUTUBE_API_KEY")
-# if not YOUTUBE_API_KEY:
-#     raise ValueError("API_KEY not found in environment variables!")
-#
-# YOUTUBE_URL="https://www.googleapis.com/youtube/v3/videos"
-#
-# CATHOVEN_URL="https://enterpriseapi.cathoven.com/cefr/process_text"
-# CATHOVEN_CLIENT_ID="41b95a1e-89cf-4194-ad44-da6a542da143"
-# CATHOVEN_CLIENT_SECRET="313f758a-a846-4e25-8656-b80e012f7216"
 
 class Video:
     """
@@ -31,15 +25,12 @@ class Video:
     description: str
     duration: str
     thumbnails: dict[str, dict[str, int | str] | dict[str, int | str] | dict[str, int | str] | dict[str, int | str] | dict[str, int | str]]
-    # thumbnails: dict[str, str | int]  # will have to see how this works
-    # do we need these?
     channelId: str
     channelTitle: str
     video_language: str
 
 
     # attributes from transcript api response
-    # transcripts: list[(list[dict[str, float | str]], list[dict[str, float | str]])]
     original_transcript_list: list[dict[str, float | str]]
     original_transcript: dict[int, dict[str, float | str]]
     translated_transcript_list: list[dict[str, float]]
@@ -53,10 +44,6 @@ class Video:
     tenses: dict
     clauses: dict
     phrases: dict
-
-    # allowed_remaining: dict
-
-    # sentences - might be useful bc it gives the difficulty breakdown of each word in a sentence
 
     # other attributes
     native_language: str  # need to get this from user...
@@ -173,18 +160,3 @@ class Video:
                 # self.phrases = analysis_result.get('phrase_count', {})  # Handle absence of phrase_count
             else:
                 return f'Error: {response.status_code}'
-
-# videoId = ''
-# vid = Video(videoId, 'fr')
-# vid.add_video_details()
-# vid.add_transcripts()
-# print(vid.original_transcript)
-# print(vid.translated_transcript)
-# vid.add_difficulty()
-# print(vid.transcript_text)
-# print(vid)
-# print(vid.final_levels)
-# print(vid.wordlists)
-# print(vid.tenses)
-# print(vid.clauses)
-# # print(vid.allowed_remaining)

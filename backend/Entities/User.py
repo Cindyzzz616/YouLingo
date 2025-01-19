@@ -1,4 +1,4 @@
-import Video
+from backend.Entities import Video
 
 A1 = 0.0
 A2 = 1.0
