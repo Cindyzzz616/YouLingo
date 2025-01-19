@@ -23,7 +23,7 @@ const LearnVideo = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
   const [count, setCount] = useState(0);
 
-  const transcript = videoInfo.transcripts;
+  const transcript = videoInfo.original_transcript || "No transcript available.";
 
   // YouTube player options
   const opts = {
@@ -35,8 +35,9 @@ const LearnVideo = () => {
   };
 
   const convertToCEFR = (level) => {
+    const intLevel = parseInt(level, 10);
     const levels = ["A1", "A2", "B1", "B2", "C1", "C2", "Unknown"];
-    return levels[level] || "Unknown";
+    return levels[intLevel] || "Unknown";
   };  
 
   const recordHistory = async () => {
@@ -104,7 +105,7 @@ const LearnVideo = () => {
                 <strong style={{ fontSize: "1.5rem", display: "block", marginBottom: "10px" }}>
                   General Level:{" "}
                   <span style={{ color: "#007bff" }}>
-                    {convertToCEFR(videoInfo.languageDifficulty?.general_level)}
+                    {convertToCEFR(videoInfo.final_levels?.general_level)}
                   </span>
                 </strong>
                 <div
@@ -119,16 +120,16 @@ const LearnVideo = () => {
                   }}
                 >
                   <div>
-                    <strong>Vocabulary Level:</strong> {videoInfo.languageDifficulty?.vocabulary_level ?? "N/A"}
+                    <strong>Vocabulary Level:</strong> {videoInfo.final_levels?.vocabulary_level ?? "N/A"}
                   </div>
                   <div>
-                    <strong>Tense Level:</strong> {videoInfo.languageDifficulty?.tense_level ?? "N/A"}
+                    <strong>Tense Level:</strong> {videoInfo.final_levels?.tense_level ?? "N/A"}
                   </div>
                   <div>
-                    <strong>Clause Level:</strong> {videoInfo.languageDifficulty?.clause_level ?? "N/A"}
+                    <strong>Clause Level:</strong> {videoInfo.final_levels?.clause_level ?? "N/A"}
                   </div>
                   <div>
-                    <strong>Sentence Level:</strong> {videoInfo.languageDifficulty?.sentence_level ?? "N/A"}
+                    <strong>Sentence Level:</strong> {videoInfo.final_levels?.sentence_level ?? "N/A"}
                   </div>
                 </div>
               </CardText>
