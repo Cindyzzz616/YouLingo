@@ -27,7 +27,9 @@ class Video:
 
 
     # attributes from transcript api response
-    transcripts: list[(list[dict[str, float | str]], list[dict[str, float | str]])]
+    # transcripts: list[(list[dict[str, float | str]], list[dict[str, float | str]])]
+    original_transcript: list[dict[str, float | str]]
+    translated_transcript: list[dict[str, float | str]]
     # a tuple of transcript and translated transcript
     # TODO change the data type ^
 
@@ -73,54 +75,62 @@ class Video:
     def add_transcripts(self) -> str | None:
         try:
             transcript_list = YouTubeTranscriptApi.list_transcripts(self.videoId)
+            self.original_transcript = []
+            self.translated_transcript = []
             for transcript in transcript_list:
-                transcript_data = transcript.fetch()
+                if transcript.language_code == 'en':
+                    self.original_transcript = transcript.fetch()
                 if transcript.is_translatable:
-                    transcript_translated = transcript.translate(self.native_language).fetch()
-                else:
-                    transcript_translated = None
-                self.transcripts.append((transcript_data, transcript_translated))
+                    self.translated_transcript = transcript.translate(self.native_language).fetch()
         except Exception as e:
             return f"Error: {str(e)}"
 
     def add_difficulty(self) -> str | None:
-        if not self.transcripts:
-            self.add_transcripts()
-
-        # for now, we just analyze the first available transcript. We can allow user to choose a transcript later on
-
-        transcript_text = ''
-        for line in self.transcripts[0][0]:
-            transcript_text = transcript_text + line['text'] + '. '
-
-        payload = {
-            'client_id': CATHOVEN_CLIENT_ID,
-            'client_secret': CATHOVEN_CLIENT_SECRET,
-            'text': transcript_text,
-            'v': 2,  # Version of the CEFR Analyser
-            'propn_as_lowest': True,
-            'intj_as_lowest': True,
-            'keep_min': True,
-            'custom_dictionary': {},  # Add custom vocabulary levels if needed
-            'return_final_levels': True,
-            "outputs": [
-                "wordlists",
-                "tense_term_count",
-                "clause_count",
-                "final_levels"
-            ]
-            # somehow "phrase_count" is not in the list of allowed output params - we'll have to see what happens
-            # removed sentences, vocabulary_stats, tense_count, tense_stats, clause_stats
-        }
-
-        response = requests.post(CATHOVEN_URL, data=payload)
-
-        if response.status_code == 200:
-            analysis_result = response.json()
-            self.final_levels = analysis_result['final_levels']
-            self.wordlists = analysis_result['wordlists']
-            self.tenses = analysis_result['tense_term_count']
-            self.clauses = analysis_result['clause_count']
-            # self.phrases = analysis_result.get('phrase_count', {})  # Handle absence of phrase_count
+        if not self.original_transcript:
+            return 'No transcript available'
         else:
-            return f'Error: {response.status_code}'
+            transcript_text = ''
+            for line in self.original_transcript:
+                transcript_text = transcript_text + line['text'] + ' '
+
+            payload = {
+                'client_id': CATHOVEN_CLIENT_ID,
+                'client_secret': CATHOVEN_CLIENT_SECRET,
+                'text': transcript_text,
+                'v': 2,  # Version of the CEFR Analyser
+                'propn_as_lowest': True,
+                'intj_as_lowest': True,
+                'keep_min': True,
+                'custom_dictionary': {},  # Add custom vocabulary levels if needed
+                'return_final_levels': True,
+                "outputs": [
+                    "wordlists",
+                    "tense_term_count",
+                    "clause_count",
+                    "final_levels"
+                ]
+                # somehow "phrase_count" is not in the list of allowed output params - we'll have to see what happens
+                # removed sentences, vocabulary_stats, tense_count, tense_stats, clause_stats
+            }
+
+            response = requests.post(CATHOVEN_URL, data=payload)
+
+            if response.status_code == 200:
+                analysis_result = response.json()
+                self.final_levels = analysis_result['final_levels']
+                self.wordlists = analysis_result['wordlists']
+                self.tenses = analysis_result['tense_term_count']
+                self.clauses = analysis_result['clause_count']
+                # self.phrases = analysis_result.get('phrase_count', {})  # Handle absence of phrase_count
+            else:
+                return f'Error: {response.status_code}'
+#
+# videoId = '1aA1WGON49E'
+# vid = Video(videoId, 'fr')
+# vid.add_video_details()
+# vid.add_transcripts()
+# print(vid.original_transcript)
+# print(vid.translated_transcript)
+# vid.add_difficulty()
+# print(vid)
+# print(vid.final_levels)
