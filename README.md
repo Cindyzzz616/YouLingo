@@ -1,4 +1,8 @@
 # YouLingo: YouTube Language Acquisition
+<div style="display: flex; align-items: center;">
+    <img src="you-jujube/src/assets/yuo.svg" alt="YouLingo Logo" style="height: 120px;" />
+    <img src="you-jujube/src/assets/youlingo.svg" alt="YouLingo Logo" style="height: 100px;" />
+</div>
 
 This project was created for the UofTHacks 12 Hackathon and was the winner of Best University of Toronto Hack.
 
