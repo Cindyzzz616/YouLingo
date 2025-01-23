@@ -1,6 +1,8 @@
 # YouLingo: YouTube Language Acquisition
 
-This project was created for U of T Hacks 12 Hackathon. Our take on this year's theme, Perspective, is an application that takes a different look
+This project was created for the UofTHacks 12 Hackathon and was the winner of Best University of Toronto Hack.
+
+Our take on this year's theme, Perspective, is an application that takes a different look
 at media consumption beyond a form of entertainment, and challenges pre-conceived ideas about language learning - that it has to be confined to
 textbooks and classrooms. The result of this is YouLingo, a web application designed to help users learn new languages by making YouTube videos into 
 custom language lessons. Users can explore various videos, add their own video URLs, and manage their favorite videos.
