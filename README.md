@@ -212,6 +212,7 @@ pip install -r requirements.txt
 To run the frontend application in a development environment, use the following command:
 
 ```sh
+cd ../you-jujube
 npm start
 ```
 
