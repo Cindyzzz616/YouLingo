@@ -1,0 +1,1 @@
+# returns wpm, spm and % of pauses
