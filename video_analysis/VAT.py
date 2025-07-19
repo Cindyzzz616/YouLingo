@@ -77,7 +77,7 @@ def compute_ptrs_from_audio(audio_path):
     model = WhisperModel("base", compute_type="int8")  # or "medium", "large"
     segments, _ = model.transcribe(processed_path, word_timestamps=True)
     ptrs, average_ptr = compute_ptrs(segments, voiced_intervals)
-    print(segments)
-    print(ptrs)
+    # print(segments)
+    # print(ptrs)
     print(f"Average PTR: {average_ptr:.3f}")
     return average_ptr
