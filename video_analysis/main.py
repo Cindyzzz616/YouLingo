@@ -27,8 +27,10 @@ if __name__ == "__main__":
     video = Video.Video(path="video_analysis/etymology.MP4")
     print(video)
     
-    user = User.User(1000)
+    user = User.User(3000)
     print(f"User Lexicon: {user.lexicon}")
+
+    print(lexical_coverage.lexical_coverage(video, user))
 
     difficulty_score = analyze_video_difficulty(video, user)
     print(f"Video Difficulty Score: {difficulty_score}")
