@@ -31,7 +31,7 @@ def lexical_coverage(video: Video, user: User) -> tuple:
     raw_coverage = len(words_in_transcript.intersection(user_lexicon)) / len(words_in_transcript) if words_in_transcript else 0.0
     print(len(words_in_transcript), len(user_lexicon))
     # NOTE double check if we should calculate the lexical coverage with tokens or types
-    print(words_in_transcript.intersection(user_lexicon))
+    # print(words_in_transcript.intersection(user_lexicon))
     print(len(words_in_transcript.intersection(user_lexicon)))
 
     # Coverage with inference (assuming some words can be inferred)
