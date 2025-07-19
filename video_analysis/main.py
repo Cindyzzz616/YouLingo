@@ -1,3 +1,7 @@
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 import User
 import Video
 import transcript
@@ -28,8 +32,9 @@ def rank_videos(videos: list, user: User):
 
 if __name__ == "__main__":
     # process a single video
-    video = Video(path="etymology.MP4")
-    user = User()
+    video = Video.Video(path="video_analysis/etymology.MP4")
+    print(video.length)
+    user = User.User()
     difficulty_score = analyze_video_difficulty(video, user)
     print(f"Video Difficulty Score: {difficulty_score}")
 

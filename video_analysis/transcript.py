@@ -1,4 +1,4 @@
-import Video
+from video_analysis import Video
 import whisper
 
 def transcribe(video: Video):
