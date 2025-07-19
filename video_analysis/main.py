@@ -1,15 +1,11 @@
 import User
 import Video
-import transcript
-import audio
+
 import lexical_profile
 import lexical_coverage
-import speech_rate
 
 def analyze_video_difficulty(video: Video, user: User):
-    # preprocess the video
-    transcript = transcript(video)
-    audio = audio(video)
+
 
     # lexical factors
     lexical_profile = lexical_profile(transcript)
@@ -28,8 +24,14 @@ def rank_videos(videos: list, user: User):
 
 if __name__ == "__main__":
     # process a single video
-    video = Video(path="etymology.MP4")
-    user = User()
+    video = Video.Video(path="video_analysis/etymology.MP4")
+    print(video)
+    
+    user = User.User(3000)
+    print(f"User Lexicon: {user.lexicon}")
+
+    print(lexical_coverage.lexical_coverage(video, user))
+
     difficulty_score = analyze_video_difficulty(video, user)
     print(f"Video Difficulty Score: {difficulty_score}")
 
