@@ -49,7 +49,7 @@ if __name__ == "__main__":
     adjust_speech_rate(video, target_rate, target_type)
 
     target_rate = 0.8
-    target_type = 'spm'
+    target_type = 'factor'
     adjust_speech_rate(video, target_rate, target_type)
 
     target_rate = 100
