@@ -1,3 +1,4 @@
+import os
 from xml.parsers.expat import model
 from moviepy import VideoFileClip
 import whisper
@@ -84,14 +85,19 @@ class Video:
         return full_text
 
     def extract_audio(self):
-        """
-        Extract audio from the video and save it to the specified path. Return the path of the saved audio file.
-        """
-        video = VideoFileClip(self.path)
-        audio = video.audio
-        audio_path = self.path.replace(".MP4", "_audio.wav")
-        audio.write_audiofile(audio_path)
-        return audio_path
+        # Get base filename without extension
+        base_filename = os.path.basename(self.path).replace(".MP4", "_audio.wav")
+
+        # Define output directory and full path
+        output_dir = "video_analysis/audios"
+        os.makedirs(output_dir, exist_ok=True)
+        output_path = os.path.join(output_dir, base_filename)
+
+        # Extract and write audio
+        audio = VideoFileClip(self.path).audio
+        audio.write_audiofile(output_path)
+
+        return output_path
     
     def calculate_speech_length(self) -> float:
         """
