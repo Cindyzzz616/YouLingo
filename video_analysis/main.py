@@ -26,7 +26,8 @@ def rank_videos(videos: list, user: User):
 if __name__ == "__main__":
     # initialize a user with a given vocabulary size
     VOCAB_SIZE = 3000
-    user = User.User(VOCAB_SIZE)
+    L1 = 'nep'
+    user = User.User(VOCAB_SIZE, L1)
     # print(f"User Lexicon: {user.lexicon}")
 
     # process a single video

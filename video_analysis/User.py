@@ -1,4 +1,5 @@
 import pandas as pd
+import panphon
 
 # TODO need to figure out how to handle contractions - e.g. the t and s from "don't" and "someone's" are entered as distinct words
 # TODO should we treat words from our videos in the same way? like split them by apostrophes?
@@ -26,6 +27,10 @@ class User:
 
     # TODO could add a feature that calculates average vocab size from a user's CEFR level or other measures/tests
 
-    def __init__(self, vocab_size):
+    def __init__(self, vocab_size, l1):
         self.vocab_size = vocab_size
         self.lexicon = extract_top_words(vocab_size)
+        self.l1 = l1  # first language, e.g. 'en' for English
+    
+    def get_phonetic_inventory(self):
+        
