@@ -6,6 +6,15 @@ from faster_whisper import WhisperModel
 from VAT import compute_ptrs_from_audio
 # TODO don't forget you can export the whisper output as a subtitle .srt file
 from nltk.corpus import cmudict
+from g2p_en import G2p
+from arpa_to_ipa_map import arpabet_to_ipa_map
+# g2p contains info on lexical stress!
+# example usage:
+g2p = G2p()
+phonemes = g2p("The elephant is big.")
+print(phonemes)
+# Output: ['DH', 'AH0', ' ', 'EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T', ' ', 'IH1', 'Z', ' ', 'B', 'IH1', 'G', '.']
+
 
 # Load CMU dict
 d = cmudict.dict()
@@ -43,6 +52,7 @@ class Video:
         self.transcript_text = self.get_full_transcript()
         self.word_list = self.transcript_text.strip().split()
         self.word_count = len(self.word_list)
+        self.phoneme_list = self.get_phoneme_list()
         self.audio_path = self.extract_audio()
         self.wpm = self.calculate_wpm()
         self.spm = self.calculate_spm()
@@ -59,7 +69,8 @@ class Video:
             f"🕒 Words Per Minute: {self.wpm:.2f} WPM\n"
             f"📖 Word Count: {self.word_count}\n"
             f"🗣️ Syllables Per Minute: {self.spm:.2f} SPM\n"
-            f"📊 Average PTR: {self.average_ptr:.3f}"
+            f"📊 Average PTR: {self.average_ptr:.3f}\n"
+            f"🔡 Phoneme List: {self.phoneme_list}"
         )
     
     def calculate_length(self) -> float:
@@ -83,6 +94,34 @@ class Video:
         """
         full_text = " ".join([segment.text for segment in self.transcript["segments"]])
         return full_text
+        
+    def get_phoneme_list(self) -> list:
+        """
+        Get a list of phonemes from the transcript. Convert each phoneme from ARPAbet to IPA.
+        """
+        phoneme_list = []
+        for word in self.word_list:
+            # Get a list of ARPAbet phonemes in a word
+            arpabet_phonemes = g2p(word)
+
+            # Convert ARPAbet to IPA
+            ipa_phonemes = []
+            for phoneme in arpabet_phonemes:
+                # Handle stress markers if they are attached to vowels (e.g., AE1)
+                if len(phoneme) > 1 and phoneme[-1].isdigit():
+                    base_phoneme = phoneme[:-1]
+                    # TODO handle stress markers
+                    # stress_marker = phoneme[-1]
+                    if base_phoneme in arpabet_to_ipa_map:
+                        # ipa_phonemes.append(arpabet_to_ipa_map[stress_marker] + arpabet_to_ipa_map[base_phoneme])
+                        ipa_phonemes.append(arpabet_to_ipa_map[base_phoneme])
+                    else:
+                        ipa_phonemes.append(phoneme) # Keep original if not found
+                elif phoneme in arpabet_to_ipa_map:
+                    ipa_phonemes.append(arpabet_to_ipa_map[phoneme])
+            print(ipa_phonemes)
+            phoneme_list.append(ipa_phonemes)
+        return phoneme_list
 
     def extract_audio(self):
         # Get base filename without extension
@@ -133,6 +172,7 @@ class Video:
         spm = sps * 60
 
         return spm
+    
 
 # def compute_ptr_per_segment(self, pause_threshold=0.3):
 
