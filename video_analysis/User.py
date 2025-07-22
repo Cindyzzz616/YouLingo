@@ -1,11 +1,20 @@
 import pandas as pd
 import panphon
 
+# Load the phoneme inventory database
+phoneme_database = pd.read_csv(
+    "https://raw.githubusercontent.com/phoible/dev/master/data/phoible.csv",
+    low_memory=False
+)
+
+print(phoneme_database.columns.tolist())
+
 # TODO need to figure out how to handle contractions - e.g. the t and s from "don't" and "someone's" are entered as distinct words
 # TODO should we treat words from our videos in the same way? like split them by apostrophes?
 
 # Load the file (tab-delimited)
 df = pd.read_csv("video_analysis/SUBTLEXus74286wordstextversion.txt", sep='\t')
+
 
 # Sort by frequency in subtitles
 df_sorted = df.sort_values("FREQcount", ascending=False)
@@ -31,6 +40,9 @@ class User:
         self.vocab_size = vocab_size
         self.lexicon = extract_top_words(vocab_size)
         self.l1 = l1  # first language, e.g. 'en' for English
+        self.phonetic_inventory = self.get_phonetic_inventory()
     
     def get_phonetic_inventory(self):
-        pass
+        # Filter for a specific language
+        phonemes = phoneme_database[phoneme_database['LanguageName'] == self.l1]['Phoneme'].unique()
+        return phonemes
