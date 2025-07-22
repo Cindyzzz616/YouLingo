@@ -33,4 +33,4 @@ class User:
         self.l1 = l1  # first language, e.g. 'en' for English
     
     def get_phonetic_inventory(self):
-        
+        pass
