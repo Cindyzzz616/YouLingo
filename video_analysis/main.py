@@ -24,7 +24,7 @@ if __name__ == "__main__":
     # initialize a user with a given vocabulary size
     VOCAB_SIZE = 3000
     L1 = 'Nepali'
-    user = User.User(VOCAB_SIZE, L1)
+    user = User(VOCAB_SIZE, L1)
     print(user.phonetic_inventory)
     # print(f"User Lexicon: {user.lexicon}")
 
@@ -35,8 +35,8 @@ if __name__ == "__main__":
     print(video1)
 
     # lexical coverage
-    print(f"Lexical coverage: {lexical_coverage.lexical_coverage(video, user)}")
-    print(f"Lexical coverage: {lexical_coverage.lexical_coverage(video1, user)}")
+    print(f"Lexical coverage: {lexical_coverage(video, user)}")
+    print(f"Lexical coverage: {lexical_coverage(video1, user)}")
 
     # adjusting speech rate
     # target_rate = 150  # example target rate
