@@ -43,17 +43,20 @@ def get_words_with_unknown_phonemes(marked_word_list: dict):
             words_with_unknown_phonemes[word] = marked_word_list[word]
     return words_with_unknown_phonemes
 
-def phonetic_coverage_by_words(marked_word_list: dict, words_with_unknown_phonemes: dict):
+def phonetic_coverage_by_words(video: Video, user: User):
     """
     Compute the phonetic coverage scores based on the words in the marked word list.
     """
+    marked_word_list = get_marked_word_list(video, user)
+    words_with_unknown_phonemes = get_words_with_unknown_phonemes(marked_word_list)
     unknown_percentage = len(words_with_unknown_phonemes) / len(marked_word_list) if len(marked_word_list) > 0 else 0
     return 1 - unknown_percentage
 
-def phonetic_coverage_by_phonemes(marked_word_list: dict, user: User):
+def phonetic_coverage_by_phonemes(video: Video, user: User):
     """
     Compute the phonetic coverage scores based on the total phonemes in the marked word list.
     """
+    marked_word_list = get_marked_word_list(video, user)
     total_phonemes = []
     known_phonemes = []
     for word in marked_word_list.keys():
@@ -89,8 +92,8 @@ if __name__ == "__main__":
     words_with_unknown_phonemes = get_words_with_unknown_phonemes(marked_word_list)
     print(f"Words with unknown phonemes: {words_with_unknown_phonemes}")
 
-    word_coverage_score = phonetic_coverage_by_words(marked_word_list, words_with_unknown_phonemes)
+    word_coverage_score = phonetic_coverage_by_words(video, user)
     print(f"Word Coverage Score: {word_coverage_score:.3f}")
 
-    phoneme_coverage_score = phonetic_coverage_by_phonemes(marked_word_list, user)
+    phoneme_coverage_score = phonetic_coverage_by_phonemes(video, user)
     print(f"Phoneme Coverage Score: {phoneme_coverage_score:.3f}")
