@@ -1,5 +1,6 @@
 from Video import Video
 from User import User
+import test_objects
 
 def get_marked_word_list(video: Video, user: User):
     """
@@ -70,14 +71,17 @@ if __name__ == "__main__":
     # Example usage
 
     # Initialize a user with a given vocabulary size and first language
-    VOCAB_SIZE = 3000
-    L1 = 'Nepali'
-    user = User(VOCAB_SIZE, L1)
-    print(f"User's phonetic inventory: {user.phonetic_inventory}")
+    # VOCAB_SIZE = 3000
+    # L1 = 'Nepali'
+    # user = User(VOCAB_SIZE, L1)
+    # print(f"User's phonetic inventory: {user.phonetic_inventory}")
 
     # Initialize a video object
-    video = Video(path="video_analysis/videos/etymology.MP4")
-    print(video)
+    # video = Video(path="video_analysis/videos/etymology.MP4")
+    # print(video)
+
+    video = test_objects.video_linguistic_intelligence
+    user = test_objects.user
 
     marked_word_list = get_marked_word_list(video, user)
     print(f"Marked Word List: {marked_word_list}\n")
