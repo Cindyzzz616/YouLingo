@@ -1,5 +1,5 @@
 import pandas as pd
-import panphon
+# import panphon
 
 # Load the phoneme inventory database
 phoneme_database = pd.read_csv(
