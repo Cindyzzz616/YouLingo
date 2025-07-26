@@ -49,7 +49,7 @@ if __name__ == "__main__":
     # adjust_speech_rate(video, target_rate, target_type)
 
     # translating transcripts
-    translation = translate_text(video.transcript_text, to_code=user.l1)
+    translation = translate_text(video.transcript_text, to_lang=user.l1)
     print(f"Translated Transcript: {translation}")
 
     # overall difficulty (to be implemented)

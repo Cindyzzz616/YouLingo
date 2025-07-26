@@ -83,7 +83,7 @@ if __name__ == "__main__":
     # video = Video(path="video_analysis/videos/etymology.MP4")
     # print(video)
 
-    video = test_objects.video_linguistic_intelligence
+    video = test_objects.video_etymology
     user = test_objects.user
 
     marked_word_list = get_marked_word_list(video, user)
