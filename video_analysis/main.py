@@ -3,41 +3,34 @@
 from User import User
 from Video import Video
 
+import test_objects
+
 from lexical_coverage import lexical_coverage
+from phonetic_coverage import phonetic_coverage_by_phonemes, phonetic_coverage_by_words
 from adjust_speech_rate import adjust_speech_rate
+from translate import translate_text
+
+# Coefficients to weigh the factors in the difficulty score
+LEXICAL_WEIGHT = 0.4
+PHONETIC_WEIGHT = 0.3
 
 def analyze_video_difficulty(video: Video, user: User):
     # lexical factors
-    lex_cov = lexical_coverage(video, user)
+    lex_cov_raw = lexical_coverage(video, user)[0]
+    lex_cov_inferencing = lexical_coverage(video, user)[1]
 
     # phonetic factors
+    phon_cov_phonemes = phonetic_coverage_by_phonemes(video, user)
+    phon_cov_words = phonetic_coverage_by_words(video, user)
 
     # calculate difficulty score
-    difficulty_score = 0.0
+    difficulty_score = (LEXICAL_WEIGHT * lex_cov_raw) + (PHONETIC_WEIGHT * phon_cov_phonemes)
 
     return difficulty_score
 
-def rank_videos(videos: list, user: User):
-    pass
-
 if __name__ == "__main__":
-    # initialize a user with a given vocabulary size
-    VOCAB_SIZE = 3000
-    L1 = 'Nepali'
-    user = User.User(VOCAB_SIZE, L1)
-    print(user.phonetic_inventory)
-    # print(f"User Lexicon: {user.lexicon}")
-
-    # process a single video
-    video = Video(path="video_analysis/videos/linguistic_intelligence.MP4")
-    print(video)
-    video1 = Video(path="video_analysis/videos/etymology.MP4")
-    print(video1)
-
-    # lexical coverage
-    print(f"Lexical coverage: {lexical_coverage.lexical_coverage(video, user)}")
-    print(f"Lexical coverage: {lexical_coverage.lexical_coverage(video1, user)}")
-
+    video = test_objects.video_etymology
+    user = test_objects.user
     # adjusting speech rate
     # target_rate = 150  # example target rate
     # target_type = 'wpm'  # example target type
@@ -55,16 +48,20 @@ if __name__ == "__main__":
     # target_type = 'duration'
     # adjust_speech_rate(video, target_rate, target_type)
 
+    # translating transcripts
+    translation = translate_text(video.transcript_text, to_lang=user.l1)
+    print(f"Translated Transcript: {translation}")
+
     # overall difficulty (to be implemented)
     difficulty_score = analyze_video_difficulty(video, user)
     print(f"Video Difficulty Score: {difficulty_score}")
 
     # rank multiple videos
-    video_paths = ["video_analysis/video1.MP4", "video_analysis/video2.MP4"]
-    for path in video_paths:
-        video = Video(path=path)
-        difficulty_score = analyze_video_difficulty(video, user)
-        print(f"Video: {path}, Difficulty Score: {difficulty_score}")
-    ranking = rank_videos(video_paths, user)
-    print(f"Video Rankings: {ranking}")
+    # video_paths = ["video_analysis/video1.MP4", "video_analysis/video2.MP4"]
+    # for path in video_paths:
+    #     video = Video(path=path)
+    #     difficulty_score = analyze_video_difficulty(video, user)
+    #     print(f"Video: {path}, Difficulty Score: {difficulty_score}")
+    # ranking = rank_videos(video_paths, user)
+    # print(f"Video Rankings: {ranking}")
 

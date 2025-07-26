@@ -1,5 +1,8 @@
 import os
-from xml.parsers.expat import model
+import re
+# from xml.parsers.expat import model
+import pandas as pd
+import matplotlib.pyplot as plt
 from moviepy import VideoFileClip
 import whisper
 from faster_whisper import WhisperModel
@@ -8,13 +11,22 @@ from VAT import compute_ptrs_from_audio
 from nltk.corpus import cmudict
 from g2p_en import G2p
 from arpa_to_ipa_map import arpabet_to_ipa_map
+
+# Load the frequency dictionary
+freq_dict = pd.read_csv("video_analysis/SUBTLEXus74286wordstextversion.txt", sep='\t')
+
 # g2p contains info on lexical stress!
 # example usage:
 g2p = G2p()
-phonemes = g2p("The elephant is big.")
+phonemes = g2p("The elephant is big. You're Tara's friend! My friend's name is chief-inspector, or father in law.")
 print(phonemes)
 # Output: ['DH', 'AH0', ' ', 'EH1', 'L', 'AH0', 'F', 'AH0', 'N', 'T', ' ', 'IH1', 'Z', ' ', 'B', 'IH1', 'G', '.']
 
+# Load the phoneme inventory database
+phoneme_database = pd.read_csv(
+    "https://raw.githubusercontent.com/phoible/dev/master/data/phoible.csv",
+    low_memory=False
+)
 
 # Load CMU dict
 d = cmudict.dict()
@@ -50,13 +62,14 @@ class Video:
         self.length = self.calculate_length()
         self.speech_length = self.calculate_speech_length()
         self.transcript_text = self.get_full_transcript()
-        self.word_list = self.transcript_text.strip().split()
+        self.word_list = self.get_word_list()
         self.word_count = len(self.word_list)
         self.phoneme_list = self.get_phoneme_list()
         self.audio_path = self.extract_audio()
         self.wpm = self.calculate_wpm()
         self.spm = self.calculate_spm()
         self.average_ptr = compute_ptrs_from_audio(self.audio_path)
+        self.word_list_frequency = self.compute_word_list_frequency()
         # TODO could also calculate average syllables/word, etc.
 
     def __str__(self):
@@ -94,10 +107,21 @@ class Video:
         """
         full_text = " ".join([segment.text for segment in self.transcript["segments"]])
         return full_text
-        
+    
+    def get_word_list(self) -> list:
+        """
+        Get a list of words from the transcript.
+        """
+        # Split on any sequence of whitespace or punctuation
+        tokens = re.split(r"[^\w']+", self.transcript_text)
+
+        # Remove empty strings
+        tokens = [t for t in tokens if t]
+        return tokens
+
     def get_phoneme_list(self) -> list:
         """
-        Get a list of phonemes from the transcript. Convert each phoneme from ARPAbet to IPA.
+        Get a list of phonemes of each word from the transcript. Convert each phoneme from ARPAbet to IPA.
         """
         phoneme_list = []
         for word in self.word_list:
@@ -119,7 +143,6 @@ class Video:
                         ipa_phonemes.append(phoneme) # Keep original if not found
                 elif phoneme in arpabet_to_ipa_map:
                     ipa_phonemes.append(arpabet_to_ipa_map[phoneme])
-            print(ipa_phonemes)
             phoneme_list.append(ipa_phonemes)
         return phoneme_list
 
@@ -173,6 +196,63 @@ class Video:
 
         return spm
     
+    def compute_word_list_frequency(self):
+        """
+        Compute the frequency of each word in the transcript.
+        Returns a dictionary with words as keys and their frequencies as values.
+        """
+        word_to_freq = {}
+        for word in self.word_list:
+            word = word.lower()
+            if word in freq_dict['Word'].values:
+                freq = freq_dict[freq_dict['Word'] == word]['FREQcount'].values[0]
+                word_to_freq[word] = freq
+            else:
+                word_to_freq[word] = 0
+        return word_to_freq
+    
+    def compute_word_frequency_average(self):
+        """
+        Compute the average frequency of words in the transcript.
+        Returns the average frequency as a float.
+        """
+        if not self.word_list_frequency:
+            return 0.0
+        total_freq = sum(self.word_list_frequency.values())
+        average_freq = total_freq / len(self.word_list_frequency)
+        return average_freq
+    
+    def compute_word_frequency_variance(self):
+        """
+        Compute the variance of word frequencies in the transcript.
+        Returns the variance as a float.
+        """
+        if not self.word_list_frequency:
+            return 0.0
+        average_freq = self.compute_word_frequency_average()
+        variance = sum((freq - average_freq) ** 2 for freq in self.word_list_frequency.values()) / len(self.word_list_frequency)
+        return variance
+
+if __name__ == "__main__":
+    # Example usage
+    video = Video(path="video_analysis/videos/linguistic_intelligence.MP4")
+    print(video)
+
+    # Print word list frequency
+    print(f"Word List Frequency: {video.word_list_frequency}")
+    print(f"Average Word Frequency: {video.compute_word_frequency_average()}")
+    print(f"Variance of Word Frequencies: {video.compute_word_frequency_variance()}")
+
+    # Plot a histogram with word frequencies
+    frequencies = list(video.word_list_frequency.values())
+    plt.hist(frequencies, bins=100, edgecolor='black', align='left')
+    plt.xlabel('Word Frequency')
+    plt.ylabel('Number of Unique Words')
+    plt.title('Distribution of Word Frequencies')
+    # plt.xticks(range(1, max(frequencies)+1))  # Show integer ticks
+    plt.show()
+
+
 
 # def compute_ptr_per_segment(self, pause_threshold=0.3):
 
