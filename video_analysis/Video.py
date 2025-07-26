@@ -71,7 +71,7 @@ class Video:
         self.audio_path = self.extract_audio()
         self.wpm = self.calculate_wpm()
         self.spm = self.calculate_spm()
-        self.average_ptr = compute_ptrs_from_audio(self.audio_path)
+        self.average_ptr = compute_ptrs_from_audio(self.audio_path) # TODO this is NOT correct bc this only has pauses between sentences
         self.word_list_frequency = self.compute_word_list_frequency()
         self.word_list_tags = self.get_word_list_tags()
         # TODO could also calculate average syllables/word, etc.
