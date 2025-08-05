@@ -1,11 +1,13 @@
 # NOTE do we want to aim for a specific phonation time ratio?
-
-from moviepy import VideoFileClip, concatenate_videoclips, vfx
-
+import moviepy
+from moviepy import VideoFileClip, concatenate_videoclips, vfx, video
+from moviepy.video.fx.Freeze import Freeze
+2
 from Video import Video
 from test_objects import video_etymology
 
 def insert_pauses(video: Video, adjustment_factor: float):
+    """A test function that inserts pauses at a specific point in time."""
     # Load full video
     clip = VideoFileClip(video.path)
 
@@ -24,5 +26,32 @@ def insert_pauses(video: Video, adjustment_factor: float):
     final.write_videofile(output_path)
     print(output_path)
 
+def insert_pauses_between_sentences(video: Video, pause_duration: float):
+    clip = VideoFileClip(video.path)
+    total_freeze_duration = 0
+
+    for segment in video.transcript['segments']:
+        print(segment.start)
+        print(segment.text)
+        print(segment.end)
+
+        # Create a freeze effect
+        freeze_effect = Freeze(t=segment.end + total_freeze_duration, freeze_duration=pause_duration).copy()
+
+        # Apply the effect to your clip
+        clip = freeze_effect.apply(clip)
+
+        # increment the total freeze duration
+        total_freeze_duration += pause_duration
+    
+    
+    # Export final video
+    output_path = 'video_analysis/videos/' + video.path.split('/')[-1].replace(
+        ".MP4", f"_pauses_inserted_between_sentences_{pause_duration}_seconds.MP4"
+    )
+    clip.write_videofile(output_path)
+    print(output_path)
+
 if __name__ == "__main__":
-    insert_pauses(video_etymology, 0.5)
+    # insert_pauses(video_etymology, 0.5)
+    insert_pauses_between_sentences(video_etymology, 2)
