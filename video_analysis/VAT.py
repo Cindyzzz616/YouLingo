@@ -98,12 +98,19 @@ def get_voiced_intervals_from_audio(audio_path):
     # for segment in segments:
     #     print(f"[{segment.start:.2f} - {segment.end:.2f}] {segment.text}")
 
-    for seg in segments:
-        print(f"Segment {seg.start:.2f}-{seg.end:.2f} has words: {seg.words is not None}")
+    # for seg in segments:
+    #     print(f"Segment {seg.start:.2f}-{seg.end:.2f} has words: {seg.words is not None}")
+    #     print(seg.words)
+    #     if seg.words is not None:
+    #         for word in seg.words:
+    #             print(word.start)
+    #             print(word.end)
+
     
     for segment in segments:
-        for word in segment.words:
-            print(f"{word['word']} [{word['start']:.2f} - {word['end']:.2f}]")
+        if segment.words is not None:
+            for word in segment.words:
+                print(f"{word.word} [{word.start:.4f} - {word.end:.4f}]")
 
     return segments
 
