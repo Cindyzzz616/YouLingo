@@ -1,4 +1,5 @@
 # TODO should I change the data structure of words so they contain all their relevant info? Like syntactic category, frequency, etc
+# so like having a Word object
 
 import os
 import re
