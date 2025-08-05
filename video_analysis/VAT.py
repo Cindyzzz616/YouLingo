@@ -7,6 +7,8 @@ from faster_whisper import WhisperModel
 
 from pydub import AudioSegment
 
+# can't user video from test_objects bc it results in a circular import
+
 def preprocess_audio(path):
     audio = AudioSegment.from_file(path)
     audio = audio.set_channels(1)       # mono
@@ -21,7 +23,7 @@ def wav_from_video(video_path, wav_path="temp.wav"):
     import subprocess
     subprocess.run(["ffmpeg", "-y", "-i", video_path, "-ar", "16000", "-ac", "1", wav_path])
 
-def get_voiced_intervals(wav_path, aggressiveness=2, frame_duration_ms=30):
+def get_voiced_intervals(wav_path, aggressiveness=3, frame_duration_ms=10):
     vad = webrtcvad.Vad(aggressiveness)
     audio = AudioSegment.from_wav(wav_path)
     samples = audio.raw_data
@@ -71,6 +73,7 @@ def compute_ptrs(segments, voiced_intervals):
 def compute_ptrs_from_audio(audio_path):
     """
     Compute PTR (Phonation Time Ratio) from an audio file.
+    NOTE this is from Whisper, not webrtcvad!
     """
     processed_path = preprocess_audio(audio_path)
     voiced_intervals = get_voiced_intervals(processed_path)
@@ -81,3 +84,40 @@ def compute_ptrs_from_audio(audio_path):
     # print(ptrs)
     print(f"Average PTR: {average_ptr:.3f}")
     return average_ptr
+
+def get_voiced_intervals_from_audio(audio_path):
+    processed_path = preprocess_audio(audio_path)
+    model = WhisperModel("base", compute_type="int8")  # or "medium", "large"
+    segments, _ = model.transcribe(processed_path, word_timestamps=True)
+
+    # for segment in segments:
+    #     print(segment)
+    #     print(f"Text: {segment.text}")
+    #     print(f"Words: {segment.words}")
+
+    # for segment in segments:
+    #     print(f"[{segment.start:.2f} - {segment.end:.2f}] {segment.text}")
+
+    for seg in segments:
+        print(f"Segment {seg.start:.2f}-{seg.end:.2f} has words: {seg.words is not None}")
+    
+    for segment in segments:
+        for word in segment.words:
+            print(f"{word['word']} [{word['start']:.2f} - {word['end']:.2f}]")
+
+    return segments
+
+if __name__ == "__main__":
+    audio_path = "/Users/cindyzhang/YouLingo/video_analysis/audios/etymology_audio.wav"
+    processed_path = preprocess_audio(audio_path)
+
+    # use webrtcvad to get voicing intervals for the entire video
+    intervals = get_voiced_intervals(processed_path)
+    print(intervals) # a list of tuples with start and end times - need to do start time - end time to find the gaps
+
+    # use whisper to get intervals of sentences
+    whisper_intervals = get_voiced_intervals_from_audio(audio_path)
+    print(whisper_intervals)
+
+    # within each sentence, use webrtcvad to get voicing intervals???
+

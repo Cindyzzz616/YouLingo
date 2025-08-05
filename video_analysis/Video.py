@@ -1,3 +1,5 @@
+# TODO should I change the data structure of words so they contain all their relevant info? Like syntactic category, frequency, etc
+
 import os
 import re
 # from xml.parsers.expat import model
@@ -11,6 +13,7 @@ from VAT import compute_ptrs_from_audio
 from nltk.corpus import cmudict
 from g2p_en import G2p
 from arpa_to_ipa_map import arpabet_to_ipa_map
+import nltk
 
 # Load the frequency dictionary
 freq_dict = pd.read_csv("video_analysis/SUBTLEXus74286wordstextversion.txt", sep='\t')
@@ -68,8 +71,9 @@ class Video:
         self.audio_path = self.extract_audio()
         self.wpm = self.calculate_wpm()
         self.spm = self.calculate_spm()
-        self.average_ptr = compute_ptrs_from_audio(self.audio_path)
+        self.average_ptr = compute_ptrs_from_audio(self.audio_path) # TODO this is NOT correct bc this only has pauses between sentences
         self.word_list_frequency = self.compute_word_list_frequency()
+        self.word_list_tags = self.get_word_list_tags()
         # TODO could also calculate average syllables/word, etc.
 
     def __str__(self):
@@ -232,6 +236,12 @@ class Video:
         average_freq = self.compute_word_frequency_average()
         variance = sum((freq - average_freq) ** 2 for freq in self.word_list_frequency.values()) / len(self.word_list_frequency)
         return variance
+    
+    def get_word_list_tags(self):
+        tokens = nltk.word_tokenize(' '.join(self.word_list))
+        tags = nltk.pos_tag(tokens)
+        # tags is a tuple of strings
+        return tags
 
 if __name__ == "__main__":
     # Example usage
@@ -242,6 +252,7 @@ if __name__ == "__main__":
     print(f"Word List Frequency: {video.word_list_frequency}")
     print(f"Average Word Frequency: {video.compute_word_frequency_average()}")
     print(f"Variance of Word Frequencies: {video.compute_word_frequency_variance()}")
+    print(f"Tags: {video.word_list_tags}")
 
     # Plot a histogram with word frequencies
     frequencies = list(video.word_list_frequency.values())
