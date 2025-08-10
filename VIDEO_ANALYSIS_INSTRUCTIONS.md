@@ -44,6 +44,7 @@ Folders:
 ## TODOs
 
 - [x] fix language_code
+- [ ] when recognizing transcripts, add something to check whether the video has speech and what language the speech is in... or basically detect all the properties in my tiktok resampling table
 - [ ] fix calculate ptr stuff in Video
 - [ ] get better corpus for word frequency (or just deal with contractions and apostrophes in general, and count by word families not words)
 - [ ] add speaker diarization to get number of speakers in a video
