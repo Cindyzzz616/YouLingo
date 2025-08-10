@@ -5,6 +5,7 @@
 
 import os
 import re
+from pathlib import Path
 import pandas as pd
 import matplotlib.pyplot as plt
 from moviepy import VideoFileClip
@@ -41,10 +42,10 @@ class Video:
     wpm: float = -1.0  # Default value for speech rate in words per minute
     tokens: list[Word]
 
-    def __init__(self, path: str):
+    def __init__(self, path: str, audio_folder: str):
         # File paths
         self.path = path # the video path
-        self.audio_path = self.extract_audio()
+        self.audio_path = self.extract_audio(audio_folder)
 
         # Transcript attributes
         self.transcript = self.transcribe() # a transcript object from Whisper
@@ -79,20 +80,34 @@ class Video:
             f"📊 Average PTR: {self.average_ptr:.3f}\n"
         )
     
-    def extract_audio(self):
-        # Get base filename without extension
-        base_filename = os.path.basename(self.path).replace(".MP4", "_audio.wav")
+    # def extract_audio(self, audio_folder: str):
+    #     # Get base filename without extension
+    #     base_filename = os.path.basename(self.path).replace(".MP4", "_audio.wav")
 
-        # Define output directory and full path
-        output_dir = "video_analysis/audios"
-        os.makedirs(output_dir, exist_ok=True)
-        output_path = os.path.join(output_dir, base_filename)
+    #     # Define output directory and full path
+    #     output_dir = audio_folder
+    #     os.makedirs(output_dir, exist_ok=True)
+    #     output_path = os.path.join(output_dir, base_filename)
 
-        # Extract and write audio
-        audio = VideoFileClip(self.path).audio
-        audio.write_audiofile(output_path)
+    #     # Extract and write audio
+    #     audio = VideoFileClip(self.path).audio
+    #     audio.write_audiofile(output_path)
 
-        return output_path
+    #     return output_path
+    
+    def extract_audio(self, audio_folder: str):
+        # Ensure output directory exists
+        output_dir = Path(audio_folder)
+        output_dir.mkdir(parents=True, exist_ok=True)
+
+        # Build audio file name (preserve stem, change extension)
+        output_path = output_dir / f"{Path(self.path).stem}_audio.wav"
+
+        # Extract audio and save
+        with VideoFileClip(self.path) as video:
+            video.audio.write_audiofile(str(output_path))
+
+        return str(output_path)
     
     def transcribe(self):
         """

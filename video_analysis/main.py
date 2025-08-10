@@ -1,5 +1,8 @@
 # NOTE in general, I need some function or module that takes in data from both a video and a user
 
+from pathlib import Path
+import pickle
+
 from User import User
 from Video import Video
 
@@ -35,15 +38,40 @@ def analyze_video_difficulty(video: Video, user: User):
 
     return difficulty_score
 
+def process_videos_in_folder(video_folder_path: str, audio_folder_path: str) -> list[Video]:
+    # TODO pickle the video objects? idk how much time that saves
+    video_list = []
+
+    # Path to your folder
+    video_dir = Path(video_folder_path)
+
+    # Define allowed video extensions (lowercase)
+    video_exts = {".mp4", ".mov", ".avi", ".mkv"}
+
+    # Iterate over matching files
+    for video_path in video_dir.iterdir():
+        if video_path.suffix.lower() in video_exts:
+            path = str(video_path.resolve())  # absolute path
+            video_list.append(Video(path, audio_folder_path))
+
+    return video_list
+    
+
 ### the driver for the entire video analysis algorithm ###
 
 if __name__ == "__main__":
-    video = test_objects.video_etymology
-    user = test_objects.user
+    # video = test_objects.video_etymology
+    # user = test_objects.user
 
-    # Displaying video and user data
-    print(video)
-    print(user)
+    # # Displaying video and user data
+    # print(video)
+    # print(user)
+
+    # Processing videos in a folder
+    video_subset = process_videos_in_folder("video_analysis/sampled_videos_subset", 
+                                            "video_analysis/sampled_audios_subset")
+    for video in video_subset:
+        print(video)
 
     # Modifying videos and saving them as new files
     # adjust speech rate
@@ -51,13 +79,12 @@ if __name__ == "__main__":
 
 
     # Translating transcripts
-    translation = translate_text(video.transcript_text, to_lang=user.l1)
-    print(f"Translated Transcript: {translation}")
+    # translation = translate_text(video.transcript_text, to_lang=user.l1)
+    # print(f"Translated Transcript: {translation}")
 
     # Displaying difficulty score (to be implemented)
-
-    difficulty_score = analyze_video_difficulty(video, user)
-    print(f"Video Difficulty Score: {difficulty_score}")
+    # difficulty_score = analyze_video_difficulty(video, user)
+    # print(f"Video Difficulty Score: {difficulty_score}")
 
     # Ranking multiple videos
     # video_paths = ["video_analysis/video1.MP4", "video_analysis/video2.MP4"]

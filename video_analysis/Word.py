@@ -1,12 +1,10 @@
 import re
+import math
 import pandas as pd
 import nltk
-# from nltk.corpus import cmudict
 from g2p_en import G2p
-from external_data.arpa_to_ipa_map import arpabet_to_ipa_map
+from external_data.arpa_to_ipa_map import ARPABET_TO_IPA_MAP
 from functional_load import FL_INITIAL_CONSONANTS, FL_FINAL_CONSONANTS
-
-# from Word import Word
 
 ##### Loading dictionaries #####
 
@@ -129,22 +127,27 @@ class Word:
                 base_phoneme = phoneme[:-1]
                 # TODO handle stress markers
                 # stress_marker = phoneme[-1]
-                if base_phoneme in arpabet_to_ipa_map:
-                    # ipa_phonemes.append(arpabet_to_ipa_map[stress_marker] + arpabet_to_ipa_map[base_phoneme])
-                    ipa_phonemes.append(arpabet_to_ipa_map[base_phoneme])
+                if base_phoneme in ARPABET_TO_IPA_MAP:
+                    # ipa_phonemes.append(ARPABET_TO_IPA_MAP[stress_marker] + ARPABET_TO_IPA_MAP[base_phoneme])
+                    ipa_phonemes.append(ARPABET_TO_IPA_MAP[base_phoneme])
                 else:
                     ipa_phonemes.append(phoneme) # Keep original if not found
-            elif phoneme in arpabet_to_ipa_map:
-                ipa_phonemes.append(arpabet_to_ipa_map[phoneme])
+            elif phoneme in ARPABET_TO_IPA_MAP:
+                ipa_phonemes.append(ARPABET_TO_IPA_MAP[phoneme])
         return ipa_phonemes
     
     def get_phonological_neighbours(self):
         word = self.text
         if word in CLEARPOND_DATA['Word'].values:
             neighbours = CLEARPOND_DATA[CLEARPOND_DATA['Word'] == word]['ePTAW'].values[0]
-            neighbours = neighbours.split(';')
+            if isinstance(neighbours, str):
+                neighbours = neighbours.split(';')
+            else:
+                neighbours = []
             number = CLEARPOND_DATA[CLEARPOND_DATA['Word'] == word]['ePTAN'].values[0]
             frequency = CLEARPOND_DATA[CLEARPOND_DATA['Word'] == word]['ePTAF'].values[0]
+            if math.isnan(frequency):
+                frequency = 0.0
         else:
             neighbours = []
             number = -1
@@ -155,7 +158,7 @@ class Word:
         initial_consonant = self.phonemes[0]
         for pair in FL_INITIAL_CONSONANTS:
             if initial_consonant in pair:
-                return FL_FINAL_CONSONANTS[pair]
+                return FL_INITIAL_CONSONANTS[pair]
         return -1
     
     def calculate_final_consonant_fl(self):
@@ -167,5 +170,5 @@ class Word:
 
 ##### Example usage #####
 if __name__ == '__main__':
-    word = Word("that")
+    word = Word("without")
     print(word)
