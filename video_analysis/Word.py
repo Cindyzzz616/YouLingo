@@ -4,6 +4,7 @@ import nltk
 # from nltk.corpus import cmudict
 from g2p_en import G2p
 from external_data.arpa_to_ipa_map import arpabet_to_ipa_map
+from functional_load import FL_INITIAL_CONSONANTS, FL_FINAL_CONSONANTS
 
 # from Word import Word
 
@@ -24,6 +25,11 @@ CLEARPOND_DATA = pd.read_csv("video_analysis/external_data/englishCPdatabase2.tx
                              sep='\t',
                              encoding='latin1')
 CLEARPOND_DATA.columns = CLEARPOND_HEADERS
+
+# Finding the set of phonemes with known FL values
+# NOTE didn't end up using these
+INITIAL_PHONEMES = {ph for pair in FL_INITIAL_CONSONANTS.keys() for ph in pair}
+FINAL_PHONEMES = {ph for pair in FL_FINAL_CONSONANTS.keys() for ph in pair}
 
 # Creating the Grapheme to Phoneme (G2P) object
 g2p = G2p()
@@ -53,7 +59,8 @@ class Word:
         self.phonological_neighbours_list = self.get_phonological_neighbours()[0]
         self.phonological_neighbours_number = self.get_phonological_neighbours()[1]
         self.phonological_neighbours_frequency = self.get_phonological_neighbours()[2]
-
+        self.initial_consonant_fl = self.calculate_initial_consonant_fl()
+        self.final_consonant_fl = self.calculate_final_consonant_fl()
 
     def __str__(self):
         return (
@@ -66,6 +73,8 @@ class Word:
             f"List of phonological neighbours: {self.phonological_neighbours_list}\n"
             f"Number of phonological neighbours: {self.phonological_neighbours_number}\n"
             f"Neighbourhood frequency: {self.phonological_neighbours_frequency}\n"
+            f"Functional load of initial consonant: {self.initial_consonant_fl}\n"
+            f"Functional load of final consonant: {self.final_consonant_fl}\n"
         )
 
     def count_syllables(self) -> int:
@@ -141,6 +150,20 @@ class Word:
             number = -1
             frequency = -1
         return [neighbours, number, frequency]
+
+    def calculate_initial_consonant_fl(self):
+        initial_consonant = self.phonemes[0]
+        for pair in FL_INITIAL_CONSONANTS:
+            if initial_consonant in pair:
+                return FL_FINAL_CONSONANTS[pair]
+        return -1
+    
+    def calculate_final_consonant_fl(self):
+        final_consonant = self.phonemes[-1]
+        for pair in FL_FINAL_CONSONANTS:
+            if final_consonant in pair:
+                return FL_FINAL_CONSONANTS[pair]
+        return -1
 
 ##### Example usage #####
 if __name__ == '__main__':

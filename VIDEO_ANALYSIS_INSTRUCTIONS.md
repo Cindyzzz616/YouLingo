@@ -43,13 +43,13 @@ Folders:
 
 ## TODOs
 
-- [ ] fix language_code
+- [x] fix language_code
 - [ ] fix calculate ptr stuff in Video
 - [ ] get better corpus for word frequency (or just deal with contractions and apostrophes in general, and count by word families not words)
 - [ ] add speaker diarization to get number of speakers in a video
 - [ ] fix pitch issue after adjusting speed
 - [x] phonological neighbours
-- [ ] FL
+- [x] FL (NOTE: we can also see how often a specific user confuses two phonemes in transcription exercises - and make a confusion matrix based on that; can also combine FL and phonetic overlap - if a word has a sound with high FL, but that sound/distinction is in the user's L1 inventory, then it's probably less likely to be confused than otherwise)
 
 ## Metrics to potentially add
 
