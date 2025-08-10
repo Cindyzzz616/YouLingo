@@ -10,10 +10,20 @@ from external_data.arpa_to_ipa_map import arpabet_to_ipa_map
 ##### Loading dictionaries #####
 
 # Loading CMU dictionary
-cmu_dict = nltk.corpus.cmudict.dict()
+CMU_DICT = nltk.corpus.cmudict.dict()
 
 # Loading the frequency dictionary
-freq_dict = pd.read_csv("video_analysis/external_data/sublexus_corpus.txt", sep='\t')
+FREQ_DICT = pd.read_csv("video_analysis/external_data/sublexus_corpus.txt", sep='\t')
+
+# Getting headers for CLEARPOND data: Read each line, strip newline characters, ignore empty lines
+with open("video_analysis/external_data/clearpondHeaders_EN.txt", "r", encoding="utf-8") as f:
+    CLEARPOND_HEADERS = [line.strip() for line in f if line.strip()]
+
+# Loading the CLEARPOND data (for phonological neighbourhood)
+CLEARPOND_DATA = pd.read_csv("video_analysis/external_data/englishCPdatabase2.txt", 
+                             sep='\t',
+                             encoding='latin1')
+CLEARPOND_DATA.columns = CLEARPOND_HEADERS
 
 # Creating the Grapheme to Phoneme (G2P) object
 g2p = G2p()
@@ -40,7 +50,10 @@ class Word:
         self.tags = self.get_tags()
         self.frequency = self.calculate_frequency()
         self.phonemes = self.get_phonemes()
-        # self.phonological_neighbours = self.get_phonological_neighbours()
+        self.phonological_neighbours_list = self.get_phonological_neighbours()[0]
+        self.phonological_neighbours_number = self.get_phonological_neighbours()[1]
+        self.phonological_neighbours_frequency = self.get_phonological_neighbours()[2]
+
 
     def __str__(self):
         return (
@@ -50,6 +63,9 @@ class Word:
             f"Tags: {self.tags}\n"
             f"Frequency: {self.frequency}\n"
             f"Phonemes: {self.phonemes}\n"
+            f"List of phonological neighbours: {self.phonological_neighbours_list}\n"
+            f"Number of phonological neighbours: {self.phonological_neighbours_number}\n"
+            f"Neighbourhood frequency: {self.phonological_neighbours_frequency}\n"
         )
 
     def count_syllables(self) -> int:
@@ -57,10 +73,10 @@ class Word:
         Count the number of syllables in a word.
         """
         word = self.text.lower()
-        if word in cmu_dict:
+        if word in CMU_DICT:
             # Some words have multiple pronunciations — take the first one
             return max([len([phoneme for phoneme in pron if phoneme[-1].isdigit()])
-                        for pron in cmu_dict[word]])
+                        for pron in CMU_DICT[word]])
         else:
             # Very rough fallback for syllable counting: count vowel groups.
             return len(re.findall(r"[aeiouy]+", word.lower()))
@@ -81,8 +97,8 @@ class Word:
         Returns -1 if the word is not in the corpus.
         """
         word = self.text
-        if word in freq_dict['Word'].values:
-            freq = freq_dict[freq_dict['Word'] == word]['FREQcount'].values[0]
+        if word in FREQ_DICT['Word'].values:
+            freq = FREQ_DICT[FREQ_DICT['Word'] == word]['FREQcount'].values[0]
         else:
             freq = -1
         return freq
@@ -113,7 +129,20 @@ class Word:
                 ipa_phonemes.append(arpabet_to_ipa_map[phoneme])
         return ipa_phonemes
     
-    # def get_phonological_neighbours(self):
-    #     # TODO to instantiate
-    #     phonological_neighbours = []
-    #     return phonological_neighbours
+    def get_phonological_neighbours(self):
+        word = self.text
+        if word in CLEARPOND_DATA['Word'].values:
+            neighbours = CLEARPOND_DATA[CLEARPOND_DATA['Word'] == word]['ePTAW'].values[0]
+            neighbours = neighbours.split(';')
+            number = CLEARPOND_DATA[CLEARPOND_DATA['Word'] == word]['ePTAN'].values[0]
+            frequency = CLEARPOND_DATA[CLEARPOND_DATA['Word'] == word]['ePTAF'].values[0]
+        else:
+            neighbours = []
+            number = -1
+            frequency = -1
+        return [neighbours, number, frequency]
+
+##### Example usage #####
+if __name__ == '__main__':
+    word = Word("that")
+    print(word)

@@ -48,7 +48,7 @@ Folders:
 - [ ] get better corpus for word frequency (or just deal with contractions and apostrophes in general, and count by word families not words)
 - [ ] add speaker diarization to get number of speakers in a video
 - [ ] fix pitch issue after adjusting speed
-- [ ] phonological neighbours
+- [x] phonological neighbours
 - [ ] FL
 
 ## Metrics to potentially add
