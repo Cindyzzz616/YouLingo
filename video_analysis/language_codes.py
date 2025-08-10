@@ -1,7 +1,27 @@
 import pandas as pd
 import csv
 
-LANG_REPLACEMENTS = {
+##### Read data files and define replacement dictionaries #####
+
+# We are converting between several sets of codes: 
+# - ISO 639-3: three-letter codes meant to cover all languages
+# - ISO 639-1: two-letter codes meant to cover major languages
+# - Language names
+
+# Language codes are involved when we do the following:
+# - Translate a transcript from a user's target language to their native language
+# --- for this we use Argos Translate; we need to provide a *ISO 6393-1* code to Argos
+# - Get a user's phonetic inventory given their native language (to calculate phonetic overlap)
+# --- for this we use Phoible
+
+ISO6393_REGISTRY_PATH = "video_analysis/external_data/iso-639-3.txt"
+ARGOS_LANGUAGES_PATH = 'video_analysis/external_data/argos_languages.csv'
+PHOIBLE_PATH = "video_analysis/external_data/phoible.csv"
+PHOIBLE_DF = pd.read_csv(PHOIBLE_PATH, low_memory=False)
+
+# Some languages are encoded as their respective dialects in Phoible
+# For these, we need to replace their official ISO 639-3 code with the code of one of their their dialects
+CODE_REPLACEMENTS = {
     'sqi': 'als',
     'ara': 'arb',
     'ave': 'NA',
@@ -66,7 +86,7 @@ LANG_REPLACEMENTS = {
     'zha': 'NA'
 }
 
-LANG_REPLACEMENTS_NAMES = {
+LANG_NAME_REPLACEMENTS = {
     'als': 'Albanian',
     'arb': 'Arabic',
     'ayr': 'Aymara',
@@ -92,6 +112,9 @@ LANG_REPLACEMENTS_NAMES = {
 }
 
 def extract_iso_codes_from_argos(file_path):
+    """
+    Return a list of ISO 6393-1 codes that represents available languages in Argos. There are 183 languages.
+    """
     iso_codes = []
     with open(file_path, mode='r', encoding='utf-8') as file:
         reader = csv.reader(file)
@@ -101,6 +124,9 @@ def extract_iso_codes_from_argos(file_path):
     return iso_codes
 
 def map_iso6391_to_6393(tsv_file_path, iso6391_codes):
+    """
+    Returns a dictionary with ISO 639-1 codes as keys, and ISO 639-3 codes as values.
+    """
     mapping = {}
     with open(tsv_file_path, mode='r', encoding='utf-8') as file:
         reader = csv.DictReader(file, delimiter='\t')
@@ -115,6 +141,9 @@ def map_iso6391_to_6393(tsv_file_path, iso6391_codes):
     return result
 
 def map_iso6391_to_language_name(tsv_file_path, iso6391_codes):
+    """
+    Return a dictionary with ISO 639-1 codes as keys, and languages names from the ISO registry as values.
+    """
     mapping = {}
     with open(tsv_file_path, mode='r', encoding='utf-8') as file:
         reader = csv.DictReader(file, delimiter='\t')
@@ -167,28 +196,26 @@ def find_argos_langs_in_phoible(df_phoible, iso6393_codes):
 def reverse_lookup_iso6391_from_phoible_name(
     phoible_lang_name,
     iso6393_to_iso6391_map,
-    argos_iso6391_list
-):
+    argos_iso6391_list):
     """
     Given a Phoible language name, return the ISO 639-1 code used in Argos Translate.
     """
-    phoible_df = pd.read_csv(phoible_file_path)
 
     # Step 1: Find ISO 639-3 code for the Phoible language
-    match = phoible_df[phoible_df['LanguageName'].str.strip().str.lower() == phoible_lang_name.strip().lower()]
+    match = PHOIBLE_DF[PHOIBLE_DF['LanguageName'].str.strip().str.lower() == phoible_lang_name.strip().lower()]
     
     if match.empty:
         return None, "Language not found in Phoible"
     
     iso6393_code = match['ISO6393'].values[0].strip()
 
-    if iso6393_code in LANG_REPLACEMENTS_NAMES.keys():
-        rev_map_names = {v: k for k, v in LANG_REPLACEMENTS.items()}
+    if iso6393_code in LANG_NAME_REPLACEMENTS.keys():
+        rev_map_names = {v: k for k, v in CODE_REPLACEMENTS.items()}
         iso6393_code = rev_map_names[iso6393_code]
     
     # Step 2: Check for replacement (if needed)
-    if iso6393_code in LANG_REPLACEMENTS.values():
-        for k, v in LANG_REPLACEMENTS.items():
+    if iso6393_code in CODE_REPLACEMENTS.values():
+        for k, v in CODE_REPLACEMENTS.items():
             if v == iso6393_code:
                 iso6391_code = k
                 break
@@ -205,45 +232,36 @@ def reverse_lookup_iso6391_from_phoible_name(
     else:
         return iso6391_code, "Mapped but not in Argos"
 
-# Example usage
-file_path = 'video_analysis/argos_languages.csv'  # Replace with your file path
-codes = extract_iso_codes_from_argos(file_path)
-print(codes)
-print(len(codes))
 
-# Sample list of ISO 639-1 codes
-iso6391_list = codes  # 'xx' is invalid on purpose
+##### Running the functions #####
 
-# Path to the tab-separated ISO 639-3 registry file
-tsv_file_path = "video_analysis/iso-639-3.txt"  # Replace with your actual path
+argos_6391_list = extract_iso_codes_from_argos(ARGOS_LANGUAGES_PATH)
+iso_mapping = map_iso6391_to_6393(ISO6393_REGISTRY_PATH, argos_6391_list)
+iso_language_names = map_iso6391_to_language_name(ISO6393_REGISTRY_PATH, argos_6391_list)
 
-iso_mapping = map_iso6391_to_6393(tsv_file_path, iso6391_list)
-iso_language_names = map_iso6391_to_language_name(tsv_file_path, iso6391_list)
-
-for code1, code3 in iso_mapping.items():
-    print(f"{code1} → {code3}")
-
-for code1, lang_name in iso_language_names.items():
-    print(f"{code1} → {lang_name}")
-
-# Find Argos languages in Phoible
-phoible_file_path = "video_analysis/phoible.csv"
-phoible_df = pd.read_csv(phoible_file_path)
+# Create a list of Argos languages in ISO 639-3
 argos_langs_6393 = [code for code in iso_mapping.values() if code is not None]
-phoible_langs = find_argos_langs_in_phoible(phoible_df, argos_langs_6393)
-for code3, lang_name in phoible_langs.items():
-    if lang_name:
-        print(f"{code3} → {lang_name}")
-    elif LANG_REPLACEMENTS[code3] != 'NA':
-        print(f"{code3} → {LANG_REPLACEMENTS_NAMES[LANG_REPLACEMENTS[code3]]}")
-    else: 
-        print(f"{code3} → Not found in Phoible")
 
-argos_iso6391_list = extract_iso_codes_from_argos('video_analysis/argos_languages.csv')
-iso_mapping = map_iso6391_to_6393("video_analysis/iso-639-3.txt", argos_iso6391_list)
+# A dictionary of languages that are in both Argos and Phoible (since Phoible has a much larger set of languages)
+# The keys are ISO 639-3 codes, the values are language names in Phoible
+phoible_langs = find_argos_langs_in_phoible(PHOIBLE_DF, argos_langs_6393)
+for code in phoible_langs.keys():
+    if not phoible_langs[code]:
+        if CODE_REPLACEMENTS[code] != 'NA':
+            phoible_langs[code] = LANG_NAME_REPLACEMENTS[CODE_REPLACEMENTS[code]]
+        else:
+            phoible_langs[code] = 'NA'
 
-# Lookup
-code, status = reverse_lookup_iso6391_from_phoible_name(
-    "Mandarin Chinese", iso_mapping, argos_iso6391_list
-)
-print(f"ISO 639-1 Code: {code}, Status: {status}")
+
+##### Example usage #####
+
+if __name__ == '__main__':
+    # Check all the languages supported by Phoible and Argos Translate
+    for code in phoible_langs.keys():
+        print(f"{code}: {phoible_langs[code]}")
+
+    # Look up a language
+    code, status = reverse_lookup_iso6391_from_phoible_name(
+        "bashkir", iso_mapping, argos_6391_list
+    )
+    print(f"ISO 639-1 Code: {code}, Status: {status}")

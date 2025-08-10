@@ -1,3 +1,5 @@
+# NOTE this is supposed to parse a sentence into syntactic constituents, so that we can insert pauses at appropriate locations.
+
 # import stanza
 # # stanza.download('en')
 
@@ -39,7 +41,7 @@
 import spacy
 
 nlp = spacy.load("en_core_web_sm")
-doc = nlp("The quick brown fox jumps over the lazy dog.")
+doc = nlp("There were only two ways to get out of this mess if they all worked together. The problem was that neither was all that appealing. One would likely cause everyone a huge amount of physical pain while the other would likely end up with everyone in jail. In Sam's mind, there was only one thing to do. He threw everyone else under the bus and he secretly sprinted away leaving the others to take the fall without him.")
 
 print(doc)
 

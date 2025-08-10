@@ -10,6 +10,13 @@ from phonetic_coverage import phonetic_coverage_by_phonemes, phonetic_coverage_b
 from adjust_speech_rate import adjust_speech_rate
 from translate import translate_text
 
+### An example of the simplest formula for difficulty score: a rating for each factor (out of 100 perhaps?), 
+# multiplied by coefficients that represent the factor's weight. So we also need to find a way to convert each
+# raw measurement into a percentage rating. But the main objective of the new study is basically to find the
+# coefficients (or fit a new formula to the actual data on the independent vs dependent variable graph)
+# NOTE: not sure if the difficulty score needs to be relative to a user or an absolute score (relative to the
+# language as a whole?)
+
 # Coefficients to weigh the factors in the difficulty score
 LEXICAL_WEIGHT = 0.4
 PHONETIC_WEIGHT = 0.3
@@ -28,35 +35,31 @@ def analyze_video_difficulty(video: Video, user: User):
 
     return difficulty_score
 
+### the driver for the entire video analysis algorithm ###
+
 if __name__ == "__main__":
     video = test_objects.video_etymology
     user = test_objects.user
-    # adjusting speech rate
-    # target_rate = 150  # example target rate
-    # target_type = 'wpm'  # example target type
-    # adjust_speech_rate(video, target_rate, target_type)
-    
-    # target_rate = 200
-    # target_type = 'spm'
-    # adjust_speech_rate(video, target_rate, target_type)
 
-    # target_rate = 0.8
-    # target_type = 'factor'
-    # adjust_speech_rate(video, target_rate, target_type)
+    # Displaying video and user data
+    print(video)
+    print(user)
 
-    # target_rate = 100
-    # target_type = 'duration'
-    # adjust_speech_rate(video, target_rate, target_type)
+    # Modifying videos and saving them as new files
+    # adjust speech rate
+    # translation
 
-    # translating transcripts
+
+    # Translating transcripts
     translation = translate_text(video.transcript_text, to_lang=user.l1)
     print(f"Translated Transcript: {translation}")
 
-    # overall difficulty (to be implemented)
+    # Displaying difficulty score (to be implemented)
+
     difficulty_score = analyze_video_difficulty(video, user)
     print(f"Video Difficulty Score: {difficulty_score}")
 
-    # rank multiple videos
+    # Ranking multiple videos
     # video_paths = ["video_analysis/video1.MP4", "video_analysis/video2.MP4"]
     # for path in video_paths:
     #     video = Video(path=path)

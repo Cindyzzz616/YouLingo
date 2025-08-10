@@ -1,13 +1,13 @@
 import webrtcvad
-import collections
 from pydub import AudioSegment
-import contextlib
-import wave
 from faster_whisper import WhisperModel
 
-from pydub import AudioSegment
+# unused imports
+# import collections
+# import contextlib
+# import wave
 
-# can't user video from test_objects bc it results in a circular import
+# can't use video from test_objects bc it results in a circular import
 
 def preprocess_audio(path):
     audio = AudioSegment.from_file(path)
