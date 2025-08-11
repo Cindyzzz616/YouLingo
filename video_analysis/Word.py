@@ -1,6 +1,8 @@
 import re
 import math
 import pandas as pd
+from pathlib import Path
+from collections import defaultdict
 import nltk
 from g2p_en import G2p
 from external_data.arpa_to_ipa_map import ARPABET_TO_IPA_MAP
@@ -13,6 +15,38 @@ CMU_DICT = nltk.corpus.cmudict.dict()
 
 # Loading the frequency dictionary
 FREQ_DICT = pd.read_csv("video_analysis/external_data/sublexus_corpus.txt", sep='\t')
+
+# Reading the word family frequency database
+
+file_path = Path("/mnt/data/basewrd1.txt")
+
+families = defaultdict(list)
+current_head = None
+
+with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
+    for line in f:
+        line = line.strip()
+        if not line:
+            continue
+        
+        # Split into word and frequency
+        match = re.match(r"([A-Za-z']+)\s+(\d+)", line)
+        if not match:
+            continue
+        word, freq = match.groups()
+        freq = int(freq)
+        
+        # Headword: no leading tab
+        if not line.startswith("\t"):
+            current_head = word
+            families[current_head].append((word, freq))
+        else:
+            families[current_head].append((word, freq))
+
+# Example: print first 3 families
+for head, members in list(families.items())[:3]:
+    print(head, "→", members)
+
 
 # Getting headers for CLEARPOND data: Read each line, strip newline characters, ignore empty lines
 with open("video_analysis/external_data/clearpondHeaders_EN.txt", "r", encoding="utf-8") as f:
@@ -53,6 +87,7 @@ class Word:
         self.syllable_count = self.count_syllables()
         self.tags = self.get_tags()
         self.frequency = self.calculate_frequency()
+        self.word_family_frequency = self.calculate_family_frequency()
         self.phonemes = self.get_phonemes()
         self.phonological_neighbours_list = self.get_phonological_neighbours()[0]
         self.phonological_neighbours_number = self.get_phonological_neighbours()[1]
@@ -109,6 +144,9 @@ class Word:
         else:
             freq = -1
         return freq
+    
+    def calculate_family_frequency(self):
+        pass
     
     def get_phonemes(self):
         """

@@ -14,6 +14,7 @@ from faster_whisper import WhisperModel
 from Word import Word
 from VAT import preprocess_audio
 from VAT import get_voiced_intervals_webrtcvad
+from diarization import diarize
 
 # Unused imports
 # from xml.parsers.expat import model
@@ -53,10 +54,12 @@ class Video:
         self.transcript = self.transcribe() # a transcript object from Whisper
         self.transcript_text = self.get_full_transcript()
         self.language = self.get_language()
+        self.number_of_speakers = diarize(self.audio_path)
 
         # Length attributes
         self.length = self.calculate_length()
-        self.speech_length = self.calculate_speech_length() # a rougher estimate of the amount of time where there's articulation
+        self.vad_duration = self.calculate_speech_length()[0] # duration of voice activation detection
+        self.total_segment_length = self.calculate_speech_length()[1] # duration of all transcript segments/sentences
 
         if self.language != 'en':
             # Lexical attributes
@@ -84,14 +87,17 @@ class Video:
             f"🎬 Video path: {self.path}\n"
             f"🎤 Audio Path: {self.audio_path}\n"
             f"📝 Transcript Preview: {self.transcript_text}\n"
+            f"🌏 Language: {self.language}\n"
+            f"👫 Number of speakers: {self.number_of_speakers}\n"
             f"⏱️ Total Length: {self.length:.2f} seconds\n"
-            f"🗣️ Speech Length: {self.speech_length:.2f} seconds\n"
+            f"🗣️ VAD duration: {self.vad_duration:.2f} seconds\n"
+            f"💬 Total segment length: {self.total_segment_length:.2f} seconds\n"
             f"Lexical properties:\n"            
             f"📖 Word Count: {self.word_count} words\n"
             f"Phonological properties:\n"
             f"🕒 Words Per Minute: {self.wpm:.2f} WPM\n"
             f"🗣️ Syllables Per Minute: {self.spm:.2f} SPM\n"
-            f"📊 Average PTR: {self.average_ptr}\n"
+            f"📊 Average PTR: {self.average_ptr:.2f}\n"
         )
     
     # def extract_audio(self, audio_folder: str):
@@ -151,19 +157,18 @@ class Video:
         clip = VideoFileClip(self.path)
         return clip.duration  # in seconds
     
-    def calculate_speech_length(self) -> float:
+    def calculate_speech_length(self):
         """
         Calculate the total speech length in seconds from the transcript.
         """
-        return self.transcript["info"].duration_after_vad
 
         # The old way of calculating speech length: subtracting duration of all sentences from total duration of video
-        # total_duration = 0.0
-        # for segment in self.transcript["segments"]:
-        #     start = segment.start
-        #     end = segment.end
-        #     total_duration += (end - start)
-        # return total_duration
+        total_duration = 0.0
+        for segment in self.transcript["segments"]:
+            start = segment.start
+            end = segment.end
+            total_duration += (end - start)
+        return self.transcript["info"].duration_after_vad, total_duration
     
     def get_tokens(self) -> list:
         """
@@ -207,7 +212,7 @@ class Video:
         Calculate the speech rate in words per minute (WPM).
         """
 
-        wps = self.word_count / self.speech_length if self.speech_length > 0 else 0
+        wps = self.word_count / self.vad_duration if self.vad_duration > 0 else 0
         wpm = wps * 60
 
         return wpm
@@ -220,7 +225,7 @@ class Video:
         for word in self.tokens:
             total_syllables += word.syllable_count
 
-        sps = total_syllables / self.speech_length if self.speech_length > 0 else 0
+        sps = total_syllables / self.vad_duration if self.vad_duration > 0 else 0
         spm = sps * 60
 
         return spm
@@ -276,6 +281,9 @@ class Video:
                 "voiced_time": round(voiced_time, 6),
                 "ptr": round(ptr, 6),
             })
+            print(voiced, "\n")
+            print(segments, "\n")
+            print(results, "\n")
 
             total_ptr = 0
             total_segs = len(results)
@@ -304,7 +312,7 @@ class Video:
 
 if __name__ == "__main__":
     # Example usage
-    video = Video(path="video_analysis/videos/etymology.MP4", audio_folder="video_analysis/audios")
+    video = Video(path="video_analysis/videos/prank.MP4", audio_folder="video_analysis/audios")
     print(video)
 
     # print(video.transcript["info"], "\n")

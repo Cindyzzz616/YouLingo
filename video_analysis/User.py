@@ -33,19 +33,20 @@ class User:
     """
 
     l1: str
-    vocab_size: int
+    net_vocab_size: int
 
     # TODO could add a feature that calculates average vocab size from a user's CEFR level or other measures/tests
 
-    def __init__(self, vocab_size, l1):
-        self.vocab_size = vocab_size
-        self.lexicon = extract_top_words(vocab_size)
+    def __init__(self, net_vocab_size, l1, word_family_size=1000):
+        self.net_vocab_size = net_vocab_size
+        self.word_family_size = word_family_size
+        self.lexicon = extract_top_words(net_vocab_size)
         self.l1 = l1  # language name (as in phoible) of first language
         self.phonetic_inventory = self.get_phonetic_inventory()
 
     def __str__(self):
         return (
-            f"🔢 Vocabulary size: {self.vocab_size}\n"
+            f"🔢 Vocabulary size: {self.net_vocab_size}\n"
             f"🔠 Lexicon (first 100 words): {self.lexicon[:100]}\n"
             f"🗣️ First language: {self.l1}\n"
             f"📚 Phonetic inventory of first language: {self.phonetic_inventory}\n"
