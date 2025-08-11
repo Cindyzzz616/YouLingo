@@ -53,7 +53,8 @@ Folders:
 - [ ] background noise levels?
 - [ ] handle code switching somehow
 - [x] fix calculate ptr stuff in Video
-- [ ] get better corpus for word frequency (or just deal with contractions and apostrophes in general, and count by word families not words)
+- [x] get better corpus for word frequency (or just deal with contractions and apostrophes in general, and count by word families not words)
+- [ ] handle contractions!!!
 - [x] add speaker diarization to get number of speakers in a video
 - [ ] fix pitch issue after adjusting speed
 - [x] phonological neighbours

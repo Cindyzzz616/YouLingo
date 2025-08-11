@@ -2,42 +2,51 @@
 # NOTE don't forget that we didn't use implement word families in this code, only surface forms of words
 # NOTE we need a better function to estimate inference percentage
 
-from User import User
-from Video import Video
-
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
+import pickle
+
+from User import User
+from Video import Video
 
 L = 82.42
 k = 0.59
 x0 = 89.10
+
+# Reading the word family frequency database
+with open("video_analysis/external_data/word_families.pkl", "rb") as f:
+    WORD_FAMILIES = pickle.load(f)
 
 def logistic(x, L, k, x0):
     return L / (1 + np.exp(-k * (x - x0)))
 
 def lexical_coverage(video: Video, user: User) -> tuple:
     """
-    Calculate lexical coverage of a transcript against a user's lexicon.
+    Calculate lexical coverage of a transcript against a user's lexicon of word families.
     Use types, not tokens.
-    
-    :param transcript: A dictionary containing the transcript text.
-    :param user: An instance of User containing the user's lexicon.
-    :return: A tuple containing raw coverage and coverage with inference.
     """
+    overlapping_families = {}
     words_in_transcript = video.types
-    user_lexicon = set(user.lexicon) # NOTE shouldn't need to use set because the users's lexicon contains unique words only.
-    
-    # Raw coverage
-    raw_coverage = len(words_in_transcript.intersection(user_lexicon)) / len(words_in_transcript) if words_in_transcript else 0.0
-    print(len(words_in_transcript), len(user_lexicon))
-    # NOTE double check if we should calculate the lexical coverage with tokens or types
-    # print(words_in_transcript.intersection(user_lexicon))
-    print(len(words_in_transcript.intersection(user_lexicon)))
+    # TODO what if a two types in a video belong to the same family?
+    for word_obj in words_in_transcript:
+        word = word_obj.text
+        for head in user.family_lexicon.keys():
+            for w, f in user.family_lexicon[head]:
+                if w.lower() == word.lower():
+                    overlapping_families[head] = user.family_lexicon[head]
+    print(overlapping_families)
+    raw_coverage = len(overlapping_families)/len(video.types)
+
+    # # Old coverage calculation based on surface form of words
+    # # Raw coverage
+    # raw_coverage = len(words_in_transcript.intersection(user_lexicon)) / len(words_in_transcript) if words_in_transcript else 0.0
+    # print(len(words_in_transcript), len(user_lexicon))
+    # # print(words_in_transcript.intersection(user_lexicon))
+    # print(len(words_in_transcript.intersection(user_lexicon)))
 
     # Coverage with inference (assuming some words can be inferred)
     inference_percentage = logistic(raw_coverage * 100, L, k, x0) / 100
-    print(inference_percentage)
     inferred_coverage = raw_coverage + (1 - raw_coverage) * inference_percentage
 
     return raw_coverage, inferred_coverage

@@ -170,7 +170,7 @@ class Video:
             total_duration += (end - start)
         return self.transcript["info"].duration_after_vad, total_duration
     
-    def get_tokens(self) -> list:
+    def get_tokens(self) -> list[Word]:
         """
         Get a list of words (tokens) from the transcript. Repeated words are counted as different tokens.
         """
@@ -281,9 +281,9 @@ class Video:
                 "voiced_time": round(voiced_time, 6),
                 "ptr": round(ptr, 6),
             })
-            print(voiced, "\n")
-            print(segments, "\n")
-            print(results, "\n")
+            # print(voiced, "\n")
+            # print(segments, "\n")
+            # print(results, "\n")
 
             total_ptr = 0
             total_segs = len(results)
@@ -312,7 +312,7 @@ class Video:
 
 if __name__ == "__main__":
     # Example usage
-    video = Video(path="video_analysis/videos/prank.MP4", audio_folder="video_analysis/audios")
+    video = Video(path="video_analysis/videos/etymology.MP4", audio_folder="video_analysis/audios")
     print(video)
 
     # print(video.transcript["info"], "\n")
