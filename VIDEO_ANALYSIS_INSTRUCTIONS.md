@@ -44,8 +44,15 @@ Folders:
 ## TODOs
 
 - [x] fix language_code
-- [ ] when recognizing transcripts, add something to check whether the video has speech and what language the speech is in... or basically detect all the properties in my tiktok resampling table
-- [ ] fix calculate ptr stuff in Video
+- [ ] fix syntax parsing (not super necessary though for the tiktok random sampling)
+- [ ] add mean sentence length attribute (and other ones from here: [text](https://chatgpt.com/share/6899654a-fa3c-8010-b05f-924e6585c457))
+- [ ] add proximity of native language's language family to target language?
+- [ ] add lexical profile if we're doing sampling on just the videos (need to be able to calculate lexical coverage for any user)
+- [ ] when recognizing transcripts, add something to check whether the video has speech and what language the speech is in... or basically detect all the properties in my tiktok resampling table; or check confidence of recognition for each segment
+- [ ] add music detection
+- [ ] background noise levels?
+- [ ] handle code switching somehow
+- [x] fix calculate ptr stuff in Video
 - [ ] get better corpus for word frequency (or just deal with contractions and apostrophes in general, and count by word families not words)
 - [ ] add speaker diarization to get number of speakers in a video
 - [ ] fix pitch issue after adjusting speed
