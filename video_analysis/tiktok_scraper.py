@@ -1,3 +1,6 @@
+# NOTE not quite working - might try a different API
+# NOTE can get video metadata but can't download
+
 from TikTokApi import TikTokApi
 import asyncio
 import os

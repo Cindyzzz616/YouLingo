@@ -1,6 +1,6 @@
 # NOTE don't forget to return two measures of coverage: raw coverage and coverage with inference
 # NOTE don't forget that we didn't use implement word families in this code, only surface forms of words
-# NOTE should we calculate the type-token ratio?
+# NOTE we need a better function to estimate inference percentage
 
 from User import User
 from Video import Video
@@ -19,13 +19,14 @@ def logistic(x, L, k, x0):
 def lexical_coverage(video: Video, user: User) -> tuple:
     """
     Calculate lexical coverage of a transcript against a user's lexicon.
+    Use types, not tokens.
     
     :param transcript: A dictionary containing the transcript text.
     :param user: An instance of User containing the user's lexicon.
     :return: A tuple containing raw coverage and coverage with inference.
     """
-    words_in_transcript = set(video.word_list)
-    user_lexicon = set(user.lexicon)
+    words_in_transcript = video.types
+    user_lexicon = set(user.lexicon) # NOTE shouldn't need to use set because the users's lexicon contains unique words only.
     
     # Raw coverage
     raw_coverage = len(words_in_transcript.intersection(user_lexicon)) / len(words_in_transcript) if words_in_transcript else 0.0

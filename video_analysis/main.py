@@ -1,5 +1,8 @@
 # NOTE in general, I need some function or module that takes in data from both a video and a user
 
+from pathlib import Path
+import pickle
+
 from User import User
 from Video import Video
 
@@ -9,6 +12,13 @@ from lexical_coverage import lexical_coverage
 from phonetic_coverage import phonetic_coverage_by_phonemes, phonetic_coverage_by_words
 from adjust_speech_rate import adjust_speech_rate
 from translate import translate_text
+
+### An example of the simplest formula for difficulty score: a rating for each factor (out of 100 perhaps?), 
+# multiplied by coefficients that represent the factor's weight. So we also need to find a way to convert each
+# raw measurement into a percentage rating. But the main objective of the new study is basically to find the
+# coefficients (or fit a new formula to the actual data on the independent vs dependent variable graph)
+# NOTE: not sure if the difficulty score needs to be relative to a user or an absolute score (relative to the
+# language as a whole?)
 
 # Coefficients to weigh the factors in the difficulty score
 LEXICAL_WEIGHT = 0.4
@@ -28,35 +38,55 @@ def analyze_video_difficulty(video: Video, user: User):
 
     return difficulty_score
 
-if __name__ == "__main__":
-    video = test_objects.video_etymology
-    user = test_objects.user
-    # adjusting speech rate
-    # target_rate = 150  # example target rate
-    # target_type = 'wpm'  # example target type
-    # adjust_speech_rate(video, target_rate, target_type)
+def process_videos_in_folder(video_folder_path: str, audio_folder_path: str) -> list[Video]:
+    # TODO pickle the video objects? idk how much time that saves
+    video_list = []
+
+    # Path to your folder
+    video_dir = Path(video_folder_path)
+
+    # Define allowed video extensions (lowercase)
+    video_exts = {".mp4", ".mov", ".avi", ".mkv"}
+
+    # Iterate over matching files
+    for video_path in video_dir.iterdir():
+        if video_path.suffix.lower() in video_exts:
+            path = str(video_path.resolve())  # absolute path
+            video_list.append(Video(path, audio_folder_path))
+
+    return video_list
     
-    # target_rate = 200
-    # target_type = 'spm'
-    # adjust_speech_rate(video, target_rate, target_type)
 
-    # target_rate = 0.8
-    # target_type = 'factor'
-    # adjust_speech_rate(video, target_rate, target_type)
+### the driver for the entire video analysis algorithm ###
 
-    # target_rate = 100
-    # target_type = 'duration'
-    # adjust_speech_rate(video, target_rate, target_type)
+if __name__ == "__main__":
+    # video = test_objects.video_etymology
+    # user = test_objects.user
 
-    # translating transcripts
-    translation = translate_text(video.transcript_text, to_lang=user.l1)
-    print(f"Translated Transcript: {translation}")
+    # # Displaying video and user data
+    # print(video)
+    # print(user)
 
-    # overall difficulty (to be implemented)
-    difficulty_score = analyze_video_difficulty(video, user)
-    print(f"Video Difficulty Score: {difficulty_score}")
+    # Processing videos in a folder
+    video_subset = process_videos_in_folder("video_analysis/sampled_videos_subset", 
+                                            "video_analysis/sampled_audios_subset")
+    for video in video_subset:
+        print(video)
 
-    # rank multiple videos
+    # Modifying videos and saving them as new files
+    # adjust speech rate
+    # translation
+
+
+    # Translating transcripts
+    # translation = translate_text(video.transcript_text, to_lang=user.l1)
+    # print(f"Translated Transcript: {translation}")
+
+    # Displaying difficulty score (to be implemented)
+    # difficulty_score = analyze_video_difficulty(video, user)
+    # print(f"Video Difficulty Score: {difficulty_score}")
+
+    # Ranking multiple videos
     # video_paths = ["video_analysis/video1.MP4", "video_analysis/video2.MP4"]
     # for path in video_paths:
     #     video = Video(path=path)

@@ -1,6 +1,7 @@
 from moviepy import VideoFileClip, vfx
 
 from Video import Video
+from test_objects import video_etymology
 
 def adjust_speech_rate(video: Video, target: float, target_type: str):
     """
@@ -36,3 +37,22 @@ def adjust_speech_rate(video: Video, target: float, target_type: str):
     )
 
     adjusted_clip.write_videofile(output_path)
+
+if __name__ == '__main__':
+    video = video_etymology
+    
+    target_rate = 150  # example target rate
+    target_type = 'wpm'  # example target type
+    adjust_speech_rate(video, target_rate, target_type)
+    
+    target_rate = 200
+    target_type = 'spm'
+    adjust_speech_rate(video, target_rate, target_type)
+
+    target_rate = 0.8
+    target_type = 'factor'
+    adjust_speech_rate(video, target_rate, target_type)
+
+    target_rate = 100
+    target_type = 'duration'
+    adjust_speech_rate(video, target_rate, target_type)
