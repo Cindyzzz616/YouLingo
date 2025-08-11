@@ -58,15 +58,26 @@ class Video:
         self.length = self.calculate_length()
         self.speech_length = self.calculate_speech_length() # a rougher estimate of the amount of time where there's articulation
 
-        # Lexical attributes
-        self.tokens = self.get_tokens()
-        self.types = set(self.tokens)
-        self.word_count = len(self.tokens)
+        if self.language != 'en':
+            # Lexical attributes
+            self.tokens = []
+            self.types = {}
+            self.word_count = -1
 
-        # Phonological attributes
-        self.wpm = self.calculate_wpm() # words per minute
-        self.spm = self.calculate_spm() # syllables per minute
-        self.average_ptr = self.voiced_slices_for_segments() # TODO this is NOT correct bc this only has pauses between sentences
+            # Phonological attributes
+            self.wpm = -1
+            self.spm = -1
+            self.average_ptr = -1
+        else:
+            # Lexical attributes
+            self.tokens = self.get_tokens()
+            self.types = set(self.tokens)
+            self.word_count = len(self.tokens)
+
+            # Phonological attributes
+            self.wpm = self.calculate_wpm() # words per minute
+            self.spm = self.calculate_spm() # syllables per minute
+            self.average_ptr = self.voiced_slices_for_segments()
 
     def __str__(self):
         return (
@@ -295,7 +306,7 @@ if __name__ == "__main__":
     # Example usage
     video = Video(path="video_analysis/videos/etymology.MP4", audio_folder="video_analysis/audios")
     print(video)
-    
+
     # print(video.transcript["info"], "\n")
     # print(video.transcript["info"].duration, type(video.transcript["info"].duration))
     # print(video.transcript["info"].duration_after_vad, type(video.transcript["info"].duration_after_vad))
