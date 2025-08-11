@@ -1,8 +1,7 @@
 import re
 import math
 import pandas as pd
-from pathlib import Path
-from collections import defaultdict
+import pickle
 import nltk
 from g2p_en import G2p
 from external_data.arpa_to_ipa_map import ARPABET_TO_IPA_MAP
@@ -17,36 +16,8 @@ CMU_DICT = nltk.corpus.cmudict.dict()
 FREQ_DICT = pd.read_csv("video_analysis/external_data/sublexus_corpus.txt", sep='\t')
 
 # Reading the word family frequency database
-
-file_path = Path("/mnt/data/basewrd1.txt")
-
-families = defaultdict(list)
-current_head = None
-
-with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
-    for line in f:
-        line = line.strip()
-        if not line:
-            continue
-        
-        # Split into word and frequency
-        match = re.match(r"([A-Za-z']+)\s+(\d+)", line)
-        if not match:
-            continue
-        word, freq = match.groups()
-        freq = int(freq)
-        
-        # Headword: no leading tab
-        if not line.startswith("\t"):
-            current_head = word
-            families[current_head].append((word, freq))
-        else:
-            families[current_head].append((word, freq))
-
-# Example: print first 3 families
-for head, members in list(families.items())[:3]:
-    print(head, "→", members)
-
+with open("video_analysis/external_data/word_families.pkl", "rb") as f:
+    WORD_FAMILIES = pickle.load(f)
 
 # Getting headers for CLEARPOND data: Read each line, strip newline characters, ignore empty lines
 with open("video_analysis/external_data/clearpondHeaders_EN.txt", "r", encoding="utf-8") as f:
@@ -86,8 +57,8 @@ class Word:
         self.length = len(text)
         self.syllable_count = self.count_syllables()
         self.tags = self.get_tags()
-        self.frequency = self.calculate_frequency()
-        self.word_family_frequency = self.calculate_family_frequency()
+        self.frequency = self.calculate_frequency()[0]
+        self.word_family_frequency = self.calculate_frequency()[1]
         self.phonemes = self.get_phonemes()
         self.phonological_neighbours_list = self.get_phonological_neighbours()[0]
         self.phonological_neighbours_number = self.get_phonological_neighbours()[1]
@@ -101,7 +72,8 @@ class Word:
             f"Length: {self.length}\n"
             f"Syllable count: {self.syllable_count}\n"
             f"Tags: {self.tags}\n"
-            f"Frequency: {self.frequency}\n"
+            f"Word frequency: {self.frequency}\n"
+            f"Family frequency: {self.word_family_frequency}\n"
             f"Phonemes: {self.phonemes}\n"
             f"List of phonological neighbours: {self.phonological_neighbours_list}\n"
             f"Number of phonological neighbours: {self.phonological_neighbours_number}\n"
@@ -138,15 +110,23 @@ class Word:
         Returns a dictionary with words as keys and their frequencies as values.
         Returns -1 if the word is not in the corpus.
         """
-        word = self.text
-        if word in FREQ_DICT['Word'].values:
-            freq = FREQ_DICT[FREQ_DICT['Word'] == word]['FREQcount'].values[0]
-        else:
-            freq = -1
-        return freq
-    
-    def calculate_family_frequency(self):
-        pass
+        # # should probably just dump the old FREQ_DICT
+        # word = self.text
+        # if word in FREQ_DICT['Word'].values:
+        #     freq = FREQ_DICT[FREQ_DICT['Word'] == word]['FREQcount'].values[0]
+        # else:
+        #     freq = -1
+        # return freq
+
+        for level in WORD_FAMILIES.keys():
+            families = WORD_FAMILIES[level]
+            for head in families.keys():
+                for w, f in families[head]:
+                    if w.lower() == self.text.lower():
+                        word_freq = f
+                        fam_freq = families[head][0][1]
+                        return word_freq, fam_freq
+        return -1, -1
     
     def get_phonemes(self):
         """
@@ -208,5 +188,5 @@ class Word:
 
 ##### Example usage #####
 if __name__ == '__main__':
-    word = Word("without")
+    word = Word("prettier")
     print(word)
