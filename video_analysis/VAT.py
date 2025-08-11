@@ -23,7 +23,7 @@ def wav_from_video(video_path, wav_path="temp.wav"):
     import subprocess
     subprocess.run(["ffmpeg", "-y", "-i", video_path, "-ar", "16000", "-ac", "1", wav_path])
 
-def get_voiced_intervals(wav_path, aggressiveness=3, frame_duration_ms=10):
+def get_voiced_intervals_webrtcvad(wav_path, aggressiveness=3, frame_duration_ms=10):
     vad = webrtcvad.Vad(aggressiveness)
     audio = AudioSegment.from_wav(wav_path)
     samples = audio.raw_data
@@ -49,7 +49,11 @@ def get_voiced_intervals(wav_path, aggressiveness=3, frame_duration_ms=10):
         voiced_intervals.append((start, len(samples) / (sample_rate * 2)))
     return voiced_intervals
 
+
 def compute_ptrs(segments, voiced_intervals):
+    """
+    This deals with segments in a whisper transcript.
+    """
     ptrs = []
     ptrs_list = []
     for seg in segments:
@@ -76,7 +80,7 @@ def compute_ptrs_from_audio(audio_path):
     NOTE this is from Whisper, not webrtcvad!
     """
     processed_path = preprocess_audio(audio_path)
-    voiced_intervals = get_voiced_intervals(processed_path)
+    voiced_intervals = get_voiced_intervals_webrtcvad(processed_path)
     model = WhisperModel("base", compute_type="int8")  # or "medium", "large"
     segments, _ = model.transcribe(processed_path, word_timestamps=True)
     ptrs, average_ptr = compute_ptrs(segments, voiced_intervals)
@@ -85,7 +89,7 @@ def compute_ptrs_from_audio(audio_path):
     print(f"Average PTR: {average_ptr:.3f}")
     return average_ptr
 
-def get_voiced_intervals_from_audio(audio_path):
+def get_voiced_intervals_whisper(audio_path):
     processed_path = preprocess_audio(audio_path)
     model = WhisperModel("base", compute_type="int8")  # or "medium", "large"
     segments, _ = model.transcribe(processed_path, word_timestamps=True)
@@ -119,11 +123,12 @@ if __name__ == "__main__":
     processed_path = preprocess_audio(audio_path)
 
     # use webrtcvad to get voicing intervals for the entire video
-    intervals = get_voiced_intervals(processed_path)
+    intervals = get_voiced_intervals_webrtcvad(processed_path)
     print(intervals) # a list of tuples with start and end times - need to do start time - end time to find the gaps
 
     # use whisper to get intervals of sentences
-    whisper_intervals = get_voiced_intervals_from_audio(audio_path)
+    # whisper doesn't have very precise detection for start and end points of individual words
+    whisper_intervals = get_voiced_intervals_whisper(audio_path)
     print(whisper_intervals)
 
     # within each sentence, use webrtcvad to get voicing intervals???

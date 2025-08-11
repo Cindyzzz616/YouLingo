@@ -12,11 +12,13 @@ from moviepy import VideoFileClip
 from faster_whisper import WhisperModel
 
 from Word import Word
-from VAT import compute_ptrs_from_audio
+from VAT import preprocess_audio
+from VAT import get_voiced_intervals_webrtcvad
 
 # Unused imports
 # from xml.parsers.expat import model
 # import whisper
+# from VAT import compute_ptrs_from_audio
 
 ##### Preparing various packages #####
 
@@ -50,6 +52,7 @@ class Video:
         # Transcript attributes
         self.transcript = self.transcribe() # a transcript object from Whisper
         self.transcript_text = self.get_full_transcript()
+        self.language = self.get_language()
 
         # Length attributes
         self.length = self.calculate_length()
@@ -63,11 +66,11 @@ class Video:
         # Phonological attributes
         self.wpm = self.calculate_wpm() # words per minute
         self.spm = self.calculate_spm() # syllables per minute
-        self.average_ptr = compute_ptrs_from_audio(self.audio_path) # TODO this is NOT correct bc this only has pauses between sentences
+        self.average_ptr = self.voiced_slices_for_segments() # TODO this is NOT correct bc this only has pauses between sentences
 
     def __str__(self):
         return (
-            f"🎬 Video(path='{self.path}')\n"
+            f"🎬 Video path: {self.path}\n"
             f"🎤 Audio Path: {self.audio_path}\n"
             f"📝 Transcript Preview: {self.transcript_text}\n"
             f"⏱️ Total Length: {self.length:.2f} seconds\n"
@@ -77,7 +80,7 @@ class Video:
             f"Phonological properties:\n"
             f"🕒 Words Per Minute: {self.wpm:.2f} WPM\n"
             f"🗣️ Syllables Per Minute: {self.spm:.2f} SPM\n"
-            f"📊 Average PTR: {self.average_ptr:.3f}\n"
+            f"📊 Average PTR: {self.average_ptr}\n"
         )
     
     # def extract_audio(self, audio_folder: str):
@@ -114,7 +117,10 @@ class Video:
         Transcribe the audio of the video using Whisper ASR.
         """
         model = WhisperModel("base", compute_type="float32")
-        segments, info = model.transcribe(self.path)
+        segments, info = model.transcribe(self.path, 
+                                          vad_filter=True,
+                                          multilingual=True,
+                                          language_detection_segments=10) # NOTE can set multilingual=True here
         return {"segments": list(segments), "info": info}
     
     def get_full_transcript(self) -> str:
@@ -123,7 +129,10 @@ class Video:
         """
         full_text = " ".join([segment.text for segment in self.transcript["segments"]])
         return full_text
-
+    
+    def get_language(self) -> str:
+        return self.transcript["info"].language
+    
     def calculate_length(self) -> float:
         """
         Calculate the length of the video in seconds.
@@ -135,12 +144,15 @@ class Video:
         """
         Calculate the total speech length in seconds from the transcript.
         """
-        total_duration = 0.0
-        for segment in self.transcript["segments"]:
-            start = segment.start
-            end = segment.end
-            total_duration += (end - start)
-        return total_duration
+        return self.transcript["info"].duration_after_vad
+
+        # The old way of calculating speech length: subtracting duration of all sentences from total duration of video
+        # total_duration = 0.0
+        # for segment in self.transcript["segments"]:
+        #     start = segment.start
+        #     end = segment.end
+        #     total_duration += (end - start)
+        # return total_duration
     
     def get_tokens(self) -> list:
         """
@@ -202,24 +214,106 @@ class Video:
 
         return spm
     
+    def voiced_slices_for_segments(self, eps: float = 1e-6):
+        """
+        For each segment, return the list of voiced sub-intervals within it,
+        plus the segment's PTR (voiced_time / duration).
+        """
+        results = []
+        preprocessed_path = preprocess_audio(self.audio_path)
+        voiced = get_voiced_intervals_webrtcvad(preprocessed_path)
+        voiced = sorted(voiced)  # ensure order
+        segments = self.transcript["segments"]
+
+        for seg in segments:
+            s0 = seg.start
+            s1 = seg.end
+            text = seg.text
+
+            dur = max(0.0, s1 - s0)
+            if dur <= eps:
+                results.append({
+                    "start": s0, "end": s1, "text": text,
+                    "voiced_intervals": [], "voiced_time": 0.0, "ptr": 0.0
+                })
+                continue
+
+            # collect overlaps
+            overlaps = []
+            voiced_time = 0.0
+
+            # iterate only over voiced intervals that can intersect [s0, s1]
+            # (early break once v_start >= s1)
+            for v_start, v_end in voiced:
+                if v_end <= s0 + eps:
+                    continue
+                if v_start >= s1 - eps:
+                    break
+                a = max(s0, v_start)
+                b = min(s1, v_end)
+                if b - a > eps:
+                    overlaps.append((a, b))
+                    voiced_time += (b - a)
+
+            ptr = voiced_time / dur if dur > 0 else 0.0
+
+            results.append({
+                "start": s0,
+                "end": s1,
+                "text": text,
+                "voiced_intervals": overlaps,
+                "voiced_time": round(voiced_time, 6),
+                "ptr": round(ptr, 6),
+            })
+
+            total_ptr = 0
+            total_segs = len(results)
+            for seg in results:
+                if seg["ptr"] > 0:
+                    total_ptr += seg["ptr"]
+                else:
+                    total_segs -= 1
+            avg_ptr = total_ptr / total_segs
+
+        return avg_ptr
+
+    # def compute_ptr(self):
+    #     preprocessed_path = preprocess_audio(self.audio_path)
+    #     voiced_intervals = get_voiced_intervals_webrtcvad(preprocessed_path)
+    #     for segment in self.transcript["segments"]: 
+    #         i = 0
+    #         while i < len(voiced_intervals) - 1:
+    #             this_interval = voiced_intervals[i]
+    #             next_interval = voiced_intervals[i+1]
+    #             this_end = this_interval[1]
+    #             next_start = next_interval[0]
+    #     return 0
+    
 ##### Example usage #####
 
 if __name__ == "__main__":
     # Example usage
-    video = Video(path="video_analysis/videos/linguistic_intelligence.MP4")
+    video = Video(path="video_analysis/videos/etymology.MP4", audio_folder="video_analysis/audios")
     print(video)
+    
+    # print(video.transcript["info"], "\n")
+    # print(video.transcript["info"].duration, type(video.transcript["info"].duration))
+    # print(video.transcript["info"].duration_after_vad, type(video.transcript["info"].duration_after_vad))
 
-    # Plot a histogram with word frequencies
-    frequencies = []
-    for token in video.tokens:
-        if token.frequency > 0:
-            frequencies.append(token.frequency)
-    plt.hist(frequencies, bins=100, edgecolor='black', align='left')
-    plt.xlabel('Word Frequency')
-    plt.ylabel('Number of Unique Words')
-    plt.title('Distribution of Word Frequencies')
-    # plt.xticks(range(1, max(frequencies)+1))  # Show integer ticks
-    plt.show()
+    # NOTE there is a multilingual=FALSE attribute in transcription info
+    # NOTE it's pretty bad with code-switching though
+
+    # # Plot a histogram with word frequencies
+    # frequencies = []
+    # for token in video.tokens:
+    #     if token.frequency > 0:
+    #         frequencies.append(token.frequency)
+    # plt.hist(frequencies, bins=100, edgecolor='black', align='left')
+    # plt.xlabel('Word Frequency')
+    # plt.ylabel('Number of Unique Words')
+    # plt.title('Distribution of Word Frequencies')
+    # # plt.xticks(range(1, max(frequencies)+1))  # Show integer ticks
+    # plt.show()
 
 
 
