@@ -27,6 +27,7 @@ def lexical_coverage(video: Video, user: User) -> tuple:
     Use types, not tokens.
     """
     overlapping_families = {}
+    non_overlapping = []
     words_in_transcript = video.types
     # TODO what if a two types in a video belong to the same family?
     for word_obj in words_in_transcript:
@@ -35,7 +36,11 @@ def lexical_coverage(video: Video, user: User) -> tuple:
             for w, f in user.family_lexicon[head]:
                 if w.lower() == word.lower():
                     overlapping_families[head] = user.family_lexicon[head]
-    print(overlapping_families)
+                else:
+                    non_overlapping.append(word)
+    non_overlapping = set(non_overlapping)
+    print(overlapping_families, "\n")
+    print(non_overlapping)
     raw_coverage = len(overlapping_families)/len(video.types)
 
     # # Old coverage calculation based on surface form of words

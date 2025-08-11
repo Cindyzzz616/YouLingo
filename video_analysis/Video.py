@@ -15,6 +15,7 @@ from Word import Word
 from VAT import preprocess_audio
 from VAT import get_voiced_intervals_webrtcvad
 from diarization import diarize
+from external_data.contractions import CONTRACTIONS
 
 # Unused imports
 # from xml.parsers.expat import model
@@ -177,6 +178,18 @@ class Video:
         word_tokens = []
         # Split on any sequence of whitespace or punctuation
         tokens = re.split(r"[^\w']+", self.transcript_text)
+
+        # Expland contractions
+        for token in tokens:
+            for key in CONTRACTIONS.keys():
+                if token.lower() == key.lower():
+                    tokens.extend(CONTRACTIONS[key])
+                    tokens.remove(token)
+        
+        # Remove possessives after contractions are handled
+        for token in tokens:
+            if token.endswith("'s"):
+                token.removesuffix("'s")
 
         # Remove empty strings
         tokens = [t for t in tokens if t]
