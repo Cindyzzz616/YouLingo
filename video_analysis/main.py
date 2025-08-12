@@ -60,15 +60,26 @@ def process_videos_in_folder(video_folder_path: str, audio_folder_path: str) -> 
 ### the driver for the entire video analysis algorithm ###
 
 if __name__ == "__main__":
-    video = test_objects.video_etymology
-    user = test_objects.user
+    # video = test_objects.video_etymology
+    # video = Video(path="video_analysis/sampled_videos_subset/6875323773755657474.mp4",
+    #               audio_folder="video_analysis/sampled_audios_subset")
+    # user = test_objects.user
 
-    # Displaying video and user data
-    print(video)
-    print(user)
+    # # Displaying video and user data
+    # print(video)
+    # for seg in video.transcript["segments"]:
+    #     print(seg, "\n")
+    # print(video.transcript["info"])
+
+    video = test_objects.video_etymology
+    print(video.transcript_text)
+    for seg in video.transcript["segments"]:
+        print(seg.text, "\n")
+    
+    # print(user)
 
     # Calculating lexical coverage
-    print(lexical_coverage(video, user))
+    # print(lexical_coverage(video, user))
 
     # Processing videos in a folder
     # video_subset = process_videos_in_folder("video_analysis/sampled_videos_subset", 

@@ -14,7 +14,7 @@ from faster_whisper import WhisperModel
 from Word import Word
 from VAT import preprocess_audio
 from VAT import get_voiced_intervals_webrtcvad
-from diarization import diarize
+# from diarization import diarize
 from external_data.contractions import CONTRACTIONS
 
 # Unused imports
@@ -52,36 +52,45 @@ class Video:
         self.audio_path = self.extract_audio(audio_folder)
 
         # Transcript attributes
-        self.transcript = self.transcribe() # a transcript object from Whisper
+        self.raw_transcript = self.transcribe() # a transcript object from Whisper
+        self.transcript = self.clean_transcript()
         self.transcript_text = self.get_full_transcript()
         self.language = self.get_language()
-        self.number_of_speakers = diarize(self.audio_path)
+        # self.number_of_speakers = diarize(self.audio_path) # TODO might remove for now? takes too much processing power
 
         # Length attributes
         self.length = self.calculate_length()
         self.vad_duration = self.calculate_speech_length()[0] # duration of voice activation detection
         self.total_segment_length = self.calculate_speech_length()[1] # duration of all transcript segments/sentences
-
-        if self.language != 'en':
+       
+        if self.language == 'en' and self.transcript["segments"]:
+            tokens, sentence_lengths = self.get_tokens()
+            
             # Lexical attributes
-            self.tokens = []
-            self.types = {}
-            self.word_count = -1
-
-            # Phonological attributes
-            self.wpm = -1
-            self.spm = -1
-            self.average_ptr = -1
-        else:
-            # Lexical attributes
-            self.tokens = self.get_tokens()
+            self.tokens = tokens
             self.types = self.get_set()
             self.word_count = len(self.tokens)
+
+            # Syntactic attributes
+            self.mean_sentence_length = sum(sentence_lengths) / len(sentence_lengths) if len(sentence_lengths) > 0 else 0
 
             # Phonological attributes
             self.wpm = self.calculate_wpm() # words per minute
             self.spm = self.calculate_spm() # syllables per minute
             self.average_ptr = self.voiced_slices_for_segments()
+        else:
+            # Lexical attributes
+            self.tokens = []
+            self.types = {}
+            self.word_count = -1
+
+            # Syntactic attributes
+            self.mean_sentence_length = -1.0
+
+            # Phonological attributes
+            self.wpm = -1
+            self.spm = -1
+            self.average_ptr = -1
 
     def __str__(self):
         return (
@@ -89,12 +98,14 @@ class Video:
             f"🎤 Audio Path: {self.audio_path}\n"
             f"📝 Transcript Preview: {self.transcript_text}\n"
             f"🌏 Language: {self.language}\n"
-            f"👫 Number of speakers: {self.number_of_speakers}\n"
+            # f"👫 Number of speakers: {self.number_of_speakers}\n"
             f"⏱️ Total Length: {self.length:.2f} seconds\n"
             f"🗣️ VAD duration: {self.vad_duration:.2f} seconds\n"
             f"💬 Total segment length: {self.total_segment_length:.2f} seconds\n"
             f"Lexical properties:\n"            
             f"📖 Word Count: {self.word_count} words\n"
+            f"Syntactic properties:\n"
+            f"📝 Mean sentence length: {self.mean_sentence_length} words\n"
             f"Phonological properties:\n"
             f"🕒 Words Per Minute: {self.wpm:.2f} WPM\n"
             f"🗣️ Syllables Per Minute: {self.spm:.2f} SPM\n"
@@ -136,10 +147,21 @@ class Video:
         """
         model = WhisperModel("base", compute_type="float32")
         segments, info = model.transcribe(self.path, 
-                                          vad_filter=True,
-                                          multilingual=True,
-                                          language_detection_segments=10) # NOTE can set multilingual=True here
+                                          vad_filter=True
+                                          # multilingual=True, # NOTE perhaps i should just give up on detecting multiple languages T-T
+                                          # language_detection_segments=10 # NOTE can set multilingual=True here
+                                          ) 
         return {"segments": list(segments), "info": info}
+    
+    def clean_transcript(self):
+        """
+        Remove segments for which no_speech_prob < 0.5.
+        """
+        cleaned_transcript = {"segments": [], "info": self.raw_transcript["info"]}
+        for seg in self.raw_transcript["segments"]:
+            if seg.no_speech_prob < 0.5:
+                cleaned_transcript["segments"].append(seg)
+        return cleaned_transcript
     
     def get_full_transcript(self) -> str:
         """
@@ -170,35 +192,43 @@ class Video:
             end = segment.end
             total_duration += (end - start)
         return self.transcript["info"].duration_after_vad, total_duration
+        # TODO could probably combine some methods so i'm not iterating through the transcript object multiple times
     
-    def get_tokens(self) -> list[Word]:
+    def get_tokens(self) -> tuple[list[Word], list[int]]:
         """
         Get a list of words (tokens) from the transcript. Repeated words are counted as different tokens.
         """
         word_tokens = []
-        # Split on any sequence of whitespace or punctuation
-        tokens = re.split(r"[^\w']+", self.transcript_text)
+        tokens = []
+        sentence_lengths = []
 
-        # Expland contractions
-        for token in tokens:
-            for key in CONTRACTIONS.keys():
-                if token.lower() == key.lower():
-                    tokens.extend(CONTRACTIONS[key])
-                    tokens.remove(token)
-        
+        # Split on any sequence of whitespace or punctuation
+        for seg in self.transcript["segments"]:
+            words = re.split(r"[^\w']+", seg.text)
+
+            # Remove empty strings
+            words = [w for w in words if w]
+            
+            # Expand contractions
+            for word in words:
+                for key in CONTRACTIONS.keys():
+                    if word.lower() == key.lower():
+                        words.extend(CONTRACTIONS[key])
+                        words.remove(word)
+            
+            sentence_lengths.append(len(words))
+            tokens.extend(words)
+
         # Remove possessives after contractions are handled
         for token in tokens:
             if token.endswith("'s"):
                 token.removesuffix("'s")
 
-        # Remove empty strings
-        tokens = [t for t in tokens if t]
-
         # Convert tokens to Word objects
         for token in tokens:
             word_tokens.append(Word(token))
 
-        return word_tokens
+        return word_tokens, sentence_lengths
     
     def get_set(self):
         word_set_flattened = set()
@@ -337,11 +367,11 @@ if __name__ == "__main__":
     # Example usage
     video = Video(path="video_analysis/videos/etymology.MP4", audio_folder="video_analysis/audios")
     print(video)
-    for token in video.tokens:
-        print(token.text)
-    print("\n")
-    for type in video.types:
-        print(type.text)
+    # for token in video.tokens:
+    #     print(token.text)
+    # print("\n")
+    # for type in video.types:
+    #     print(type.text)
 
     # print(video.transcript["info"], "\n")
     # print(video.transcript["info"].duration, type(video.transcript["info"].duration))
