@@ -30,6 +30,33 @@ phoneme_database = pd.read_csv(
     low_memory=False
 )
 
+##### Helper functions #####
+def serialize_word_timing(w):
+    # Some builds call it `probability`, others `score`; guard with getattr
+    return {
+        "word": getattr(w, "word", None),
+        "start": getattr(w, "start", None),
+        "end": getattr(w, "end", None),
+        "prob": getattr(w, "probability", getattr(w, "score", None)),
+    }
+
+def serialize_segment(seg):
+    d = {
+        "id": getattr(seg, "id", None),
+        "start": getattr(seg, "start", None),
+        "end": getattr(seg, "end", None),
+        "text": getattr(seg, "text", None),
+        "no_speech_prob": getattr(seg, "no_speech_prob", None),
+        "avg_logprob": getattr(seg, "avg_logprob", None),
+        "compression_ratio": getattr(seg, "compression_ratio", None),
+        "temperature": getattr(seg, "temperature", None),
+    }
+    # Word-level timing if present
+    words = getattr(seg, "words", None)
+    if words:
+        d["words"] = [serialize_word_timing(w) for w in words]
+    return d
+
 ##### The actual Video object #####
 
 class Video:
@@ -65,7 +92,7 @@ class Video:
        
         if self.language == 'en' and self.transcript["segments"]:
             tokens, sentence_lengths = self.get_tokens()
-            
+
             # Lexical attributes
             self.tokens = tokens
             self.types = self.get_set()
@@ -111,6 +138,70 @@ class Video:
             f"🗣️ Syllables Per Minute: {self.spm:.2f} SPM\n"
             f"📊 Average PTR: {self.average_ptr:.2f}\n"
         )
+
+    def to_dict(self):
+        # Tokens (list[Word]) → list[dict]
+        tokens_dict = [t.to_dict() for t in getattr(self, "tokens", [])]
+
+        # Types is a set of Word objects → stable list (e.g., alphabetized by text)
+        types_list = sorted(
+            [w.to_dict() for w in getattr(self, "types", set())],
+            key=lambda d: (d.get("text") or "").lower()
+        )
+
+        # Whisper segments (custom objects) → list[dict]
+        segs = []
+        for seg in self.transcript.get("segments", []):
+            segs.append(serialize_segment(seg))
+
+        # Info object may be a pydantic-like structure; grab common fields safely
+        info = self.transcript.get("info", None)
+        info_dict = None
+        if info is not None:
+            info_dict = {
+                "language": getattr(info, "language", getattr(self, "language", None)),
+                "duration": getattr(info, "duration", None),
+                "duration_after_vad": getattr(info, "duration_after_vad", None),
+                "language_probability": getattr(info, "language_probability", None),
+                # Add anything else you find useful and JSON-safe
+            }
+
+        return {
+            # Core metadata
+            "path": self.path,
+            "audio_path": self.audio_path,
+            "language": self.language,
+            "length_sec": self.length,
+            "vad_duration_sec": self.vad_duration,
+            "total_segment_length_sec": self.total_segment_length,
+
+            # Lexical
+            "word_count": self.word_count,
+            "tokens": tokens_dict,
+            "types": types_list,
+
+            # Syntactic
+            "mean_sentence_length_words": self.mean_sentence_length,
+
+            # Phonological
+            "wpm": self.wpm,
+            "spm": self.spm,
+            "average_ptr": self.average_ptr,
+
+            # Transcript
+            "transcript_text": self.transcript_text,
+            "transcript": {
+                "segments": segs,
+                "info": info_dict
+            }
+        }
+
+    def to_json(self, out_path: str | Path, **dump_kwargs):
+        out_path = Path(out_path)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        with out_path.open("w", encoding="utf-8") as f:
+            json.dump(self.to_dict(), f, ensure_ascii=False, indent=2, **dump_kwargs)
+        return str(out_path)
     
     # def extract_audio(self, audio_folder: str):
     #     # Get base filename without extension

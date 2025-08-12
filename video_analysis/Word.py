@@ -81,6 +81,50 @@ class Word:
             f"Functional load of initial consonant: {self.initial_consonant_fl}\n"
             f"Functional load of final consonant: {self.final_consonant_fl}\n"
         )
+    
+    def to_dict(self):
+        """
+        Convert this Word into a JSON-safe dictionary.
+        Cast numpy/pandas scalars to builtins to avoid JSON errors.
+        """
+        # helpers to coerce numpy/pandas scalars into plain Python types
+        def _to_int(x, default=None):
+            try:
+                return int(x)
+            except Exception:
+                return default
+
+        def _to_float(x, default=None):
+            try:
+                return float(x)
+            except Exception:
+                return default
+
+        return {
+            "text": self.text,
+            "length": _to_int(self.length, 0),
+            "syllable_count": _to_int(self.syllable_count, 0),
+
+            # NLTK returns [(token, tag)] — keep both for clarity
+            "tags": [{"token": tok, "pos": pos} for (tok, pos) in (self.tags or [])],
+
+            # Frequencies (-1 means not found in your corpus)
+            "frequency": _to_int(self.frequency, -1),
+            "word_family_frequency": _to_int(getattr(self, "word_family_frequency", -1), -1),
+
+            # Phonology
+            "phonemes": list(self.phonemes or []),
+
+            "phonological_neighbours": {
+                "list": list(getattr(self, "phonological_neighbours_list", []) or []),
+                "number": _to_int(getattr(self, "phonological_neighbours_number", -1), -1),
+                "frequency": _to_float(getattr(self, "phonological_neighbours_frequency", -1.0), -1.0),
+            },
+
+            # Functional load (use -1 if unknown)
+            "initial_consonant_fl": _to_float(getattr(self, "initial_consonant_fl", -1.0), -1.0),
+            "final_consonant_fl": _to_float(getattr(self, "final_consonant_fl", -1.0), -1.0),
+        }
 
     def count_syllables(self) -> int:
         """
@@ -190,3 +234,5 @@ class Word:
 if __name__ == '__main__':
     word = Word("prettier")
     print(word)
+    word_dict = word.to_dict()
+    print(word_dict)
