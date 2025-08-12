@@ -1,6 +1,7 @@
 # NOTE in general, I need some function or module that takes in data from both a video and a user
 
 from pathlib import Path
+import json
 import pickle
 
 from User import User
@@ -39,7 +40,9 @@ def analyze_video_difficulty(video: Video, user: User):
     return difficulty_score
 
 def process_videos_in_folder(video_folder_path: str, audio_folder_path: str) -> list[Video]:
-    # TODO pickle the video objects? idk how much time that saves
+    """
+    Process the videos in a folder. Return a list of video objects and save data of each video to a JSON file.
+    """
     video_list = []
 
     # Path to your folder
@@ -48,11 +51,19 @@ def process_videos_in_folder(video_folder_path: str, audio_folder_path: str) -> 
     # Define allowed video extensions (lowercase)
     video_exts = {".mp4", ".mov", ".avi", ".mkv"}
 
+    i = 1
     # Iterate over matching files
     for video_path in video_dir.iterdir():
         if video_path.suffix.lower() in video_exts:
             path = str(video_path.resolve())  # absolute path
-            video_list.append(Video(path, audio_folder_path))
+            video = Video(path, audio_folder_path)
+            video_list.append(video)
+            with open(f"video_analysis/sampled_json_subset/{video_path.stem}_data.json", "w", encoding="utf-8") as f:
+                json.dump(video.to_dict(), f, ensure_ascii=False, indent=4)
+            print(f"✅ Video {i}: {path} is processed.")
+        else:
+            print(f"✅ Video {i} is NOT processed.")
+        i += 1
 
     return video_list
     
@@ -71,10 +82,10 @@ if __name__ == "__main__":
     #     print(seg, "\n")
     # print(video.transcript["info"])
 
-    video = test_objects.video_etymology
-    print(video.transcript_text)
-    for seg in video.transcript["segments"]:
-        print(seg.text, "\n")
+    # video = test_objects.video_etymology
+    # print(video.transcript_text)
+    # for seg in video.transcript["segments"]:
+    #     print(seg.text, "\n")
     
     # print(user)
 
@@ -82,10 +93,10 @@ if __name__ == "__main__":
     # print(lexical_coverage(video, user))
 
     # Processing videos in a folder
-    # video_subset = process_videos_in_folder("video_analysis/sampled_videos_subset", 
-    #                                         "video_analysis/sampled_audios_subset")
-    # for video in video_subset:
-    #     print(video)
+    video_subset = process_videos_in_folder("video_analysis/sampled_videos_subset", 
+                                            "video_analysis/sampled_audios_subset")
+    for video in video_subset:
+        print(video)
 
     # Modifying videos and saving them as new files
     # adjust speech rate

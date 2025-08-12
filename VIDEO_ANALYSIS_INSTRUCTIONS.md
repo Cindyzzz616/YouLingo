@@ -1,5 +1,12 @@
 # Video analysis instructions
 
+## Sampling notes
+
+- why isn't 20 transcribed?
+- why isn't 30 transcribed?
+--- still isn't transcribed at 0.2 no speech prob threshold
+
+
 ## File structure
 
 There are three types of objects: Video, User and Word.

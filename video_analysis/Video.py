@@ -22,6 +22,9 @@ from external_data.contractions import CONTRACTIONS
 # import whisper
 # from VAT import compute_ptrs_from_audio
 
+##### Constants #####
+NO_SPEECH_THRESHOLD = 0.3
+
 ##### Preparing various packages #####
 
 # Loading the phoneme inventory database
@@ -108,7 +111,7 @@ class Video:
         else:
             # Lexical attributes
             self.tokens = []
-            self.types = {}
+            self.types = []
             self.word_count = -1
 
             # Syntactic attributes
@@ -143,11 +146,9 @@ class Video:
         # Tokens (list[Word]) → list[dict]
         tokens_dict = [t.to_dict() for t in getattr(self, "tokens", [])]
 
-        # Types is a set of Word objects → stable list (e.g., alphabetized by text)
-        types_list = sorted(
-            [w.to_dict() for w in getattr(self, "types", set())],
-            key=lambda d: (d.get("text") or "").lower()
-        )
+        # Types (list[Word]) → list[dict]
+        types_dict = [t.to_dict() for t in getattr(self, "types", [])]
+
 
         # Whisper segments (custom objects) → list[dict]
         segs = []
@@ -163,6 +164,7 @@ class Video:
                 "duration": getattr(info, "duration", None),
                 "duration_after_vad": getattr(info, "duration_after_vad", None),
                 "language_probability": getattr(info, "language_probability", None),
+                "all_language_probs": getattr(info, "all_language_probs", None)
                 # Add anything else you find useful and JSON-safe
             }
 
@@ -178,7 +180,7 @@ class Video:
             # Lexical
             "word_count": self.word_count,
             "tokens": tokens_dict,
-            "types": types_list,
+            "types": types_dict,
 
             # Syntactic
             "mean_sentence_length_words": self.mean_sentence_length,
@@ -246,11 +248,11 @@ class Video:
     
     def clean_transcript(self):
         """
-        Remove segments for which no_speech_prob < 0.5.
+        Remove segments for which no_speech_prob < NO_SPEECH_THRESHOLD.
         """
         cleaned_transcript = {"segments": [], "info": self.raw_transcript["info"]}
         for seg in self.raw_transcript["segments"]:
-            if seg.no_speech_prob < 0.5:
+            if seg.no_speech_prob < NO_SPEECH_THRESHOLD:
                 cleaned_transcript["segments"].append(seg)
         return cleaned_transcript
     
@@ -301,19 +303,17 @@ class Video:
             words = [w for w in words if w]
             
             # Expand contractions
-            for word in words:
-                for key in CONTRACTIONS.keys():
-                    if word.lower() == key.lower():
-                        words.extend(CONTRACTIONS[key])
-                        words.remove(word)
+            expanded = []
+            for w in words:
+                exp = CONTRACTIONS.get(w, CONTRACTIONS.get(w.capitalize(), None))
+                expanded.extend(exp if exp else [w])
+            words = expanded
             
             sentence_lengths.append(len(words))
             tokens.extend(words)
 
         # Remove possessives after contractions are handled
-        for token in tokens:
-            if token.endswith("'s"):
-                token.removesuffix("'s")
+        tokens = [t.removesuffix("'s") if t.endswith("'s") else t for t in tokens]
 
         # Convert tokens to Word objects
         for token in tokens:
@@ -322,13 +322,13 @@ class Video:
         return word_tokens, sentence_lengths
     
     def get_set(self):
-        word_set_flattened = set()
+        word_set_flattened = []
         for token in self.tokens:
             if token.text.lower() not in word_set_flattened:
-                word_set_flattened.add(token.text.lower())
-        word_set = set()
+                word_set_flattened.append(token.text.lower())
+        word_set = []
         for word in word_set_flattened:
-            word_set.add(Word(word))
+            word_set.append(Word(word))
         return word_set
     
     def compute_word_frequency_average(self):
@@ -458,6 +458,8 @@ if __name__ == "__main__":
     # Example usage
     video = Video(path="video_analysis/videos/etymology.MP4", audio_folder="video_analysis/audios")
     print(video)
+    video_dict = video.to_dict()
+    print(video_dict)
     # for token in video.tokens:
     #     print(token.text)
     # print("\n")
