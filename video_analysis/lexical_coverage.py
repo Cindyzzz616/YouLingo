@@ -9,6 +9,7 @@ import pickle
 
 from User import User
 from Video import Video
+import test_objects
 
 L = 82.42
 k = 0.59
@@ -32,13 +33,15 @@ def lexical_coverage(video: Video, user: User) -> tuple:
     # TODO what if a two types in a video belong to the same family?
     for word_obj in words_in_transcript:
         word = word_obj.text
+        overlapping = False
         for head in user.family_lexicon.keys():
             for w, f in user.family_lexicon[head]:
                 if w.lower() == word.lower():
                     overlapping_families[head] = user.family_lexicon[head]
-                else:
-                    non_overlapping.append(word)
-    non_overlapping = set(non_overlapping)
+                    overlapping = True
+        if not overlapping:
+            non_overlapping.append(word)
+    # non_overlapping = set(non_overlapping)
     print(overlapping_families, "\n")
     print(non_overlapping)
     raw_coverage = len(overlapping_families)/len(video.types)
@@ -57,31 +60,38 @@ def lexical_coverage(video: Video, user: User) -> tuple:
     return raw_coverage, inferred_coverage
 
 if __name__ == "__main__":
+    ### example usage ###
+    video = test_objects.video_etymology
+    user = test_objects.user
+
+    print(lexical_coverage(video, user))
+    
+
     ### Approximation of inferencing percentage as a function of lexical coverage ###
 
-    # Data
-    coverage = np.array([90, 95, 98])
-    inferencing = np.array([52, 80, 82])
+    # # Data
+    # coverage = np.array([90, 95, 98])
+    # inferencing = np.array([52, 80, 82])
 
-    # Initial guesses: L = max %, k = steepness, x0 = midpoint
-    initial_guess = [100, 1, 95]
+    # # Initial guesses: L = max %, k = steepness, x0 = midpoint
+    # initial_guess = [100, 1, 95]
 
-    # Fit the model
-    params, _ = curve_fit(logistic, coverage, inferencing, p0=initial_guess)
-    L, k, x0 = params
-    print(f"Fitted parameters: L={L:.2f}, k={k:.2f}, x0={x0:.2f}")
+    # # Fit the model
+    # params, _ = curve_fit(logistic, coverage, inferencing, p0=initial_guess)
+    # L, k, x0 = params
+    # print(f"Fitted parameters: L={L:.2f}, k={k:.2f}, x0={x0:.2f}")
 
-    # Generate x values for smooth curve
-    x_vals = np.linspace(0, 100, 300)
-    y_vals = logistic(x_vals, *params)
+    # # Generate x values for smooth curve
+    # x_vals = np.linspace(0, 100, 300)
+    # y_vals = logistic(x_vals, *params)
 
-    # Plot
-    plt.scatter(coverage, inferencing, label="Data", color="blue")
-    plt.plot(x_vals, y_vals, label="Logistic Fit", color="red")
-    plt.title("Inferencing as a Function of Coverage Level")
-    plt.xlabel("Coverage Level (%)")
-    plt.ylabel("Inferencing (%)")
-    plt.grid(True)
-    plt.legend()
-    plt.tight_layout()
-    plt.show()
+    # # Plot
+    # plt.scatter(coverage, inferencing, label="Data", color="blue")
+    # plt.plot(x_vals, y_vals, label="Logistic Fit", color="red")
+    # plt.title("Inferencing as a Function of Coverage Level")
+    # plt.xlabel("Coverage Level (%)")
+    # plt.ylabel("Inferencing (%)")
+    # plt.grid(True)
+    # plt.legend()
+    # plt.tight_layout()
+    # plt.show()

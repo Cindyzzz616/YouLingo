@@ -67,7 +67,6 @@ class User:
     lexicon: list[str] # TODO change this to a list of Word objects?
     family_lexicon: dict[str, list[tuple]]
     l1: str
-    phonetic_inventory: list[str]
 
     # TODO could add a feature that calculates average vocab size from a user's CEFR level or other measures/tests
 

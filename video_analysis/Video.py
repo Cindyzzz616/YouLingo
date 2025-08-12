@@ -75,7 +75,7 @@ class Video:
         else:
             # Lexical attributes
             self.tokens = self.get_tokens()
-            self.types = set(self.tokens)
+            self.types = self.get_set()
             self.word_count = len(self.tokens)
 
             # Phonological attributes
@@ -199,6 +199,16 @@ class Video:
             word_tokens.append(Word(token))
 
         return word_tokens
+    
+    def get_set(self):
+        word_set_flattened = set()
+        for token in self.tokens:
+            if token.text.lower() not in word_set_flattened:
+                word_set_flattened.add(token.text.lower())
+        word_set = set()
+        for word in word_set_flattened:
+            word_set.add(Word(word))
+        return word_set
     
     def compute_word_frequency_average(self):
         """
@@ -327,6 +337,11 @@ if __name__ == "__main__":
     # Example usage
     video = Video(path="video_analysis/videos/etymology.MP4", audio_folder="video_analysis/audios")
     print(video)
+    for token in video.tokens:
+        print(token.text)
+    print("\n")
+    for type in video.types:
+        print(type.text)
 
     # print(video.transcript["info"], "\n")
     # print(video.transcript["info"].duration, type(video.transcript["info"].duration))
