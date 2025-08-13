@@ -1,0 +1,504 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/249_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/249_video_audio.wav",
+    "language": "nl",
+    "length_sec": 42.94,
+    "vad_duration_sec": 42.4899375,
+    "total_segment_length_sec": 42.28,
+    "word_count": -1,
+    "tokens": [],
+    "types": [],
+    "mean_sentence_length_words": -1.0,
+    "wpm": -1,
+    "spm": -1,
+    "average_ptr": -1,
+    "transcript_text": " Oké, ik heb een vraag, zem iets, zwaars, ik snap het niet helemaal, ik ben deel Surinams.  Het Surinamsen gedeelte van mijn familie, die was alle maal hun vlees, maar mijn Nederlandse kans,  en ik heb mijn moeder leren koken, die was het vlees niet, dus ik was mijn vlees ook niet,  maar ik was laatst op school en ik begon de meisje ook of een huwashijker kip niet.  Dus ik zat de Ese van, he, waarom die kip was en ik dacht, ik dacht, ik naaf,  die kan was wel een kip, wat in jullie, was jullie vlees, of was jullie niet,  want ik, ja, wat is nou normaal, wel was het niet, was ik snap het niet, ik snap het echt niet,  laat me weten.",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.46,
+                "end": 8.02,
+                "text": " Oké, ik heb een vraag, zem iets, zwaars, ik snap het niet helemaal, ik ben deel Surinams.",
+                "no_speech_prob": 0.1751757711172104,
+                "avg_logprob": -0.5659704800623997,
+                "compression_ratio": 1.768,
+                "temperature": 0.0
+            },
+            {
+                "id": 2,
+                "start": 8.02,
+                "end": 16.14,
+                "text": " Het Surinamsen gedeelte van mijn familie, die was alle maal hun vlees, maar mijn Nederlandse kans,",
+                "no_speech_prob": 0.1751757711172104,
+                "avg_logprob": -0.5659704800623997,
+                "compression_ratio": 1.768,
+                "temperature": 0.0
+            },
+            {
+                "id": 3,
+                "start": 16.14,
+                "end": 21.14,
+                "text": " en ik heb mijn moeder leren koken, die was het vlees niet, dus ik was mijn vlees ook niet,",
+                "no_speech_prob": 0.1751757711172104,
+                "avg_logprob": -0.5659704800623997,
+                "compression_ratio": 1.768,
+                "temperature": 0.0
+            },
+            {
+                "id": 4,
+                "start": 21.14,
+                "end": 24.74,
+                "text": " maar ik was laatst op school en ik begon de meisje ook of een huwashijker kip niet.",
+                "no_speech_prob": 0.1751757711172104,
+                "avg_logprob": -0.5659704800623997,
+                "compression_ratio": 1.768,
+                "temperature": 0.0
+            },
+            {
+                "id": 5,
+                "start": 24.74,
+                "end": 29.38,
+                "text": " Dus ik zat de Ese van, he, waarom die kip was en ik dacht, ik dacht, ik naaf,",
+                "no_speech_prob": 0.1751757711172104,
+                "avg_logprob": -0.5659704800623997,
+                "compression_ratio": 1.768,
+                "temperature": 0.0
+            },
+            {
+                "id": 6,
+                "start": 29.38,
+                "end": 34.94,
+                "text": " die kan was wel een kip, wat in jullie, was jullie vlees, of was jullie niet,",
+                "no_speech_prob": 0.02769734151661396,
+                "avg_logprob": -0.393079569262843,
+                "compression_ratio": 1.6936936936936937,
+                "temperature": 0.0
+            },
+            {
+                "id": 7,
+                "start": 34.94,
+                "end": 41.94,
+                "text": " want ik, ja, wat is nou normaal, wel was het niet, was ik snap het niet, ik snap het echt niet,",
+                "no_speech_prob": 0.02769734151661396,
+                "avg_logprob": -0.393079569262843,
+                "compression_ratio": 1.6936936936936937,
+                "temperature": 0.0
+            },
+            {
+                "id": 8,
+                "start": 41.94,
+                "end": 42.74,
+                "text": " laat me weten.",
+                "no_speech_prob": 0.02769734151661396,
+                "avg_logprob": -0.393079569262843,
+                "compression_ratio": 1.6936936936936937,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "nl",
+            "duration": 42.9539375,
+            "duration_after_vad": 42.4899375,
+            "language_probability": 0.9775347709655762,
+            "all_language_probs": [
+                [
+                    "nl",
+                    0.9775347709655762
+                ],
+                [
+                    "en",
+                    0.008281849324703217
+                ],
+                [
+                    "pt",
+                    0.001779409940354526
+                ],
+                [
+                    "el",
+                    0.001575420843437314
+                ],
+                [
+                    "de",
+                    0.0012928826035931706
+                ],
+                [
+                    "fr",
+                    0.00126684142742306
+                ],
+                [
+                    "tr",
+                    0.0010890590492635965
+                ],
+                [
+                    "pl",
+                    0.0010684552835300565
+                ],
+                [
+                    "ja",
+                    0.0009884423343464732
+                ],
+                [
+                    "zh",
+                    0.00048016561777330935
+                ],
+                [
+                    "ar",
+                    0.0004642452404368669
+                ],
+                [
+                    "es",
+                    0.00042562634916976094
+                ],
+                [
+                    "ko",
+                    0.00037139299092814326
+                ],
+                [
+                    "vi",
+                    0.00035812120768241584
+                ],
+                [
+                    "nn",
+                    0.0003161891654599458
+                ],
+                [
+                    "cy",
+                    0.00030063503072597086
+                ],
+                [
+                    "ca",
+                    0.00027968123322352767
+                ],
+                [
+                    "af",
+                    0.00023573024373035878
+                ],
+                [
+                    "ru",
+                    0.00020073630730621517
+                ],
+                [
+                    "it",
+                    0.00015674636233597994
+                ],
+                [
+                    "hi",
+                    0.00014732628187630326
+                ],
+                [
+                    "hu",
+                    0.00014621589798480272
+                ],
+                [
+                    "la",
+                    0.00013949329149909317
+                ],
+                [
+                    "jw",
+                    0.00010993212345056236
+                ],
+                [
+                    "gl",
+                    0.00010323031165171415
+                ],
+                [
+                    "fi",
+                    0.00010301180009264499
+                ],
+                [
+                    "sv",
+                    9.641486394684762e-05
+                ],
+                [
+                    "ur",
+                    8.301396883325651e-05
+                ],
+                [
+                    "id",
+                    7.545738480985165e-05
+                ],
+                [
+                    "mi",
+                    5.5372052884195e-05
+                ],
+                [
+                    "br",
+                    4.213041756884195e-05
+                ],
+                [
+                    "da",
+                    4.18490672018379e-05
+                ],
+                [
+                    "cs",
+                    3.054288754356094e-05
+                ],
+                [
+                    "th",
+                    2.8493332138168626e-05
+                ],
+                [
+                    "sn",
+                    2.7802776457974687e-05
+                ],
+                [
+                    "no",
+                    2.75159181910567e-05
+                ],
+                [
+                    "ms",
+                    2.5219173039658926e-05
+                ],
+                [
+                    "haw",
+                    2.3609774871147238e-05
+                ],
+                [
+                    "tl",
+                    2.1913849195698276e-05
+                ],
+                [
+                    "is",
+                    2.187327845604159e-05
+                ],
+                [
+                    "eu",
+                    2.0904139091726393e-05
+                ],
+                [
+                    "km",
+                    1.875166708487086e-05
+                ],
+                [
+                    "uk",
+                    1.4729768736287951e-05
+                ],
+                [
+                    "ta",
+                    1.2638486623473e-05
+                ],
+                [
+                    "he",
+                    1.107244588638423e-05
+                ],
+                [
+                    "ro",
+                    1.0627773917804006e-05
+                ],
+                [
+                    "oc",
+                    9.51163201534655e-06
+                ],
+                [
+                    "yi",
+                    9.300612873630598e-06
+                ],
+                [
+                    "ml",
+                    6.303488589765038e-06
+                ],
+                [
+                    "be",
+                    6.0902489167347085e-06
+                ],
+                [
+                    "yo",
+                    4.2273472899978515e-06
+                ],
+                [
+                    "az",
+                    3.7755039556941483e-06
+                ],
+                [
+                    "ht",
+                    3.592664370444254e-06
+                ],
+                [
+                    "bg",
+                    3.5558139188651694e-06
+                ],
+                [
+                    "fo",
+                    3.4000004234258085e-06
+                ],
+                [
+                    "mn",
+                    3.307092583781923e-06
+                ],
+                [
+                    "bn",
+                    3.049426823054091e-06
+                ],
+                [
+                    "sl",
+                    2.925761236838298e-06
+                ],
+                [
+                    "et",
+                    2.861343091353774e-06
+                ],
+                [
+                    "bs",
+                    2.7631369903247105e-06
+                ],
+                [
+                    "sa",
+                    2.7350167783879442e-06
+                ],
+                [
+                    "sk",
+                    2.491852683306206e-06
+                ],
+                [
+                    "fa",
+                    2.408754880889319e-06
+                ],
+                [
+                    "hy",
+                    2.2896290374774253e-06
+                ],
+                [
+                    "sw",
+                    1.6629549008939648e-06
+                ],
+                [
+                    "lv",
+                    1.6452213458251208e-06
+                ],
+                [
+                    "bo",
+                    1.5820504586372408e-06
+                ],
+                [
+                    "te",
+                    1.4474344425252639e-06
+                ],
+                [
+                    "pa",
+                    1.3951949995316681e-06
+                ],
+                [
+                    "my",
+                    1.3275921446620487e-06
+                ],
+                [
+                    "sq",
+                    1.2977292271898477e-06
+                ],
+                [
+                    "mt",
+                    1.2877972039859742e-06
+                ],
+                [
+                    "hr",
+                    1.2777157962773344e-06
+                ],
+                [
+                    "lo",
+                    1.037240167534037e-06
+                ],
+                [
+                    "ne",
+                    1.025533492793329e-06
+                ],
+                [
+                    "si",
+                    9.187589853354439e-07
+                ],
+                [
+                    "kk",
+                    6.68773566303571e-07
+                ],
+                [
+                    "sd",
+                    5.741113682233845e-07
+                ],
+                [
+                    "sr",
+                    4.900281282971264e-07
+                ],
+                [
+                    "ln",
+                    3.9456887179767364e-07
+                ],
+                [
+                    "ps",
+                    3.3919798170245485e-07
+                ],
+                [
+                    "lt",
+                    3.349994699419767e-07
+                ],
+                [
+                    "mk",
+                    3.007191651249741e-07
+                ],
+                [
+                    "ka",
+                    2.6928566398964904e-07
+                ],
+                [
+                    "mr",
+                    1.516810641533084e-07
+                ],
+                [
+                    "kn",
+                    1.4491891420220782e-07
+                ],
+                [
+                    "as",
+                    6.339261204857394e-08
+                ],
+                [
+                    "am",
+                    5.662850099952266e-08
+                ],
+                [
+                    "gu",
+                    5.4201585442115174e-08
+                ],
+                [
+                    "tt",
+                    4.524248353732219e-08
+                ],
+                [
+                    "lb",
+                    4.273809750543478e-08
+                ],
+                [
+                    "so",
+                    3.500084844176854e-08
+                ],
+                [
+                    "tg",
+                    2.7876914998614666e-08
+                ],
+                [
+                    "su",
+                    1.4094577061030122e-08
+                ],
+                [
+                    "ha",
+                    4.825349009252022e-09
+                ],
+                [
+                    "ba",
+                    3.6269882652817387e-09
+                ],
+                [
+                    "mg",
+                    3.0475266754592667e-09
+                ],
+                [
+                    "uz",
+                    2.9255389222271333e-09
+                ],
+                [
+                    "tk",
+                    2.7863291673924095e-09
+                ]
+            ]
+        }
+    }
+}

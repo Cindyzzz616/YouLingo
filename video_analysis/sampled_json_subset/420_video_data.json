@@ -1,0 +1,1360 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/420_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/420_video_audio.wav",
+    "language": "en",
+    "length_sec": 36.67,
+    "vad_duration_sec": 13.84,
+    "total_segment_length_sec": 6.8599999999999985,
+    "word_count": 18,
+    "tokens": [
+        {
+            "text": "One",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "One",
+                    "pos": "CD"
+                }
+            ],
+            "frequency": 318107,
+            "word_family_frequency": 318107,
+            "phonemes": [
+                "w",
+                "ʌ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 75.0
+        },
+        {
+            "text": "this",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "this",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 578204,
+            "word_family_frequency": 578204,
+            "phonemes": [
+                "ð",
+                "ɪ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Miss",
+                    "kiss",
+                    "piss",
+                    "thus",
+                    "sis",
+                    "dis",
+                    "hiss"
+                ],
+                "number": 7,
+                "frequency": 90.7115
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "Try",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "Try",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 55212,
+            "word_family_frequency": 55212,
+            "phonemes": [
+                "t",
+                "r",
+                "aɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 87.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "this",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "this",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 578204,
+            "word_family_frequency": 578204,
+            "phonemes": [
+                "ð",
+                "ɪ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Miss",
+                    "kiss",
+                    "piss",
+                    "thus",
+                    "sis",
+                    "dis",
+                    "hiss"
+                ],
+                "number": 7,
+                "frequency": 90.7115
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "One",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "One",
+                    "pos": "CD"
+                }
+            ],
+            "frequency": 318107,
+            "word_family_frequency": 318107,
+            "phonemes": [
+                "w",
+                "ʌ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 75.0
+        },
+        {
+            "text": "this",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "this",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 578204,
+            "word_family_frequency": 578204,
+            "phonemes": [
+                "ð",
+                "ɪ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Miss",
+                    "kiss",
+                    "piss",
+                    "thus",
+                    "sis",
+                    "dis",
+                    "hiss"
+                ],
+                "number": 7,
+                "frequency": 90.7115
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "Hey",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "Hey",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 1753,
+            "word_family_frequency": 7448,
+            "phonemes": [
+                "h",
+                "eɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "he",
+                    "they",
+                    "How",
+                    "her",
+                    "who",
+                    "say",
+                    "way",
+                    "day",
+                    "Hi",
+                    "may",
+                    "huh",
+                    "pay",
+                    "high",
+                    "hair",
+                    "ha",
+                    "Ray",
+                    "gay",
+                    "lay",
+                    "ho",
+                    "Bay",
+                    "whore",
+                    "Jay",
+                    "Herr",
+                    "Kay",
+                    "weigh",
+                    "Yea",
+                    "Yay",
+                    "Hah",
+                    "Fay",
+                    "Hare",
+                    "Nay",
+                    "Chez",
+                    "Hoi",
+                    "Shay",
+                    "hoe",
+                    "Haw",
+                    "Howe",
+                    "Lei",
+                    "hoy",
+                    "Ley",
+                    "fey",
+                    "Dei",
+                    "a",
+                    "eh",
+                    "hate",
+                    "Hail",
+                    "Hayes",
+                    "Hale",
+                    "haze",
+                    "Hays"
+                ],
+                "number": 50,
+                "frequency": 940.9267
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "man",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "man",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 99863,
+            "word_family_frequency": 99863,
+            "phonemes": [
+                "m",
+                "æ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "can",
+                    "mean",
+                    "men",
+                    "mine",
+                    "mad",
+                    "ran",
+                    "Van",
+                    "moon",
+                    "San",
+                    "match",
+                    "main",
+                    "Dan",
+                    "fan",
+                    "map",
+                    "Matt",
+                    "Mac",
+                    "mall",
+                    "mass",
+                    "math",
+                    "Chan",
+                    "pan",
+                    "tan",
+                    "Mack",
+                    "Han",
+                    "Maine",
+                    "Mash",
+                    "Min",
+                    "Yan",
+                    "mat",
+                    "ban",
+                    "Mal",
+                    "mourn",
+                    "mas",
+                    "Mam",
+                    "Nan",
+                    "Mein",
+                    "moan",
+                    "Mach",
+                    "Wan",
+                    "Madge",
+                    "mag",
+                    "morn",
+                    "mane",
+                    "Ann",
+                    "Anne",
+                    "Manny",
+                    "manner",
+                    "manor",
+                    "manned",
+                    "Mans",
+                    "Manna"
+                ],
+                "number": 51,
+                "frequency": 155.8362
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": 75.0
+        },
+        {
+            "text": "Try",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "Try",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 55212,
+            "word_family_frequency": 55212,
+            "phonemes": [
+                "t",
+                "r",
+                "aɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 87.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "this",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "this",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 578204,
+            "word_family_frequency": 578204,
+            "phonemes": [
+                "ð",
+                "ɪ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Miss",
+                    "kiss",
+                    "piss",
+                    "thus",
+                    "sis",
+                    "dis",
+                    "hiss"
+                ],
+                "number": 7,
+                "frequency": 90.7115
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "One",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "One",
+                    "pos": "CD"
+                }
+            ],
+            "frequency": 318107,
+            "word_family_frequency": 318107,
+            "phonemes": [
+                "w",
+                "ʌ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 75.0
+        },
+        {
+            "text": "this",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "this",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 578204,
+            "word_family_frequency": 578204,
+            "phonemes": [
+                "ð",
+                "ɪ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Miss",
+                    "kiss",
+                    "piss",
+                    "thus",
+                    "sis",
+                    "dis",
+                    "hiss"
+                ],
+                "number": 7,
+                "frequency": 90.7115
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "Try",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "Try",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 55212,
+            "word_family_frequency": 55212,
+            "phonemes": [
+                "t",
+                "r",
+                "aɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 87.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "this",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "this",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 578204,
+            "word_family_frequency": 578204,
+            "phonemes": [
+                "ð",
+                "ɪ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Miss",
+                    "kiss",
+                    "piss",
+                    "thus",
+                    "sis",
+                    "dis",
+                    "hiss"
+                ],
+                "number": 7,
+                "frequency": 90.7115
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "One",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "One",
+                    "pos": "CD"
+                }
+            ],
+            "frequency": 318107,
+            "word_family_frequency": 318107,
+            "phonemes": [
+                "w",
+                "ʌ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 75.0
+        },
+        {
+            "text": "this",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "this",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 578204,
+            "word_family_frequency": 578204,
+            "phonemes": [
+                "ð",
+                "ɪ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Miss",
+                    "kiss",
+                    "piss",
+                    "thus",
+                    "sis",
+                    "dis",
+                    "hiss"
+                ],
+                "number": 7,
+                "frequency": 90.7115
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "Try",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "Try",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 55212,
+            "word_family_frequency": 55212,
+            "phonemes": [
+                "t",
+                "r",
+                "aɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 87.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "this",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "this",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 578204,
+            "word_family_frequency": 578204,
+            "phonemes": [
+                "ð",
+                "ɪ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Miss",
+                    "kiss",
+                    "piss",
+                    "thus",
+                    "sis",
+                    "dis",
+                    "hiss"
+                ],
+                "number": 7,
+                "frequency": 90.7115
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 57.0
+        }
+    ],
+    "types": [
+        {
+            "text": "one",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "one",
+                    "pos": "CD"
+                }
+            ],
+            "frequency": 318107,
+            "word_family_frequency": 318107,
+            "phonemes": [
+                "w",
+                "ʌ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "What",
+                    "was",
+                    "when",
+                    "done",
+                    "son",
+                    "run",
+                    "fun",
+                    "gun",
+                    "win",
+                    "none",
+                    "sun",
+                    "wine",
+                    "warn",
+                    "Wayne",
+                    "worn",
+                    "ton",
+                    "nun",
+                    "Wen",
+                    "bun",
+                    "Dunne",
+                    "Wynn",
+                    "Chun",
+                    "pun",
+                    "Wan",
+                    "whine",
+                    "Hun",
+                    "Jun",
+                    "shun",
+                    "Un",
+                    "once",
+                    "ones",
+                    "Wong"
+                ],
+                "number": 32,
+                "frequency": 629.9547
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 75.0
+        },
+        {
+            "text": "this",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "this",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 578204,
+            "word_family_frequency": 578204,
+            "phonemes": [
+                "ð",
+                "ɪ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Miss",
+                    "kiss",
+                    "piss",
+                    "thus",
+                    "sis",
+                    "dis",
+                    "hiss"
+                ],
+                "number": 7,
+                "frequency": 90.7115
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "try",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "try",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 55212,
+            "word_family_frequency": 55212,
+            "phonemes": [
+                "t",
+                "r",
+                "aɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "TRUE",
+                    "cry",
+                    "tree",
+                    "dry",
+                    "Troy",
+                    "fry",
+                    "tray",
+                    "Trey",
+                    "pry",
+                    "awry",
+                    "tie",
+                    "rye",
+                    "Thai",
+                    "Tai",
+                    "tried",
+                    "trial",
+                    "tries",
+                    "tribe",
+                    "tripe",
+                    "trite"
+                ],
+                "number": 20,
+                "frequency": 39.098
+            },
+            "initial_consonant_fl": 87.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "hey",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "hey",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 1753,
+            "word_family_frequency": 7448,
+            "phonemes": [
+                "h",
+                "eɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "man",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "man",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 99863,
+            "word_family_frequency": 99863,
+            "phonemes": [
+                "m",
+                "æ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "can",
+                    "mean",
+                    "men",
+                    "mine",
+                    "mad",
+                    "ran",
+                    "Van",
+                    "moon",
+                    "San",
+                    "match",
+                    "main",
+                    "Dan",
+                    "fan",
+                    "map",
+                    "Matt",
+                    "Mac",
+                    "mall",
+                    "mass",
+                    "math",
+                    "Chan",
+                    "pan",
+                    "tan",
+                    "Mack",
+                    "Han",
+                    "Maine",
+                    "Mash",
+                    "Min",
+                    "Yan",
+                    "mat",
+                    "ban",
+                    "Mal",
+                    "mourn",
+                    "mas",
+                    "Mam",
+                    "Nan",
+                    "Mein",
+                    "moan",
+                    "Mach",
+                    "Wan",
+                    "Madge",
+                    "mag",
+                    "morn",
+                    "mane",
+                    "Ann",
+                    "Anne",
+                    "Manny",
+                    "manner",
+                    "manor",
+                    "manned",
+                    "Mans",
+                    "Manna"
+                ],
+                "number": 51,
+                "frequency": 155.8362
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": 75.0
+        }
+    ],
+    "mean_sentence_length_words": 2.25,
+    "wpm": 78.03468208092485,
+    "spm": 78.03468208092485,
+    "average_ptr": 0.85920475,
+    "transcript_text": " One this? Try this.  One this?  Hey, man!  Try this.  One this?  Try this.  One this?  Try this!",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.0,
+                "end": 1.96,
+                "text": " One this? Try this.",
+                "no_speech_prob": 0.11475548893213272,
+                "avg_logprob": -1.6369102901882595,
+                "compression_ratio": 2.119047619047619,
+                "temperature": 1.0
+            },
+            {
+                "id": 2,
+                "start": 5.26,
+                "end": 6.06,
+                "text": " One this?",
+                "no_speech_prob": 0.11475548893213272,
+                "avg_logprob": -1.6369102901882595,
+                "compression_ratio": 2.119047619047619,
+                "temperature": 1.0
+            },
+            {
+                "id": 3,
+                "start": 6.4,
+                "end": 6.86,
+                "text": " Hey, man!",
+                "no_speech_prob": 0.11475548893213272,
+                "avg_logprob": -1.6369102901882595,
+                "compression_ratio": 2.119047619047619,
+                "temperature": 1.0
+            },
+            {
+                "id": 4,
+                "start": 6.94,
+                "end": 7.7,
+                "text": " Try this.",
+                "no_speech_prob": 0.11475548893213272,
+                "avg_logprob": -1.6369102901882595,
+                "compression_ratio": 2.119047619047619,
+                "temperature": 1.0
+            },
+            {
+                "id": 5,
+                "start": 16.94,
+                "end": 17.88,
+                "text": " One this?",
+                "no_speech_prob": 0.11475548893213272,
+                "avg_logprob": -1.6369102901882595,
+                "compression_ratio": 2.119047619047619,
+                "temperature": 1.0
+            },
+            {
+                "id": 6,
+                "start": 18.34,
+                "end": 18.9,
+                "text": " Try this.",
+                "no_speech_prob": 0.11475548893213272,
+                "avg_logprob": -1.6369102901882595,
+                "compression_ratio": 2.119047619047619,
+                "temperature": 1.0
+            },
+            {
+                "id": 7,
+                "start": 23.11,
+                "end": 23.69,
+                "text": " One this?",
+                "no_speech_prob": 0.11475548893213272,
+                "avg_logprob": -1.6369102901882595,
+                "compression_ratio": 2.119047619047619,
+                "temperature": 1.0
+            },
+            {
+                "id": 8,
+                "start": 24.45,
+                "end": 25.25,
+                "text": " Try this!",
+                "no_speech_prob": 0.11475548893213272,
+                "avg_logprob": -1.6369102901882595,
+                "compression_ratio": 2.119047619047619,
+                "temperature": 1.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 36.641125,
+            "duration_after_vad": 13.84,
+            "language_probability": 0.5854334235191345,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.5854334235191345
+                ],
+                [
+                    "tr",
+                    0.05524847283959389
+                ],
+                [
+                    "de",
+                    0.039346009492874146
+                ],
+                [
+                    "hi",
+                    0.03063262440264225
+                ],
+                [
+                    "yo",
+                    0.028502821922302246
+                ],
+                [
+                    "ms",
+                    0.021819552406668663
+                ],
+                [
+                    "ur",
+                    0.019100099802017212
+                ],
+                [
+                    "ar",
+                    0.018749596551060677
+                ],
+                [
+                    "ht",
+                    0.016541317105293274
+                ],
+                [
+                    "zh",
+                    0.016076212748885155
+                ],
+                [
+                    "haw",
+                    0.012691742740571499
+                ],
+                [
+                    "ja",
+                    0.01224525272846222
+                ],
+                [
+                    "sn",
+                    0.011579549871385098
+                ],
+                [
+                    "sw",
+                    0.00868858490139246
+                ],
+                [
+                    "ko",
+                    0.007609299384057522
+                ],
+                [
+                    "nn",
+                    0.00716688297688961
+                ],
+                [
+                    "bo",
+                    0.0061842347495257854
+                ],
+                [
+                    "yi",
+                    0.0060288505628705025
+                ],
+                [
+                    "bn",
+                    0.005852977745234966
+                ],
+                [
+                    "he",
+                    0.005545611027628183
+                ],
+                [
+                    "la",
+                    0.005422693211585283
+                ],
+                [
+                    "jw",
+                    0.00505385035648942
+                ],
+                [
+                    "cy",
+                    0.0049783880822360516
+                ],
+                [
+                    "my",
+                    0.004713308531790972
+                ],
+                [
+                    "fa",
+                    0.004290170036256313
+                ],
+                [
+                    "es",
+                    0.003915116656571627
+                ],
+                [
+                    "fr",
+                    0.003319757990539074
+                ],
+                [
+                    "nl",
+                    0.0030873834621161222
+                ],
+                [
+                    "tl",
+                    0.002998772542923689
+                ],
+                [
+                    "pt",
+                    0.0029704542830586433
+                ],
+                [
+                    "da",
+                    0.002936287084594369
+                ],
+                [
+                    "br",
+                    0.002286583185195923
+                ],
+                [
+                    "mi",
+                    0.0021799220703542233
+                ],
+                [
+                    "sd",
+                    0.002132573164999485
+                ],
+                [
+                    "ne",
+                    0.002044041408225894
+                ],
+                [
+                    "km",
+                    0.0018356477376073599
+                ],
+                [
+                    "no",
+                    0.0018203476211056113
+                ],
+                [
+                    "si",
+                    0.001657192362472415
+                ],
+                [
+                    "sl",
+                    0.0016078106127679348
+                ],
+                [
+                    "pl",
+                    0.001497054472565651
+                ],
+                [
+                    "sa",
+                    0.0013527971459552646
+                ],
+                [
+                    "bs",
+                    0.0013075280003249645
+                ],
+                [
+                    "el",
+                    0.001252089045010507
+                ],
+                [
+                    "hr",
+                    0.001174326054751873
+                ],
+                [
+                    "mn",
+                    0.0011522118002176285
+                ],
+                [
+                    "as",
+                    0.0011195623083040118
+                ],
+                [
+                    "ru",
+                    0.0010204804129898548
+                ],
+                [
+                    "sv",
+                    0.0009763441048562527
+                ],
+                [
+                    "id",
+                    0.0008942620479501784
+                ],
+                [
+                    "uk",
+                    0.0007225305307656527
+                ],
+                [
+                    "af",
+                    0.0006632560980506241
+                ],
+                [
+                    "ro",
+                    0.0006404214655049145
+                ],
+                [
+                    "lv",
+                    0.0006326338625513017
+                ],
+                [
+                    "bg",
+                    0.0006285262643359601
+                ],
+                [
+                    "hy",
+                    0.0006256926571950316
+                ],
+                [
+                    "ps",
+                    0.0005700273322872818
+                ],
+                [
+                    "pa",
+                    0.0005591688677668571
+                ],
+                [
+                    "ta",
+                    0.0005009487504139543
+                ],
+                [
+                    "mt",
+                    0.0004903643857687712
+                ],
+                [
+                    "oc",
+                    0.0004656684468500316
+                ],
+                [
+                    "th",
+                    0.0004601131076924503
+                ],
+                [
+                    "it",
+                    0.00043623874080367386
+                ],
+                [
+                    "te",
+                    0.0004266771429684013
+                ],
+                [
+                    "fo",
+                    0.00042076941463164985
+                ],
+                [
+                    "lt",
+                    0.0004193656495772302
+                ],
+                [
+                    "kk",
+                    0.0004144192498642951
+                ],
+                [
+                    "is",
+                    0.0003989429387729615
+                ],
+                [
+                    "ka",
+                    0.00038617767859250307
+                ],
+                [
+                    "am",
+                    0.0003204450476914644
+                ],
+                [
+                    "gl",
+                    0.00030360210803337395
+                ],
+                [
+                    "sr",
+                    0.00029047808493487537
+                ],
+                [
+                    "lo",
+                    0.00028623396065086126
+                ],
+                [
+                    "vi",
+                    0.0002636818098835647
+                ],
+                [
+                    "az",
+                    0.0002351294388063252
+                ],
+                [
+                    "gu",
+                    0.00023313451674766839
+                ],
+                [
+                    "ln",
+                    0.00022404124320019037
+                ],
+                [
+                    "kn",
+                    0.00021272979211062193
+                ],
+                [
+                    "ml",
+                    0.00019893309217877686
+                ],
+                [
+                    "so",
+                    0.00019581166270654649
+                ],
+                [
+                    "cs",
+                    0.00018382631242275238
+                ],
+                [
+                    "eu",
+                    0.00016618904192000628
+                ],
+                [
+                    "sk",
+                    0.00012418731057550758
+                ],
+                [
+                    "mk",
+                    0.00011094241926912218
+                ],
+                [
+                    "mr",
+                    0.0001089227371267043
+                ],
+                [
+                    "et",
+                    8.793282904662192e-05
+                ],
+                [
+                    "be",
+                    8.587342745158821e-05
+                ],
+                [
+                    "fi",
+                    8.495443762512878e-05
+                ],
+                [
+                    "hu",
+                    7.444529182976112e-05
+                ],
+                [
+                    "sq",
+                    7.014843140495941e-05
+                ],
+                [
+                    "ca",
+                    6.779860268579796e-05
+                ],
+                [
+                    "tg",
+                    6.603770452784374e-05
+                ],
+                [
+                    "lb",
+                    3.494515476631932e-05
+                ],
+                [
+                    "tt",
+                    2.8800172003684565e-05
+                ],
+                [
+                    "ha",
+                    2.107996078848373e-05
+                ],
+                [
+                    "su",
+                    1.1160730537085328e-05
+                ],
+                [
+                    "uz",
+                    1.925919377754326e-06
+                ],
+                [
+                    "ba",
+                    1.7207892142323544e-06
+                ],
+                [
+                    "mg",
+                    1.4340785128297284e-06
+                ],
+                [
+                    "tk",
+                    1.4260198213378317e-06
+                ]
+            ]
+        }
+    }
+}

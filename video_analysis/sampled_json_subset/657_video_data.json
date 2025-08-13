@@ -1,0 +1,564 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/657_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/657_video_audio.wav",
+    "language": "nl",
+    "length_sec": 59.06,
+    "vad_duration_sec": 58.6979375,
+    "total_segment_length_sec": 27.840000000000003,
+    "word_count": -1,
+    "tokens": [],
+    "types": [],
+    "mean_sentence_length_words": -1.0,
+    "wpm": -1,
+    "spm": -1,
+    "average_ptr": -1,
+    "transcript_text": " Hier hebben we Emilia.  Emilia zegt.  Leben, ontleben, lasten.  Ja, lasten jouw opa, die jodel, ik heb verleben.  Hier hebben we een kind.  Kim zegt.  Als je morgen op een vliegteig na een nog omkende bestemming zal morgen blaal la, waar we dat je ingaat.  Er is de beste gefein, zo prima zijn.  Hier hebben we een Binka.  Binka zegt.  Originele vragen worden gewaardeerd.  Binka leg je wel eens zo'n flinkea, die gaat stinka en door het gewicht ook gelijk gaat stinka.  Merel vragen.  Als je mijn vriendin bent en ik maak het uit, wordt je dan mijn extra.",
+    "transcript": {
+        "segments": [
+            {
+                "id": 22,
+                "start": 30.22,
+                "end": 31.7,
+                "text": " Hier hebben we Emilia.",
+                "no_speech_prob": 0.05693566054105759,
+                "avg_logprob": -0.5082249641418457,
+                "compression_ratio": 1.8282828282828283,
+                "temperature": 0.0
+            },
+            {
+                "id": 23,
+                "start": 31.7,
+                "end": 32.7,
+                "text": " Emilia zegt.",
+                "no_speech_prob": 0.05693566054105759,
+                "avg_logprob": -0.5082249641418457,
+                "compression_ratio": 1.8282828282828283,
+                "temperature": 0.0
+            },
+            {
+                "id": 24,
+                "start": 32.7,
+                "end": 34.18,
+                "text": " Leben, ontleben, lasten.",
+                "no_speech_prob": 0.05693566054105759,
+                "avg_logprob": -0.5082249641418457,
+                "compression_ratio": 1.8282828282828283,
+                "temperature": 0.0
+            },
+            {
+                "id": 25,
+                "start": 34.18,
+                "end": 36.7,
+                "text": " Ja, lasten jouw opa, die jodel, ik heb verleben.",
+                "no_speech_prob": 0.05693566054105759,
+                "avg_logprob": -0.5082249641418457,
+                "compression_ratio": 1.8282828282828283,
+                "temperature": 0.0
+            },
+            {
+                "id": 26,
+                "start": 36.7,
+                "end": 37.7,
+                "text": " Hier hebben we een kind.",
+                "no_speech_prob": 0.05693566054105759,
+                "avg_logprob": -0.5082249641418457,
+                "compression_ratio": 1.8282828282828283,
+                "temperature": 0.0
+            },
+            {
+                "id": 27,
+                "start": 37.7,
+                "end": 38.7,
+                "text": " Kim zegt.",
+                "no_speech_prob": 0.05693566054105759,
+                "avg_logprob": -0.5082249641418457,
+                "compression_ratio": 1.8282828282828283,
+                "temperature": 0.0
+            },
+            {
+                "id": 28,
+                "start": 38.7,
+                "end": 44.06,
+                "text": " Als je morgen op een vliegteig na een nog omkende bestemming zal morgen blaal la, waar we dat je ingaat.",
+                "no_speech_prob": 0.05693566054105759,
+                "avg_logprob": -0.5082249641418457,
+                "compression_ratio": 1.8282828282828283,
+                "temperature": 0.0
+            },
+            {
+                "id": 29,
+                "start": 45.06,
+                "end": 47.06,
+                "text": " Er is de beste gefein, zo prima zijn.",
+                "no_speech_prob": 0.05693566054105759,
+                "avg_logprob": -0.5082249641418457,
+                "compression_ratio": 1.8282828282828283,
+                "temperature": 0.0
+            },
+            {
+                "id": 30,
+                "start": 47.06,
+                "end": 48.26,
+                "text": " Hier hebben we een Binka.",
+                "no_speech_prob": 0.05693566054105759,
+                "avg_logprob": -0.5082249641418457,
+                "compression_ratio": 1.8282828282828283,
+                "temperature": 0.0
+            },
+            {
+                "id": 31,
+                "start": 48.26,
+                "end": 49.26,
+                "text": " Binka zegt.",
+                "no_speech_prob": 0.05693566054105759,
+                "avg_logprob": -0.5082249641418457,
+                "compression_ratio": 1.8282828282828283,
+                "temperature": 0.0
+            },
+            {
+                "id": 32,
+                "start": 49.26,
+                "end": 51.26,
+                "text": " Originele vragen worden gewaardeerd.",
+                "no_speech_prob": 0.05693566054105759,
+                "avg_logprob": -0.5082249641418457,
+                "compression_ratio": 1.8282828282828283,
+                "temperature": 0.0
+            },
+            {
+                "id": 33,
+                "start": 51.26,
+                "end": 55.58,
+                "text": " Binka leg je wel eens zo'n flinkea, die gaat stinka en door het gewicht ook gelijk gaat stinka.",
+                "no_speech_prob": 0.05693566054105759,
+                "avg_logprob": -0.5082249641418457,
+                "compression_ratio": 1.8282828282828283,
+                "temperature": 0.0
+            },
+            {
+                "id": 34,
+                "start": 55.58,
+                "end": 56.58,
+                "text": " Merel vragen.",
+                "no_speech_prob": 0.05693566054105759,
+                "avg_logprob": -0.5082249641418457,
+                "compression_ratio": 1.8282828282828283,
+                "temperature": 0.0
+            },
+            {
+                "id": 35,
+                "start": 56.58,
+                "end": 59.06,
+                "text": " Als je mijn vriendin bent en ik maak het uit, wordt je dan mijn extra.",
+                "no_speech_prob": 0.05693566054105759,
+                "avg_logprob": -0.5082249641418457,
+                "compression_ratio": 1.8282828282828283,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "nl",
+            "duration": 59.0019375,
+            "duration_after_vad": 58.6979375,
+            "language_probability": 0.9121175408363342,
+            "all_language_probs": [
+                [
+                    "nl",
+                    0.9121175408363342
+                ],
+                [
+                    "en",
+                    0.04396867752075195
+                ],
+                [
+                    "pt",
+                    0.005675859283655882
+                ],
+                [
+                    "de",
+                    0.005292526446282864
+                ],
+                [
+                    "fr",
+                    0.005114247091114521
+                ],
+                [
+                    "pl",
+                    0.0033021571580320597
+                ],
+                [
+                    "es",
+                    0.0030498921405524015
+                ],
+                [
+                    "tr",
+                    0.00192352628801018
+                ],
+                [
+                    "ru",
+                    0.001588568091392517
+                ],
+                [
+                    "el",
+                    0.0015208598924800754
+                ],
+                [
+                    "nn",
+                    0.0014592863153666258
+                ],
+                [
+                    "ar",
+                    0.001275442773476243
+                ],
+                [
+                    "ja",
+                    0.0012684945249930024
+                ],
+                [
+                    "zh",
+                    0.001074212952516973
+                ],
+                [
+                    "ko",
+                    0.0010613659396767616
+                ],
+                [
+                    "vi",
+                    0.0009329959866590798
+                ],
+                [
+                    "fi",
+                    0.0009016796248033643
+                ],
+                [
+                    "hi",
+                    0.0007123947725631297
+                ],
+                [
+                    "sv",
+                    0.0006962453480809927
+                ],
+                [
+                    "la",
+                    0.0006641547661274672
+                ],
+                [
+                    "hu",
+                    0.0006527439691126347
+                ],
+                [
+                    "it",
+                    0.0005648343940265477
+                ],
+                [
+                    "cy",
+                    0.0005173705285415053
+                ],
+                [
+                    "jw",
+                    0.00042516362736932933
+                ],
+                [
+                    "cs",
+                    0.0003380573180038482
+                ],
+                [
+                    "id",
+                    0.0003135294537059963
+                ],
+                [
+                    "da",
+                    0.0002989203785546124
+                ],
+                [
+                    "no",
+                    0.0002977328549604863
+                ],
+                [
+                    "th",
+                    0.00027432438218966126
+                ],
+                [
+                    "ca",
+                    0.0002555757819209248
+                ],
+                [
+                    "tl",
+                    0.00025365487090311944
+                ],
+                [
+                    "af",
+                    0.0002232135011581704
+                ],
+                [
+                    "km",
+                    0.00020957973902113736
+                ],
+                [
+                    "haw",
+                    0.00016072024300228804
+                ],
+                [
+                    "ur",
+                    0.00014725778601132333
+                ],
+                [
+                    "br",
+                    0.00011784274101955816
+                ],
+                [
+                    "sn",
+                    0.00010239869152428582
+                ],
+                [
+                    "ms",
+                    0.00010092523007187992
+                ],
+                [
+                    "mi",
+                    8.98500657058321e-05
+                ],
+                [
+                    "ta",
+                    7.944537355797365e-05
+                ],
+                [
+                    "ro",
+                    7.860349433030933e-05
+                ],
+                [
+                    "is",
+                    7.64233700465411e-05
+                ],
+                [
+                    "gl",
+                    7.45101278880611e-05
+                ],
+                [
+                    "eu",
+                    7.097401976352558e-05
+                ],
+                [
+                    "he",
+                    6.378837861120701e-05
+                ],
+                [
+                    "ml",
+                    5.7223831390729174e-05
+                ],
+                [
+                    "uk",
+                    5.4107898904476315e-05
+                ],
+                [
+                    "yi",
+                    4.576627179631032e-05
+                ],
+                [
+                    "sk",
+                    3.9487244066549465e-05
+                ],
+                [
+                    "fo",
+                    3.2170388294616714e-05
+                ],
+                [
+                    "ht",
+                    2.9264585464261472e-05
+                ],
+                [
+                    "oc",
+                    2.376098927925341e-05
+                ],
+                [
+                    "bg",
+                    2.3258626242750324e-05
+                ],
+                [
+                    "yo",
+                    2.2059459297452122e-05
+                ],
+                [
+                    "et",
+                    2.192554165958427e-05
+                ],
+                [
+                    "mn",
+                    2.1745063349953853e-05
+                ],
+                [
+                    "lv",
+                    2.0289689928176813e-05
+                ],
+                [
+                    "sl",
+                    2.0064189811819233e-05
+                ],
+                [
+                    "hr",
+                    1.699932909104973e-05
+                ],
+                [
+                    "sa",
+                    1.4848245882603806e-05
+                ],
+                [
+                    "bn",
+                    1.315554527536733e-05
+                ],
+                [
+                    "si",
+                    1.241722929989919e-05
+                ],
+                [
+                    "my",
+                    1.1786561117332894e-05
+                ],
+                [
+                    "bs",
+                    1.1607337000896223e-05
+                ],
+                [
+                    "te",
+                    1.0898790606006514e-05
+                ],
+                [
+                    "be",
+                    1.0777283023344353e-05
+                ],
+                [
+                    "fa",
+                    1.0588503755570855e-05
+                ],
+                [
+                    "ne",
+                    8.629501280665863e-06
+                ],
+                [
+                    "az",
+                    8.31109173304867e-06
+                ],
+                [
+                    "bo",
+                    8.24818380351644e-06
+                ],
+                [
+                    "mt",
+                    8.114702723105438e-06
+                ],
+                [
+                    "lo",
+                    7.191792974481359e-06
+                ],
+                [
+                    "sq",
+                    6.744437996530905e-06
+                ],
+                [
+                    "hy",
+                    6.4819569161045365e-06
+                ],
+                [
+                    "sw",
+                    6.428741926356452e-06
+                ],
+                [
+                    "pa",
+                    4.955784788762685e-06
+                ],
+                [
+                    "lt",
+                    4.580816948873689e-06
+                ],
+                [
+                    "kk",
+                    3.6934732179361163e-06
+                ],
+                [
+                    "sd",
+                    3.359393986102077e-06
+                ],
+                [
+                    "sr",
+                    2.0606405541911954e-06
+                ],
+                [
+                    "ln",
+                    1.6891400491658715e-06
+                ],
+                [
+                    "ka",
+                    1.6823413488964434e-06
+                ],
+                [
+                    "kn",
+                    1.2450852864276385e-06
+                ],
+                [
+                    "mk",
+                    1.2259971526873414e-06
+                ],
+                [
+                    "mr",
+                    9.043953923537629e-07
+                ],
+                [
+                    "ps",
+                    6.910592560416262e-07
+                ],
+                [
+                    "as",
+                    6.013286792949657e-07
+                ],
+                [
+                    "gu",
+                    3.959403613862378e-07
+                ],
+                [
+                    "am",
+                    3.8009619629519875e-07
+                ],
+                [
+                    "lb",
+                    2.2510680253162718e-07
+                ],
+                [
+                    "so",
+                    2.0398005062816082e-07
+                ],
+                [
+                    "tt",
+                    1.6217298082210618e-07
+                ],
+                [
+                    "tg",
+                    7.95376706719253e-08
+                ],
+                [
+                    "su",
+                    4.7915662548803084e-08
+                ],
+                [
+                    "ha",
+                    1.5884854320802333e-08
+                ],
+                [
+                    "ba",
+                    1.1011115574888208e-08
+                ],
+                [
+                    "tk",
+                    9.429468761368298e-09
+                ],
+                [
+                    "mg",
+                    8.476786383937451e-09
+                ],
+                [
+                    "uz",
+                    7.55000151286822e-09
+                ]
+            ]
+        }
+    }
+}

@@ -1,0 +1,484 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/879_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/879_video_audio.wav",
+    "language": "nl",
+    "length_sec": 58.57,
+    "vad_duration_sec": 58.409375,
+    "total_segment_length_sec": 52.0,
+    "word_count": -1,
+    "tokens": [],
+    "types": [],
+    "mean_sentence_length_words": -1.0,
+    "wpm": -1,
+    "spm": -1,
+    "average_ptr": -1,
+    "transcript_text": " Lekker wokken je uit de losse pols hier, beginnen met de choumijnnoedels, even een paar bonsaiers opgeven met de spatou, panfilippie in de pan, pas voorumaken met de hanksgroen, klein beetje van maggie en op de koken.  Kippenbosjes in de pan water erbij laten koken en verdart hem in de bosar, daarna op de knip, normaal uitje, op de snij, een verkramelen, blikkie meers, uitlaat de lekkende bijleggen.  Even bolen, ik ga je spar van dag, eerst berg slaar op de snij. Zat zeuptjes klaar, noedertjes uit de lekkere, sowya saas, ketchup manis.  Mengen, ook klaar, paap, hansgroen je wilt, kippetje uit de lekkere naar elkaar grijgen met twee jaar gekke.  Oberligst in ieder pan, olie, sowya saas, knofelijk poeja, keri poeja, kajenne poeja, saat dat niet m'n laia kippetjes erbij.  Spaat ook flippe hustelen, maar kessmannen chuniszetten, konijnen voerden bij, lekker laten bruttelen, hansgroen en chef hier doen met werk.",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.18,
+                "end": 12.18,
+                "text": " Lekker wokken je uit de losse pols hier, beginnen met de choumijnnoedels, even een paar bonsaiers opgeven met de spatou, panfilippie in de pan, pas voorumaken met de hanksgroen, klein beetje van maggie en op de koken.",
+                "no_speech_prob": 0.006890185177326202,
+                "avg_logprob": -0.5080649180071695,
+                "compression_ratio": 1.6919831223628692,
+                "temperature": 0.0
+            },
+            {
+                "id": 2,
+                "start": 12.18,
+                "end": 23.18,
+                "text": " Kippenbosjes in de pan water erbij laten koken en verdart hem in de bosar, daarna op de knip, normaal uitje, op de snij, een verkramelen, blikkie meers, uitlaat de lekkende bijleggen.",
+                "no_speech_prob": 0.006890185177326202,
+                "avg_logprob": -0.5080649180071695,
+                "compression_ratio": 1.6919831223628692,
+                "temperature": 0.0
+            },
+            {
+                "id": 3,
+                "start": 23.18,
+                "end": 31.18,
+                "text": " Even bolen, ik ga je spar van dag, eerst berg slaar op de snij. Zat zeuptjes klaar, noedertjes uit de lekkere, sowya saas, ketchup manis.",
+                "no_speech_prob": 0.24549610912799835,
+                "avg_logprob": -0.5252738601090957,
+                "compression_ratio": 1.7508532423208192,
+                "temperature": 0.0
+            },
+            {
+                "id": 4,
+                "start": 31.18,
+                "end": 37.18,
+                "text": " Mengen, ook klaar, paap, hansgroen je wilt, kippetje uit de lekkere naar elkaar grijgen met twee jaar gekke.",
+                "no_speech_prob": 0.24549610912799835,
+                "avg_logprob": -0.5252738601090957,
+                "compression_ratio": 1.7508532423208192,
+                "temperature": 0.0
+            },
+            {
+                "id": 5,
+                "start": 37.18,
+                "end": 45.18,
+                "text": " Oberligst in ieder pan, olie, sowya saas, knofelijk poeja, keri poeja, kajenne poeja, saat dat niet m'n laia kippetjes erbij.",
+                "no_speech_prob": 0.24549610912799835,
+                "avg_logprob": -0.5252738601090957,
+                "compression_ratio": 1.7508532423208192,
+                "temperature": 0.0
+            },
+            {
+                "id": 6,
+                "start": 45.18,
+                "end": 52.18,
+                "text": " Spaat ook flippe hustelen, maar kessmannen chuniszetten, konijnen voerden bij, lekker laten bruttelen, hansgroen en chef hier doen met werk.",
+                "no_speech_prob": 0.24549610912799835,
+                "avg_logprob": -0.5252738601090957,
+                "compression_ratio": 1.7508532423208192,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "nl",
+            "duration": 58.585375,
+            "duration_after_vad": 58.409375,
+            "language_probability": 0.9977974891662598,
+            "all_language_probs": [
+                [
+                    "nl",
+                    0.9977974891662598
+                ],
+                [
+                    "el",
+                    0.00047077963245101273
+                ],
+                [
+                    "en",
+                    0.0003994997532572597
+                ],
+                [
+                    "af",
+                    0.00038082851096987724
+                ],
+                [
+                    "pt",
+                    0.00021386658772826195
+                ],
+                [
+                    "pl",
+                    0.00012919478467665613
+                ],
+                [
+                    "nn",
+                    8.835881453705952e-05
+                ],
+                [
+                    "fr",
+                    7.202137931017205e-05
+                ],
+                [
+                    "tr",
+                    6.568593380507082e-05
+                ],
+                [
+                    "ar",
+                    3.926077260985039e-05
+                ],
+                [
+                    "ja",
+                    3.618869595811702e-05
+                ],
+                [
+                    "jw",
+                    3.3534408430568874e-05
+                ],
+                [
+                    "la",
+                    3.186826143064536e-05
+                ],
+                [
+                    "de",
+                    2.7833153581013903e-05
+                ],
+                [
+                    "br",
+                    2.4493900127708912e-05
+                ],
+                [
+                    "it",
+                    2.3850339857744984e-05
+                ],
+                [
+                    "es",
+                    2.1574127458734438e-05
+                ],
+                [
+                    "cy",
+                    1.9667048036353663e-05
+                ],
+                [
+                    "km",
+                    1.8159442333853804e-05
+                ],
+                [
+                    "hi",
+                    1.2679509381996468e-05
+                ],
+                [
+                    "sn",
+                    9.922730896505527e-06
+                ],
+                [
+                    "gl",
+                    6.527985533466563e-06
+                ],
+                [
+                    "eu",
+                    6.06982757744845e-06
+                ],
+                [
+                    "ko",
+                    5.7855158956954256e-06
+                ],
+                [
+                    "da",
+                    5.555933057621587e-06
+                ],
+                [
+                    "ca",
+                    5.0820658543671016e-06
+                ],
+                [
+                    "oc",
+                    4.8626507123117335e-06
+                ],
+                [
+                    "ur",
+                    4.276847903383896e-06
+                ],
+                [
+                    "yo",
+                    3.78546201318386e-06
+                ],
+                [
+                    "ru",
+                    3.55282099917531e-06
+                ],
+                [
+                    "is",
+                    3.4176694043708267e-06
+                ],
+                [
+                    "fi",
+                    3.2999191716953646e-06
+                ],
+                [
+                    "vi",
+                    3.0116477773844963e-06
+                ],
+                [
+                    "ro",
+                    2.8709757771139266e-06
+                ],
+                [
+                    "haw",
+                    2.743276809269446e-06
+                ],
+                [
+                    "zh",
+                    2.6850727863347856e-06
+                ],
+                [
+                    "hu",
+                    1.94129574992985e-06
+                ],
+                [
+                    "ht",
+                    1.913748292281525e-06
+                ],
+                [
+                    "cs",
+                    1.841143102865317e-06
+                ],
+                [
+                    "uk",
+                    1.7561810636834707e-06
+                ],
+                [
+                    "id",
+                    1.7128213585237972e-06
+                ],
+                [
+                    "yi",
+                    1.3697019767278107e-06
+                ],
+                [
+                    "sv",
+                    1.2396737929520896e-06
+                ],
+                [
+                    "no",
+                    8.940760380937718e-07
+                ],
+                [
+                    "bg",
+                    7.051003763081098e-07
+                ],
+                [
+                    "ms",
+                    6.582250193787331e-07
+                ],
+                [
+                    "mi",
+                    6.486737902378081e-07
+                ],
+                [
+                    "tl",
+                    4.7190491159199155e-07
+                ],
+                [
+                    "sq",
+                    3.990749632976076e-07
+                ],
+                [
+                    "pa",
+                    3.6563770322572964e-07
+                ],
+                [
+                    "ta",
+                    3.4307495866414683e-07
+                ],
+                [
+                    "lv",
+                    2.68041759454718e-07
+                ],
+                [
+                    "hy",
+                    2.546935604641476e-07
+                ],
+                [
+                    "sa",
+                    2.4078079263745167e-07
+                ],
+                [
+                    "bn",
+                    2.2282411293872428e-07
+                ],
+                [
+                    "et",
+                    2.2141712463508156e-07
+                ],
+                [
+                    "fo",
+                    2.209751954751482e-07
+                ],
+                [
+                    "si",
+                    1.7787667161428544e-07
+                ],
+                [
+                    "ml",
+                    1.640146507497775e-07
+                ],
+                [
+                    "bo",
+                    1.6214370646139287e-07
+                ],
+                [
+                    "ln",
+                    1.252212342706116e-07
+                ],
+                [
+                    "sk",
+                    1.229199284580318e-07
+                ],
+                [
+                    "sl",
+                    1.2201441279557912e-07
+                ],
+                [
+                    "th",
+                    1.1955076217873284e-07
+                ],
+                [
+                    "mn",
+                    9.670802825212377e-08
+                ],
+                [
+                    "mt",
+                    9.601090766864218e-08
+                ],
+                [
+                    "sd",
+                    9.591152405619141e-08
+                ],
+                [
+                    "my",
+                    8.670158280210671e-08
+                ],
+                [
+                    "he",
+                    7.691479453342254e-08
+                ],
+                [
+                    "az",
+                    6.861564116888985e-08
+                ],
+                [
+                    "sw",
+                    6.761501936125569e-08
+                ],
+                [
+                    "bs",
+                    6.30413268254415e-08
+                ],
+                [
+                    "fa",
+                    5.5566427903386284e-08
+                ],
+                [
+                    "lo",
+                    5.49613936584592e-08
+                ],
+                [
+                    "hr",
+                    4.2934395594329544e-08
+                ],
+                [
+                    "ne",
+                    3.57328993061401e-08
+                ],
+                [
+                    "lt",
+                    3.4623081290874325e-08
+                ],
+                [
+                    "te",
+                    3.044771546001357e-08
+                ],
+                [
+                    "kk",
+                    2.7356637843922726e-08
+                ],
+                [
+                    "be",
+                    2.2429508916843588e-08
+                ],
+                [
+                    "ps",
+                    1.764940193993425e-08
+                ],
+                [
+                    "mk",
+                    1.1972881353017328e-08
+                ],
+                [
+                    "sr",
+                    6.3816161244290015e-09
+                ],
+                [
+                    "lb",
+                    5.554552817699232e-09
+                ],
+                [
+                    "am",
+                    4.4495487294682334e-09
+                ],
+                [
+                    "gu",
+                    4.404114850586893e-09
+                ],
+                [
+                    "tt",
+                    3.870594067478805e-09
+                ],
+                [
+                    "ka",
+                    2.7681943404189724e-09
+                ],
+                [
+                    "so",
+                    2.443202529178734e-09
+                ],
+                [
+                    "tg",
+                    2.0339023798499056e-09
+                ],
+                [
+                    "mr",
+                    1.9607284684752813e-09
+                ],
+                [
+                    "kn",
+                    1.6617460740775414e-09
+                ],
+                [
+                    "su",
+                    9.02840024963325e-10
+                ],
+                [
+                    "as",
+                    8.787069960547456e-10
+                ],
+                [
+                    "ha",
+                    6.027244814355015e-10
+                ],
+                [
+                    "uz",
+                    5.241427847302305e-10
+                ],
+                [
+                    "ba",
+                    2.859962544565775e-10
+                ],
+                [
+                    "mg",
+                    2.558432077304218e-10
+                ],
+                [
+                    "tk",
+                    1.7724884060488222e-10
+                ]
+            ]
+        }
+    }
+}

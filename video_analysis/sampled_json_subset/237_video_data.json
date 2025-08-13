@@ -1,0 +1,866 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/237_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/237_video_audio.wav",
+    "language": "en",
+    "length_sec": 12.25,
+    "vad_duration_sec": 4.56,
+    "total_segment_length_sec": 4.5,
+    "word_count": 6,
+    "tokens": [
+        {
+            "text": "D",
+            "length": 1,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "D",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 82978,
+            "word_family_frequency": 1344286,
+            "phonemes": [
+                "d",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "J",
+            "length": 1,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "J",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 10359,
+            "word_family_frequency": 10359,
+            "phonemes": [
+                "dʒ",
+                "eɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 39.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "Savel",
+            "length": 5,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "Savel",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": -1,
+            "word_family_frequency": -1,
+            "phonemes": [
+                "s",
+                "ɑ",
+                "v",
+                "ɛ",
+                "l"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 85.0,
+            "final_consonant_fl": 76.0
+        },
+        {
+            "text": "on",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "on",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 741805,
+            "word_family_frequency": 741805,
+            "phonemes": [
+                "ɑ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "in",
+                    "an",
+                    "own",
+                    "Ann",
+                    "odd",
+                    "Anne",
+                    "earn",
+                    "inn",
+                    "Un",
+                    "urn",
+                    "Ah",
+                    "don",
+                    "John",
+                    "honor",
+                    "con",
+                    "von",
+                    "Bon",
+                    "Ana",
+                    "Khan",
+                    "non",
+                    "Conn",
+                    "yon",
+                    "shone",
+                    "Donne",
+                    "Bonne"
+                ],
+                "number": 25,
+                "frequency": 761.5992
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 75.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "mix",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "mix",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 8810,
+            "word_family_frequency": 8810,
+            "phonemes": [
+                "m",
+                "ɪ",
+                "k",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "makes",
+                    "six",
+                    "fix",
+                    "Max",
+                    "marks",
+                    "Mickey",
+                    "chicks",
+                    "picks",
+                    "kicks",
+                    "Hicks",
+                    "dicks",
+                    "Dix",
+                    "Marx",
+                    "Micah",
+                    "Nix",
+                    "myths",
+                    "ticks",
+                    "mitts",
+                    "licks",
+                    "mikes",
+                    "Nicks",
+                    "mince",
+                    "mocks",
+                    "Wicks",
+                    "Miss",
+                    "Mick",
+                    "mixed",
+                    "mixer",
+                    "minx"
+                ],
+                "number": 29,
+                "frequency": 41.2306
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": 57.0
+        }
+    ],
+    "types": [
+        {
+            "text": "d",
+            "length": 1,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "d",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 82978,
+            "word_family_frequency": 1344286,
+            "phonemes": [
+                "d",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "j",
+            "length": 1,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "j",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 10359,
+            "word_family_frequency": 10359,
+            "phonemes": [
+                "dʒ",
+                "eɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 39.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "savel",
+            "length": 5,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "savel",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": -1,
+            "word_family_frequency": -1,
+            "phonemes": [
+                "s",
+                "ɑ",
+                "v",
+                "ɛ",
+                "l"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 85.0,
+            "final_consonant_fl": 76.0
+        },
+        {
+            "text": "on",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "on",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 741805,
+            "word_family_frequency": 741805,
+            "phonemes": [
+                "ɑ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "in",
+                    "an",
+                    "own",
+                    "Ann",
+                    "odd",
+                    "Anne",
+                    "earn",
+                    "inn",
+                    "Un",
+                    "urn",
+                    "Ah",
+                    "don",
+                    "John",
+                    "honor",
+                    "con",
+                    "von",
+                    "Bon",
+                    "Ana",
+                    "Khan",
+                    "non",
+                    "Conn",
+                    "yon",
+                    "shone",
+                    "Donne",
+                    "Bonne"
+                ],
+                "number": 25,
+                "frequency": 761.5992
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 75.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "mix",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "mix",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 8810,
+            "word_family_frequency": 8810,
+            "phonemes": [
+                "m",
+                "ɪ",
+                "k",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "makes",
+                    "six",
+                    "fix",
+                    "Max",
+                    "marks",
+                    "Mickey",
+                    "chicks",
+                    "picks",
+                    "kicks",
+                    "Hicks",
+                    "dicks",
+                    "Dix",
+                    "Marx",
+                    "Micah",
+                    "Nix",
+                    "myths",
+                    "ticks",
+                    "mitts",
+                    "licks",
+                    "mikes",
+                    "Nicks",
+                    "mince",
+                    "mocks",
+                    "Wicks",
+                    "Miss",
+                    "Mick",
+                    "mixed",
+                    "mixer",
+                    "minx"
+                ],
+                "number": 29,
+                "frequency": 41.2306
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": 57.0
+        }
+    ],
+    "mean_sentence_length_words": 6.0,
+    "wpm": 78.94736842105263,
+    "spm": 92.10526315789474,
+    "average_ptr": 0.986667,
+    "transcript_text": " D.J. Savel, on the mix.",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.0,
+                "end": 4.5,
+                "text": " D.J. Savel, on the mix.",
+                "no_speech_prob": 0.1643448770046234,
+                "avg_logprob": -0.9944613490785871,
+                "compression_ratio": 0.7419354838709677,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 12.2369375,
+            "duration_after_vad": 4.56,
+            "language_probability": 0.6394976377487183,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.6394976377487183
+                ],
+                [
+                    "ja",
+                    0.03668277710676193
+                ],
+                [
+                    "es",
+                    0.030471881851553917
+                ],
+                [
+                    "pt",
+                    0.02158508263528347
+                ],
+                [
+                    "nn",
+                    0.021212594583630562
+                ],
+                [
+                    "pl",
+                    0.017694449052214622
+                ],
+                [
+                    "nl",
+                    0.016490336507558823
+                ],
+                [
+                    "fr",
+                    0.015110405161976814
+                ],
+                [
+                    "ko",
+                    0.014752717688679695
+                ],
+                [
+                    "it",
+                    0.011470750905573368
+                ],
+                [
+                    "km",
+                    0.011005978100001812
+                ],
+                [
+                    "de",
+                    0.010335776954889297
+                ],
+                [
+                    "la",
+                    0.008263017050921917
+                ],
+                [
+                    "el",
+                    0.008170925080776215
+                ],
+                [
+                    "tr",
+                    0.007555054966360331
+                ],
+                [
+                    "cy",
+                    0.00732713658362627
+                ],
+                [
+                    "ru",
+                    0.007125829346477985
+                ],
+                [
+                    "ro",
+                    0.006450771354138851
+                ],
+                [
+                    "hi",
+                    0.006026448681950569
+                ],
+                [
+                    "jw",
+                    0.005779103841632605
+                ],
+                [
+                    "bg",
+                    0.005434456747025251
+                ],
+                [
+                    "ar",
+                    0.005130667705088854
+                ],
+                [
+                    "yo",
+                    0.004770196974277496
+                ],
+                [
+                    "haw",
+                    0.004572044592350721
+                ],
+                [
+                    "sv",
+                    0.0043741026893258095
+                ],
+                [
+                    "br",
+                    0.0043386477045714855
+                ],
+                [
+                    "sn",
+                    0.003809510264545679
+                ],
+                [
+                    "fi",
+                    0.0030664619989693165
+                ],
+                [
+                    "hr",
+                    0.002909670816734433
+                ],
+                [
+                    "he",
+                    0.0027916221879422665
+                ],
+                [
+                    "tl",
+                    0.002783986506983638
+                ],
+                [
+                    "cs",
+                    0.0027148157823830843
+                ],
+                [
+                    "no",
+                    0.0026192069053649902
+                ],
+                [
+                    "ta",
+                    0.002533630235120654
+                ],
+                [
+                    "ms",
+                    0.002492530969902873
+                ],
+                [
+                    "sl",
+                    0.0024379154201596975
+                ],
+                [
+                    "bn",
+                    0.0023558512330055237
+                ],
+                [
+                    "te",
+                    0.002294528530910611
+                ],
+                [
+                    "zh",
+                    0.0022864658385515213
+                ],
+                [
+                    "vi",
+                    0.0022457351442426443
+                ],
+                [
+                    "bs",
+                    0.0020711375400424004
+                ],
+                [
+                    "hu",
+                    0.001749600050970912
+                ],
+                [
+                    "mi",
+                    0.0017292365664616227
+                ],
+                [
+                    "gl",
+                    0.0015056311385706067
+                ],
+                [
+                    "si",
+                    0.001344751100987196
+                ],
+                [
+                    "ca",
+                    0.001257764408364892
+                ],
+                [
+                    "ur",
+                    0.0012262128293514252
+                ],
+                [
+                    "uk",
+                    0.0012174886651337147
+                ],
+                [
+                    "lv",
+                    0.0011618128046393394
+                ],
+                [
+                    "da",
+                    0.0011178789427503943
+                ],
+                [
+                    "fa",
+                    0.0011103400029242039
+                ],
+                [
+                    "ht",
+                    0.001096394145861268
+                ],
+                [
+                    "id",
+                    0.001049652462825179
+                ],
+                [
+                    "eu",
+                    0.001043066382408142
+                ],
+                [
+                    "oc",
+                    0.000872461823746562
+                ],
+                [
+                    "sk",
+                    0.0008271511760540307
+                ],
+                [
+                    "th",
+                    0.0008232941036112607
+                ],
+                [
+                    "is",
+                    0.000819253851659596
+                ],
+                [
+                    "af",
+                    0.0007722237496636808
+                ],
+                [
+                    "yi",
+                    0.000697502342518419
+                ],
+                [
+                    "sw",
+                    0.0006964464555494487
+                ],
+                [
+                    "sa",
+                    0.0006397193064913154
+                ],
+                [
+                    "ml",
+                    0.0005993980448693037
+                ],
+                [
+                    "lt",
+                    0.0005396798369474709
+                ],
+                [
+                    "my",
+                    0.0005243244813755155
+                ],
+                [
+                    "sr",
+                    0.0004907845868729055
+                ],
+                [
+                    "hy",
+                    0.0004743741301354021
+                ],
+                [
+                    "ne",
+                    0.0003423057496547699
+                ],
+                [
+                    "et",
+                    0.0003014161193277687
+                ],
+                [
+                    "bo",
+                    0.0002516958920750767
+                ],
+                [
+                    "mn",
+                    0.00024910419597290456
+                ],
+                [
+                    "kk",
+                    0.00024335112539120018
+                ],
+                [
+                    "ka",
+                    0.0002231925172964111
+                ],
+                [
+                    "az",
+                    0.00021078910504002124
+                ],
+                [
+                    "ps",
+                    0.00020352943101897836
+                ],
+                [
+                    "sq",
+                    0.00018667828408069909
+                ],
+                [
+                    "mt",
+                    0.00018223185907118022
+                ],
+                [
+                    "sd",
+                    0.00016353206592611969
+                ],
+                [
+                    "pa",
+                    0.00015887936751823872
+                ],
+                [
+                    "mk",
+                    0.00015824455476831645
+                ],
+                [
+                    "lo",
+                    0.00010995925549650565
+                ],
+                [
+                    "kn",
+                    8.775491005508229e-05
+                ],
+                [
+                    "gu",
+                    8.673055708641186e-05
+                ],
+                [
+                    "fo",
+                    8.49133066367358e-05
+                ],
+                [
+                    "ln",
+                    8.263615745818242e-05
+                ],
+                [
+                    "be",
+                    5.343191878637299e-05
+                ],
+                [
+                    "as",
+                    5.136400432093069e-05
+                ],
+                [
+                    "mr",
+                    4.736889968626201e-05
+                ],
+                [
+                    "am",
+                    4.6739991375943646e-05
+                ],
+                [
+                    "so",
+                    1.8025148165179417e-05
+                ],
+                [
+                    "lb",
+                    8.05017498350935e-06
+                ],
+                [
+                    "tt",
+                    7.5050552368338685e-06
+                ],
+                [
+                    "tg",
+                    7.210192961792927e-06
+                ],
+                [
+                    "su",
+                    3.329519358885591e-06
+                ],
+                [
+                    "ha",
+                    9.31657666569663e-07
+                ],
+                [
+                    "ba",
+                    2.855548189018009e-07
+                ],
+                [
+                    "uz",
+                    2.1929501770046045e-07
+                ],
+                [
+                    "tk",
+                    1.8734323248281726e-07
+                ],
+                [
+                    "mg",
+                    1.3318482672275422e-07
+                ]
+            ]
+        }
+    }
+}

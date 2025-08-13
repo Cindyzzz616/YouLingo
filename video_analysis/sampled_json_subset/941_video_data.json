@@ -1,0 +1,910 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/941_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/941_video_audio.wav",
+    "language": "en",
+    "length_sec": 9.11,
+    "vad_duration_sec": 6.768,
+    "total_segment_length_sec": 6.0,
+    "word_count": 4,
+    "tokens": [
+        {
+            "text": "that",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "that",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 1208154,
+            "word_family_frequency": 1208154,
+            "phonemes": [
+                "ð",
+                "æ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "fat",
+                    "cat",
+                    "hat",
+                    "rat",
+                    "Matt",
+                    "sat",
+                    "bat",
+                    "Pat",
+                    "chat",
+                    "Nat",
+                    "mat",
+                    "Kat",
+                    "vat",
+                    "tat",
+                    "gat",
+                    "shat",
+                    "gnat",
+                    "at"
+                ],
+                "number": 18,
+                "frequency": 199.3791
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "would",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "would",
+                    "pos": "MD"
+                }
+            ],
+            "frequency": 246616,
+            "word_family_frequency": 246616,
+            "phonemes": [
+                "w",
+                "ʊ",
+                "d"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "good",
+                    "could",
+                    "should",
+                    "word",
+                    "wide",
+                    "Wade",
+                    "hood",
+                    "ward",
+                    "weed",
+                    "wool",
+                    "weighed",
+                    "wed",
+                    "wad",
+                    "woods",
+                    "Woody"
+                ],
+                "number": 15,
+                "frequency": 377.7869
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "be",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "be",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 4725359,
+            "word_family_frequency": 4725359,
+            "phonemes": [
+                "b",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "me",
+                    "we",
+                    "he",
+                    "re",
+                    "she",
+                    "see",
+                    "by",
+                    "boy",
+                    "buy",
+                    "Bye",
+                    "key",
+                    "bar",
+                    "sea",
+                    "tea",
+                    "bear",
+                    "Lee",
+                    "Gee",
+                    "thee",
+                    "Bay",
+                    "bow",
+                    "pee",
+                    "knee",
+                    "Boo",
+                    "fee",
+                    "wee",
+                    "bare",
+                    "Mae",
+                    "bore",
+                    "Dee",
+                    "Beau",
+                    "pea",
+                    "boar",
+                    "tee",
+                    "Bah",
+                    "Shea",
+                    "buoy",
+                    "Zee",
+                    "Yee",
+                    "Baa",
+                    "Shi",
+                    "Tae",
+                    "mea",
+                    "Burr",
+                    "nee",
+                    "Lea",
+                    "beat",
+                    "beach",
+                    "beef",
+                    "Abby",
+                    "beam",
+                    "bean",
+                    "beep",
+                    "bees",
+                    "Abbey",
+                    "Bowie",
+                    "beak",
+                    "bead",
+                    "Brie",
+                    "Beech"
+                ],
+                "number": 59,
+                "frequency": 701.9409
+            },
+            "initial_consonant_fl": 98.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "air",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "air",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 21064,
+            "word_family_frequency": 21064,
+            "phonemes": [
+                "ɛ",
+                "r"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "I",
+                    "a",
+                    "are",
+                    "Oh",
+                    "or",
+                    "uh",
+                    "Ah",
+                    "eye",
+                    "Ooh",
+                    "owe",
+                    "eh",
+                    "Aye",
+                    "Aw",
+                    "awe",
+                    "ore",
+                    "oar",
+                    "Eau",
+                    "there",
+                    "Where",
+                    "their",
+                    "care",
+                    "hair",
+                    "wear",
+                    "fair",
+                    "share",
+                    "bear",
+                    "dare",
+                    "chair",
+                    "pair",
+                    "rare",
+                    "Herr",
+                    "bare",
+                    "fare",
+                    "Hare",
+                    "mare",
+                    "Cher",
+                    "lair",
+                    "Ware",
+                    "pear",
+                    "aired",
+                    "heirs",
+                    "airs",
+                    "faire"
+                ],
+                "number": 43,
+                "frequency": 1859.2298
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        }
+    ],
+    "types": [
+        {
+            "text": "that",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "that",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 1208154,
+            "word_family_frequency": 1208154,
+            "phonemes": [
+                "ð",
+                "æ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "fat",
+                    "cat",
+                    "hat",
+                    "rat",
+                    "Matt",
+                    "sat",
+                    "bat",
+                    "Pat",
+                    "chat",
+                    "Nat",
+                    "mat",
+                    "Kat",
+                    "vat",
+                    "tat",
+                    "gat",
+                    "shat",
+                    "gnat",
+                    "at"
+                ],
+                "number": 18,
+                "frequency": 199.3791
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "would",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "would",
+                    "pos": "MD"
+                }
+            ],
+            "frequency": 246616,
+            "word_family_frequency": 246616,
+            "phonemes": [
+                "w",
+                "ʊ",
+                "d"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "good",
+                    "could",
+                    "should",
+                    "word",
+                    "wide",
+                    "Wade",
+                    "hood",
+                    "ward",
+                    "weed",
+                    "wool",
+                    "weighed",
+                    "wed",
+                    "wad",
+                    "woods",
+                    "Woody"
+                ],
+                "number": 15,
+                "frequency": 377.7869
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "be",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "be",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 4725359,
+            "word_family_frequency": 4725359,
+            "phonemes": [
+                "b",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "me",
+                    "we",
+                    "he",
+                    "re",
+                    "she",
+                    "see",
+                    "by",
+                    "boy",
+                    "buy",
+                    "Bye",
+                    "key",
+                    "bar",
+                    "sea",
+                    "tea",
+                    "bear",
+                    "Lee",
+                    "Gee",
+                    "thee",
+                    "Bay",
+                    "bow",
+                    "pee",
+                    "knee",
+                    "Boo",
+                    "fee",
+                    "wee",
+                    "bare",
+                    "Mae",
+                    "bore",
+                    "Dee",
+                    "Beau",
+                    "pea",
+                    "boar",
+                    "tee",
+                    "Bah",
+                    "Shea",
+                    "buoy",
+                    "Zee",
+                    "Yee",
+                    "Baa",
+                    "Shi",
+                    "Tae",
+                    "mea",
+                    "Burr",
+                    "nee",
+                    "Lea",
+                    "beat",
+                    "beach",
+                    "beef",
+                    "Abby",
+                    "beam",
+                    "bean",
+                    "beep",
+                    "bees",
+                    "Abbey",
+                    "Bowie",
+                    "beak",
+                    "bead",
+                    "Brie",
+                    "Beech"
+                ],
+                "number": 59,
+                "frequency": 701.9409
+            },
+            "initial_consonant_fl": 98.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "air",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "air",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 21064,
+            "word_family_frequency": 21064,
+            "phonemes": [
+                "ɛ",
+                "r"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "I",
+                    "a",
+                    "are",
+                    "Oh",
+                    "or",
+                    "uh",
+                    "Ah",
+                    "eye",
+                    "Ooh",
+                    "owe",
+                    "eh",
+                    "Aye",
+                    "Aw",
+                    "awe",
+                    "ore",
+                    "oar",
+                    "Eau",
+                    "there",
+                    "Where",
+                    "their",
+                    "care",
+                    "hair",
+                    "wear",
+                    "fair",
+                    "share",
+                    "bear",
+                    "dare",
+                    "chair",
+                    "pair",
+                    "rare",
+                    "Herr",
+                    "bare",
+                    "fare",
+                    "Hare",
+                    "mare",
+                    "Cher",
+                    "lair",
+                    "Ware",
+                    "pear",
+                    "aired",
+                    "heirs",
+                    "airs",
+                    "faire"
+                ],
+                "number": 43,
+                "frequency": 1859.2298
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        }
+    ],
+    "mean_sentence_length_words": 4.0,
+    "wpm": 35.46099290780142,
+    "spm": 35.46099290780142,
+    "average_ptr": 0.995,
+    "transcript_text": " That'd be air!",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.0,
+                "end": 6.0,
+                "text": " That'd be air!",
+                "no_speech_prob": 0.23114846646785736,
+                "avg_logprob": -1.4795023202896118,
+                "compression_ratio": 0.6363636363636364,
+                "temperature": 1.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 9.079,
+            "duration_after_vad": 6.768,
+            "language_probability": 0.7098301649093628,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.7098301649093628
+                ],
+                [
+                    "ko",
+                    0.07063217461109161
+                ],
+                [
+                    "ja",
+                    0.023643501102924347
+                ],
+                [
+                    "nn",
+                    0.019123859703540802
+                ],
+                [
+                    "es",
+                    0.013969501480460167
+                ],
+                [
+                    "pt",
+                    0.013147635385394096
+                ],
+                [
+                    "zh",
+                    0.012527316808700562
+                ],
+                [
+                    "km",
+                    0.010911337099969387
+                ],
+                [
+                    "jw",
+                    0.009405425749719143
+                ],
+                [
+                    "vi",
+                    0.009328823536634445
+                ],
+                [
+                    "ru",
+                    0.00874375831335783
+                ],
+                [
+                    "nl",
+                    0.008701583370566368
+                ],
+                [
+                    "fr",
+                    0.008450633846223354
+                ],
+                [
+                    "it",
+                    0.006843284238129854
+                ],
+                [
+                    "th",
+                    0.006223054137080908
+                ],
+                [
+                    "de",
+                    0.005448516923934221
+                ],
+                [
+                    "tl",
+                    0.004639649298042059
+                ],
+                [
+                    "hi",
+                    0.004565131384879351
+                ],
+                [
+                    "haw",
+                    0.004389360547065735
+                ],
+                [
+                    "la",
+                    0.003922982607036829
+                ],
+                [
+                    "id",
+                    0.0034836798440665007
+                ],
+                [
+                    "pl",
+                    0.0033669997937977314
+                ],
+                [
+                    "sv",
+                    0.0030652759596705437
+                ],
+                [
+                    "fi",
+                    0.0028567970730364323
+                ],
+                [
+                    "br",
+                    0.0027731151785701513
+                ],
+                [
+                    "tr",
+                    0.0027076054830104113
+                ],
+                [
+                    "ar",
+                    0.0026489123702049255
+                ],
+                [
+                    "sn",
+                    0.002617048332467675
+                ],
+                [
+                    "cy",
+                    0.0023077623918652534
+                ],
+                [
+                    "ms",
+                    0.0017268442315980792
+                ],
+                [
+                    "el",
+                    0.0014371003489941359
+                ],
+                [
+                    "ur",
+                    0.0013475508894771338
+                ],
+                [
+                    "te",
+                    0.0012084770714864135
+                ],
+                [
+                    "no",
+                    0.001065244316123426
+                ],
+                [
+                    "mi",
+                    0.0010018073953688145
+                ],
+                [
+                    "ta",
+                    0.0009514781995676458
+                ],
+                [
+                    "hu",
+                    0.0008770478889346123
+                ],
+                [
+                    "ro",
+                    0.0006466082413680851
+                ],
+                [
+                    "gl",
+                    0.0006391837960109115
+                ],
+                [
+                    "ca",
+                    0.000599129416514188
+                ],
+                [
+                    "ml",
+                    0.0005912202759645879
+                ],
+                [
+                    "si",
+                    0.0005335930036380887
+                ],
+                [
+                    "sa",
+                    0.0004616882652044296
+                ],
+                [
+                    "yo",
+                    0.00045570865040645003
+                ],
+                [
+                    "cs",
+                    0.00044283352326601744
+                ],
+                [
+                    "my",
+                    0.00042329015559516847
+                ],
+                [
+                    "bn",
+                    0.0003902567259501666
+                ],
+                [
+                    "bg",
+                    0.0003524014900904149
+                ],
+                [
+                    "fa",
+                    0.00029700197046622634
+                ],
+                [
+                    "ht",
+                    0.00028028376982547343
+                ],
+                [
+                    "da",
+                    0.00026638919371180236
+                ],
+                [
+                    "uk",
+                    0.00024487829068675637
+                ],
+                [
+                    "sl",
+                    0.00023487285943701863
+                ],
+                [
+                    "hr",
+                    0.00022463849745690823
+                ],
+                [
+                    "bs",
+                    0.00020096349180676043
+                ],
+                [
+                    "mn",
+                    0.0001885567035060376
+                ],
+                [
+                    "oc",
+                    0.0001813963463064283
+                ],
+                [
+                    "hy",
+                    0.00017393635062035173
+                ],
+                [
+                    "sk",
+                    0.00016867944214027375
+                ],
+                [
+                    "eu",
+                    0.00016125125694088638
+                ],
+                [
+                    "bo",
+                    0.0001592521439306438
+                ],
+                [
+                    "he",
+                    0.00015738810179755092
+                ],
+                [
+                    "is",
+                    0.000155498695676215
+                ],
+                [
+                    "lo",
+                    0.00014842346718069166
+                ],
+                [
+                    "yi",
+                    0.00014037475921213627
+                ],
+                [
+                    "sw",
+                    0.00012613882427103817
+                ],
+                [
+                    "ne",
+                    0.00010895531886490062
+                ],
+                [
+                    "be",
+                    9.925472113536671e-05
+                ],
+                [
+                    "lv",
+                    8.850910671753809e-05
+                ],
+                [
+                    "af",
+                    7.70993938203901e-05
+                ],
+                [
+                    "lt",
+                    7.152152102207765e-05
+                ],
+                [
+                    "fo",
+                    6.396081880666316e-05
+                ],
+                [
+                    "az",
+                    6.272872997215018e-05
+                ],
+                [
+                    "ps",
+                    5.553303344640881e-05
+                ],
+                [
+                    "sd",
+                    5.2945037168683484e-05
+                ],
+                [
+                    "kk",
+                    5.1540424465201795e-05
+                ],
+                [
+                    "sr",
+                    4.697443364420906e-05
+                ],
+                [
+                    "et",
+                    4.030397394672036e-05
+                ],
+                [
+                    "mt",
+                    3.741818727576174e-05
+                ],
+                [
+                    "pa",
+                    3.6085893952986225e-05
+                ],
+                [
+                    "ka",
+                    3.230741640436463e-05
+                ],
+                [
+                    "sq",
+                    3.12645424855873e-05
+                ],
+                [
+                    "kn",
+                    2.8672453481703997e-05
+                ],
+                [
+                    "ln",
+                    2.0942095943610184e-05
+                ],
+                [
+                    "mr",
+                    1.1358927622495685e-05
+                ],
+                [
+                    "gu",
+                    1.124383106798632e-05
+                ],
+                [
+                    "as",
+                    1.0995609045494348e-05
+                ],
+                [
+                    "mk",
+                    7.820602149877232e-06
+                ],
+                [
+                    "am",
+                    7.413088496832643e-06
+                ],
+                [
+                    "so",
+                    5.39975462743314e-06
+                ],
+                [
+                    "su",
+                    9.489928629591304e-07
+                ],
+                [
+                    "tg",
+                    8.985766726254951e-07
+                ],
+                [
+                    "lb",
+                    6.050960337233846e-07
+                ],
+                [
+                    "tt",
+                    5.617338274532813e-07
+                ],
+                [
+                    "ha",
+                    1.9089026181973168e-07
+                ],
+                [
+                    "ba",
+                    5.0744382917855546e-08
+                ],
+                [
+                    "uz",
+                    4.920256202467499e-08
+                ],
+                [
+                    "tk",
+                    4.288856203515934e-08
+                ],
+                [
+                    "mg",
+                    2.524676467885456e-08
+                ]
+            ]
+        }
+    }
+}

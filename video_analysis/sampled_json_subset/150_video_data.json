@@ -1,0 +1,930 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/150_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/150_video_audio.wav",
+    "language": "en",
+    "length_sec": 5.34,
+    "vad_duration_sec": 5.317375,
+    "total_segment_length_sec": 2.0,
+    "word_count": 5,
+    "tokens": [
+        {
+            "text": "Jello",
+            "length": 5,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "Jello",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 5,
+            "word_family_frequency": 5,
+            "phonemes": [
+                "dʒ",
+                "ɛ",
+                "l",
+                "oʊ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 39.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "beats",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "beats",
+                    "pos": "NNS"
+                }
+            ],
+            "frequency": 603,
+            "word_family_frequency": 11436,
+            "phonemes": [
+                "b",
+                "i",
+                "t",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "seats",
+                    "boots",
+                    "sheets",
+                    "boats",
+                    "bits",
+                    "bets",
+                    "meets",
+                    "bats",
+                    "butts",
+                    "bites",
+                    "Bates",
+                    "beeps",
+                    "cheats",
+                    "beetle",
+                    "buts",
+                    "Keats",
+                    "meats",
+                    "beater",
+                    "heats",
+                    "beefs",
+                    "bouts",
+                    "feats",
+                    "teats",
+                    "bots",
+                    "beat",
+                    "eats",
+                    "beasts"
+                ],
+                "number": 27,
+                "frequency": 10.3624
+            },
+            "initial_consonant_fl": 98.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "holla",
+            "length": 5,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "holla",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": -1,
+            "word_family_frequency": -1,
+            "phonemes": [
+                "h",
+                "ɑ",
+                "l",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "at",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "at",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 524402,
+            "word_family_frequency": 524402,
+            "phonemes": [
+                "æ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "it",
+                    "out",
+                    "as",
+                    "am",
+                    "eat",
+                    "ass",
+                    "eight",
+                    "ought",
+                    "art",
+                    "ate",
+                    "add",
+                    "Ann",
+                    "Anne",
+                    "ad",
+                    "Ash",
+                    "Ave",
+                    "oat",
+                    "aught",
+                    "that",
+                    "act",
+                    "fat",
+                    "cat",
+                    "hat",
+                    "Aunt",
+                    "rat",
+                    "Matt",
+                    "sat",
+                    "bat",
+                    "Pat",
+                    "chat",
+                    "ant",
+                    "Nat",
+                    "aft",
+                    "mat",
+                    "Kat",
+                    "apt",
+                    "vat",
+                    "tat",
+                    "gat",
+                    "shat",
+                    "gnat"
+                ],
+                "number": 41,
+                "frequency": 1014.8656
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "me",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "me",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 131605,
+            "word_family_frequency": 1172647,
+            "phonemes": [
+                "m",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "we",
+                    "he",
+                    "my",
+                    "re",
+                    "be",
+                    "she",
+                    "see",
+                    "more",
+                    "may",
+                    "ma",
+                    "key",
+                    "sea",
+                    "tea",
+                    "Lee",
+                    "Gee",
+                    "thee",
+                    "pee",
+                    "knee",
+                    "bee",
+                    "fee",
+                    "wee",
+                    "Moore",
+                    "Moe",
+                    "Dee",
+                    "Mar",
+                    "pea",
+                    "mare",
+                    "mow",
+                    "tee",
+                    "Moo",
+                    "moor",
+                    "Shea",
+                    "Mao",
+                    "Zee",
+                    "Yee",
+                    "Shi",
+                    "Tae",
+                    "Mau",
+                    "nee",
+                    "Lea",
+                    "mean",
+                    "meet",
+                    "army",
+                    "Amy",
+                    "meat",
+                    "meal",
+                    "Emmy",
+                    "meek",
+                    "Mead",
+                    "Amie"
+                ],
+                "number": 50,
+                "frequency": 915.8141
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": -1.0
+        }
+    ],
+    "types": [
+        {
+            "text": "jello",
+            "length": 5,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "jello",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 5,
+            "word_family_frequency": 5,
+            "phonemes": [
+                "dʒ",
+                "ɛ",
+                "l",
+                "oʊ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 39.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "beats",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "beats",
+                    "pos": "NNS"
+                }
+            ],
+            "frequency": 603,
+            "word_family_frequency": 11436,
+            "phonemes": [
+                "b",
+                "i",
+                "t",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "seats",
+                    "boots",
+                    "sheets",
+                    "boats",
+                    "bits",
+                    "bets",
+                    "meets",
+                    "bats",
+                    "butts",
+                    "bites",
+                    "Bates",
+                    "beeps",
+                    "cheats",
+                    "beetle",
+                    "buts",
+                    "Keats",
+                    "meats",
+                    "beater",
+                    "heats",
+                    "beefs",
+                    "bouts",
+                    "feats",
+                    "teats",
+                    "bots",
+                    "beat",
+                    "eats",
+                    "beasts"
+                ],
+                "number": 27,
+                "frequency": 10.3624
+            },
+            "initial_consonant_fl": 98.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "holla",
+            "length": 5,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "holla",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": -1,
+            "word_family_frequency": -1,
+            "phonemes": [
+                "h",
+                "ɑ",
+                "l",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "at",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "at",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 524402,
+            "word_family_frequency": 524402,
+            "phonemes": [
+                "æ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "it",
+                    "out",
+                    "as",
+                    "am",
+                    "eat",
+                    "ass",
+                    "eight",
+                    "ought",
+                    "art",
+                    "ate",
+                    "add",
+                    "Ann",
+                    "Anne",
+                    "ad",
+                    "Ash",
+                    "Ave",
+                    "oat",
+                    "aught",
+                    "that",
+                    "act",
+                    "fat",
+                    "cat",
+                    "hat",
+                    "Aunt",
+                    "rat",
+                    "Matt",
+                    "sat",
+                    "bat",
+                    "Pat",
+                    "chat",
+                    "ant",
+                    "Nat",
+                    "aft",
+                    "mat",
+                    "Kat",
+                    "apt",
+                    "vat",
+                    "tat",
+                    "gat",
+                    "shat",
+                    "gnat"
+                ],
+                "number": 41,
+                "frequency": 1014.8656
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "me",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "me",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 131605,
+            "word_family_frequency": 1172647,
+            "phonemes": [
+                "m",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "we",
+                    "he",
+                    "my",
+                    "re",
+                    "be",
+                    "she",
+                    "see",
+                    "more",
+                    "may",
+                    "ma",
+                    "key",
+                    "sea",
+                    "tea",
+                    "Lee",
+                    "Gee",
+                    "thee",
+                    "pee",
+                    "knee",
+                    "bee",
+                    "fee",
+                    "wee",
+                    "Moore",
+                    "Moe",
+                    "Dee",
+                    "Mar",
+                    "pea",
+                    "mare",
+                    "mow",
+                    "tee",
+                    "Moo",
+                    "moor",
+                    "Shea",
+                    "Mao",
+                    "Zee",
+                    "Yee",
+                    "Shi",
+                    "Tae",
+                    "Mau",
+                    "nee",
+                    "Lea",
+                    "mean",
+                    "meet",
+                    "army",
+                    "Amy",
+                    "meat",
+                    "meal",
+                    "Emmy",
+                    "meek",
+                    "Mead",
+                    "Amie"
+                ],
+                "number": 50,
+                "frequency": 915.8141
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": -1.0
+        }
+    ],
+    "mean_sentence_length_words": 5.0,
+    "wpm": 56.41881567502762,
+    "spm": 78.98634194503867,
+    "average_ptr": 0.98,
+    "transcript_text": " Jello beats, holla at me",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.0,
+                "end": 2.0,
+                "text": " Jello beats, holla at me",
+                "no_speech_prob": 0.06379643082618713,
+                "avg_logprob": -0.8763360977172852,
+                "compression_ratio": 0.75,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 5.317375,
+            "duration_after_vad": 5.317375,
+            "language_probability": 0.9057961702346802,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.9057961702346802
+                ],
+                [
+                    "pt",
+                    0.016042128205299377
+                ],
+                [
+                    "haw",
+                    0.005508757662028074
+                ],
+                [
+                    "tl",
+                    0.005221389699727297
+                ],
+                [
+                    "hi",
+                    0.005024120677262545
+                ],
+                [
+                    "ja",
+                    0.0038970177993178368
+                ],
+                [
+                    "km",
+                    0.003424251452088356
+                ],
+                [
+                    "jw",
+                    0.003418534994125366
+                ],
+                [
+                    "nl",
+                    0.003313518827781081
+                ],
+                [
+                    "fr",
+                    0.0030344275292009115
+                ],
+                [
+                    "ko",
+                    0.002746099838986993
+                ],
+                [
+                    "it",
+                    0.0026596575044095516
+                ],
+                [
+                    "id",
+                    0.0025315391831099987
+                ],
+                [
+                    "es",
+                    0.002386517357081175
+                ],
+                [
+                    "tr",
+                    0.002322583692148328
+                ],
+                [
+                    "ms",
+                    0.002285038586705923
+                ],
+                [
+                    "vi",
+                    0.0020123207941651344
+                ],
+                [
+                    "da",
+                    0.0019297451945021749
+                ],
+                [
+                    "nn",
+                    0.001904394943267107
+                ],
+                [
+                    "th",
+                    0.0018762151012197137
+                ],
+                [
+                    "ar",
+                    0.001578249386511743
+                ],
+                [
+                    "zh",
+                    0.0014855252811685205
+                ],
+                [
+                    "yo",
+                    0.001480237697251141
+                ],
+                [
+                    "ru",
+                    0.0014508335152640939
+                ],
+                [
+                    "ur",
+                    0.001409142860211432
+                ],
+                [
+                    "sv",
+                    0.0012184744700789452
+                ],
+                [
+                    "la",
+                    0.0011207559145987034
+                ],
+                [
+                    "mi",
+                    0.0010954904137179255
+                ],
+                [
+                    "de",
+                    0.0008190794615074992
+                ],
+                [
+                    "cy",
+                    0.0006694905459880829
+                ],
+                [
+                    "ml",
+                    0.0006687235436402261
+                ],
+                [
+                    "ht",
+                    0.0006607322720810771
+                ],
+                [
+                    "no",
+                    0.0006505742203444242
+                ],
+                [
+                    "si",
+                    0.0005876775248907506
+                ],
+                [
+                    "sn",
+                    0.000544016424100846
+                ],
+                [
+                    "fi",
+                    0.0005096913082525134
+                ],
+                [
+                    "ro",
+                    0.0004756555426865816
+                ],
+                [
+                    "pl",
+                    0.00046455502160824835
+                ],
+                [
+                    "cs",
+                    0.00042096743709407747
+                ],
+                [
+                    "bs",
+                    0.0004142094112467021
+                ],
+                [
+                    "el",
+                    0.00039584984187968075
+                ],
+                [
+                    "uk",
+                    0.0003892139357049018
+                ],
+                [
+                    "ta",
+                    0.00038729890366084874
+                ],
+                [
+                    "hr",
+                    0.00037295007496140897
+                ],
+                [
+                    "bn",
+                    0.00035640536225400865
+                ],
+                [
+                    "hu",
+                    0.00028553162701427937
+                ],
+                [
+                    "my",
+                    0.00021622706844937056
+                ],
+                [
+                    "te",
+                    0.00020913840853609145
+                ],
+                [
+                    "fa",
+                    0.00015379101387225091
+                ],
+                [
+                    "br",
+                    0.0001503654639236629
+                ],
+                [
+                    "af",
+                    0.00014877050125505775
+                ],
+                [
+                    "fo",
+                    0.00012856350804213434
+                ],
+                [
+                    "yi",
+                    0.0001261679281014949
+                ],
+                [
+                    "ne",
+                    0.00012048790085827932
+                ],
+                [
+                    "sd",
+                    0.00011493242345750332
+                ],
+                [
+                    "sl",
+                    0.00010711225331760943
+                ],
+                [
+                    "pa",
+                    0.00010497682524146512
+                ],
+                [
+                    "mn",
+                    8.903050184017047e-05
+                ],
+                [
+                    "he",
+                    8.532236097380519e-05
+                ],
+                [
+                    "is",
+                    8.07765027275309e-05
+                ],
+                [
+                    "sw",
+                    7.852719136280939e-05
+                ],
+                [
+                    "bg",
+                    7.275270763784647e-05
+                ],
+                [
+                    "lv",
+                    7.021953933872283e-05
+                ],
+                [
+                    "sa",
+                    6.973744166316465e-05
+                ],
+                [
+                    "sk",
+                    6.454771937569603e-05
+                ],
+                [
+                    "lo",
+                    5.609014260699041e-05
+                ],
+                [
+                    "ca",
+                    5.524098014575429e-05
+                ],
+                [
+                    "mt",
+                    4.5136323024053127e-05
+                ],
+                [
+                    "sr",
+                    4.214584987494163e-05
+                ],
+                [
+                    "bo",
+                    3.9752860175212845e-05
+                ],
+                [
+                    "az",
+                    3.9095062675187364e-05
+                ],
+                [
+                    "et",
+                    3.274006303399801e-05
+                ],
+                [
+                    "lt",
+                    2.8000640668324195e-05
+                ],
+                [
+                    "oc",
+                    2.2851800167700276e-05
+                ],
+                [
+                    "hy",
+                    2.0978712200303562e-05
+                ],
+                [
+                    "eu",
+                    1.7367166947224177e-05
+                ],
+                [
+                    "ka",
+                    1.7290949472226202e-05
+                ],
+                [
+                    "kk",
+                    1.665230047365185e-05
+                ],
+                [
+                    "ps",
+                    1.5693160094087943e-05
+                ],
+                [
+                    "be",
+                    1.559850170451682e-05
+                ],
+                [
+                    "ln",
+                    1.4359916349349078e-05
+                ],
+                [
+                    "gl",
+                    1.3959996067569591e-05
+                ],
+                [
+                    "sq",
+                    1.3501052308129147e-05
+                ],
+                [
+                    "kn",
+                    1.3417196896625683e-05
+                ],
+                [
+                    "gu",
+                    1.2790965229214635e-05
+                ],
+                [
+                    "mr",
+                    7.351260137511417e-06
+                ],
+                [
+                    "as",
+                    6.462363671744242e-06
+                ],
+                [
+                    "am",
+                    6.1512646425399e-06
+                ],
+                [
+                    "mk",
+                    4.228182206134079e-06
+                ],
+                [
+                    "so",
+                    3.800465947279008e-06
+                ],
+                [
+                    "su",
+                    7.762083100715245e-07
+                ],
+                [
+                    "lb",
+                    5.282141728457646e-07
+                ],
+                [
+                    "tg",
+                    3.340392140671611e-07
+                ],
+                [
+                    "tt",
+                    3.265869850110903e-07
+                ],
+                [
+                    "ha",
+                    2.1145064010852366e-07
+                ],
+                [
+                    "uz",
+                    4.3001389116170685e-08
+                ],
+                [
+                    "ba",
+                    3.680960247720577e-08
+                ],
+                [
+                    "tk",
+                    3.17068753474814e-08
+                ],
+                [
+                    "mg",
+                    2.0990446714108657e-08
+                ]
+            ]
+        }
+    }
+}

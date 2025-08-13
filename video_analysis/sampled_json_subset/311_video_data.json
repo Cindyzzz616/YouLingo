@@ -1,0 +1,819 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/311_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/311_video_audio.wav",
+    "language": "en",
+    "length_sec": 9.98,
+    "vad_duration_sec": 5.9685625,
+    "total_segment_length_sec": 4.000000000000001,
+    "word_count": 5,
+    "tokens": [
+        {
+            "text": "Mother",
+            "length": 6,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "Mother",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 28992,
+            "word_family_frequency": 28992,
+            "phonemes": [
+                "m",
+                "ʌ",
+                "ð",
+                "ər"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "fucker",
+            "length": 6,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "fucker",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 55,
+            "word_family_frequency": 4788,
+            "phonemes": [
+                "f",
+                "ʌ",
+                "k",
+                "ər"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "fucked",
+                    "sucker",
+                    "Tucker",
+                    "fucks",
+                    "faker",
+                    "pucker",
+                    "Sucre",
+                    "fuck",
+                    "fuckers"
+                ],
+                "number": 9,
+                "frequency": 50.9891
+            },
+            "initial_consonant_fl": 77.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "What",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "What",
+                    "pos": "WP"
+                }
+            ],
+            "frequency": 253809,
+            "word_family_frequency": 253809,
+            "phonemes": [
+                "w",
+                "ʌ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "was",
+                    "but",
+                    "one",
+                    "wait",
+                    "won",
+                    "Shut",
+                    "cut",
+                    "white",
+                    "wet",
+                    "butt",
+                    "weight",
+                    "nut",
+                    "hut",
+                    "gut",
+                    "wit",
+                    "wheat",
+                    "mutt",
+                    "Whit",
+                    "Watt",
+                    "rut",
+                    "wart",
+                    "putt",
+                    "Tut",
+                    "Butte"
+                ],
+                "number": 24,
+                "frequency": 649.0253
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "fuck",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "fuck",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 4788,
+            "word_family_frequency": 4788,
+            "phonemes": [
+                "f",
+                "ʌ",
+                "k"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "fun",
+                    "luck",
+                    "fake",
+                    "suck",
+                    "Buck",
+                    "duck",
+                    "Chuck",
+                    "fork",
+                    "tuck",
+                    "folk",
+                    "fuss",
+                    "Yuck",
+                    "fudge",
+                    "puck",
+                    "muck",
+                    "fuzz",
+                    "Feck",
+                    "Yuk",
+                    "Huck",
+                    "fucked",
+                    "fucker",
+                    "fucks",
+                    "funk"
+                ],
+                "number": 23,
+                "frequency": 28.3896
+            },
+            "initial_consonant_fl": 77.0,
+            "final_consonant_fl": 65.0
+        }
+    ],
+    "types": [
+        {
+            "text": "mother",
+            "length": 6,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "mother",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 28992,
+            "word_family_frequency": 28992,
+            "phonemes": [
+                "m",
+                "ʌ",
+                "ð",
+                "ər"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Luther",
+                    "Muller",
+                    "mugger",
+                    "mutter",
+                    "other",
+                    "mothers",
+                    "smother"
+                ],
+                "number": 7,
+                "frequency": 109.0869
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "fucker",
+            "length": 6,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "fucker",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 55,
+            "word_family_frequency": 4788,
+            "phonemes": [
+                "f",
+                "ʌ",
+                "k",
+                "ər"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "fucked",
+                    "sucker",
+                    "Tucker",
+                    "fucks",
+                    "faker",
+                    "pucker",
+                    "Sucre",
+                    "fuck",
+                    "fuckers"
+                ],
+                "number": 9,
+                "frequency": 50.9891
+            },
+            "initial_consonant_fl": 77.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "what",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "what",
+                    "pos": "WP"
+                }
+            ],
+            "frequency": 253809,
+            "word_family_frequency": 253809,
+            "phonemes": [
+                "w",
+                "ʌ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "fuck",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "fuck",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 4788,
+            "word_family_frequency": 4788,
+            "phonemes": [
+                "f",
+                "ʌ",
+                "k"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "fun",
+                    "luck",
+                    "fake",
+                    "suck",
+                    "Buck",
+                    "duck",
+                    "Chuck",
+                    "fork",
+                    "tuck",
+                    "folk",
+                    "fuss",
+                    "Yuck",
+                    "fudge",
+                    "puck",
+                    "muck",
+                    "fuzz",
+                    "Feck",
+                    "Yuk",
+                    "Huck",
+                    "fucked",
+                    "fucker",
+                    "fucks",
+                    "funk"
+                ],
+                "number": 23,
+                "frequency": 28.3896
+            },
+            "initial_consonant_fl": 77.0,
+            "final_consonant_fl": 65.0
+        }
+    ],
+    "mean_sentence_length_words": 2.5,
+    "wpm": 50.263359058399736,
+    "spm": 70.36870268175963,
+    "average_ptr": 0.7375,
+    "transcript_text": " Mother fucker  What the fuck",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 4.02,
+                "end": 6.02,
+                "text": " Mother fucker",
+                "no_speech_prob": 0.08406222611665726,
+                "avg_logprob": -0.30377596616744995,
+                "compression_ratio": 0.9310344827586207,
+                "temperature": 0.0
+            },
+            {
+                "id": 2,
+                "start": 6.3,
+                "end": 8.3,
+                "text": " What the fuck",
+                "no_speech_prob": 0.08406222611665726,
+                "avg_logprob": -0.30377596616744995,
+                "compression_ratio": 0.9310344827586207,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 9.9845625,
+            "duration_after_vad": 5.9685625,
+            "language_probability": 0.9636893272399902,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.9636893272399902
+                ],
+                [
+                    "nn",
+                    0.00966584961861372
+                ],
+                [
+                    "ru",
+                    0.0040203784592449665
+                ],
+                [
+                    "ko",
+                    0.00371806463226676
+                ],
+                [
+                    "ja",
+                    0.0022528222762048244
+                ],
+                [
+                    "es",
+                    0.0016047570388764143
+                ],
+                [
+                    "tl",
+                    0.0012192059075459838
+                ],
+                [
+                    "haw",
+                    0.0011056081857532263
+                ],
+                [
+                    "km",
+                    0.0010104391258209944
+                ],
+                [
+                    "la",
+                    0.0009542899206280708
+                ],
+                [
+                    "pt",
+                    0.0009099083254113793
+                ],
+                [
+                    "nl",
+                    0.0008991866488941014
+                ],
+                [
+                    "jw",
+                    0.0008078195387497544
+                ],
+                [
+                    "zh",
+                    0.0007397460285574198
+                ],
+                [
+                    "pl",
+                    0.0006253195460885763
+                ],
+                [
+                    "cy",
+                    0.000622808001935482
+                ],
+                [
+                    "hi",
+                    0.0005907501908950508
+                ],
+                [
+                    "fr",
+                    0.0005372961168177426
+                ],
+                [
+                    "de",
+                    0.0005170877557247877
+                ],
+                [
+                    "ms",
+                    0.00048366270493716
+                ],
+                [
+                    "id",
+                    0.0004279647546354681
+                ],
+                [
+                    "tr",
+                    0.0004083029634784907
+                ],
+                [
+                    "ar",
+                    0.0003054052358493209
+                ],
+                [
+                    "th",
+                    0.00027664494700729847
+                ],
+                [
+                    "vi",
+                    0.00025585960247553885
+                ],
+                [
+                    "sv",
+                    0.00023989689361769706
+                ],
+                [
+                    "mi",
+                    0.00022597455244977027
+                ],
+                [
+                    "fi",
+                    0.00017640134319663048
+                ],
+                [
+                    "it",
+                    0.00017061033577192575
+                ],
+                [
+                    "mn",
+                    0.00012542128388304263
+                ],
+                [
+                    "el",
+                    0.00010194615606451407
+                ],
+                [
+                    "ml",
+                    9.75824732449837e-05
+                ],
+                [
+                    "ur",
+                    9.694087930256501e-05
+                ],
+                [
+                    "da",
+                    8.966676978161559e-05
+                ],
+                [
+                    "br",
+                    8.847400022204965e-05
+                ],
+                [
+                    "sn",
+                    8.143940794980153e-05
+                ],
+                [
+                    "ta",
+                    6.0667349316645414e-05
+                ],
+                [
+                    "no",
+                    5.692434206139296e-05
+                ],
+                [
+                    "ro",
+                    5.264761784928851e-05
+                ],
+                [
+                    "si",
+                    3.910021769115701e-05
+                ],
+                [
+                    "hu",
+                    3.7574205634882674e-05
+                ],
+                [
+                    "bn",
+                    3.614868546719663e-05
+                ],
+                [
+                    "uk",
+                    3.6123044992564246e-05
+                ],
+                [
+                    "te",
+                    3.502835534163751e-05
+                ],
+                [
+                    "cs",
+                    3.386075695743784e-05
+                ],
+                [
+                    "fo",
+                    3.358376125106588e-05
+                ],
+                [
+                    "ht",
+                    3.158755862386897e-05
+                ],
+                [
+                    "hr",
+                    3.139187901979312e-05
+                ],
+                [
+                    "af",
+                    2.9962313419673592e-05
+                ],
+                [
+                    "yo",
+                    2.6714656996773556e-05
+                ],
+                [
+                    "sa",
+                    2.2329340936266817e-05
+                ],
+                [
+                    "yi",
+                    2.0775180018972605e-05
+                ],
+                [
+                    "sk",
+                    2.0353036234155297e-05
+                ],
+                [
+                    "bs",
+                    1.9827273717965e-05
+                ],
+                [
+                    "my",
+                    1.8402646674076095e-05
+                ],
+                [
+                    "sl",
+                    1.6671910998411477e-05
+                ],
+                [
+                    "bg",
+                    1.6576123016420752e-05
+                ],
+                [
+                    "he",
+                    1.4163739251671359e-05
+                ],
+                [
+                    "is",
+                    1.3929186025052331e-05
+                ],
+                [
+                    "bo",
+                    1.28671781567391e-05
+                ],
+                [
+                    "sw",
+                    1.1753120816138107e-05
+                ],
+                [
+                    "fa",
+                    1.1192319107067306e-05
+                ],
+                [
+                    "ne",
+                    1.1184316463186406e-05
+                ],
+                [
+                    "gl",
+                    1.0438937351864297e-05
+                ],
+                [
+                    "ca",
+                    9.98513769445708e-06
+                ],
+                [
+                    "lv",
+                    9.957854672393296e-06
+                ],
+                [
+                    "eu",
+                    8.389745744352695e-06
+                ],
+                [
+                    "lo",
+                    6.298640073509887e-06
+                ],
+                [
+                    "sd",
+                    5.8713703765533864e-06
+                ],
+                [
+                    "lt",
+                    5.203631189942826e-06
+                ],
+                [
+                    "mt",
+                    4.8831780077307485e-06
+                ],
+                [
+                    "be",
+                    4.754657766170567e-06
+                ],
+                [
+                    "kn",
+                    4.596210601448547e-06
+                ],
+                [
+                    "hy",
+                    4.554766292130807e-06
+                ],
+                [
+                    "oc",
+                    4.3105937947984785e-06
+                ],
+                [
+                    "sr",
+                    4.073376203450607e-06
+                ],
+                [
+                    "az",
+                    3.0403123219002737e-06
+                ],
+                [
+                    "et",
+                    2.779913529593614e-06
+                ],
+                [
+                    "pa",
+                    2.6633470042725094e-06
+                ],
+                [
+                    "mr",
+                    2.618317466840381e-06
+                ],
+                [
+                    "kk",
+                    2.494344698789064e-06
+                ],
+                [
+                    "ka",
+                    2.4101018425426446e-06
+                ],
+                [
+                    "sq",
+                    1.4129209375823848e-06
+                ],
+                [
+                    "ps",
+                    1.1536454849192523e-06
+                ],
+                [
+                    "gu",
+                    1.0462612181072473e-06
+                ],
+                [
+                    "ln",
+                    9.666687219578307e-07
+                ],
+                [
+                    "mk",
+                    5.225105610406899e-07
+                ],
+                [
+                    "as",
+                    3.99519734628484e-07
+                ],
+                [
+                    "am",
+                    3.8914731703698635e-07
+                ],
+                [
+                    "so",
+                    2.7875205432792427e-07
+                ],
+                [
+                    "su",
+                    1.5207071157874452e-07
+                ],
+                [
+                    "lb",
+                    1.1318581272234951e-07
+                ],
+                [
+                    "tg",
+                    9.760782404555357e-08
+                ],
+                [
+                    "tt",
+                    5.498305100104517e-08
+                ],
+                [
+                    "ha",
+                    1.8347279251429427e-08
+                ],
+                [
+                    "uz",
+                    9.719867577473451e-09
+                ],
+                [
+                    "ba",
+                    8.663021411337013e-09
+                ],
+                [
+                    "tk",
+                    7.421189884837531e-09
+                ],
+                [
+                    "mg",
+                    3.8428145110458445e-09
+                ]
+            ]
+        }
+    }
+}
