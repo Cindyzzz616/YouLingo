@@ -1,0 +1,474 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/599_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/599_video_audio.wav",
+    "language": "nl",
+    "length_sec": 59.03,
+    "vad_duration_sec": 58.4275,
+    "total_segment_length_sec": 58.04,
+    "word_count": -1,
+    "tokens": [],
+    "types": [],
+    "mean_sentence_length_words": -1.0,
+    "wpm": -1,
+    "spm": -1,
+    "average_ptr": -1,
+    "transcript_text": " Dubbelbroodje, kipkakjan, te gaan we beginnen met de pindakka, scoffé, halve pot in de pan, voedelijkotje met ketchup manis,  olie, zonmalolek, een uitje rapsen, twee knoflotteene pessen en een beetje bruine zaken door feen, alvglasje water, gaspitje aan en lekker aan de koe brengen.  Pak een spirello, een verroeren, is dit een resultaat, alafsak hier nootjes erbij, weer een verroeren, katstankshuis is klaar.  Kipfilé, effe door minereigen, broodkrampies, meegen met wat gas, zout dat hier m'n laja, een zwachte peper, en verlekken knap in dat bakkie, paniertjes klaar, ander botje, twee etjes, lebotje roeren, pannetje aan het vuur brengen, olie erin, kippe bosjes, effe door het aang, daarna door de panneer, in de pan, spatertjes erbij, omkiepen maar, witte bonnetjes, effe open snij je, katjankshuisje erof heen, is niet zo'n klaar, is niet zo'n drop,  broodje dicht, baam!",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.53,
+                "end": 8.91,
+                "text": " Dubbelbroodje, kipkakjan, te gaan we beginnen met de pindakka, scoffé, halve pot in de pan, voedelijkotje met ketchup manis,",
+                "no_speech_prob": 0.011450638063251972,
+                "avg_logprob": -0.5738626491082343,
+                "compression_ratio": 1.611764705882353,
+                "temperature": 0.0
+            },
+            {
+                "id": 2,
+                "start": 8.91,
+                "end": 19.33,
+                "text": " olie, zonmalolek, een uitje rapsen, twee knoflotteene pessen en een beetje bruine zaken door feen, alvglasje water, gaspitje aan en lekker aan de koe brengen.",
+                "no_speech_prob": 0.011450638063251972,
+                "avg_logprob": -0.5738626491082343,
+                "compression_ratio": 1.611764705882353,
+                "temperature": 0.0
+            },
+            {
+                "id": 3,
+                "start": 19.33,
+                "end": 26.85,
+                "text": " Pak een spirello, een verroeren, is dit een resultaat, alafsak hier nootjes erbij, weer een verroeren, katstankshuis is klaar.",
+                "no_speech_prob": 0.011450638063251972,
+                "avg_logprob": -0.5738626491082343,
+                "compression_ratio": 1.611764705882353,
+                "temperature": 0.0
+            },
+            {
+                "id": 4,
+                "start": 26.85,
+                "end": 56.57,
+                "text": " Kipfilé, effe door minereigen, broodkrampies, meegen met wat gas, zout dat hier m'n laja, een zwachte peper, en verlekken knap in dat bakkie, paniertjes klaar, ander botje, twee etjes, lebotje roeren, pannetje aan het vuur brengen, olie erin, kippe bosjes, effe door het aang, daarna door de panneer, in de pan, spatertjes erbij, omkiepen maar, witte bonnetjes, effe open snij je, katjankshuisje erof heen, is niet zo'n klaar, is niet zo'n drop,",
+                "no_speech_prob": 0.15551519393920898,
+                "avg_logprob": -0.5115692901332476,
+                "compression_ratio": 1.7088122605363985,
+                "temperature": 0.0
+            },
+            {
+                "id": 5,
+                "start": 56.57,
+                "end": 58.57,
+                "text": " broodje dicht, baam!",
+                "no_speech_prob": 0.24205578863620758,
+                "avg_logprob": -0.5438914624127474,
+                "compression_ratio": 0.7142857142857143,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "nl",
+            "duration": 58.9555,
+            "duration_after_vad": 58.4275,
+            "language_probability": 0.9969226717948914,
+            "all_language_probs": [
+                [
+                    "nl",
+                    0.9969226717948914
+                ],
+                [
+                    "el",
+                    0.001233130693435669
+                ],
+                [
+                    "en",
+                    0.0004149607557337731
+                ],
+                [
+                    "pt",
+                    0.0003181826905347407
+                ],
+                [
+                    "fr",
+                    0.00013885638327337801
+                ],
+                [
+                    "pl",
+                    0.00013436019071377814
+                ],
+                [
+                    "nn",
+                    0.00011073236237280071
+                ],
+                [
+                    "af",
+                    0.00010441592894494534
+                ],
+                [
+                    "tr",
+                    8.266394434031099e-05
+                ],
+                [
+                    "es",
+                    5.694287028745748e-05
+                ],
+                [
+                    "de",
+                    5.347522528609261e-05
+                ],
+                [
+                    "it",
+                    4.7052679292391986e-05
+                ],
+                [
+                    "ja",
+                    4.5865937863709405e-05
+                ],
+                [
+                    "jw",
+                    4.024084046250209e-05
+                ],
+                [
+                    "br",
+                    2.6767807867145166e-05
+                ],
+                [
+                    "la",
+                    2.619155748107005e-05
+                ],
+                [
+                    "ar",
+                    2.49877502938034e-05
+                ],
+                [
+                    "hi",
+                    2.3071948817232624e-05
+                ],
+                [
+                    "da",
+                    1.942639755725395e-05
+                ],
+                [
+                    "km",
+                    1.895766399684362e-05
+                ],
+                [
+                    "cy",
+                    1.813241578929592e-05
+                ],
+                [
+                    "ca",
+                    1.2420521670719609e-05
+                ],
+                [
+                    "eu",
+                    1.106220133806346e-05
+                ],
+                [
+                    "id",
+                    1.042419535224326e-05
+                ],
+                [
+                    "sn",
+                    1.0423598723718897e-05
+                ],
+                [
+                    "gl",
+                    1.0282175935572013e-05
+                ],
+                [
+                    "ko",
+                    1.0004221621784382e-05
+                ],
+                [
+                    "fi",
+                    9.870502253761515e-06
+                ],
+                [
+                    "vi",
+                    6.884461527079111e-06
+                ],
+                [
+                    "is",
+                    6.77728212394868e-06
+                ],
+                [
+                    "oc",
+                    5.101062924950384e-06
+                ],
+                [
+                    "zh",
+                    4.799821454071207e-06
+                ],
+                [
+                    "sv",
+                    3.5026507703150855e-06
+                ],
+                [
+                    "ro",
+                    3.4389840948279016e-06
+                ],
+                [
+                    "no",
+                    3.216518962290138e-06
+                ],
+                [
+                    "haw",
+                    3.1625229439669056e-06
+                ],
+                [
+                    "yo",
+                    2.9583170544356108e-06
+                ],
+                [
+                    "ur",
+                    2.9116636142134666e-06
+                ],
+                [
+                    "ru",
+                    2.134228680006345e-06
+                ],
+                [
+                    "hu",
+                    1.9768415313592413e-06
+                ],
+                [
+                    "cs",
+                    1.8352042161495774e-06
+                ],
+                [
+                    "ms",
+                    1.6585984212724725e-06
+                ],
+                [
+                    "ht",
+                    1.6331925962731475e-06
+                ],
+                [
+                    "tl",
+                    1.539912318548886e-06
+                ],
+                [
+                    "uk",
+                    1.2422173085724353e-06
+                ],
+                [
+                    "ta",
+                    1.0399137408967363e-06
+                ],
+                [
+                    "yi",
+                    8.968380029727996e-07
+                ],
+                [
+                    "mi",
+                    7.36742947538005e-07
+                ],
+                [
+                    "bn",
+                    5.827855034112872e-07
+                ],
+                [
+                    "bg",
+                    5.647306693390419e-07
+                ],
+                [
+                    "sq",
+                    5.406415652942087e-07
+                ],
+                [
+                    "ml",
+                    5.245377110441041e-07
+                ],
+                [
+                    "si",
+                    4.292140829420532e-07
+                ],
+                [
+                    "sa",
+                    3.838676150280662e-07
+                ],
+                [
+                    "et",
+                    3.410040392282099e-07
+                ],
+                [
+                    "th",
+                    3.3753460115804046e-07
+                ],
+                [
+                    "hy",
+                    2.836071644196636e-07
+                ],
+                [
+                    "pa",
+                    2.4878846716092085e-07
+                ],
+                [
+                    "lv",
+                    2.199725201990077e-07
+                ],
+                [
+                    "my",
+                    1.9136146534037834e-07
+                ],
+                [
+                    "fo",
+                    1.838345866644886e-07
+                ],
+                [
+                    "he",
+                    1.769697917097801e-07
+                ],
+                [
+                    "sk",
+                    1.641469111746119e-07
+                ],
+                [
+                    "ln",
+                    1.43315332934435e-07
+                ],
+                [
+                    "sl",
+                    1.2788882486347575e-07
+                ],
+                [
+                    "te",
+                    1.2575034702422272e-07
+                ],
+                [
+                    "bo",
+                    1.1898380591901514e-07
+                ],
+                [
+                    "sw",
+                    1.1356285511965325e-07
+                ],
+                [
+                    "mn",
+                    1.0626407487279721e-07
+                ],
+                [
+                    "lo",
+                    9.369976794459944e-08
+                ],
+                [
+                    "az",
+                    8.037958565410008e-08
+                ],
+                [
+                    "sd",
+                    7.854335137835733e-08
+                ],
+                [
+                    "bs",
+                    6.91800750018956e-08
+                ],
+                [
+                    "hr",
+                    6.663294271902487e-08
+                ],
+                [
+                    "ne",
+                    6.013198117216234e-08
+                ],
+                [
+                    "mt",
+                    5.8528105029154176e-08
+                ],
+                [
+                    "fa",
+                    3.7065461810925626e-08
+                ],
+                [
+                    "kk",
+                    3.50340876309474e-08
+                ],
+                [
+                    "lt",
+                    3.501718737197734e-08
+                ],
+                [
+                    "be",
+                    3.178957186378284e-08
+                ],
+                [
+                    "ps",
+                    1.769383217720133e-08
+                ],
+                [
+                    "mk",
+                    1.2146153416381367e-08
+                ],
+                [
+                    "am",
+                    8.603454837441404e-09
+                ],
+                [
+                    "gu",
+                    8.072138513171012e-09
+                ],
+                [
+                    "lb",
+                    7.973166127328568e-09
+                ],
+                [
+                    "sr",
+                    7.110781741204164e-09
+                ],
+                [
+                    "ka",
+                    4.2367056529712954e-09
+                ],
+                [
+                    "mr",
+                    3.9071630375531186e-09
+                ],
+                [
+                    "so",
+                    3.3201048577069514e-09
+                ],
+                [
+                    "tt",
+                    2.9194724415759765e-09
+                ],
+                [
+                    "kn",
+                    2.7550792758290754e-09
+                ],
+                [
+                    "as",
+                    1.987030318062466e-09
+                ],
+                [
+                    "tg",
+                    1.5554044718868454e-09
+                ],
+                [
+                    "su",
+                    1.2799705739752198e-09
+                ],
+                [
+                    "ha",
+                    6.316608902601217e-10
+                ],
+                [
+                    "uz",
+                    6.040389299855065e-10
+                ],
+                [
+                    "mg",
+                    3.1367802799664446e-10
+                ],
+                [
+                    "ba",
+                    3.0739219503139736e-10
+                ],
+                [
+                    "tk",
+                    2.354287875760974e-10
+                ]
+            ]
+        }
+    }
+}

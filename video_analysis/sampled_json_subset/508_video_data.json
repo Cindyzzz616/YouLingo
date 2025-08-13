@@ -1,0 +1,1308 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/508_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/508_video_audio.wav",
+    "language": "en",
+    "length_sec": 11.86,
+    "vad_duration_sec": 3.356375,
+    "total_segment_length_sec": 3.2799999999999994,
+    "word_count": 11,
+    "tokens": [
+        {
+            "text": "Ladies",
+            "length": 6,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "Ladies",
+                    "pos": "NNS"
+                }
+            ],
+            "frequency": 3114,
+            "word_family_frequency": 12704,
+            "phonemes": [
+                "l",
+                "eɪ",
+                "d",
+                "i",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 83.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "and",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "and",
+                    "pos": "CC"
+                }
+            ],
+            "frequency": 2627531,
+            "word_family_frequency": 2627531,
+            "phonemes": [
+                "ʌ",
+                "n",
+                "d"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "end",
+                    "Aunt",
+                    "Annie",
+                    "Anna",
+                    "earned",
+                    "owned",
+                    "ant",
+                    "add",
+                    "Ann",
+                    "Anne",
+                    "ad",
+                    "hand",
+                    "land",
+                    "band",
+                    "sand",
+                    "canned",
+                    "banned",
+                    "Rand",
+                    "manned",
+                    "tanned",
+                    "ands",
+                    "panned"
+                ],
+                "number": 22,
+                "frequency": 43.9046
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "gents",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "gents",
+                    "pos": "NNS"
+                }
+            ],
+            "frequency": 148,
+            "word_family_frequency": 6840,
+            "phonemes": [
+                "dʒ",
+                "ɛ",
+                "n",
+                "t",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "cents",
+                    "gentle",
+                    "joints",
+                    "tents",
+                    "vents",
+                    "rents",
+                    "dents",
+                    "jets",
+                    "gent"
+                ],
+                "number": 9,
+                "frequency": 5.9564
+            },
+            "initial_consonant_fl": 39.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "this",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "this",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 578204,
+            "word_family_frequency": 578204,
+            "phonemes": [
+                "ð",
+                "ɪ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Miss",
+                    "kiss",
+                    "piss",
+                    "thus",
+                    "sis",
+                    "dis",
+                    "hiss"
+                ],
+                "number": 7,
+                "frequency": 90.7115
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "is",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "is",
+                    "pos": "VBZ"
+                }
+            ],
+            "frequency": 974447,
+            "word_family_frequency": 4725359,
+            "phonemes": [
+                "ɪ",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "it",
+                    "in",
+                    "if",
+                    "as",
+                    "us",
+                    "eyes",
+                    "ill",
+                    "ease",
+                    "owes",
+                    "inn",
+                    "itch",
+                    "oars",
+                    "heirs",
+                    "airs",
+                    "ooze",
+                    "ores",
+                    "his",
+                    "Tis",
+                    "whiz",
+                    "biz",
+                    "fizz",
+                    "wiz",
+                    "ins",
+                    "ills"
+                ],
+                "number": 24,
+                "frequency": 1606.2876
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "moment",
+            "length": 6,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "moment",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 24753,
+            "word_family_frequency": 24753,
+            "phonemes": [
+                "m",
+                "oʊ",
+                "m",
+                "ʌ",
+                "n",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "moments"
+                ],
+                "number": 1,
+                "frequency": 21.5882
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "you",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "you",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 821635,
+            "word_family_frequency": 821635,
+            "phonemes": [
+                "j",
+                "u"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "have",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "have",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 1344286,
+            "word_family_frequency": 1344286,
+            "phonemes": [
+                "h",
+                "æ",
+                "v"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "had",
+                    "has",
+                    "half",
+                    "hang",
+                    "hat",
+                    "hatch",
+                    "ham",
+                    "hack",
+                    "Han",
+                    "hath",
+                    "Heave",
+                    "hash",
+                    "hag",
+                    "hive",
+                    "Hap",
+                    "Ave",
+                    "halves"
+                ],
+                "number": 17,
+                "frequency": 192.8812
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": 22.0
+        },
+        {
+            "text": "waited",
+            "length": 6,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "waited",
+                    "pos": "VBD"
+                }
+            ],
+            "frequency": 3588,
+            "word_family_frequency": 22072,
+            "phonemes": [
+                "w",
+                "eɪ",
+                "t",
+                "ʌ",
+                "d"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "hated",
+                    "dated",
+                    "rated",
+                    "fated",
+                    "mated",
+                    "baited",
+                    "wasted",
+                    "awaited"
+                ],
+                "number": 8,
+                "frequency": 7.5172
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "for",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "for",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 881846,
+            "word_family_frequency": 881846,
+            "phonemes": [
+                "f",
+                "ɔ",
+                "r"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "more",
+                    "door",
+                    "far",
+                    "war",
+                    "fair",
+                    "nor",
+                    "wore",
+                    "whore",
+                    "Shore",
+                    "pour",
+                    "sore",
+                    "Corps",
+                    "core",
+                    "fee",
+                    "tore",
+                    "fur",
+                    "bore",
+                    "fare",
+                    "Fay",
+                    "roar",
+                    "tor",
+                    "Thor",
+                    "boar",
+                    "foe",
+                    "soar",
+                    "Foo",
+                    "Gore",
+                    "chore",
+                    "Phi",
+                    "lore",
+                    "Fie",
+                    "faire",
+                    "fey",
+                    "pore",
+                    "fir",
+                    "or",
+                    "ore",
+                    "oar",
+                    "floor",
+                    "force",
+                    "form",
+                    "fourth",
+                    "forth",
+                    "Fort",
+                    "Ford",
+                    "fork",
+                    "Forge",
+                    "fours",
+                    "afore"
+                ],
+                "number": 49,
+                "frequency": 87.8035
+            },
+            "initial_consonant_fl": 77.0,
+            "final_consonant_fl": -1.0
+        }
+    ],
+    "types": [
+        {
+            "text": "ladies",
+            "length": 6,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "ladies",
+                    "pos": "NNS"
+                }
+            ],
+            "frequency": 3114,
+            "word_family_frequency": 12704,
+            "phonemes": [
+                "l",
+                "eɪ",
+                "d",
+                "i",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": 0,
+                "frequency": 0.0
+            },
+            "initial_consonant_fl": 83.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "and",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "and",
+                    "pos": "CC"
+                }
+            ],
+            "frequency": 2627531,
+            "word_family_frequency": 2627531,
+            "phonemes": [
+                "ʌ",
+                "n",
+                "d"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "end",
+                    "Aunt",
+                    "Annie",
+                    "Anna",
+                    "earned",
+                    "owned",
+                    "ant",
+                    "add",
+                    "Ann",
+                    "Anne",
+                    "ad",
+                    "hand",
+                    "land",
+                    "band",
+                    "sand",
+                    "canned",
+                    "banned",
+                    "Rand",
+                    "manned",
+                    "tanned",
+                    "ands",
+                    "panned"
+                ],
+                "number": 22,
+                "frequency": 43.9046
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "gents",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "gents",
+                    "pos": "NNS"
+                }
+            ],
+            "frequency": 148,
+            "word_family_frequency": 6840,
+            "phonemes": [
+                "dʒ",
+                "ɛ",
+                "n",
+                "t",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "cents",
+                    "gentle",
+                    "joints",
+                    "tents",
+                    "vents",
+                    "rents",
+                    "dents",
+                    "jets",
+                    "gent"
+                ],
+                "number": 9,
+                "frequency": 5.9564
+            },
+            "initial_consonant_fl": 39.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "this",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "this",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 578204,
+            "word_family_frequency": 578204,
+            "phonemes": [
+                "ð",
+                "ɪ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Miss",
+                    "kiss",
+                    "piss",
+                    "thus",
+                    "sis",
+                    "dis",
+                    "hiss"
+                ],
+                "number": 7,
+                "frequency": 90.7115
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "is",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "is",
+                    "pos": "VBZ"
+                }
+            ],
+            "frequency": 974447,
+            "word_family_frequency": 4725359,
+            "phonemes": [
+                "ɪ",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "it",
+                    "in",
+                    "if",
+                    "as",
+                    "us",
+                    "eyes",
+                    "ill",
+                    "ease",
+                    "owes",
+                    "inn",
+                    "itch",
+                    "oars",
+                    "heirs",
+                    "airs",
+                    "ooze",
+                    "ores",
+                    "his",
+                    "Tis",
+                    "whiz",
+                    "biz",
+                    "fizz",
+                    "wiz",
+                    "ins",
+                    "ills"
+                ],
+                "number": 24,
+                "frequency": 1606.2876
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "moment",
+            "length": 6,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "moment",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 24753,
+            "word_family_frequency": 24753,
+            "phonemes": [
+                "m",
+                "oʊ",
+                "m",
+                "ʌ",
+                "n",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "moments"
+                ],
+                "number": 1,
+                "frequency": 21.5882
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "you",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "you",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 821635,
+            "word_family_frequency": 821635,
+            "phonemes": [
+                "j",
+                "u"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "have",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "have",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 1344286,
+            "word_family_frequency": 1344286,
+            "phonemes": [
+                "h",
+                "æ",
+                "v"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "had",
+                    "has",
+                    "half",
+                    "hang",
+                    "hat",
+                    "hatch",
+                    "ham",
+                    "hack",
+                    "Han",
+                    "hath",
+                    "Heave",
+                    "hash",
+                    "hag",
+                    "hive",
+                    "Hap",
+                    "Ave",
+                    "halves"
+                ],
+                "number": 17,
+                "frequency": 192.8812
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": 22.0
+        },
+        {
+            "text": "waited",
+            "length": 6,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "waited",
+                    "pos": "VBD"
+                }
+            ],
+            "frequency": 3588,
+            "word_family_frequency": 22072,
+            "phonemes": [
+                "w",
+                "eɪ",
+                "t",
+                "ʌ",
+                "d"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "hated",
+                    "dated",
+                    "rated",
+                    "fated",
+                    "mated",
+                    "baited",
+                    "wasted",
+                    "awaited"
+                ],
+                "number": 8,
+                "frequency": 7.5172
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "for",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "for",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 881846,
+            "word_family_frequency": 881846,
+            "phonemes": [
+                "f",
+                "ɔ",
+                "r"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "more",
+                    "door",
+                    "far",
+                    "war",
+                    "fair",
+                    "nor",
+                    "wore",
+                    "whore",
+                    "Shore",
+                    "pour",
+                    "sore",
+                    "Corps",
+                    "core",
+                    "fee",
+                    "tore",
+                    "fur",
+                    "bore",
+                    "fare",
+                    "Fay",
+                    "roar",
+                    "tor",
+                    "Thor",
+                    "boar",
+                    "foe",
+                    "soar",
+                    "Foo",
+                    "Gore",
+                    "chore",
+                    "Phi",
+                    "lore",
+                    "Fie",
+                    "faire",
+                    "fey",
+                    "pore",
+                    "fir",
+                    "or",
+                    "ore",
+                    "oar",
+                    "floor",
+                    "force",
+                    "form",
+                    "fourth",
+                    "forth",
+                    "Fort",
+                    "Ford",
+                    "fork",
+                    "Forge",
+                    "fours",
+                    "afore"
+                ],
+                "number": 49,
+                "frequency": 87.8035
+            },
+            "initial_consonant_fl": 77.0,
+            "final_consonant_fl": -1.0
+        }
+    ],
+    "mean_sentence_length_words": 11.0,
+    "wpm": 196.64072101597705,
+    "spm": 250.270008565789,
+    "average_ptr": 0.984756,
+    "transcript_text": " Ladies and gents, this is the moment you've waited for.",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 8.46,
+                "end": 11.74,
+                "text": " Ladies and gents, this is the moment you've waited for.",
+                "no_speech_prob": 0.15288443863391876,
+                "avg_logprob": -0.33564191706040325,
+                "compression_ratio": 0.9166666666666666,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 11.820375,
+            "duration_after_vad": 3.356375,
+            "language_probability": 0.9437036514282227,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.9437036514282227
+                ],
+                [
+                    "nn",
+                    0.009401069022715092
+                ],
+                [
+                    "ja",
+                    0.007221390958875418
+                ],
+                [
+                    "la",
+                    0.006505021825432777
+                ],
+                [
+                    "km",
+                    0.0024113820400089025
+                ],
+                [
+                    "cy",
+                    0.0023764728102833033
+                ],
+                [
+                    "de",
+                    0.0021285770926624537
+                ],
+                [
+                    "haw",
+                    0.002013365738093853
+                ],
+                [
+                    "fr",
+                    0.0019771973602473736
+                ],
+                [
+                    "jw",
+                    0.0019528042757883668
+                ],
+                [
+                    "ru",
+                    0.0017559498082846403
+                ],
+                [
+                    "ko",
+                    0.0017433419125154614
+                ],
+                [
+                    "es",
+                    0.001638932153582573
+                ],
+                [
+                    "pt",
+                    0.001562969060614705
+                ],
+                [
+                    "pl",
+                    0.001550791086629033
+                ],
+                [
+                    "it",
+                    0.001061704009771347
+                ],
+                [
+                    "hi",
+                    0.0009421536815352738
+                ],
+                [
+                    "zh",
+                    0.0007961933151818812
+                ],
+                [
+                    "th",
+                    0.0007365712663158774
+                ],
+                [
+                    "tr",
+                    0.0006470963126048446
+                ],
+                [
+                    "nl",
+                    0.0006279796943999827
+                ],
+                [
+                    "tl",
+                    0.0006046540220268071
+                ],
+                [
+                    "ar",
+                    0.000554331811144948
+                ],
+                [
+                    "ms",
+                    0.0004554967163130641
+                ],
+                [
+                    "vi",
+                    0.0004541923408396542
+                ],
+                [
+                    "br",
+                    0.0003580352640710771
+                ],
+                [
+                    "ur",
+                    0.00034997760667465627
+                ],
+                [
+                    "el",
+                    0.00034446694189682603
+                ],
+                [
+                    "te",
+                    0.00029636031831614673
+                ],
+                [
+                    "hu",
+                    0.0002906600711867213
+                ],
+                [
+                    "sv",
+                    0.0002516295644454658
+                ],
+                [
+                    "id",
+                    0.00024845238658599555
+                ],
+                [
+                    "ro",
+                    0.0002263451460748911
+                ],
+                [
+                    "fi",
+                    0.00020525441505014896
+                ],
+                [
+                    "sa",
+                    0.00019139023788738996
+                ],
+                [
+                    "sn",
+                    0.0001899535272968933
+                ],
+                [
+                    "si",
+                    0.00015986418293323368
+                ],
+                [
+                    "mi",
+                    0.00015825204900465906
+                ],
+                [
+                    "ml",
+                    0.0001405811053700745
+                ],
+                [
+                    "ta",
+                    0.00013789530203212053
+                ],
+                [
+                    "fa",
+                    0.00010433569696033373
+                ],
+                [
+                    "uk",
+                    9.654362656874582e-05
+                ],
+                [
+                    "cs",
+                    9.527664224151522e-05
+                ],
+                [
+                    "no",
+                    8.270132093457505e-05
+                ],
+                [
+                    "da",
+                    7.713751256233081e-05
+                ],
+                [
+                    "sl",
+                    7.31943073333241e-05
+                ],
+                [
+                    "yo",
+                    7.120791997294873e-05
+                ],
+                [
+                    "yi",
+                    6.335526268230751e-05
+                ],
+                [
+                    "my",
+                    6.113834388088435e-05
+                ],
+                [
+                    "bg",
+                    5.941609924775548e-05
+                ],
+                [
+                    "mn",
+                    5.742287612520158e-05
+                ],
+                [
+                    "bn",
+                    5.639605660689995e-05
+                ],
+                [
+                    "af",
+                    5.4018910304876044e-05
+                ],
+                [
+                    "he",
+                    5.213281110627577e-05
+                ],
+                [
+                    "is",
+                    4.95752647111658e-05
+                ],
+                [
+                    "hr",
+                    4.548774450086057e-05
+                ],
+                [
+                    "gl",
+                    4.444419391802512e-05
+                ],
+                [
+                    "ht",
+                    4.428819374879822e-05
+                ],
+                [
+                    "sk",
+                    3.7294466892490163e-05
+                ],
+                [
+                    "bo",
+                    3.653426028904505e-05
+                ],
+                [
+                    "ne",
+                    2.9959144740132615e-05
+                ],
+                [
+                    "ca",
+                    2.6757907107821666e-05
+                ],
+                [
+                    "bs",
+                    2.588844290585257e-05
+                ],
+                [
+                    "hy",
+                    2.424713056825567e-05
+                ],
+                [
+                    "sw",
+                    2.36570012930315e-05
+                ],
+                [
+                    "eu",
+                    2.1890964490012266e-05
+                ],
+                [
+                    "fo",
+                    2.150985164917074e-05
+                ],
+                [
+                    "mt",
+                    2.113267510139849e-05
+                ],
+                [
+                    "oc",
+                    1.900918869068846e-05
+                ],
+                [
+                    "lo",
+                    1.783685183909256e-05
+                ],
+                [
+                    "sd",
+                    1.5476898624910973e-05
+                ],
+                [
+                    "pa",
+                    1.4791557077842299e-05
+                ],
+                [
+                    "lv",
+                    1.4748089597560465e-05
+                ],
+                [
+                    "sr",
+                    1.1166253898409195e-05
+                ],
+                [
+                    "az",
+                    1.1024929335690103e-05
+                ],
+                [
+                    "sq",
+                    1.0427049346617423e-05
+                ],
+                [
+                    "lt",
+                    9.555622455081902e-06
+                ],
+                [
+                    "kn",
+                    6.183728601172334e-06
+                ],
+                [
+                    "et",
+                    5.7482625379634555e-06
+                ],
+                [
+                    "ps",
+                    5.527359462575987e-06
+                ],
+                [
+                    "kk",
+                    5.453458470583428e-06
+                ],
+                [
+                    "be",
+                    5.079538368590875e-06
+                ],
+                [
+                    "ka",
+                    4.776437435793923e-06
+                ],
+                [
+                    "mr",
+                    4.011116743640741e-06
+                ],
+                [
+                    "gu",
+                    2.604923338367371e-06
+                ],
+                [
+                    "am",
+                    1.8347196828472079e-06
+                ],
+                [
+                    "ln",
+                    1.693091348897724e-06
+                ],
+                [
+                    "as",
+                    1.0969736194965662e-06
+                ],
+                [
+                    "mk",
+                    1.0789576663228218e-06
+                ],
+                [
+                    "so",
+                    4.1389458260709944e-07
+                ],
+                [
+                    "su",
+                    2.9276171176206844e-07
+                ],
+                [
+                    "lb",
+                    2.808055512559804e-07
+                ],
+                [
+                    "tg",
+                    1.9176941634668765e-07
+                ],
+                [
+                    "tt",
+                    1.2799267778973444e-07
+                ],
+                [
+                    "ha",
+                    5.2236796221905024e-08
+                ],
+                [
+                    "uz",
+                    1.7368158466979366e-08
+                ],
+                [
+                    "tk",
+                    1.2612115796173384e-08
+                ],
+                [
+                    "ba",
+                    1.25694166186463e-08
+                ],
+                [
+                    "mg",
+                    6.604606195281804e-09
+                ]
+            ]
+        }
+    }
+}

@@ -1,0 +1,3010 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/378_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/378_video_audio.wav",
+    "language": "en",
+    "length_sec": 14.55,
+    "vad_duration_sec": 9.4636875,
+    "total_segment_length_sec": 13.629999999999999,
+    "word_count": 26,
+    "tokens": [
+        {
+            "text": "Stop",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "Stop",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 28170,
+            "word_family_frequency": 28170,
+            "phonemes": [
+                "s",
+                "t",
+                "ɑ",
+                "p"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 85.0,
+            "final_consonant_fl": 43.0
+        },
+        {
+            "text": "what",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "what",
+                    "pos": "WP"
+                }
+            ],
+            "frequency": 253809,
+            "word_family_frequency": 253809,
+            "phonemes": [
+                "w",
+                "ʌ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "hell",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "hell",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 5329,
+            "word_family_frequency": 5329,
+            "phonemes": [
+                "h",
+                "ɛ",
+                "l"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Well",
+                    "tell",
+                    "whole",
+                    "head",
+                    "sell",
+                    "fell",
+                    "hole",
+                    "cell",
+                    "hall",
+                    "bell",
+                    "hill",
+                    "yell",
+                    "heck",
+                    "Mel",
+                    "shell",
+                    "Hail",
+                    "heal",
+                    "Del",
+                    "Belle",
+                    "heel",
+                    "haul",
+                    "hull",
+                    "hen",
+                    "Dell",
+                    "howl",
+                    "Hale",
+                    "gel",
+                    "hedge",
+                    "hurl",
+                    "hem",
+                    "Tel",
+                    "Pell",
+                    "Hoyle",
+                    "Elle",
+                    "ell",
+                    "help",
+                    "held",
+                    "health",
+                    "Heller",
+                    "Helm",
+                    "Hells"
+                ],
+                "number": 41,
+                "frequency": 171.6982
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": 76.0
+        },
+        {
+            "text": "are",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "are",
+                    "pos": "VBP"
+                }
+            ],
+            "frequency": 458447,
+            "word_family_frequency": 4725359,
+            "phonemes": [
+                "ɑ",
+                "r"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "I",
+                    "a",
+                    "Oh",
+                    "or",
+                    "uh",
+                    "Ah",
+                    "air",
+                    "eye",
+                    "Ooh",
+                    "owe",
+                    "eh",
+                    "Aye",
+                    "Aw",
+                    "heir",
+                    "awe",
+                    "ere",
+                    "ore",
+                    "err",
+                    "oar",
+                    "Eau",
+                    "car",
+                    "far",
+                    "bar",
+                    "art",
+                    "arm",
+                    "jar",
+                    "Argh",
+                    "par",
+                    "Arc",
+                    "Mar",
+                    "Ark",
+                    "arch",
+                    "tar",
+                    "Carr",
+                    "Char",
+                    "Dar",
+                    "Gar"
+                ],
+                "number": 37,
+                "frequency": 1833.6603
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "you",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "you",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 821635,
+            "word_family_frequency": 821635,
+            "phonemes": [
+                "j",
+                "u"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "talking",
+            "length": 7,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "talking",
+                    "pos": "VBG"
+                }
+            ],
+            "frequency": 13021,
+            "word_family_frequency": 40409,
+            "phonemes": [
+                "t",
+                "ɔ",
+                "k",
+                "ɪ",
+                "ŋ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "taking",
+                    "walking",
+                    "ticking",
+                    "Hawking",
+                    "tucking",
+                    "gawking",
+                    "stalking"
+                ],
+                "number": 7,
+                "frequency": 46.7339
+            },
+            "initial_consonant_fl": 87.0,
+            "final_consonant_fl": 21.0
+        },
+        {
+            "text": "about",
+            "length": 5,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "about",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 192168,
+            "word_family_frequency": 192168,
+            "phonemes": [
+                "ʌ",
+                "b",
+                "aʊ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Abort",
+                    "bout"
+                ],
+                "number": 2,
+                "frequency": 11.8529
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "Get",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "Get",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 214216,
+            "word_family_frequency": 214216,
+            "phonemes": [
+                "g",
+                "ɛ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 71.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "my",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "my",
+                    "pos": "PRP$"
+                }
+            ],
+            "frequency": 146817,
+            "word_family_frequency": 1172647,
+            "phonemes": [
+                "m",
+                "aɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "me",
+                    "Why",
+                    "by",
+                    "more",
+                    "guy",
+                    "Hi",
+                    "may",
+                    "die",
+                    "high",
+                    "buy",
+                    "ma",
+                    "Bye",
+                    "lie",
+                    "tie",
+                    "pie",
+                    "thy",
+                    "shy",
+                    "Mae",
+                    "Moore",
+                    "Moe",
+                    "Chi",
+                    "rye",
+                    "Mar",
+                    "dye",
+                    "thigh",
+                    "pi",
+                    "sigh",
+                    "Thai",
+                    "Tai",
+                    "mare",
+                    "mow",
+                    "vie",
+                    "Moo",
+                    "moor",
+                    "Kai",
+                    "Mao",
+                    "Lai",
+                    "Chai",
+                    "Mau",
+                    "Phi",
+                    "nigh",
+                    "mea",
+                    "Fie",
+                    "lye",
+                    "Psi",
+                    "I",
+                    "eye",
+                    "Aye",
+                    "might",
+                    "mine",
+                    "Mike",
+                    "mile",
+                    "mice",
+                    "Mia",
+                    "Maya",
+                    "mite",
+                    "mime",
+                    "mire"
+                ],
+                "number": 58,
+                "frequency": 1005.8577
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "pretty",
+            "length": 6,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "pretty",
+                    "pos": "RB"
+                }
+            ],
+            "frequency": 7895,
+            "word_family_frequency": 7895,
+            "phonemes": [
+                "p",
+                "r",
+                "ɪ",
+                "t",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "privy",
+                    "prissy",
+                    "gritty",
+                    "pity"
+                ],
+                "number": 4,
+                "frequency": 6.5882
+            },
+            "initial_consonant_fl": 98.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "name",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "name",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 42072,
+            "word_family_frequency": 42072,
+            "phonemes": [
+                "n",
+                "eɪ",
+                "m"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "came",
+                    "same",
+                    "game",
+                    "shame",
+                    "nail",
+                    "dame",
+                    "lame",
+                    "fame",
+                    "numb",
+                    "Nam",
+                    "Norm",
+                    "tame",
+                    "Nein",
+                    "Nome",
+                    "neighs",
+                    "gnome",
+                    "maim",
+                    "nave",
+                    "knave",
+                    "aim",
+                    "Nay",
+                    "named",
+                    "names"
+                ],
+                "number": 23,
+                "frequency": 59.5209
+            },
+            "initial_consonant_fl": 61.0,
+            "final_consonant_fl": 42.0
+        },
+        {
+            "text": "honey",
+            "length": 5,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "honey",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 1600,
+            "word_family_frequency": 1600,
+            "phonemes": [
+                "h",
+                "ʌ",
+                "n",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "money",
+                    "funny",
+                    "hunt",
+                    "Bunny",
+                    "Sonny",
+                    "horny",
+                    "sunny",
+                    "hunch",
+                    "Huns",
+                    "runny",
+                    "hussy",
+                    "hubby",
+                    "Gunny",
+                    "Tunney",
+                    "huffy",
+                    "Hun"
+                ],
+                "number": 16,
+                "frequency": 59.5245
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "you",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "you",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 821635,
+            "word_family_frequency": 821635,
+            "phonemes": [
+                "j",
+                "u"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "mouse",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "mouse",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 3077,
+            "word_family_frequency": 3077,
+            "phonemes": [
+                "m",
+                "aʊ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "house",
+                    "Miss",
+                    "mouth",
+                    "mess",
+                    "mass",
+                    "mice",
+                    "moose",
+                    "Mace",
+                    "Moss",
+                    "Morse",
+                    "mas",
+                    "louse",
+                    "mousse",
+                    "douse",
+                    "muss",
+                    "Mao",
+                    "Mau",
+                    "mousy"
+                ],
+                "number": 18,
+                "frequency": 67.3431
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "do",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "do",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 539713,
+            "word_family_frequency": 539713,
+            "phonemes": [
+                "d",
+                "u"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "you",
+                    "to",
+                    "who",
+                    "too",
+                    "two",
+                    "day",
+                    "new",
+                    "knew",
+                    "door",
+                    "die",
+                    "dare",
+                    "shoe",
+                    "Sue",
+                    "dough",
+                    "zoo",
+                    "Boo",
+                    "Jew",
+                    "Woo",
+                    "Dee",
+                    "Shoo",
+                    "Pooh",
+                    "Doe",
+                    "Duh",
+                    "dye",
+                    "Lew",
+                    "der",
+                    "loo",
+                    "Sioux",
+                    "goo",
+                    "Moo",
+                    "poo",
+                    "Rue",
+                    "Dar",
+                    "lieu",
+                    "Foo",
+                    "dah",
+                    "Chou",
+                    "Dow",
+                    "coo",
+                    "Dei",
+                    "Ooh",
+                    "dude",
+                    "due",
+                    "Drew",
+                    "Duke",
+                    "doom",
+                    "douche",
+                    "ado",
+                    "dune",
+                    "dupe",
+                    "doer",
+                    "Duce"
+                ],
+                "number": 52,
+                "frequency": 1387.9464
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "not",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "not",
+                    "pos": "RB"
+                }
+            ],
+            "frequency": 763344,
+            "word_family_frequency": 763344,
+            "phonemes": [
+                "n",
+                "ɑ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "got",
+                    "night",
+                    "lot",
+                    "shot",
+                    "hot",
+                    "knock",
+                    "note",
+                    "Knight",
+                    "pot",
+                    "nut",
+                    "net",
+                    "neat",
+                    "yacht",
+                    "rot",
+                    "dot",
+                    "nod",
+                    "non",
+                    "Nat",
+                    "notch",
+                    "knob",
+                    "cot",
+                    "knit",
+                    "Watt",
+                    "Newt",
+                    "Tot",
+                    "bot",
+                    "jot",
+                    "Mott",
+                    "naught",
+                    "knoll",
+                    "gnat",
+                    "Noll",
+                    "Baht",
+                    "Nob",
+                    "Nah",
+                    "knocked",
+                    "knots",
+                    "snot",
+                    "Notre"
+                ],
+                "number": 39,
+                "frequency": 140.6722
+            },
+            "initial_consonant_fl": 61.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "talk",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "talk",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 40409,
+            "word_family_frequency": 40409,
+            "phonemes": [
+                "t",
+                "ɔ",
+                "k"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "take",
+                    "took",
+                    "walk",
+                    "taught",
+                    "tall",
+                    "Hawk",
+                    "tuck",
+                    "tick",
+                    "tech",
+                    "chalk",
+                    "Turk",
+                    "tack",
+                    "Tic",
+                    "tock",
+                    "toke",
+                    "torque",
+                    "taut",
+                    "taupe",
+                    "tyke",
+                    "teak",
+                    "talked",
+                    "talks",
+                    "talker",
+                    "stalk",
+                    "talky"
+                ],
+                "number": 25,
+                "frequency": 108.1914
+            },
+            "initial_consonant_fl": 87.0,
+            "final_consonant_fl": 65.0
+        },
+        {
+            "text": "put",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "put",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 68149,
+            "word_family_frequency": 68149,
+            "phonemes": [
+                "p",
+                "ʊ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "part",
+                    "pull",
+                    "push",
+                    "foot",
+                    "Pete",
+                    "pot",
+                    "pet",
+                    "Pat",
+                    "port",
+                    "pit",
+                    "puss",
+                    "putt",
+                    "pout",
+                    "soot",
+                    "pert",
+                    "puts",
+                    "pushed",
+                    "putter"
+                ],
+                "number": 18,
+                "frequency": 40.1699
+            },
+            "initial_consonant_fl": 98.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "me",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "me",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 131605,
+            "word_family_frequency": 1172647,
+            "phonemes": [
+                "m",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "we",
+                    "he",
+                    "my",
+                    "re",
+                    "be",
+                    "she",
+                    "see",
+                    "more",
+                    "may",
+                    "ma",
+                    "key",
+                    "sea",
+                    "tea",
+                    "Lee",
+                    "Gee",
+                    "thee",
+                    "pee",
+                    "knee",
+                    "bee",
+                    "fee",
+                    "wee",
+                    "Moore",
+                    "Moe",
+                    "Dee",
+                    "Mar",
+                    "pea",
+                    "mare",
+                    "mow",
+                    "tee",
+                    "Moo",
+                    "moor",
+                    "Shea",
+                    "Mao",
+                    "Zee",
+                    "Yee",
+                    "Shi",
+                    "Tae",
+                    "Mau",
+                    "nee",
+                    "Lea",
+                    "mean",
+                    "meet",
+                    "army",
+                    "Amy",
+                    "meat",
+                    "meal",
+                    "Emmy",
+                    "meek",
+                    "Mead",
+                    "Amie"
+                ],
+                "number": 50,
+                "frequency": 915.8141
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "like",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "like",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 156796,
+            "word_family_frequency": 156796,
+            "phonemes": [
+                "l",
+                "aɪ",
+                "k"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "look",
+                    "life",
+                    "live",
+                    "line",
+                    "light",
+                    "luck",
+                    "Mike",
+                    "Luke",
+                    "lock",
+                    "lied",
+                    "lies",
+                    "lake",
+                    "liar",
+                    "bike",
+                    "lack",
+                    "lick",
+                    "leak",
+                    "psych",
+                    "hike",
+                    "Pike",
+                    "lime",
+                    "dyke",
+                    "lice",
+                    "lark",
+                    "lac",
+                    "Nike",
+                    "Lite",
+                    "tyke",
+                    "kike",
+                    "lurk",
+                    "dike",
+                    "lire",
+                    "lie",
+                    "Ike",
+                    "Lai",
+                    "lye",
+                    "liked",
+                    "likes",
+                    "alike"
+                ],
+                "number": 39,
+                "frequency": 112.359
+            },
+            "initial_consonant_fl": 83.0,
+            "final_consonant_fl": 65.0
+        },
+        {
+            "text": "I",
+            "length": 1,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "I",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 1172647,
+            "word_family_frequency": 1172647,
+            "phonemes": [
+                "aɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "a",
+                    "are",
+                    "Oh",
+                    "or",
+                    "uh",
+                    "Ah",
+                    "air",
+                    "Ooh",
+                    "owe",
+                    "eh",
+                    "Aw",
+                    "heir",
+                    "awe",
+                    "ere",
+                    "ore",
+                    "err",
+                    "oar",
+                    "Eau",
+                    "my",
+                    "Why",
+                    "by",
+                    "guy",
+                    "Hi",
+                    "die",
+                    "eyes",
+                    "high",
+                    "buy",
+                    "Bye",
+                    "lie",
+                    "ice",
+                    "tie",
+                    "pie",
+                    "thy",
+                    "shy",
+                    "Chi",
+                    "rye",
+                    "dye",
+                    "thigh",
+                    "pi",
+                    "sigh",
+                    "Thai",
+                    "Tai",
+                    "vie",
+                    "Ike",
+                    "Kai",
+                    "isle",
+                    "Lai",
+                    "Chai",
+                    "Phi",
+                    "nigh",
+                    "eyed",
+                    "Fie",
+                    "lye",
+                    "Psi"
+                ],
+                "number": 54,
+                "frequency": 834.1133
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "might",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "might",
+                    "pos": "MD"
+                }
+            ],
+            "frequency": 59502,
+            "word_family_frequency": 59502,
+            "phonemes": [
+                "m",
+                "aɪ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "right",
+                    "night",
+                    "meet",
+                    "mine",
+                    "fight",
+                    "met",
+                    "white",
+                    "light",
+                    "write",
+                    "Mike",
+                    "tight",
+                    "sight",
+                    "meat",
+                    "bite",
+                    "Matt",
+                    "mate",
+                    "Knight",
+                    "mile",
+                    "site",
+                    "height",
+                    "mice",
+                    "Mia",
+                    "Maya",
+                    "Wright",
+                    "mutt",
+                    "mat",
+                    "Mort",
+                    "kite",
+                    "Mart",
+                    "rite",
+                    "mitt",
+                    "shite",
+                    "moot",
+                    "moat",
+                    "mime",
+                    "cite",
+                    "Mott",
+                    "Lite",
+                    "mire",
+                    "my",
+                    "mighty",
+                    "smite",
+                    "Miter",
+                    "mites"
+                ],
+                "number": 44,
+                "frequency": 309.0677
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "know",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "know",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 190679,
+            "word_family_frequency": 190679,
+            "phonemes": [
+                "n",
+                "oʊ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "so",
+                    "go",
+                    "now",
+                    "new",
+                    "show",
+                    "knew",
+                    "though",
+                    "Joe",
+                    "low",
+                    "ho",
+                    "nor",
+                    "Nah",
+                    "row",
+                    "bow",
+                    "dough",
+                    "knee",
+                    "toe",
+                    "Moe",
+                    "Beau",
+                    "tow",
+                    "Co",
+                    "sew",
+                    "Doe",
+                    "Poe",
+                    "Nay",
+                    "Cho",
+                    "woe",
+                    "mow",
+                    "sow",
+                    "foe",
+                    "Lowe",
+                    "Roe",
+                    "hoe",
+                    "nigh",
+                    "nee",
+                    "gnaw",
+                    "Oh",
+                    "owe",
+                    "Eau",
+                    "knows",
+                    "known",
+                    "nose",
+                    "note",
+                    "Nope",
+                    "snow",
+                    "Noel",
+                    "Noah",
+                    "Nome",
+                    "gnome",
+                    "Ono",
+                    "node"
+                ],
+                "number": 51,
+                "frequency": 341.1026
+            },
+            "initial_consonant_fl": 61.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "of",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "of",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 3052563,
+            "word_family_frequency": 3052563,
+            "phonemes": [
+                "ʌ",
+                "v"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "up",
+                    "us",
+                    "Um",
+                    "Eve",
+                    "Ugh",
+                    "Un",
+                    "Umm",
+                    "Ave",
+                    "uh",
+                    "love",
+                    "shove",
+                    "dove",
+                    "guv",
+                    "luv"
+                ],
+                "number": 14,
+                "frequency": 535.4076
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 22.0
+        },
+        {
+            "text": "it",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "it",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 1238613,
+            "word_family_frequency": 1238613,
+            "phonemes": [
+                "ɪ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "in",
+                    "is",
+                    "out",
+                    "if",
+                    "at",
+                    "eat",
+                    "eight",
+                    "ought",
+                    "art",
+                    "ate",
+                    "ill",
+                    "inn",
+                    "itch",
+                    "oat",
+                    "aught",
+                    "shit",
+                    "sit",
+                    "hit",
+                    "bit",
+                    "its",
+                    "fit",
+                    "kit",
+                    "pit",
+                    "lit",
+                    "wit",
+                    "tit",
+                    "Whit",
+                    "knit",
+                    "writ",
+                    "mitt",
+                    "zit"
+                ],
+                "number": 31,
+                "frequency": 1018.1777
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 72.0
+        }
+    ],
+    "types": [
+        {
+            "text": "stop",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "stop",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 28170,
+            "word_family_frequency": 28170,
+            "phonemes": [
+                "s",
+                "t",
+                "ɑ",
+                "p"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "step",
+                    "stock",
+                    "swap",
+                    "stoop",
+                    "steep",
+                    "slop",
+                    "atop",
+                    "Steppe",
+                    "top",
+                    "stopped",
+                    "stops",
+                    "stomp",
+                    "stopper"
+                ],
+                "number": 13,
+                "frequency": 29.9759
+            },
+            "initial_consonant_fl": 85.0,
+            "final_consonant_fl": 43.0
+        },
+        {
+            "text": "what",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "what",
+                    "pos": "WP"
+                }
+            ],
+            "frequency": 253809,
+            "word_family_frequency": 253809,
+            "phonemes": [
+                "w",
+                "ʌ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "hell",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "hell",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 5329,
+            "word_family_frequency": 5329,
+            "phonemes": [
+                "h",
+                "ɛ",
+                "l"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Well",
+                    "tell",
+                    "whole",
+                    "head",
+                    "sell",
+                    "fell",
+                    "hole",
+                    "cell",
+                    "hall",
+                    "bell",
+                    "hill",
+                    "yell",
+                    "heck",
+                    "Mel",
+                    "shell",
+                    "Hail",
+                    "heal",
+                    "Del",
+                    "Belle",
+                    "heel",
+                    "haul",
+                    "hull",
+                    "hen",
+                    "Dell",
+                    "howl",
+                    "Hale",
+                    "gel",
+                    "hedge",
+                    "hurl",
+                    "hem",
+                    "Tel",
+                    "Pell",
+                    "Hoyle",
+                    "Elle",
+                    "ell",
+                    "help",
+                    "held",
+                    "health",
+                    "Heller",
+                    "Helm",
+                    "Hells"
+                ],
+                "number": 41,
+                "frequency": 171.6982
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": 76.0
+        },
+        {
+            "text": "are",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "are",
+                    "pos": "VBP"
+                }
+            ],
+            "frequency": 458447,
+            "word_family_frequency": 4725359,
+            "phonemes": [
+                "ɑ",
+                "r"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "I",
+                    "a",
+                    "Oh",
+                    "or",
+                    "uh",
+                    "Ah",
+                    "air",
+                    "eye",
+                    "Ooh",
+                    "owe",
+                    "eh",
+                    "Aye",
+                    "Aw",
+                    "heir",
+                    "awe",
+                    "ere",
+                    "ore",
+                    "err",
+                    "oar",
+                    "Eau",
+                    "car",
+                    "far",
+                    "bar",
+                    "art",
+                    "arm",
+                    "jar",
+                    "Argh",
+                    "par",
+                    "Arc",
+                    "Mar",
+                    "Ark",
+                    "arch",
+                    "tar",
+                    "Carr",
+                    "Char",
+                    "Dar",
+                    "Gar"
+                ],
+                "number": 37,
+                "frequency": 1833.6603
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "you",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "you",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 821635,
+            "word_family_frequency": 821635,
+            "phonemes": [
+                "j",
+                "u"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "talking",
+            "length": 7,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "talking",
+                    "pos": "VBG"
+                }
+            ],
+            "frequency": 13021,
+            "word_family_frequency": 40409,
+            "phonemes": [
+                "t",
+                "ɔ",
+                "k",
+                "ɪ",
+                "ŋ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "taking",
+                    "walking",
+                    "ticking",
+                    "Hawking",
+                    "tucking",
+                    "gawking",
+                    "stalking"
+                ],
+                "number": 7,
+                "frequency": 46.7339
+            },
+            "initial_consonant_fl": 87.0,
+            "final_consonant_fl": 21.0
+        },
+        {
+            "text": "about",
+            "length": 5,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "about",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 192168,
+            "word_family_frequency": 192168,
+            "phonemes": [
+                "ʌ",
+                "b",
+                "aʊ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Abort",
+                    "bout"
+                ],
+                "number": 2,
+                "frequency": 11.8529
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "get",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "get",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 214216,
+            "word_family_frequency": 214216,
+            "phonemes": [
+                "g",
+                "ɛ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "got",
+                    "Let",
+                    "guess",
+                    "yet",
+                    "set",
+                    "met",
+                    "bet",
+                    "wet",
+                    "gate",
+                    "pet",
+                    "net",
+                    "debt",
+                    "jet",
+                    "goat",
+                    "gut",
+                    "vet",
+                    "gout",
+                    "gat",
+                    "gets",
+                    "guest",
+                    "guessed",
+                    "ghetto"
+                ],
+                "number": 22,
+                "frequency": 343.418
+            },
+            "initial_consonant_fl": 71.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "my",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "my",
+                    "pos": "PRP$"
+                }
+            ],
+            "frequency": 146817,
+            "word_family_frequency": 1172647,
+            "phonemes": [
+                "m",
+                "aɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "me",
+                    "Why",
+                    "by",
+                    "more",
+                    "guy",
+                    "Hi",
+                    "may",
+                    "die",
+                    "high",
+                    "buy",
+                    "ma",
+                    "Bye",
+                    "lie",
+                    "tie",
+                    "pie",
+                    "thy",
+                    "shy",
+                    "Mae",
+                    "Moore",
+                    "Moe",
+                    "Chi",
+                    "rye",
+                    "Mar",
+                    "dye",
+                    "thigh",
+                    "pi",
+                    "sigh",
+                    "Thai",
+                    "Tai",
+                    "mare",
+                    "mow",
+                    "vie",
+                    "Moo",
+                    "moor",
+                    "Kai",
+                    "Mao",
+                    "Lai",
+                    "Chai",
+                    "Mau",
+                    "Phi",
+                    "nigh",
+                    "mea",
+                    "Fie",
+                    "lye",
+                    "Psi",
+                    "I",
+                    "eye",
+                    "Aye",
+                    "might",
+                    "mine",
+                    "Mike",
+                    "mile",
+                    "mice",
+                    "Mia",
+                    "Maya",
+                    "mite",
+                    "mime",
+                    "mire"
+                ],
+                "number": 58,
+                "frequency": 1005.8577
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "pretty",
+            "length": 6,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "pretty",
+                    "pos": "RB"
+                }
+            ],
+            "frequency": 7895,
+            "word_family_frequency": 7895,
+            "phonemes": [
+                "p",
+                "r",
+                "ɪ",
+                "t",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "privy",
+                    "prissy",
+                    "gritty",
+                    "pity"
+                ],
+                "number": 4,
+                "frequency": 6.5882
+            },
+            "initial_consonant_fl": 98.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "name",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "name",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 42072,
+            "word_family_frequency": 42072,
+            "phonemes": [
+                "n",
+                "eɪ",
+                "m"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "came",
+                    "same",
+                    "game",
+                    "shame",
+                    "nail",
+                    "dame",
+                    "lame",
+                    "fame",
+                    "numb",
+                    "Nam",
+                    "Norm",
+                    "tame",
+                    "Nein",
+                    "Nome",
+                    "neighs",
+                    "gnome",
+                    "maim",
+                    "nave",
+                    "knave",
+                    "aim",
+                    "Nay",
+                    "named",
+                    "names"
+                ],
+                "number": 23,
+                "frequency": 59.5209
+            },
+            "initial_consonant_fl": 61.0,
+            "final_consonant_fl": 42.0
+        },
+        {
+            "text": "honey",
+            "length": 5,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "honey",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 1600,
+            "word_family_frequency": 1600,
+            "phonemes": [
+                "h",
+                "ʌ",
+                "n",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "money",
+                    "funny",
+                    "hunt",
+                    "Bunny",
+                    "Sonny",
+                    "horny",
+                    "sunny",
+                    "hunch",
+                    "Huns",
+                    "runny",
+                    "hussy",
+                    "hubby",
+                    "Gunny",
+                    "Tunney",
+                    "huffy",
+                    "Hun"
+                ],
+                "number": 16,
+                "frequency": 59.5245
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "mouse",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "mouse",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 3077,
+            "word_family_frequency": 3077,
+            "phonemes": [
+                "m",
+                "aʊ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "house",
+                    "Miss",
+                    "mouth",
+                    "mess",
+                    "mass",
+                    "mice",
+                    "moose",
+                    "Mace",
+                    "Moss",
+                    "Morse",
+                    "mas",
+                    "louse",
+                    "mousse",
+                    "douse",
+                    "muss",
+                    "Mao",
+                    "Mau",
+                    "mousy"
+                ],
+                "number": 18,
+                "frequency": 67.3431
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "do",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "do",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 539713,
+            "word_family_frequency": 539713,
+            "phonemes": [
+                "d",
+                "u"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "you",
+                    "to",
+                    "who",
+                    "too",
+                    "two",
+                    "day",
+                    "new",
+                    "knew",
+                    "door",
+                    "die",
+                    "dare",
+                    "shoe",
+                    "Sue",
+                    "dough",
+                    "zoo",
+                    "Boo",
+                    "Jew",
+                    "Woo",
+                    "Dee",
+                    "Shoo",
+                    "Pooh",
+                    "Doe",
+                    "Duh",
+                    "dye",
+                    "Lew",
+                    "der",
+                    "loo",
+                    "Sioux",
+                    "goo",
+                    "Moo",
+                    "poo",
+                    "Rue",
+                    "Dar",
+                    "lieu",
+                    "Foo",
+                    "dah",
+                    "Chou",
+                    "Dow",
+                    "coo",
+                    "Dei",
+                    "Ooh",
+                    "dude",
+                    "due",
+                    "Drew",
+                    "Duke",
+                    "doom",
+                    "douche",
+                    "ado",
+                    "dune",
+                    "dupe",
+                    "doer",
+                    "Duce"
+                ],
+                "number": 52,
+                "frequency": 1387.9464
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "not",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "not",
+                    "pos": "RB"
+                }
+            ],
+            "frequency": 763344,
+            "word_family_frequency": 763344,
+            "phonemes": [
+                "n",
+                "ɑ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "got",
+                    "night",
+                    "lot",
+                    "shot",
+                    "hot",
+                    "knock",
+                    "note",
+                    "Knight",
+                    "pot",
+                    "nut",
+                    "net",
+                    "neat",
+                    "yacht",
+                    "rot",
+                    "dot",
+                    "nod",
+                    "non",
+                    "Nat",
+                    "notch",
+                    "knob",
+                    "cot",
+                    "knit",
+                    "Watt",
+                    "Newt",
+                    "Tot",
+                    "bot",
+                    "jot",
+                    "Mott",
+                    "naught",
+                    "knoll",
+                    "gnat",
+                    "Noll",
+                    "Baht",
+                    "Nob",
+                    "Nah",
+                    "knocked",
+                    "knots",
+                    "snot",
+                    "Notre"
+                ],
+                "number": 39,
+                "frequency": 140.6722
+            },
+            "initial_consonant_fl": 61.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "talk",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "talk",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 40409,
+            "word_family_frequency": 40409,
+            "phonemes": [
+                "t",
+                "ɔ",
+                "k"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "take",
+                    "took",
+                    "walk",
+                    "taught",
+                    "tall",
+                    "Hawk",
+                    "tuck",
+                    "tick",
+                    "tech",
+                    "chalk",
+                    "Turk",
+                    "tack",
+                    "Tic",
+                    "tock",
+                    "toke",
+                    "torque",
+                    "taut",
+                    "taupe",
+                    "tyke",
+                    "teak",
+                    "talked",
+                    "talks",
+                    "talker",
+                    "stalk",
+                    "talky"
+                ],
+                "number": 25,
+                "frequency": 108.1914
+            },
+            "initial_consonant_fl": 87.0,
+            "final_consonant_fl": 65.0
+        },
+        {
+            "text": "put",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "put",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 68149,
+            "word_family_frequency": 68149,
+            "phonemes": [
+                "p",
+                "ʊ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "part",
+                    "pull",
+                    "push",
+                    "foot",
+                    "Pete",
+                    "pot",
+                    "pet",
+                    "Pat",
+                    "port",
+                    "pit",
+                    "puss",
+                    "putt",
+                    "pout",
+                    "soot",
+                    "pert",
+                    "puts",
+                    "pushed",
+                    "putter"
+                ],
+                "number": 18,
+                "frequency": 40.1699
+            },
+            "initial_consonant_fl": 98.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "me",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "me",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 131605,
+            "word_family_frequency": 1172647,
+            "phonemes": [
+                "m",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "we",
+                    "he",
+                    "my",
+                    "re",
+                    "be",
+                    "she",
+                    "see",
+                    "more",
+                    "may",
+                    "ma",
+                    "key",
+                    "sea",
+                    "tea",
+                    "Lee",
+                    "Gee",
+                    "thee",
+                    "pee",
+                    "knee",
+                    "bee",
+                    "fee",
+                    "wee",
+                    "Moore",
+                    "Moe",
+                    "Dee",
+                    "Mar",
+                    "pea",
+                    "mare",
+                    "mow",
+                    "tee",
+                    "Moo",
+                    "moor",
+                    "Shea",
+                    "Mao",
+                    "Zee",
+                    "Yee",
+                    "Shi",
+                    "Tae",
+                    "Mau",
+                    "nee",
+                    "Lea",
+                    "mean",
+                    "meet",
+                    "army",
+                    "Amy",
+                    "meat",
+                    "meal",
+                    "Emmy",
+                    "meek",
+                    "Mead",
+                    "Amie"
+                ],
+                "number": 50,
+                "frequency": 915.8141
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "like",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "like",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 156796,
+            "word_family_frequency": 156796,
+            "phonemes": [
+                "l",
+                "aɪ",
+                "k"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "look",
+                    "life",
+                    "live",
+                    "line",
+                    "light",
+                    "luck",
+                    "Mike",
+                    "Luke",
+                    "lock",
+                    "lied",
+                    "lies",
+                    "lake",
+                    "liar",
+                    "bike",
+                    "lack",
+                    "lick",
+                    "leak",
+                    "psych",
+                    "hike",
+                    "Pike",
+                    "lime",
+                    "dyke",
+                    "lice",
+                    "lark",
+                    "lac",
+                    "Nike",
+                    "Lite",
+                    "tyke",
+                    "kike",
+                    "lurk",
+                    "dike",
+                    "lire",
+                    "lie",
+                    "Ike",
+                    "Lai",
+                    "lye",
+                    "liked",
+                    "likes",
+                    "alike"
+                ],
+                "number": 39,
+                "frequency": 112.359
+            },
+            "initial_consonant_fl": 83.0,
+            "final_consonant_fl": 65.0
+        },
+        {
+            "text": "i",
+            "length": 1,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "i",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 1172647,
+            "word_family_frequency": 1172647,
+            "phonemes": [
+                "aɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "might",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "might",
+                    "pos": "MD"
+                }
+            ],
+            "frequency": 59502,
+            "word_family_frequency": 59502,
+            "phonemes": [
+                "m",
+                "aɪ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "right",
+                    "night",
+                    "meet",
+                    "mine",
+                    "fight",
+                    "met",
+                    "white",
+                    "light",
+                    "write",
+                    "Mike",
+                    "tight",
+                    "sight",
+                    "meat",
+                    "bite",
+                    "Matt",
+                    "mate",
+                    "Knight",
+                    "mile",
+                    "site",
+                    "height",
+                    "mice",
+                    "Mia",
+                    "Maya",
+                    "Wright",
+                    "mutt",
+                    "mat",
+                    "Mort",
+                    "kite",
+                    "Mart",
+                    "rite",
+                    "mitt",
+                    "shite",
+                    "moot",
+                    "moat",
+                    "mime",
+                    "cite",
+                    "Mott",
+                    "Lite",
+                    "mire",
+                    "my",
+                    "mighty",
+                    "smite",
+                    "Miter",
+                    "mites"
+                ],
+                "number": 44,
+                "frequency": 309.0677
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "know",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "know",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 190679,
+            "word_family_frequency": 190679,
+            "phonemes": [
+                "n",
+                "oʊ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "so",
+                    "go",
+                    "now",
+                    "new",
+                    "show",
+                    "knew",
+                    "though",
+                    "Joe",
+                    "low",
+                    "ho",
+                    "nor",
+                    "Nah",
+                    "row",
+                    "bow",
+                    "dough",
+                    "knee",
+                    "toe",
+                    "Moe",
+                    "Beau",
+                    "tow",
+                    "Co",
+                    "sew",
+                    "Doe",
+                    "Poe",
+                    "Nay",
+                    "Cho",
+                    "woe",
+                    "mow",
+                    "sow",
+                    "foe",
+                    "Lowe",
+                    "Roe",
+                    "hoe",
+                    "nigh",
+                    "nee",
+                    "gnaw",
+                    "Oh",
+                    "owe",
+                    "Eau",
+                    "knows",
+                    "known",
+                    "nose",
+                    "note",
+                    "Nope",
+                    "snow",
+                    "Noel",
+                    "Noah",
+                    "Nome",
+                    "gnome",
+                    "Ono",
+                    "node"
+                ],
+                "number": 51,
+                "frequency": 341.1026
+            },
+            "initial_consonant_fl": 61.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "of",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "of",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 3052563,
+            "word_family_frequency": 3052563,
+            "phonemes": [
+                "ʌ",
+                "v"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "up",
+                    "us",
+                    "Um",
+                    "Eve",
+                    "Ugh",
+                    "Un",
+                    "Umm",
+                    "Ave",
+                    "uh",
+                    "love",
+                    "shove",
+                    "dove",
+                    "guv",
+                    "luv"
+                ],
+                "number": 14,
+                "frequency": 535.4076
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 22.0
+        },
+        {
+            "text": "it",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "it",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 1238613,
+            "word_family_frequency": 1238613,
+            "phonemes": [
+                "ɪ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "in",
+                    "is",
+                    "out",
+                    "if",
+                    "at",
+                    "eat",
+                    "eight",
+                    "ought",
+                    "art",
+                    "ate",
+                    "ill",
+                    "inn",
+                    "itch",
+                    "oat",
+                    "aught",
+                    "shit",
+                    "sit",
+                    "hit",
+                    "bit",
+                    "its",
+                    "fit",
+                    "kit",
+                    "pit",
+                    "lit",
+                    "wit",
+                    "tit",
+                    "Whit",
+                    "knit",
+                    "writ",
+                    "mitt",
+                    "zit"
+                ],
+                "number": 31,
+                "frequency": 1018.1777
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 72.0
+        }
+    ],
+    "mean_sentence_length_words": 8.666666666666666,
+    "wpm": 164.84060784974145,
+    "spm": 190.20070136508627,
+    "average_ptr": 0.9759123333333332,
+    "transcript_text": " Stop, what the hell are you talking about?  Get my pretty name, honey, you mouse  Don't talk, put me like I might know of it",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.94,
+                "end": 4.44,
+                "text": " Stop, what the hell are you talking about?",
+                "no_speech_prob": 0.21040275692939758,
+                "avg_logprob": -0.6313871098192114,
+                "compression_ratio": 1.1730769230769231,
+                "temperature": 0.0
+            },
+            {
+                "id": 2,
+                "start": 4.44,
+                "end": 6.94,
+                "text": " Get my pretty name, honey, you mouse",
+                "no_speech_prob": 0.21040275692939758,
+                "avg_logprob": -0.6313871098192114,
+                "compression_ratio": 1.1730769230769231,
+                "temperature": 0.0
+            },
+            {
+                "id": 3,
+                "start": 6.94,
+                "end": 14.57,
+                "text": " Don't talk, put me like I might know of it",
+                "no_speech_prob": 0.21040275692939758,
+                "avg_logprob": -0.6313871098192114,
+                "compression_ratio": 1.1730769230769231,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 14.5356875,
+            "duration_after_vad": 9.4636875,
+            "language_probability": 0.936099648475647,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.936099648475647
+                ],
+                [
+                    "ko",
+                    0.013354972936213017
+                ],
+                [
+                    "haw",
+                    0.007944831624627113
+                ],
+                [
+                    "km",
+                    0.006504022050648928
+                ],
+                [
+                    "nn",
+                    0.005366368219256401
+                ],
+                [
+                    "ja",
+                    0.004883856046944857
+                ],
+                [
+                    "cy",
+                    0.002753196284174919
+                ],
+                [
+                    "jw",
+                    0.0025193793699145317
+                ],
+                [
+                    "zh",
+                    0.001978656742721796
+                ],
+                [
+                    "la",
+                    0.0018467116169631481
+                ],
+                [
+                    "pt",
+                    0.001254622358828783
+                ],
+                [
+                    "es",
+                    0.0012523416662588716
+                ],
+                [
+                    "tl",
+                    0.0011123291915282607
+                ],
+                [
+                    "th",
+                    0.0010250257328152657
+                ],
+                [
+                    "fr",
+                    0.0010206965962424874
+                ],
+                [
+                    "si",
+                    0.0008673483971506357
+                ],
+                [
+                    "de",
+                    0.000833472004160285
+                ],
+                [
+                    "sn",
+                    0.0006574312574230134
+                ],
+                [
+                    "mi",
+                    0.0006335274083539844
+                ],
+                [
+                    "pl",
+                    0.0005474624340422451
+                ],
+                [
+                    "ru",
+                    0.0005451195756904781
+                ],
+                [
+                    "vi",
+                    0.0005447532166726887
+                ],
+                [
+                    "tr",
+                    0.0005377544439397752
+                ],
+                [
+                    "it",
+                    0.000521997397299856
+                ],
+                [
+                    "hi",
+                    0.00045693194260820746
+                ],
+                [
+                    "ar",
+                    0.0003636092587839812
+                ],
+                [
+                    "yo",
+                    0.00035744873457588255
+                ],
+                [
+                    "ms",
+                    0.0003038239956367761
+                ],
+                [
+                    "nl",
+                    0.00028709927573800087
+                ],
+                [
+                    "te",
+                    0.0002486742159817368
+                ],
+                [
+                    "ta",
+                    0.00024163504713214934
+                ],
+                [
+                    "da",
+                    0.00023721462639514357
+                ],
+                [
+                    "my",
+                    0.0002139894204447046
+                ],
+                [
+                    "sv",
+                    0.00018805208674166352
+                ],
+                [
+                    "no",
+                    0.00015337798686232418
+                ],
+                [
+                    "el",
+                    0.0001463378284825012
+                ],
+                [
+                    "ml",
+                    0.00014283617201726884
+                ],
+                [
+                    "br",
+                    0.0001423612848157063
+                ],
+                [
+                    "sa",
+                    0.00013801972090732306
+                ],
+                [
+                    "ur",
+                    0.00013173175102565438
+                ],
+                [
+                    "hu",
+                    0.0001151992182713002
+                ],
+                [
+                    "is",
+                    0.00010778077557915822
+                ],
+                [
+                    "ro",
+                    0.00010760238365037367
+                ],
+                [
+                    "ht",
+                    0.00010064954403787851
+                ],
+                [
+                    "id",
+                    8.573420200264081e-05
+                ],
+                [
+                    "yi",
+                    8.035806968109682e-05
+                ],
+                [
+                    "uk",
+                    7.998396904440597e-05
+                ],
+                [
+                    "fi",
+                    6.708440196234733e-05
+                ],
+                [
+                    "he",
+                    6.233638850972056e-05
+                ],
+                [
+                    "fo",
+                    5.8998757594963536e-05
+                ],
+                [
+                    "bn",
+                    5.784178210888058e-05
+                ],
+                [
+                    "fa",
+                    5.749897536588833e-05
+                ],
+                [
+                    "cs",
+                    4.9366157327312976e-05
+                ],
+                [
+                    "sl",
+                    4.6897355787223205e-05
+                ],
+                [
+                    "hr",
+                    4.423432255862281e-05
+                ],
+                [
+                    "mn",
+                    4.025487942271866e-05
+                ],
+                [
+                    "sw",
+                    3.984673094237223e-05
+                ],
+                [
+                    "ne",
+                    3.6882192944176495e-05
+                ],
+                [
+                    "bs",
+                    3.564164580893703e-05
+                ],
+                [
+                    "bo",
+                    3.374492735019885e-05
+                ],
+                [
+                    "bg",
+                    3.129577817162499e-05
+                ],
+                [
+                    "eu",
+                    3.05922185361851e-05
+                ],
+                [
+                    "lv",
+                    2.6386933313915506e-05
+                ],
+                [
+                    "pa",
+                    2.287958523083944e-05
+                ],
+                [
+                    "af",
+                    2.273138852615375e-05
+                ],
+                [
+                    "ca",
+                    2.1249803467071615e-05
+                ],
+                [
+                    "lo",
+                    2.0861603843513876e-05
+                ],
+                [
+                    "gl",
+                    1.5041920960356947e-05
+                ],
+                [
+                    "hy",
+                    1.4154597010929137e-05
+                ],
+                [
+                    "oc",
+                    1.414753933204338e-05
+                ],
+                [
+                    "sk",
+                    1.2581030205183197e-05
+                ],
+                [
+                    "mt",
+                    1.202579187520314e-05
+                ],
+                [
+                    "lt",
+                    9.715369742480107e-06
+                ],
+                [
+                    "sd",
+                    9.641740689403377e-06
+                ],
+                [
+                    "az",
+                    9.514101293461863e-06
+                ],
+                [
+                    "kk",
+                    8.937764505390078e-06
+                ],
+                [
+                    "be",
+                    8.669274393469095e-06
+                ],
+                [
+                    "et",
+                    7.304077371372841e-06
+                ],
+                [
+                    "sr",
+                    5.536183834919939e-06
+                ],
+                [
+                    "kn",
+                    5.02602597407531e-06
+                ],
+                [
+                    "sq",
+                    4.908071787212975e-06
+                ],
+                [
+                    "ps",
+                    4.853704467677744e-06
+                ],
+                [
+                    "ka",
+                    3.4298388982278993e-06
+                ],
+                [
+                    "mr",
+                    3.4185920867457753e-06
+                ],
+                [
+                    "am",
+                    2.4964770091173705e-06
+                ],
+                [
+                    "ln",
+                    1.285739472223213e-06
+                ],
+                [
+                    "gu",
+                    1.2010210639346042e-06
+                ],
+                [
+                    "as",
+                    9.543421128910268e-07
+                ],
+                [
+                    "so",
+                    8.41032090193039e-07
+                ],
+                [
+                    "mk",
+                    6.666805347776972e-07
+                ],
+                [
+                    "lb",
+                    4.2759654661495006e-07
+                ],
+                [
+                    "su",
+                    3.5252449492872984e-07
+                ],
+                [
+                    "tg",
+                    1.735233468025399e-07
+                ],
+                [
+                    "tt",
+                    1.5133907993458706e-07
+                ],
+                [
+                    "ha",
+                    1.0547844198072198e-07
+                ],
+                [
+                    "uz",
+                    1.8989823047377286e-08
+                ],
+                [
+                    "ba",
+                    1.3102808615883532e-08
+                ],
+                [
+                    "tk",
+                    1.2451692121828728e-08
+                ],
+                [
+                    "mg",
+                    1.0973206343578568e-08
+                ]
+            ]
+        }
+    }
+}

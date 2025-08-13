@@ -1,0 +1,856 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/453_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/453_video_audio.wav",
+    "language": "en",
+    "length_sec": 15.08,
+    "vad_duration_sec": 2.41375,
+    "total_segment_length_sec": 2.0,
+    "word_count": 4,
+    "tokens": [
+        {
+            "text": "because",
+            "length": 7,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "because",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 117444,
+            "word_family_frequency": 117444,
+            "phonemes": [
+                "b",
+                "ɪ",
+                "k",
+                "ɔ",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "become",
+                    "becomes"
+                ],
+                "number": 2,
+                "frequency": 69.853
+            },
+            "initial_consonant_fl": 98.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "she",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "she",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 676070,
+            "word_family_frequency": 676070,
+            "phonemes": [
+                "ʃ",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "me",
+                    "we",
+                    "he",
+                    "re",
+                    "be",
+                    "see",
+                    "sure",
+                    "show",
+                    "key",
+                    "share",
+                    "sea",
+                    "tea",
+                    "Lee",
+                    "Gee",
+                    "shoe",
+                    "thee",
+                    "Shore",
+                    "shy",
+                    "pee",
+                    "knee",
+                    "bee",
+                    "Shaw",
+                    "fee",
+                    "wee",
+                    "Mae",
+                    "Dee",
+                    "Shoo",
+                    "pea",
+                    "Cher",
+                    "tee",
+                    "Chez",
+                    "Zee",
+                    "Yee",
+                    "Shay",
+                    "Tae",
+                    "Shah",
+                    "Shih",
+                    "mea",
+                    "nee",
+                    "Lea",
+                    "sheep",
+                    "sheet",
+                    "chic",
+                    "Sheen",
+                    "sheath"
+                ],
+                "number": 45,
+                "frequency": 944.0797
+            },
+            "initial_consonant_fl": 55.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "is",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "is",
+                    "pos": "VBZ"
+                }
+            ],
+            "frequency": 974447,
+            "word_family_frequency": 4725359,
+            "phonemes": [
+                "ɪ",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "it",
+                    "in",
+                    "if",
+                    "as",
+                    "us",
+                    "eyes",
+                    "ill",
+                    "ease",
+                    "owes",
+                    "inn",
+                    "itch",
+                    "oars",
+                    "heirs",
+                    "airs",
+                    "ooze",
+                    "ores",
+                    "his",
+                    "Tis",
+                    "whiz",
+                    "biz",
+                    "fizz",
+                    "wiz",
+                    "ins",
+                    "ills"
+                ],
+                "number": 24,
+                "frequency": 1606.2876
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "dead",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "dead",
+                    "pos": "JJ"
+                }
+            ],
+            "frequency": 13205,
+            "word_family_frequency": 13205,
+            "phonemes": [
+                "d",
+                "ɛ",
+                "d"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "did",
+                    "said",
+                    "Dad",
+                    "head",
+                    "death",
+                    "bed",
+                    "died",
+                    "red",
+                    "dude",
+                    "Ted",
+                    "led",
+                    "deck",
+                    "fed",
+                    "deaf",
+                    "debt",
+                    "shed",
+                    "deed",
+                    "Del",
+                    "Deb",
+                    "med",
+                    "den",
+                    "dared",
+                    "Des",
+                    "wed",
+                    "Dowd",
+                    "Dell",
+                    "Jed",
+                    "dyed",
+                    "dud",
+                    "Dodd",
+                    "Zed",
+                    "Dade",
+                    "Ed",
+                    "dread",
+                    "deader"
+                ],
+                "number": 35,
+                "frequency": 155.0179
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": 100.0
+        }
+    ],
+    "types": [
+        {
+            "text": "because",
+            "length": 7,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "because",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 117444,
+            "word_family_frequency": 117444,
+            "phonemes": [
+                "b",
+                "ɪ",
+                "k",
+                "ɔ",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "become",
+                    "becomes"
+                ],
+                "number": 2,
+                "frequency": 69.853
+            },
+            "initial_consonant_fl": 98.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "she",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "she",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 676070,
+            "word_family_frequency": 676070,
+            "phonemes": [
+                "ʃ",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "me",
+                    "we",
+                    "he",
+                    "re",
+                    "be",
+                    "see",
+                    "sure",
+                    "show",
+                    "key",
+                    "share",
+                    "sea",
+                    "tea",
+                    "Lee",
+                    "Gee",
+                    "shoe",
+                    "thee",
+                    "Shore",
+                    "shy",
+                    "pee",
+                    "knee",
+                    "bee",
+                    "Shaw",
+                    "fee",
+                    "wee",
+                    "Mae",
+                    "Dee",
+                    "Shoo",
+                    "pea",
+                    "Cher",
+                    "tee",
+                    "Chez",
+                    "Zee",
+                    "Yee",
+                    "Shay",
+                    "Tae",
+                    "Shah",
+                    "Shih",
+                    "mea",
+                    "nee",
+                    "Lea",
+                    "sheep",
+                    "sheet",
+                    "chic",
+                    "Sheen",
+                    "sheath"
+                ],
+                "number": 45,
+                "frequency": 944.0797
+            },
+            "initial_consonant_fl": 55.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "is",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "is",
+                    "pos": "VBZ"
+                }
+            ],
+            "frequency": 974447,
+            "word_family_frequency": 4725359,
+            "phonemes": [
+                "ɪ",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "it",
+                    "in",
+                    "if",
+                    "as",
+                    "us",
+                    "eyes",
+                    "ill",
+                    "ease",
+                    "owes",
+                    "inn",
+                    "itch",
+                    "oars",
+                    "heirs",
+                    "airs",
+                    "ooze",
+                    "ores",
+                    "his",
+                    "Tis",
+                    "whiz",
+                    "biz",
+                    "fizz",
+                    "wiz",
+                    "ins",
+                    "ills"
+                ],
+                "number": 24,
+                "frequency": 1606.2876
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "dead",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "dead",
+                    "pos": "JJ"
+                }
+            ],
+            "frequency": 13205,
+            "word_family_frequency": 13205,
+            "phonemes": [
+                "d",
+                "ɛ",
+                "d"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "did",
+                    "said",
+                    "Dad",
+                    "head",
+                    "death",
+                    "bed",
+                    "died",
+                    "red",
+                    "dude",
+                    "Ted",
+                    "led",
+                    "deck",
+                    "fed",
+                    "deaf",
+                    "debt",
+                    "shed",
+                    "deed",
+                    "Del",
+                    "Deb",
+                    "med",
+                    "den",
+                    "dared",
+                    "Des",
+                    "wed",
+                    "Dowd",
+                    "Dell",
+                    "Jed",
+                    "dyed",
+                    "dud",
+                    "Dodd",
+                    "Zed",
+                    "Dade",
+                    "Ed",
+                    "dread",
+                    "deader"
+                ],
+                "number": 35,
+                "frequency": 155.0179
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": 100.0
+        }
+    ],
+    "mean_sentence_length_words": 4.0,
+    "wpm": 99.43034697048162,
+    "spm": 124.28793371310203,
+    "average_ptr": 0.915,
+    "transcript_text": " because she's dead.",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 12.66,
+                "end": 14.66,
+                "text": " because she's dead.",
+                "no_speech_prob": 0.2627062499523163,
+                "avg_logprob": -0.7924075201153755,
+                "compression_ratio": 0.7037037037037037,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 15.06975,
+            "duration_after_vad": 2.41375,
+            "language_probability": 0.9675768613815308,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.9675768613815308
+                ],
+                [
+                    "ko",
+                    0.003957732580602169
+                ],
+                [
+                    "fr",
+                    0.002629605820402503
+                ],
+                [
+                    "ru",
+                    0.002570357406511903
+                ],
+                [
+                    "pt",
+                    0.002222200855612755
+                ],
+                [
+                    "km",
+                    0.0021669757552444935
+                ],
+                [
+                    "es",
+                    0.0021173006389290094
+                ],
+                [
+                    "ja",
+                    0.0018890335923060775
+                ],
+                [
+                    "nn",
+                    0.0017689140513539314
+                ],
+                [
+                    "zh",
+                    0.0014599658316001296
+                ],
+                [
+                    "pl",
+                    0.0013400211464613676
+                ],
+                [
+                    "cy",
+                    0.0012785388389602304
+                ],
+                [
+                    "it",
+                    0.0009273499599657953
+                ],
+                [
+                    "hi",
+                    0.0006684931577183306
+                ],
+                [
+                    "nl",
+                    0.0006316942744888365
+                ],
+                [
+                    "de",
+                    0.0005847797146998346
+                ],
+                [
+                    "tr",
+                    0.000485549884615466
+                ],
+                [
+                    "id",
+                    0.0004462026117835194
+                ],
+                [
+                    "tl",
+                    0.00044414991862140596
+                ],
+                [
+                    "th",
+                    0.0004148156731389463
+                ],
+                [
+                    "jw",
+                    0.00041260503348894417
+                ],
+                [
+                    "la",
+                    0.00040741125121712685
+                ],
+                [
+                    "vi",
+                    0.00037177238846197724
+                ],
+                [
+                    "hu",
+                    0.00026465009432286024
+                ],
+                [
+                    "sv",
+                    0.00025567703414708376
+                ],
+                [
+                    "el",
+                    0.00025447653024457395
+                ],
+                [
+                    "ms",
+                    0.00025352794909849763
+                ],
+                [
+                    "ar",
+                    0.0002407571446383372
+                ],
+                [
+                    "no",
+                    0.00017846479022409767
+                ],
+                [
+                    "haw",
+                    0.00017010336159728467
+                ],
+                [
+                    "ca",
+                    0.00011498194362502545
+                ],
+                [
+                    "sn",
+                    0.00010964008106384426
+                ],
+                [
+                    "ro",
+                    0.0001018074617604725
+                ],
+                [
+                    "da",
+                    0.00010039286280516535
+                ],
+                [
+                    "mi",
+                    8.882082329364493e-05
+                ],
+                [
+                    "fi",
+                    8.851978782331571e-05
+                ],
+                [
+                    "ur",
+                    8.086133311735466e-05
+                ],
+                [
+                    "ml",
+                    7.780483429087326e-05
+                ],
+                [
+                    "cs",
+                    7.021831697784364e-05
+                ],
+                [
+                    "te",
+                    6.722718535456806e-05
+                ],
+                [
+                    "bn",
+                    6.404441228369251e-05
+                ],
+                [
+                    "ta",
+                    5.9251276979921386e-05
+                ],
+                [
+                    "br",
+                    5.526356471818872e-05
+                ],
+                [
+                    "bs",
+                    4.657086174120195e-05
+                ],
+                [
+                    "he",
+                    4.148922016611323e-05
+                ],
+                [
+                    "hr",
+                    3.815752643276937e-05
+                ],
+                [
+                    "uk",
+                    3.682193346321583e-05
+                ],
+                [
+                    "si",
+                    3.657864726847038e-05
+                ],
+                [
+                    "bg",
+                    3.385977106518112e-05
+                ],
+                [
+                    "yo",
+                    2.5734208975336514e-05
+                ],
+                [
+                    "sl",
+                    2.566462535469327e-05
+                ],
+                [
+                    "fa",
+                    2.2772321244701743e-05
+                ],
+                [
+                    "is",
+                    1.7733731510816142e-05
+                ],
+                [
+                    "sa",
+                    1.567160325066652e-05
+                ],
+                [
+                    "gl",
+                    1.4050332538317889e-05
+                ],
+                [
+                    "sk",
+                    1.3200527064327616e-05
+                ],
+                [
+                    "my",
+                    1.1556255230971146e-05
+                ],
+                [
+                    "yi",
+                    1.1343700862198602e-05
+                ],
+                [
+                    "ht",
+                    1.0355097401770763e-05
+                ],
+                [
+                    "be",
+                    9.775095350050833e-06
+                ],
+                [
+                    "af",
+                    9.471123121329583e-06
+                ],
+                [
+                    "eu",
+                    9.317059266322758e-06
+                ],
+                [
+                    "bo",
+                    8.898840860638302e-06
+                ],
+                [
+                    "mn",
+                    8.137061740853824e-06
+                ],
+                [
+                    "sr",
+                    7.1978874984779395e-06
+                ],
+                [
+                    "mt",
+                    7.1495396696263924e-06
+                ],
+                [
+                    "hy",
+                    6.690639111184282e-06
+                ],
+                [
+                    "sw",
+                    6.006007424730342e-06
+                ],
+                [
+                    "oc",
+                    5.799367954750778e-06
+                ],
+                [
+                    "sq",
+                    5.5101186262618285e-06
+                ],
+                [
+                    "az",
+                    4.879255811829353e-06
+                ],
+                [
+                    "ne",
+                    4.543926024780376e-06
+                ],
+                [
+                    "pa",
+                    4.138155873079086e-06
+                ],
+                [
+                    "lv",
+                    3.4900676837423816e-06
+                ],
+                [
+                    "et",
+                    3.2056211693998193e-06
+                ],
+                [
+                    "ps",
+                    3.090943664574297e-06
+                ],
+                [
+                    "fo",
+                    2.8093886612623464e-06
+                ],
+                [
+                    "lo",
+                    2.7810176561615663e-06
+                ],
+                [
+                    "lt",
+                    2.630329163366696e-06
+                ],
+                [
+                    "kn",
+                    2.3194429559225682e-06
+                ],
+                [
+                    "mr",
+                    2.210839738836512e-06
+                ],
+                [
+                    "gu",
+                    1.9777321540459525e-06
+                ],
+                [
+                    "sd",
+                    1.9268636606284417e-06
+                ],
+                [
+                    "kk",
+                    1.923257968883263e-06
+                ],
+                [
+                    "ka",
+                    1.3494193353835726e-06
+                ],
+                [
+                    "mk",
+                    7.689067160754348e-07
+                ],
+                [
+                    "ln",
+                    5.744112172578753e-07
+                ],
+                [
+                    "as",
+                    4.693889366080839e-07
+                ],
+                [
+                    "am",
+                    1.7650346251230076e-07
+                ],
+                [
+                    "so",
+                    1.071523101359162e-07
+                ],
+                [
+                    "lb",
+                    7.415997060888913e-08
+                ],
+                [
+                    "tg",
+                    4.863492364393096e-08
+                ],
+                [
+                    "tt",
+                    4.7918916834532865e-08
+                ],
+                [
+                    "su",
+                    3.666377423883205e-08
+                ],
+                [
+                    "ha",
+                    7.504827870263853e-09
+                ],
+                [
+                    "uz",
+                    5.059101582105541e-09
+                ],
+                [
+                    "ba",
+                    3.956727834264484e-09
+                ],
+                [
+                    "tk",
+                    3.237663914745781e-09
+                ],
+                [
+                    "mg",
+                    1.617593503588921e-09
+                ]
+            ]
+        }
+    }
+}

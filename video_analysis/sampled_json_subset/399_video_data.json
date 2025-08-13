@@ -1,0 +1,1079 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/399_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/399_video_audio.wav",
+    "language": "en",
+    "length_sec": 10.54,
+    "vad_duration_sec": 5.597875,
+    "total_segment_length_sec": 3.0,
+    "word_count": 8,
+    "tokens": [
+        {
+            "text": "Stop",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "Stop",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 28170,
+            "word_family_frequency": 28170,
+            "phonemes": [
+                "s",
+                "t",
+                "ɑ",
+                "p"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 85.0,
+            "final_consonant_fl": 43.0
+        },
+        {
+            "text": "What",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "What",
+                    "pos": "WP"
+                }
+            ],
+            "frequency": 253809,
+            "word_family_frequency": 253809,
+            "phonemes": [
+                "w",
+                "ʌ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "was",
+                    "but",
+                    "one",
+                    "wait",
+                    "won",
+                    "Shut",
+                    "cut",
+                    "white",
+                    "wet",
+                    "butt",
+                    "weight",
+                    "nut",
+                    "hut",
+                    "gut",
+                    "wit",
+                    "wheat",
+                    "mutt",
+                    "Whit",
+                    "Watt",
+                    "rut",
+                    "wart",
+                    "putt",
+                    "Tut",
+                    "Butte"
+                ],
+                "number": 24,
+                "frequency": 649.0253
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "hell",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "hell",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 5329,
+            "word_family_frequency": 5329,
+            "phonemes": [
+                "h",
+                "ɛ",
+                "l"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Well",
+                    "tell",
+                    "whole",
+                    "head",
+                    "sell",
+                    "fell",
+                    "hole",
+                    "cell",
+                    "hall",
+                    "bell",
+                    "hill",
+                    "yell",
+                    "heck",
+                    "Mel",
+                    "shell",
+                    "Hail",
+                    "heal",
+                    "Del",
+                    "Belle",
+                    "heel",
+                    "haul",
+                    "hull",
+                    "hen",
+                    "Dell",
+                    "howl",
+                    "Hale",
+                    "gel",
+                    "hedge",
+                    "hurl",
+                    "hem",
+                    "Tel",
+                    "Pell",
+                    "Hoyle",
+                    "Elle",
+                    "ell",
+                    "help",
+                    "held",
+                    "health",
+                    "Heller",
+                    "Helm",
+                    "Hells"
+                ],
+                "number": 41,
+                "frequency": 171.6982
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": 76.0
+        },
+        {
+            "text": "are",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "are",
+                    "pos": "VBP"
+                }
+            ],
+            "frequency": 458447,
+            "word_family_frequency": 4725359,
+            "phonemes": [
+                "ɑ",
+                "r"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "I",
+                    "a",
+                    "Oh",
+                    "or",
+                    "uh",
+                    "Ah",
+                    "air",
+                    "eye",
+                    "Ooh",
+                    "owe",
+                    "eh",
+                    "Aye",
+                    "Aw",
+                    "heir",
+                    "awe",
+                    "ere",
+                    "ore",
+                    "err",
+                    "oar",
+                    "Eau",
+                    "car",
+                    "far",
+                    "bar",
+                    "art",
+                    "arm",
+                    "jar",
+                    "Argh",
+                    "par",
+                    "Arc",
+                    "Mar",
+                    "Ark",
+                    "arch",
+                    "tar",
+                    "Carr",
+                    "Char",
+                    "Dar",
+                    "Gar"
+                ],
+                "number": 37,
+                "frequency": 1833.6603
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "you",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "you",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 821635,
+            "word_family_frequency": 821635,
+            "phonemes": [
+                "j",
+                "u"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "talking",
+            "length": 7,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "talking",
+                    "pos": "VBG"
+                }
+            ],
+            "frequency": 13021,
+            "word_family_frequency": 40409,
+            "phonemes": [
+                "t",
+                "ɔ",
+                "k",
+                "ɪ",
+                "ŋ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "taking",
+                    "walking",
+                    "ticking",
+                    "Hawking",
+                    "tucking",
+                    "gawking",
+                    "stalking"
+                ],
+                "number": 7,
+                "frequency": 46.7339
+            },
+            "initial_consonant_fl": 87.0,
+            "final_consonant_fl": 21.0
+        },
+        {
+            "text": "about",
+            "length": 5,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "about",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 192168,
+            "word_family_frequency": 192168,
+            "phonemes": [
+                "ʌ",
+                "b",
+                "aʊ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Abort",
+                    "bout"
+                ],
+                "number": 2,
+                "frequency": 11.8529
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 72.0
+        }
+    ],
+    "types": [
+        {
+            "text": "stop",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "stop",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 28170,
+            "word_family_frequency": 28170,
+            "phonemes": [
+                "s",
+                "t",
+                "ɑ",
+                "p"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "step",
+                    "stock",
+                    "swap",
+                    "stoop",
+                    "steep",
+                    "slop",
+                    "atop",
+                    "Steppe",
+                    "top",
+                    "stopped",
+                    "stops",
+                    "stomp",
+                    "stopper"
+                ],
+                "number": 13,
+                "frequency": 29.9759
+            },
+            "initial_consonant_fl": 85.0,
+            "final_consonant_fl": 43.0
+        },
+        {
+            "text": "what",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "what",
+                    "pos": "WP"
+                }
+            ],
+            "frequency": 253809,
+            "word_family_frequency": 253809,
+            "phonemes": [
+                "w",
+                "ʌ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "hell",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "hell",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 5329,
+            "word_family_frequency": 5329,
+            "phonemes": [
+                "h",
+                "ɛ",
+                "l"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Well",
+                    "tell",
+                    "whole",
+                    "head",
+                    "sell",
+                    "fell",
+                    "hole",
+                    "cell",
+                    "hall",
+                    "bell",
+                    "hill",
+                    "yell",
+                    "heck",
+                    "Mel",
+                    "shell",
+                    "Hail",
+                    "heal",
+                    "Del",
+                    "Belle",
+                    "heel",
+                    "haul",
+                    "hull",
+                    "hen",
+                    "Dell",
+                    "howl",
+                    "Hale",
+                    "gel",
+                    "hedge",
+                    "hurl",
+                    "hem",
+                    "Tel",
+                    "Pell",
+                    "Hoyle",
+                    "Elle",
+                    "ell",
+                    "help",
+                    "held",
+                    "health",
+                    "Heller",
+                    "Helm",
+                    "Hells"
+                ],
+                "number": 41,
+                "frequency": 171.6982
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": 76.0
+        },
+        {
+            "text": "are",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "are",
+                    "pos": "VBP"
+                }
+            ],
+            "frequency": 458447,
+            "word_family_frequency": 4725359,
+            "phonemes": [
+                "ɑ",
+                "r"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "I",
+                    "a",
+                    "Oh",
+                    "or",
+                    "uh",
+                    "Ah",
+                    "air",
+                    "eye",
+                    "Ooh",
+                    "owe",
+                    "eh",
+                    "Aye",
+                    "Aw",
+                    "heir",
+                    "awe",
+                    "ere",
+                    "ore",
+                    "err",
+                    "oar",
+                    "Eau",
+                    "car",
+                    "far",
+                    "bar",
+                    "art",
+                    "arm",
+                    "jar",
+                    "Argh",
+                    "par",
+                    "Arc",
+                    "Mar",
+                    "Ark",
+                    "arch",
+                    "tar",
+                    "Carr",
+                    "Char",
+                    "Dar",
+                    "Gar"
+                ],
+                "number": 37,
+                "frequency": 1833.6603
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "you",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "you",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 821635,
+            "word_family_frequency": 821635,
+            "phonemes": [
+                "j",
+                "u"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "talking",
+            "length": 7,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "talking",
+                    "pos": "VBG"
+                }
+            ],
+            "frequency": 13021,
+            "word_family_frequency": 40409,
+            "phonemes": [
+                "t",
+                "ɔ",
+                "k",
+                "ɪ",
+                "ŋ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "taking",
+                    "walking",
+                    "ticking",
+                    "Hawking",
+                    "tucking",
+                    "gawking",
+                    "stalking"
+                ],
+                "number": 7,
+                "frequency": 46.7339
+            },
+            "initial_consonant_fl": 87.0,
+            "final_consonant_fl": 21.0
+        },
+        {
+            "text": "about",
+            "length": 5,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "about",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 192168,
+            "word_family_frequency": 192168,
+            "phonemes": [
+                "ʌ",
+                "b",
+                "aʊ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Abort",
+                    "bout"
+                ],
+                "number": 2,
+                "frequency": 11.8529
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 72.0
+        }
+    ],
+    "mean_sentence_length_words": 8.0,
+    "wpm": 85.74682357144452,
+    "spm": 107.18352946430565,
+    "average_ptr": 0.793333,
+    "transcript_text": " Stop. What the hell are you talking about?",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 4.94,
+                "end": 7.94,
+                "text": " Stop. What the hell are you talking about?",
+                "no_speech_prob": 0.1336185187101364,
+                "avg_logprob": -0.41979913528148943,
+                "compression_ratio": 0.84,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 10.541875,
+            "duration_after_vad": 5.597875,
+            "language_probability": 0.9710573554039001,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.9710573554039001
+                ],
+                [
+                    "ko",
+                    0.0057708704844117165
+                ],
+                [
+                    "ja",
+                    0.0031623688992112875
+                ],
+                [
+                    "nn",
+                    0.0026940868701785803
+                ],
+                [
+                    "haw",
+                    0.0022530127316713333
+                ],
+                [
+                    "km",
+                    0.0021068209316581488
+                ],
+                [
+                    "tl",
+                    0.00134170800447464
+                ],
+                [
+                    "zh",
+                    0.0010240726405754685
+                ],
+                [
+                    "pt",
+                    0.0008743884391151369
+                ],
+                [
+                    "th",
+                    0.0007887411047704518
+                ],
+                [
+                    "jw",
+                    0.0007642590790055692
+                ],
+                [
+                    "es",
+                    0.0007577838259749115
+                ],
+                [
+                    "hi",
+                    0.0006434043170884252
+                ],
+                [
+                    "cy",
+                    0.0005481837433762848
+                ],
+                [
+                    "la",
+                    0.00047302470193244517
+                ],
+                [
+                    "vi",
+                    0.0004631272458937019
+                ],
+                [
+                    "ms",
+                    0.0004123961552977562
+                ],
+                [
+                    "fr",
+                    0.0003842368023470044
+                ],
+                [
+                    "si",
+                    0.00037469292874448
+                ],
+                [
+                    "de",
+                    0.00030102196615189314
+                ],
+                [
+                    "mi",
+                    0.00029568374156951904
+                ],
+                [
+                    "tr",
+                    0.0002761000068858266
+                ],
+                [
+                    "nl",
+                    0.0002621812163852155
+                ],
+                [
+                    "sn",
+                    0.00024861126439645886
+                ],
+                [
+                    "ar",
+                    0.00022322444419842213
+                ],
+                [
+                    "ta",
+                    0.00020141949062235653
+                ],
+                [
+                    "yo",
+                    0.0001761346502462402
+                ],
+                [
+                    "it",
+                    0.00017293244309257716
+                ],
+                [
+                    "ml",
+                    0.00017133992514573038
+                ],
+                [
+                    "id",
+                    0.0001528305292595178
+                ],
+                [
+                    "ur",
+                    0.00015035539399832487
+                ],
+                [
+                    "pl",
+                    0.00014103275316301733
+                ],
+                [
+                    "ru",
+                    0.0001389946264680475
+                ],
+                [
+                    "sv",
+                    0.00012925008195452392
+                ],
+                [
+                    "da",
+                    0.00012411711213644594
+                ],
+                [
+                    "te",
+                    0.00011291478585917503
+                ],
+                [
+                    "el",
+                    9.285371197620407e-05
+                ],
+                [
+                    "sa",
+                    8.391122537432238e-05
+                ],
+                [
+                    "my",
+                    5.60308362764772e-05
+                ],
+                [
+                    "bn",
+                    4.7131874453043565e-05
+                ],
+                [
+                    "no",
+                    4.651001654565334e-05
+                ],
+                [
+                    "fi",
+                    4.501680450630374e-05
+                ],
+                [
+                    "ro",
+                    4.080573489773087e-05
+                ],
+                [
+                    "ht",
+                    2.9393258955678903e-05
+                ],
+                [
+                    "uk",
+                    2.6706798962550238e-05
+                ],
+                [
+                    "hu",
+                    2.48977703449782e-05
+                ],
+                [
+                    "br",
+                    2.369388130318839e-05
+                ],
+                [
+                    "he",
+                    2.2781663574278355e-05
+                ],
+                [
+                    "is",
+                    2.2414096747525036e-05
+                ],
+                [
+                    "yi",
+                    2.0930943719577044e-05
+                ],
+                [
+                    "fa",
+                    2.0258332369849086e-05
+                ],
+                [
+                    "sw",
+                    1.9903482098015957e-05
+                ],
+                [
+                    "pa",
+                    1.5989084204193205e-05
+                ],
+                [
+                    "bo",
+                    1.5293249816750176e-05
+                ],
+                [
+                    "ne",
+                    1.3286145076563116e-05
+                ],
+                [
+                    "cs",
+                    1.234702085639583e-05
+                ],
+                [
+                    "fo",
+                    1.2046414667565841e-05
+                ],
+                [
+                    "sl",
+                    1.1056171388190705e-05
+                ],
+                [
+                    "lo",
+                    1.0504323654458858e-05
+                ],
+                [
+                    "hr",
+                    1.0260198905598372e-05
+                ],
+                [
+                    "af",
+                    9.45201281865593e-06
+                ],
+                [
+                    "bg",
+                    7.993410690687597e-06
+                ],
+                [
+                    "mn",
+                    7.789931260049343e-06
+                ],
+                [
+                    "bs",
+                    6.5328722484991886e-06
+                ],
+                [
+                    "ca",
+                    6.4494138314330485e-06
+                ],
+                [
+                    "lv",
+                    5.828944267705083e-06
+                ],
+                [
+                    "gl",
+                    4.995845756639028e-06
+                ],
+                [
+                    "sd",
+                    4.757876467920141e-06
+                ],
+                [
+                    "az",
+                    4.750767402583733e-06
+                ],
+                [
+                    "sk",
+                    4.659141268348321e-06
+                ],
+                [
+                    "mt",
+                    4.099121269973693e-06
+                ],
+                [
+                    "eu",
+                    4.085049113200512e-06
+                ],
+                [
+                    "hy",
+                    3.987679974670755e-06
+                ],
+                [
+                    "oc",
+                    2.950293946923921e-06
+                ],
+                [
+                    "be",
+                    2.851834778994089e-06
+                ],
+                [
+                    "kn",
+                    2.8256290534045547e-06
+                ],
+                [
+                    "ps",
+                    2.7465821403893642e-06
+                ],
+                [
+                    "lt",
+                    2.486053290340351e-06
+                ],
+                [
+                    "mr",
+                    2.22778021452541e-06
+                ],
+                [
+                    "et",
+                    1.9622161744337063e-06
+                ],
+                [
+                    "kk",
+                    1.9241406334913336e-06
+                ],
+                [
+                    "sr",
+                    1.6176809367607348e-06
+                ],
+                [
+                    "sq",
+                    1.3799228781863349e-06
+                ],
+                [
+                    "gu",
+                    1.3229999922259594e-06
+                ],
+                [
+                    "am",
+                    9.279290225094883e-07
+                ],
+                [
+                    "ka",
+                    7.383553679574106e-07
+                ],
+                [
+                    "as",
+                    6.329355528578162e-07
+                ],
+                [
+                    "ln",
+                    5.004923195883748e-07
+                ],
+                [
+                    "so",
+                    3.350945974034403e-07
+                ],
+                [
+                    "mk",
+                    2.3936621573739103e-07
+                ],
+                [
+                    "su",
+                    1.3012862609684817e-07
+                ],
+                [
+                    "lb",
+                    8.366969694861837e-08
+                ],
+                [
+                    "tg",
+                    4.8143601105721245e-08
+                ],
+                [
+                    "ha",
+                    4.153841004495007e-08
+                ],
+                [
+                    "tt",
+                    3.2714627451468914e-08
+                ],
+                [
+                    "uz",
+                    5.858790341761733e-09
+                ],
+                [
+                    "ba",
+                    3.978299023543741e-09
+                ],
+                [
+                    "tk",
+                    3.783109381316763e-09
+                ],
+                [
+                    "mg",
+                    2.7432325300225102e-09
+                ]
+            ]
+        }
+    }
+}

@@ -1,0 +1,966 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/327_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/327_video_audio.wav",
+    "language": "en",
+    "length_sec": 15.07,
+    "vad_duration_sec": 3.808,
+    "total_segment_length_sec": 3.84,
+    "word_count": 8,
+    "tokens": [
+        {
+            "text": "All",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "All",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 282152,
+            "word_family_frequency": 282152,
+            "phonemes": [
+                "ɔ",
+                "l"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 76.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "leaves",
+            "length": 6,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "leaves",
+                    "pos": "NNS"
+                }
+            ],
+            "frequency": 6390,
+            "word_family_frequency": 36304,
+            "phonemes": [
+                "l",
+                "i",
+                "v",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "lives",
+                    "loves",
+                    "leads",
+                    "thieves",
+                    "leagues",
+                    "Reeves",
+                    "Leeds",
+                    "leans",
+                    "loaves",
+                    "leave",
+                    "sleeves",
+                    "Cleaves"
+                ],
+                "number": 12,
+                "frequency": 67.7336
+            },
+            "initial_consonant_fl": 83.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "are",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "are",
+                    "pos": "VBP"
+                }
+            ],
+            "frequency": 458447,
+            "word_family_frequency": 4725359,
+            "phonemes": [
+                "ɑ",
+                "r"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "I",
+                    "a",
+                    "Oh",
+                    "or",
+                    "uh",
+                    "Ah",
+                    "air",
+                    "eye",
+                    "Ooh",
+                    "owe",
+                    "eh",
+                    "Aye",
+                    "Aw",
+                    "heir",
+                    "awe",
+                    "ere",
+                    "ore",
+                    "err",
+                    "oar",
+                    "Eau",
+                    "car",
+                    "far",
+                    "bar",
+                    "art",
+                    "arm",
+                    "jar",
+                    "Argh",
+                    "par",
+                    "Arc",
+                    "Mar",
+                    "Ark",
+                    "arch",
+                    "tar",
+                    "Carr",
+                    "Char",
+                    "Dar",
+                    "Gar"
+                ],
+                "number": 37,
+                "frequency": 1833.6603
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "brown",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "brown",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 9958,
+            "word_family_frequency": 9958,
+            "phonemes": [
+                "b",
+                "r",
+                "aʊ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 98.0,
+            "final_consonant_fl": 75.0
+        },
+        {
+            "text": "leaves",
+            "length": 6,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "leaves",
+                    "pos": "NNS"
+                }
+            ],
+            "frequency": 6390,
+            "word_family_frequency": 36304,
+            "phonemes": [
+                "l",
+                "i",
+                "v",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "lives",
+                    "loves",
+                    "leads",
+                    "thieves",
+                    "leagues",
+                    "Reeves",
+                    "Leeds",
+                    "leans",
+                    "loaves",
+                    "leave",
+                    "sleeves",
+                    "Cleaves"
+                ],
+                "number": 12,
+                "frequency": 67.7336
+            },
+            "initial_consonant_fl": 83.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "are",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "are",
+                    "pos": "VBP"
+                }
+            ],
+            "frequency": 458447,
+            "word_family_frequency": 4725359,
+            "phonemes": [
+                "ɑ",
+                "r"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "I",
+                    "a",
+                    "Oh",
+                    "or",
+                    "uh",
+                    "Ah",
+                    "air",
+                    "eye",
+                    "Ooh",
+                    "owe",
+                    "eh",
+                    "Aye",
+                    "Aw",
+                    "heir",
+                    "awe",
+                    "ere",
+                    "ore",
+                    "err",
+                    "oar",
+                    "Eau",
+                    "car",
+                    "far",
+                    "bar",
+                    "art",
+                    "arm",
+                    "jar",
+                    "Argh",
+                    "par",
+                    "Arc",
+                    "Mar",
+                    "Ark",
+                    "arch",
+                    "tar",
+                    "Carr",
+                    "Char",
+                    "Dar",
+                    "Gar"
+                ],
+                "number": 37,
+                "frequency": 1833.6603
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "brown",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "brown",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 9958,
+            "word_family_frequency": 9958,
+            "phonemes": [
+                "b",
+                "r",
+                "aʊ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 98.0,
+            "final_consonant_fl": 75.0
+        }
+    ],
+    "types": [
+        {
+            "text": "all",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "all",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 282152,
+            "word_family_frequency": 282152,
+            "phonemes": [
+                "ɔ",
+                "l"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "off",
+                    "ought",
+                    "oil",
+                    "ill",
+                    "Earl",
+                    "owl",
+                    "ale",
+                    "Elle",
+                    "Ole",
+                    "ell",
+                    "eel",
+                    "Auf",
+                    "isle",
+                    "aught",
+                    "Aw",
+                    "awe",
+                    "call",
+                    "fall",
+                    "ball",
+                    "Paul",
+                    "wall",
+                    "awful",
+                    "hall",
+                    "tall",
+                    "haul",
+                    "Saul",
+                    "gall",
+                    "shawl",
+                    "auld",
+                    "bawl",
+                    "Gaul",
+                    "pall"
+                ],
+                "number": 32,
+                "frequency": 88.1342
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 76.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "leaves",
+            "length": 6,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "leaves",
+                    "pos": "NNS"
+                }
+            ],
+            "frequency": 6390,
+            "word_family_frequency": 36304,
+            "phonemes": [
+                "l",
+                "i",
+                "v",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "lives",
+                    "loves",
+                    "leads",
+                    "thieves",
+                    "leagues",
+                    "Reeves",
+                    "Leeds",
+                    "leans",
+                    "loaves",
+                    "leave",
+                    "sleeves",
+                    "Cleaves"
+                ],
+                "number": 12,
+                "frequency": 67.7336
+            },
+            "initial_consonant_fl": 83.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "are",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "are",
+                    "pos": "VBP"
+                }
+            ],
+            "frequency": 458447,
+            "word_family_frequency": 4725359,
+            "phonemes": [
+                "ɑ",
+                "r"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "I",
+                    "a",
+                    "Oh",
+                    "or",
+                    "uh",
+                    "Ah",
+                    "air",
+                    "eye",
+                    "Ooh",
+                    "owe",
+                    "eh",
+                    "Aye",
+                    "Aw",
+                    "heir",
+                    "awe",
+                    "ere",
+                    "ore",
+                    "err",
+                    "oar",
+                    "Eau",
+                    "car",
+                    "far",
+                    "bar",
+                    "art",
+                    "arm",
+                    "jar",
+                    "Argh",
+                    "par",
+                    "Arc",
+                    "Mar",
+                    "Ark",
+                    "arch",
+                    "tar",
+                    "Carr",
+                    "Char",
+                    "Dar",
+                    "Gar"
+                ],
+                "number": 37,
+                "frequency": 1833.6603
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "brown",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "brown",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 9958,
+            "word_family_frequency": 9958,
+            "phonemes": [
+                "b",
+                "r",
+                "aʊ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 98.0,
+            "final_consonant_fl": 75.0
+        }
+    ],
+    "mean_sentence_length_words": 8.0,
+    "wpm": 126.05042016806723,
+    "spm": 126.05042016806723,
+    "average_ptr": 0.895833,
+    "transcript_text": " All the leaves are brown, leaves are brown",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 2.99,
+                "end": 6.83,
+                "text": " All the leaves are brown, leaves are brown",
+                "no_speech_prob": 0.278491348028183,
+                "avg_logprob": -0.5254534830649694,
+                "compression_ratio": 1.2,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 15.0465625,
+            "duration_after_vad": 3.808,
+            "language_probability": 0.6896399855613708,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.6896399855613708
+                ],
+                [
+                    "cy",
+                    0.04014626517891884
+                ],
+                [
+                    "ru",
+                    0.03554195165634155
+                ],
+                [
+                    "nl",
+                    0.028358248993754387
+                ],
+                [
+                    "de",
+                    0.021092398092150688
+                ],
+                [
+                    "zh",
+                    0.019402211531996727
+                ],
+                [
+                    "la",
+                    0.01687506027519703
+                ],
+                [
+                    "pt",
+                    0.01431281678378582
+                ],
+                [
+                    "fr",
+                    0.013599132187664509
+                ],
+                [
+                    "hi",
+                    0.010403227061033249
+                ],
+                [
+                    "nn",
+                    0.007424145471304655
+                ],
+                [
+                    "ta",
+                    0.005808247718960047
+                ],
+                [
+                    "jw",
+                    0.00542339077219367
+                ],
+                [
+                    "es",
+                    0.004837617743760347
+                ],
+                [
+                    "mi",
+                    0.004827303811907768
+                ],
+                [
+                    "ms",
+                    0.004706686828285456
+                ],
+                [
+                    "sa",
+                    0.0044662379659712315
+                ],
+                [
+                    "pl",
+                    0.0043802750296890736
+                ],
+                [
+                    "haw",
+                    0.0037092682905495167
+                ],
+                [
+                    "ro",
+                    0.0035411776043474674
+                ],
+                [
+                    "uk",
+                    0.0034221243113279343
+                ],
+                [
+                    "yi",
+                    0.003096264088526368
+                ],
+                [
+                    "km",
+                    0.0028760782442986965
+                ],
+                [
+                    "sl",
+                    0.002778911031782627
+                ],
+                [
+                    "ko",
+                    0.002741116564720869
+                ],
+                [
+                    "tl",
+                    0.0026889729779213667
+                ],
+                [
+                    "da",
+                    0.0025596818886697292
+                ],
+                [
+                    "ca",
+                    0.0024868932086974382
+                ],
+                [
+                    "br",
+                    0.002189585007727146
+                ],
+                [
+                    "af",
+                    0.0021798342932015657
+                ],
+                [
+                    "ur",
+                    0.0020931558683514595
+                ],
+                [
+                    "tr",
+                    0.0018810405163094401
+                ],
+                [
+                    "bg",
+                    0.0018154012504965067
+                ],
+                [
+                    "el",
+                    0.0017519737593829632
+                ],
+                [
+                    "no",
+                    0.0017494208877906203
+                ],
+                [
+                    "sn",
+                    0.0017293264390900731
+                ],
+                [
+                    "ar",
+                    0.0017120293341577053
+                ],
+                [
+                    "ja",
+                    0.001577159040607512
+                ],
+                [
+                    "cs",
+                    0.0015128401573747396
+                ],
+                [
+                    "sv",
+                    0.0012909906217828393
+                ],
+                [
+                    "lv",
+                    0.0012719518272206187
+                ],
+                [
+                    "it",
+                    0.0010668153408914804
+                ],
+                [
+                    "th",
+                    0.0009696036577224731
+                ],
+                [
+                    "bs",
+                    0.000932163093239069
+                ],
+                [
+                    "te",
+                    0.0008865634445101023
+                ],
+                [
+                    "vi",
+                    0.0008081833948381245
+                ],
+                [
+                    "bo",
+                    0.0006932287360541523
+                ],
+                [
+                    "he",
+                    0.0006398914265446365
+                ],
+                [
+                    "hr",
+                    0.0006354760262183845
+                ],
+                [
+                    "ht",
+                    0.0006057812715880573
+                ],
+                [
+                    "yo",
+                    0.0005255016149021685
+                ],
+                [
+                    "is",
+                    0.0004990287125110626
+                ],
+                [
+                    "my",
+                    0.00049658736679703
+                ],
+                [
+                    "ml",
+                    0.0004778084985446185
+                ],
+                [
+                    "lt",
+                    0.0004307615745346993
+                ],
+                [
+                    "oc",
+                    0.00040376753895543516
+                ],
+                [
+                    "mn",
+                    0.0003608828119467944
+                ],
+                [
+                    "sw",
+                    0.00035774600110016763
+                ],
+                [
+                    "si",
+                    0.00033214990980923176
+                ],
+                [
+                    "kk",
+                    0.00033152333344332874
+                ],
+                [
+                    "fa",
+                    0.0003209425776731223
+                ],
+                [
+                    "sk",
+                    0.00031858577858656645
+                ],
+                [
+                    "sq",
+                    0.000306340487441048
+                ],
+                [
+                    "be",
+                    0.0002872844925150275
+                ],
+                [
+                    "sr",
+                    0.0002871256147045642
+                ],
+                [
+                    "ne",
+                    0.00027342981775291264
+                ],
+                [
+                    "sd",
+                    0.0002472338092047721
+                ],
+                [
+                    "gl",
+                    0.00024615536676719785
+                ],
+                [
+                    "fo",
+                    0.00024133408442139626
+                ],
+                [
+                    "pa",
+                    0.00024021780700422823
+                ],
+                [
+                    "bn",
+                    0.00022968865232542157
+                ],
+                [
+                    "id",
+                    0.00020251751993782818
+                ],
+                [
+                    "eu",
+                    0.0001836732990341261
+                ],
+                [
+                    "mt",
+                    0.00018038135021924973
+                ],
+                [
+                    "hu",
+                    0.00014793103036936373
+                ],
+                [
+                    "hy",
+                    0.0001468970294808969
+                ],
+                [
+                    "ps",
+                    0.00014502952399197966
+                ],
+                [
+                    "fi",
+                    8.93551332410425e-05
+                ],
+                [
+                    "az",
+                    8.757596515351906e-05
+                ],
+                [
+                    "ka",
+                    6.986148218857124e-05
+                ],
+                [
+                    "lo",
+                    6.210249557625502e-05
+                ],
+                [
+                    "mk",
+                    6.023424066370353e-05
+                ],
+                [
+                    "gu",
+                    5.730591146857478e-05
+                ],
+                [
+                    "et",
+                    4.78034999105148e-05
+                ],
+                [
+                    "kn",
+                    4.486981561058201e-05
+                ],
+                [
+                    "ln",
+                    3.622347503551282e-05
+                ],
+                [
+                    "mr",
+                    2.71756016445579e-05
+                ],
+                [
+                    "am",
+                    1.7807753465604037e-05
+                ],
+                [
+                    "as",
+                    1.1330723282299004e-05
+                ],
+                [
+                    "tt",
+                    1.0494888556422666e-05
+                ],
+                [
+                    "so",
+                    7.2739726419968065e-06
+                ],
+                [
+                    "lb",
+                    4.664332664106041e-06
+                ],
+                [
+                    "tg",
+                    4.302224624552764e-06
+                ],
+                [
+                    "su",
+                    1.4315409089249442e-06
+                ],
+                [
+                    "ha",
+                    6.913110723871796e-07
+                ],
+                [
+                    "uz",
+                    3.056624109376571e-07
+                ],
+                [
+                    "ba",
+                    2.234839229231511e-07
+                ],
+                [
+                    "tk",
+                    1.6388585777349363e-07
+                ],
+                [
+                    "mg",
+                    1.5258908092619095e-07
+                ]
+            ]
+        }
+    }
+}

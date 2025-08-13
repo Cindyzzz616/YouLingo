@@ -14,11 +14,16 @@ from faster_whisper import WhisperModel
 from Word import Word
 from VAT import preprocess_audio
 from VAT import get_voiced_intervals_webrtcvad
+# from diarization import diarize
+from external_data.contractions import CONTRACTIONS
 
 # Unused imports
 # from xml.parsers.expat import model
 # import whisper
 # from VAT import compute_ptrs_from_audio
+
+##### Constants #####
+NO_SPEECH_THRESHOLD = 0.3
 
 ##### Preparing various packages #####
 
@@ -27,6 +32,33 @@ phoneme_database = pd.read_csv(
     "https://raw.githubusercontent.com/phoible/dev/master/data/phoible.csv",
     low_memory=False
 )
+
+##### Helper functions #####
+def serialize_word_timing(w):
+    # Some builds call it `probability`, others `score`; guard with getattr
+    return {
+        "word": getattr(w, "word", None),
+        "start": getattr(w, "start", None),
+        "end": getattr(w, "end", None),
+        "prob": getattr(w, "probability", getattr(w, "score", None)),
+    }
+
+def serialize_segment(seg):
+    d = {
+        "id": getattr(seg, "id", None),
+        "start": getattr(seg, "start", None),
+        "end": getattr(seg, "end", None),
+        "text": getattr(seg, "text", None),
+        "no_speech_prob": getattr(seg, "no_speech_prob", None),
+        "avg_logprob": getattr(seg, "avg_logprob", None),
+        "compression_ratio": getattr(seg, "compression_ratio", None),
+        "temperature": getattr(seg, "temperature", None),
+    }
+    # Word-level timing if present
+    words = getattr(seg, "words", None)
+    if words:
+        d["words"] = [serialize_word_timing(w) for w in words]
+    return d
 
 ##### The actual Video object #####
 
@@ -50,49 +82,128 @@ class Video:
         self.audio_path = self.extract_audio(audio_folder)
 
         # Transcript attributes
-        self.transcript = self.transcribe() # a transcript object from Whisper
+        self.raw_transcript = self.transcribe() # a transcript object from Whisper
+        self.transcript = self.clean_transcript()
         self.transcript_text = self.get_full_transcript()
         self.language = self.get_language()
+        # self.number_of_speakers = diarize(self.audio_path) # TODO might remove for now? takes too much processing power
 
         # Length attributes
         self.length = self.calculate_length()
-        self.speech_length = self.calculate_speech_length() # a rougher estimate of the amount of time where there's articulation
+        self.vad_duration = self.calculate_speech_length()[0] # duration of voice activation detection
+        self.total_segment_length = self.calculate_speech_length()[1] # duration of all transcript segments/sentences
+       
+        if self.language == 'en' and self.transcript["segments"]:
+            tokens, sentence_lengths = self.get_tokens()
 
-        if self.language != 'en':
             # Lexical attributes
-            self.tokens = []
-            self.types = {}
-            self.word_count = -1
-
-            # Phonological attributes
-            self.wpm = -1
-            self.spm = -1
-            self.average_ptr = -1
-        else:
-            # Lexical attributes
-            self.tokens = self.get_tokens()
-            self.types = set(self.tokens)
+            self.tokens = tokens
+            self.types = self.get_set()
             self.word_count = len(self.tokens)
+
+            # Syntactic attributes
+            self.mean_sentence_length = sum(sentence_lengths) / len(sentence_lengths) if len(sentence_lengths) > 0 else 0
 
             # Phonological attributes
             self.wpm = self.calculate_wpm() # words per minute
             self.spm = self.calculate_spm() # syllables per minute
             self.average_ptr = self.voiced_slices_for_segments()
+        else:
+            # Lexical attributes
+            self.tokens = []
+            self.types = []
+            self.word_count = -1
+
+            # Syntactic attributes
+            self.mean_sentence_length = -1.0
+
+            # Phonological attributes
+            self.wpm = -1
+            self.spm = -1
+            self.average_ptr = -1
 
     def __str__(self):
         return (
             f"🎬 Video path: {self.path}\n"
             f"🎤 Audio Path: {self.audio_path}\n"
             f"📝 Transcript Preview: {self.transcript_text}\n"
+            f"🌏 Language: {self.language}\n"
+            # f"👫 Number of speakers: {self.number_of_speakers}\n"
             f"⏱️ Total Length: {self.length:.2f} seconds\n"
-            f"🗣️ Speech Length: {self.speech_length:.2f} seconds\n"
+            f"🗣️ VAD duration: {self.vad_duration:.2f} seconds\n"
+            f"💬 Total segment length: {self.total_segment_length:.2f} seconds\n"
             f"Lexical properties:\n"            
             f"📖 Word Count: {self.word_count} words\n"
+            f"Syntactic properties:\n"
+            f"📝 Mean sentence length: {self.mean_sentence_length} words\n"
             f"Phonological properties:\n"
             f"🕒 Words Per Minute: {self.wpm:.2f} WPM\n"
             f"🗣️ Syllables Per Minute: {self.spm:.2f} SPM\n"
-            f"📊 Average PTR: {self.average_ptr}\n"
+            f"📊 Average PTR: {self.average_ptr:.2f}\n"
         )
+
+    def to_dict(self):
+        # Tokens (list[Word]) → list[dict]
+        tokens_dict = [t.to_dict() for t in getattr(self, "tokens", [])]
+
+        # Types (list[Word]) → list[dict]
+        types_dict = [t.to_dict() for t in getattr(self, "types", [])]
+
+
+        # Whisper segments (custom objects) → list[dict]
+        segs = []
+        for seg in self.transcript.get("segments", []):
+            segs.append(serialize_segment(seg))
+
+        # Info object may be a pydantic-like structure; grab common fields safely
+        info = self.transcript.get("info", None)
+        info_dict = None
+        if info is not None:
+            info_dict = {
+                "language": getattr(info, "language", getattr(self, "language", None)),
+                "duration": getattr(info, "duration", None),
+                "duration_after_vad": getattr(info, "duration_after_vad", None),
+                "language_probability": getattr(info, "language_probability", None),
+                "all_language_probs": getattr(info, "all_language_probs", None)
+                # Add anything else you find useful and JSON-safe
+            }
+
+        return {
+            # Core metadata
+            "path": self.path,
+            "audio_path": self.audio_path,
+            "language": self.language,
+            "length_sec": self.length,
+            "vad_duration_sec": self.vad_duration,
+            "total_segment_length_sec": self.total_segment_length,
+
+            # Lexical
+            "word_count": self.word_count,
+            "tokens": tokens_dict,
+            "types": types_dict,
+
+            # Syntactic
+            "mean_sentence_length_words": self.mean_sentence_length,
+
+            # Phonological
+            "wpm": self.wpm,
+            "spm": self.spm,
+            "average_ptr": self.average_ptr,
+
+            # Transcript
+            "transcript_text": self.transcript_text,
+            "transcript": {
+                "segments": segs,
+                "info": info_dict
+            }
+        }
+
+    def to_json(self, out_path: str | Path, **dump_kwargs):
+        out_path = Path(out_path)
+        out_path.parent.mkdir(parents=True, exist_ok=True)
+        with out_path.open("w", encoding="utf-8") as f:
+            json.dump(self.to_dict(), f, ensure_ascii=False, indent=2, **dump_kwargs)
+        return str(out_path)
     
     # def extract_audio(self, audio_folder: str):
     #     # Get base filename without extension
@@ -129,10 +240,21 @@ class Video:
         """
         model = WhisperModel("base", compute_type="float32")
         segments, info = model.transcribe(self.path, 
-                                          vad_filter=True,
-                                          multilingual=True,
-                                          language_detection_segments=10) # NOTE can set multilingual=True here
+                                          vad_filter=True
+                                          # multilingual=True, # NOTE perhaps i should just give up on detecting multiple languages T-T
+                                          # language_detection_segments=10 # NOTE can set multilingual=True here
+                                          ) 
         return {"segments": list(segments), "info": info}
+    
+    def clean_transcript(self):
+        """
+        Remove segments for which no_speech_prob < NO_SPEECH_THRESHOLD.
+        """
+        cleaned_transcript = {"segments": [], "info": self.raw_transcript["info"]}
+        for seg in self.raw_transcript["segments"]:
+            if seg.no_speech_prob < NO_SPEECH_THRESHOLD:
+                cleaned_transcript["segments"].append(seg)
+        return cleaned_transcript
     
     def get_full_transcript(self) -> str:
         """
@@ -151,36 +273,63 @@ class Video:
         clip = VideoFileClip(self.path)
         return clip.duration  # in seconds
     
-    def calculate_speech_length(self) -> float:
+    def calculate_speech_length(self):
         """
         Calculate the total speech length in seconds from the transcript.
         """
-        return self.transcript["info"].duration_after_vad
 
         # The old way of calculating speech length: subtracting duration of all sentences from total duration of video
-        # total_duration = 0.0
-        # for segment in self.transcript["segments"]:
-        #     start = segment.start
-        #     end = segment.end
-        #     total_duration += (end - start)
-        # return total_duration
+        total_duration = 0.0
+        for segment in self.transcript["segments"]:
+            start = segment.start
+            end = segment.end
+            total_duration += (end - start)
+        return self.transcript["info"].duration_after_vad, total_duration
+        # TODO could probably combine some methods so i'm not iterating through the transcript object multiple times
     
-    def get_tokens(self) -> list:
+    def get_tokens(self) -> tuple[list[Word], list[int]]:
         """
         Get a list of words (tokens) from the transcript. Repeated words are counted as different tokens.
         """
         word_tokens = []
-        # Split on any sequence of whitespace or punctuation
-        tokens = re.split(r"[^\w']+", self.transcript_text)
+        tokens = []
+        sentence_lengths = []
 
-        # Remove empty strings
-        tokens = [t for t in tokens if t]
+        # Split on any sequence of whitespace or punctuation
+        for seg in self.transcript["segments"]:
+            words = re.split(r"[^\w']+", seg.text)
+
+            # Remove empty strings
+            words = [w for w in words if w]
+            
+            # Expand contractions
+            expanded = []
+            for w in words:
+                exp = CONTRACTIONS.get(w, CONTRACTIONS.get(w.capitalize(), None))
+                expanded.extend(exp if exp else [w])
+            words = expanded
+            
+            sentence_lengths.append(len(words))
+            tokens.extend(words)
+
+        # Remove possessives after contractions are handled
+        tokens = [t.removesuffix("'s") if t.endswith("'s") else t for t in tokens]
 
         # Convert tokens to Word objects
         for token in tokens:
             word_tokens.append(Word(token))
 
-        return word_tokens
+        return word_tokens, sentence_lengths
+    
+    def get_set(self):
+        word_set_flattened = []
+        for token in self.tokens:
+            if token.text.lower() not in word_set_flattened:
+                word_set_flattened.append(token.text.lower())
+        word_set = []
+        for word in word_set_flattened:
+            word_set.append(Word(word))
+        return word_set
     
     def compute_word_frequency_average(self):
         """
@@ -207,7 +356,7 @@ class Video:
         Calculate the speech rate in words per minute (WPM).
         """
 
-        wps = self.word_count / self.speech_length if self.speech_length > 0 else 0
+        wps = self.word_count / self.vad_duration if self.vad_duration > 0 else 0
         wpm = wps * 60
 
         return wpm
@@ -220,7 +369,7 @@ class Video:
         for word in self.tokens:
             total_syllables += word.syllable_count
 
-        sps = total_syllables / self.speech_length if self.speech_length > 0 else 0
+        sps = total_syllables / self.vad_duration if self.vad_duration > 0 else 0
         spm = sps * 60
 
         return spm
@@ -276,6 +425,9 @@ class Video:
                 "voiced_time": round(voiced_time, 6),
                 "ptr": round(ptr, 6),
             })
+            # print(voiced, "\n")
+            # print(segments, "\n")
+            # print(results, "\n")
 
             total_ptr = 0
             total_segs = len(results)
@@ -306,6 +458,13 @@ if __name__ == "__main__":
     # Example usage
     video = Video(path="video_analysis/videos/etymology.MP4", audio_folder="video_analysis/audios")
     print(video)
+    video_dict = video.to_dict()
+    print(video_dict)
+    # for token in video.tokens:
+    #     print(token.text)
+    # print("\n")
+    # for type in video.types:
+    #     print(type.text)
 
     # print(video.transcript["info"], "\n")
     # print(video.transcript["info"].duration, type(video.transcript["info"].duration))

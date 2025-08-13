@@ -1,0 +1,474 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/187_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/187_video_audio.wav",
+    "language": "nl",
+    "length_sec": 29.29,
+    "vad_duration_sec": 29.280375,
+    "total_segment_length_sec": 27.0,
+    "word_count": -1,
+    "tokens": [],
+    "types": [],
+    "mean_sentence_length_words": -1.0,
+    "wpm": -1,
+    "spm": -1,
+    "average_ptr": -1,
+    "transcript_text": " Op 19 november komt Maels Morales naar de PlayStation 4 en PlayStation 5, maar op die dag komt ook de remastered versie van de originele spiderman naar de PlayStation 5.  En die game ziet er alleen niet veel beter uit. Ook Peter Parker heeft een nieuw gezicht geplegen.  Mijn voel mensen op het internet staan hier kwaad over en ik ben daar gewoon benieuwd wat jij van vindt.  Laat het weten in de comments, deel deze video met je vrienden en wil we niks missen met het laatste nieuws ook je favoriete games.  Vredels niet te volgen.",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.0,
+                "end": 11.0,
+                "text": " Op 19 november komt Maels Morales naar de PlayStation 4 en PlayStation 5, maar op die dag komt ook de remastered versie van de originele spiderman naar de PlayStation 5.",
+                "no_speech_prob": 0.009752169251441956,
+                "avg_logprob": -0.40282937504301136,
+                "compression_ratio": 1.6635220125786163,
+                "temperature": 0.0
+            },
+            {
+                "id": 2,
+                "start": 11.0,
+                "end": 16.0,
+                "text": " En die game ziet er alleen niet veel beter uit. Ook Peter Parker heeft een nieuw gezicht geplegen.",
+                "no_speech_prob": 0.009752169251441956,
+                "avg_logprob": -0.40282937504301136,
+                "compression_ratio": 1.6635220125786163,
+                "temperature": 0.0
+            },
+            {
+                "id": 3,
+                "start": 16.0,
+                "end": 21.0,
+                "text": " Mijn voel mensen op het internet staan hier kwaad over en ik ben daar gewoon benieuwd wat jij van vindt.",
+                "no_speech_prob": 0.009752169251441956,
+                "avg_logprob": -0.40282937504301136,
+                "compression_ratio": 1.6635220125786163,
+                "temperature": 0.0
+            },
+            {
+                "id": 4,
+                "start": 21.0,
+                "end": 25.0,
+                "text": " Laat het weten in de comments, deel deze video met je vrienden en wil we niks missen met het laatste nieuws ook je favoriete games.",
+                "no_speech_prob": 0.009752169251441956,
+                "avg_logprob": -0.40282937504301136,
+                "compression_ratio": 1.6635220125786163,
+                "temperature": 0.0
+            },
+            {
+                "id": 5,
+                "start": 25.0,
+                "end": 27.0,
+                "text": " Vredels niet te volgen.",
+                "no_speech_prob": 0.009752169251441956,
+                "avg_logprob": -0.40282937504301136,
+                "compression_ratio": 1.6635220125786163,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "nl",
+            "duration": 29.280375,
+            "duration_after_vad": 29.280375,
+            "language_probability": 0.9928159713745117,
+            "all_language_probs": [
+                [
+                    "nl",
+                    0.9928159713745117
+                ],
+                [
+                    "en",
+                    0.004999047610908747
+                ],
+                [
+                    "de",
+                    0.0004053016600664705
+                ],
+                [
+                    "pl",
+                    0.00036402101977728307
+                ],
+                [
+                    "nn",
+                    0.00022753517259843647
+                ],
+                [
+                    "pt",
+                    0.00020625388424377888
+                ],
+                [
+                    "fr",
+                    0.00017306266818195581
+                ],
+                [
+                    "la",
+                    0.00010333412501495332
+                ],
+                [
+                    "el",
+                    8.286313095595688e-05
+                ],
+                [
+                    "hi",
+                    6.738504453096539e-05
+                ],
+                [
+                    "es",
+                    5.9707243053708225e-05
+                ],
+                [
+                    "cs",
+                    4.9213937018066645e-05
+                ],
+                [
+                    "ja",
+                    4.5719356421614066e-05
+                ],
+                [
+                    "ru",
+                    4.213933789287694e-05
+                ],
+                [
+                    "cy",
+                    3.367926910868846e-05
+                ],
+                [
+                    "ar",
+                    3.3052998333005235e-05
+                ],
+                [
+                    "jw",
+                    2.9391638236120343e-05
+                ],
+                [
+                    "hu",
+                    2.6631088985595852e-05
+                ],
+                [
+                    "it",
+                    2.620389022922609e-05
+                ],
+                [
+                    "km",
+                    2.3011181838228367e-05
+                ],
+                [
+                    "tr",
+                    2.1528208890231326e-05
+                ],
+                [
+                    "fi",
+                    2.0897301510558464e-05
+                ],
+                [
+                    "ur",
+                    1.819648787204642e-05
+                ],
+                [
+                    "br",
+                    1.534140028525144e-05
+                ],
+                [
+                    "af",
+                    1.4570425264537334e-05
+                ],
+                [
+                    "vi",
+                    1.2520594282250386e-05
+                ],
+                [
+                    "id",
+                    1.1047025509469677e-05
+                ],
+                [
+                    "zh",
+                    9.529509043204598e-06
+                ],
+                [
+                    "ko",
+                    8.275963409687392e-06
+                ],
+                [
+                    "haw",
+                    7.697973160247784e-06
+                ],
+                [
+                    "ms",
+                    4.54565679319785e-06
+                ],
+                [
+                    "eu",
+                    4.393616563902469e-06
+                ],
+                [
+                    "da",
+                    4.107657332497183e-06
+                ],
+                [
+                    "ca",
+                    3.871319222525926e-06
+                ],
+                [
+                    "no",
+                    3.4458144000382163e-06
+                ],
+                [
+                    "sv",
+                    2.2488129616249353e-06
+                ],
+                [
+                    "sn",
+                    2.1478467715496663e-06
+                ],
+                [
+                    "gl",
+                    1.7158654372906312e-06
+                ],
+                [
+                    "sk",
+                    1.6926304624576005e-06
+                ],
+                [
+                    "uk",
+                    1.609913852007594e-06
+                ],
+                [
+                    "tl",
+                    1.459437953599263e-06
+                ],
+                [
+                    "th",
+                    1.1630140761553776e-06
+                ],
+                [
+                    "yi",
+                    1.1210246384507627e-06
+                ],
+                [
+                    "is",
+                    9.764090691533056e-07
+                ],
+                [
+                    "ht",
+                    9.005521519611648e-07
+                ],
+                [
+                    "bg",
+                    8.712441399438831e-07
+                ],
+                [
+                    "ro",
+                    8.624235761089949e-07
+                ],
+                [
+                    "oc",
+                    8.182715873772395e-07
+                ],
+                [
+                    "lv",
+                    7.711357170592237e-07
+                ],
+                [
+                    "mi",
+                    7.624649924764526e-07
+                ],
+                [
+                    "ml",
+                    6.699576715618605e-07
+                ],
+                [
+                    "et",
+                    6.519090902656899e-07
+                ],
+                [
+                    "yo",
+                    5.057438556832494e-07
+                ],
+                [
+                    "si",
+                    4.871503733738791e-07
+                ],
+                [
+                    "he",
+                    4.5964088712935336e-07
+                ],
+                [
+                    "sa",
+                    4.496883718729805e-07
+                ],
+                [
+                    "ta",
+                    4.013477337139193e-07
+                ],
+                [
+                    "my",
+                    3.831104322671308e-07
+                ],
+                [
+                    "sl",
+                    3.3370199048476934e-07
+                ],
+                [
+                    "mn",
+                    3.257896992181486e-07
+                ],
+                [
+                    "fo",
+                    2.3420388117756374e-07
+                ],
+                [
+                    "az",
+                    2.2814256794845278e-07
+                ],
+                [
+                    "hy",
+                    1.983044626285846e-07
+                ],
+                [
+                    "bs",
+                    1.9419869090597786e-07
+                ],
+                [
+                    "lt",
+                    1.8488732678179076e-07
+                ],
+                [
+                    "mt",
+                    1.8270876012138615e-07
+                ],
+                [
+                    "bn",
+                    1.7244013861272833e-07
+                ],
+                [
+                    "fa",
+                    1.6455325635433837e-07
+                ],
+                [
+                    "sq",
+                    1.3277445987114334e-07
+                ],
+                [
+                    "bo",
+                    1.3095180406708096e-07
+                ],
+                [
+                    "hr",
+                    1.308242332243026e-07
+                ],
+                [
+                    "pa",
+                    1.3073454852019495e-07
+                ],
+                [
+                    "be",
+                    1.1429348489855329e-07
+                ],
+                [
+                    "sd",
+                    1.0384085413761568e-07
+                ],
+                [
+                    "lo",
+                    9.249653487586329e-08
+                ],
+                [
+                    "te",
+                    8.29432451610046e-08
+                ],
+                [
+                    "ne",
+                    7.384572597857186e-08
+                ],
+                [
+                    "sw",
+                    5.690747073572311e-08
+                ],
+                [
+                    "kk",
+                    4.6870848535718324e-08
+                ],
+                [
+                    "ps",
+                    3.9459123968299537e-08
+                ],
+                [
+                    "mk",
+                    3.2719128739699954e-08
+                ],
+                [
+                    "sr",
+                    3.149786564904389e-08
+                ],
+                [
+                    "ln",
+                    2.061005055509213e-08
+                ],
+                [
+                    "lb",
+                    1.7584280698201837e-08
+                ],
+                [
+                    "gu",
+                    1.1943707356465438e-08
+                ],
+                [
+                    "ka",
+                    1.0991648480285221e-08
+                ],
+                [
+                    "mr",
+                    9.311993842686661e-09
+                ],
+                [
+                    "as",
+                    6.662093987586104e-09
+                ],
+                [
+                    "kn",
+                    5.45832845588734e-09
+                ],
+                [
+                    "am",
+                    4.488288851689504e-09
+                ],
+                [
+                    "tt",
+                    3.4612559485225347e-09
+                ],
+                [
+                    "so",
+                    2.559418676995051e-09
+                ],
+                [
+                    "tg",
+                    1.2426735196413574e-09
+                ],
+                [
+                    "su",
+                    7.748661712270177e-10
+                ],
+                [
+                    "ba",
+                    3.44073713964832e-10
+                ],
+                [
+                    "ha",
+                    2.6742366654453065e-10
+                ],
+                [
+                    "tk",
+                    2.0942096667919685e-10
+                ],
+                [
+                    "uz",
+                    1.6383490397675615e-10
+                ],
+                [
+                    "mg",
+                    1.2692917550349847e-10
+                ]
+            ]
+        }
+    }
+}

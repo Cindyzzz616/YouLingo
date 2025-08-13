@@ -1,0 +1,1050 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/655_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/655_video_audio.wav",
+    "language": "en",
+    "length_sec": 10.19,
+    "vad_duration_sec": 5.6175625,
+    "total_segment_length_sec": 9.94,
+    "word_count": 6,
+    "tokens": [
+        {
+            "text": "Sweet",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "Sweet",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 5772,
+            "word_family_frequency": 5772,
+            "phonemes": [
+                "s",
+                "w",
+                "i",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 85.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "dreams",
+            "length": 6,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "dreams",
+                    "pos": "NNS"
+                }
+            ],
+            "frequency": 2465,
+            "word_family_frequency": 9457,
+            "phonemes": [
+                "d",
+                "r",
+                "i",
+                "m",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "dreamed",
+                    "drums",
+                    "dreamer",
+                    "dreamy",
+                    "creams",
+                    "dream",
+                    "dreamers"
+                ],
+                "number": 7,
+                "frequency": 23.1541
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "are",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "are",
+                    "pos": "VBP"
+                }
+            ],
+            "frequency": 458447,
+            "word_family_frequency": 4725359,
+            "phonemes": [
+                "ɑ",
+                "r"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "I",
+                    "a",
+                    "Oh",
+                    "or",
+                    "uh",
+                    "Ah",
+                    "air",
+                    "eye",
+                    "Ooh",
+                    "owe",
+                    "eh",
+                    "Aye",
+                    "Aw",
+                    "heir",
+                    "awe",
+                    "ere",
+                    "ore",
+                    "err",
+                    "oar",
+                    "Eau",
+                    "car",
+                    "far",
+                    "bar",
+                    "art",
+                    "arm",
+                    "jar",
+                    "Argh",
+                    "par",
+                    "Arc",
+                    "Mar",
+                    "Ark",
+                    "arch",
+                    "tar",
+                    "Carr",
+                    "Char",
+                    "Dar",
+                    "Gar"
+                ],
+                "number": 37,
+                "frequency": 1833.6603
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "made",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "made",
+                    "pos": "VBN"
+                }
+            ],
+            "frequency": 93581,
+            "word_family_frequency": 223856,
+            "phonemes": [
+                "m",
+                "eɪ",
+                "d"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "make",
+                    "mad",
+                    "paid",
+                    "main",
+                    "mail",
+                    "mood",
+                    "male",
+                    "mayor",
+                    "laid",
+                    "mate",
+                    "Wade",
+                    "mud",
+                    "raid",
+                    "med",
+                    "shade",
+                    "Fayed",
+                    "fade",
+                    "Maine",
+                    "mode",
+                    "Jade",
+                    "Mace",
+                    "Mayo",
+                    "weighed",
+                    "maze",
+                    "Mein",
+                    "Mod",
+                    "mid",
+                    "Mead",
+                    "Sade",
+                    "Dade",
+                    "mowed",
+                    "Maud",
+                    "mane",
+                    "Mays",
+                    "maim",
+                    "bade",
+                    "may",
+                    "aid",
+                    "aide",
+                    "Mayday",
+                    "maids",
+                    "mailed",
+                    "maimed"
+                ],
+                "number": 43,
+                "frequency": 57.3589
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "to",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "to",
+                    "pos": "TO"
+                }
+            ],
+            "frequency": 2605024,
+            "word_family_frequency": 2605024,
+            "phonemes": [
+                "t",
+                "u"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "you",
+                    "do",
+                    "who",
+                    "new",
+                    "knew",
+                    "tea",
+                    "tie",
+                    "tour",
+                    "shoe",
+                    "Sue",
+                    "toy",
+                    "zoo",
+                    "toe",
+                    "Boo",
+                    "Jew",
+                    "tore",
+                    "Woo",
+                    "tow",
+                    "Shoo",
+                    "Pooh",
+                    "doo",
+                    "Thai",
+                    "tar",
+                    "Lew",
+                    "Tai",
+                    "tor",
+                    "loo",
+                    "tee",
+                    "Sioux",
+                    "dew",
+                    "goo",
+                    "Moo",
+                    "poo",
+                    "Rue",
+                    "Tao",
+                    "lieu",
+                    "Foo",
+                    "Chou",
+                    "Tae",
+                    "coo",
+                    "Tau",
+                    "Ooh",
+                    "TRUE",
+                    "tube",
+                    "tune",
+                    "tooth",
+                    "tool",
+                    "stew",
+                    "tomb",
+                    "toot",
+                    "twos"
+                ],
+                "number": 51,
+                "frequency": 1020.7962
+            },
+            "initial_consonant_fl": 87.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "disagree",
+            "length": 8,
+            "syllable_count": 3,
+            "tags": [
+                {
+                    "token": "disagree",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 2635,
+            "word_family_frequency": 2635,
+            "phonemes": [
+                "d",
+                "ɪ",
+                "s",
+                "ʌ",
+                "g",
+                "r",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "disagreed",
+                    "disagrees"
+                ],
+                "number": 2,
+                "frequency": 0.63726
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": -1.0
+        }
+    ],
+    "types": [
+        {
+            "text": "sweet",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "sweet",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 5772,
+            "word_family_frequency": 5772,
+            "phonemes": [
+                "s",
+                "w",
+                "i",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "sweat",
+                    "sweep",
+                    "Swat",
+                    "Swede",
+                    "tweet",
+                    "sleet",
+                    "skeet",
+                    "seat",
+                    "wheat",
+                    "sweetie",
+                    "sweeter",
+                    "sweets",
+                    "suites"
+                ],
+                "number": 13,
+                "frequency": 14.1026
+            },
+            "initial_consonant_fl": 85.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "dreams",
+            "length": 6,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "dreams",
+                    "pos": "NNS"
+                }
+            ],
+            "frequency": 2465,
+            "word_family_frequency": 9457,
+            "phonemes": [
+                "d",
+                "r",
+                "i",
+                "m",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "dreamed",
+                    "drums",
+                    "dreamer",
+                    "dreamy",
+                    "creams",
+                    "dream",
+                    "dreamers"
+                ],
+                "number": 7,
+                "frequency": 23.1541
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "are",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "are",
+                    "pos": "VBP"
+                }
+            ],
+            "frequency": 458447,
+            "word_family_frequency": 4725359,
+            "phonemes": [
+                "ɑ",
+                "r"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "I",
+                    "a",
+                    "Oh",
+                    "or",
+                    "uh",
+                    "Ah",
+                    "air",
+                    "eye",
+                    "Ooh",
+                    "owe",
+                    "eh",
+                    "Aye",
+                    "Aw",
+                    "heir",
+                    "awe",
+                    "ere",
+                    "ore",
+                    "err",
+                    "oar",
+                    "Eau",
+                    "car",
+                    "far",
+                    "bar",
+                    "art",
+                    "arm",
+                    "jar",
+                    "Argh",
+                    "par",
+                    "Arc",
+                    "Mar",
+                    "Ark",
+                    "arch",
+                    "tar",
+                    "Carr",
+                    "Char",
+                    "Dar",
+                    "Gar"
+                ],
+                "number": 37,
+                "frequency": 1833.6603
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "made",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "made",
+                    "pos": "VBN"
+                }
+            ],
+            "frequency": 93581,
+            "word_family_frequency": 223856,
+            "phonemes": [
+                "m",
+                "eɪ",
+                "d"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "make",
+                    "mad",
+                    "paid",
+                    "main",
+                    "mail",
+                    "mood",
+                    "male",
+                    "mayor",
+                    "laid",
+                    "mate",
+                    "Wade",
+                    "mud",
+                    "raid",
+                    "med",
+                    "shade",
+                    "Fayed",
+                    "fade",
+                    "Maine",
+                    "mode",
+                    "Jade",
+                    "Mace",
+                    "Mayo",
+                    "weighed",
+                    "maze",
+                    "Mein",
+                    "Mod",
+                    "mid",
+                    "Mead",
+                    "Sade",
+                    "Dade",
+                    "mowed",
+                    "Maud",
+                    "mane",
+                    "Mays",
+                    "maim",
+                    "bade",
+                    "may",
+                    "aid",
+                    "aide",
+                    "Mayday",
+                    "maids",
+                    "mailed",
+                    "maimed"
+                ],
+                "number": 43,
+                "frequency": 57.3589
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "to",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "to",
+                    "pos": "TO"
+                }
+            ],
+            "frequency": 2605024,
+            "word_family_frequency": 2605024,
+            "phonemes": [
+                "t",
+                "u"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "you",
+                    "do",
+                    "who",
+                    "new",
+                    "knew",
+                    "tea",
+                    "tie",
+                    "tour",
+                    "shoe",
+                    "Sue",
+                    "toy",
+                    "zoo",
+                    "toe",
+                    "Boo",
+                    "Jew",
+                    "tore",
+                    "Woo",
+                    "tow",
+                    "Shoo",
+                    "Pooh",
+                    "doo",
+                    "Thai",
+                    "tar",
+                    "Lew",
+                    "Tai",
+                    "tor",
+                    "loo",
+                    "tee",
+                    "Sioux",
+                    "dew",
+                    "goo",
+                    "Moo",
+                    "poo",
+                    "Rue",
+                    "Tao",
+                    "lieu",
+                    "Foo",
+                    "Chou",
+                    "Tae",
+                    "coo",
+                    "Tau",
+                    "Ooh",
+                    "TRUE",
+                    "tube",
+                    "tune",
+                    "tooth",
+                    "tool",
+                    "stew",
+                    "tomb",
+                    "toot",
+                    "twos"
+                ],
+                "number": 51,
+                "frequency": 1020.7962
+            },
+            "initial_consonant_fl": 87.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "disagree",
+            "length": 8,
+            "syllable_count": 3,
+            "tags": [
+                {
+                    "token": "disagree",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 2635,
+            "word_family_frequency": 2635,
+            "phonemes": [
+                "d",
+                "ɪ",
+                "s",
+                "ʌ",
+                "g",
+                "r",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "disagreed",
+                    "disagrees"
+                ],
+                "number": 2,
+                "frequency": 0.63726
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": -1.0
+        }
+    ],
+    "mean_sentence_length_words": 6.0,
+    "wpm": 64.08473425974344,
+    "spm": 85.44631234632459,
+    "average_ptr": 0.745473,
+    "transcript_text": " Sweet dreams are made to disagree",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.0,
+                "end": 9.94,
+                "text": " Sweet dreams are made to disagree",
+                "no_speech_prob": 0.2167552411556244,
+                "avg_logprob": -0.550475968254937,
+                "compression_ratio": 0.8048780487804879,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 10.1935625,
+            "duration_after_vad": 5.6175625,
+            "language_probability": 0.877176821231842,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.877176821231842
+                ],
+                [
+                    "ja",
+                    0.01917101815342903
+                ],
+                [
+                    "la",
+                    0.014615284278988838
+                ],
+                [
+                    "nn",
+                    0.014013435691595078
+                ],
+                [
+                    "ko",
+                    0.011328529566526413
+                ],
+                [
+                    "cy",
+                    0.008049611002206802
+                ],
+                [
+                    "jw",
+                    0.005477523431181908
+                ],
+                [
+                    "pt",
+                    0.005323365796357393
+                ],
+                [
+                    "ru",
+                    0.005112951155751944
+                ],
+                [
+                    "km",
+                    0.004310643300414085
+                ],
+                [
+                    "haw",
+                    0.003871368709951639
+                ],
+                [
+                    "es",
+                    0.0037282214034348726
+                ],
+                [
+                    "zh",
+                    0.0026123791467398405
+                ],
+                [
+                    "ms",
+                    0.0023171803914010525
+                ],
+                [
+                    "hi",
+                    0.002197708934545517
+                ],
+                [
+                    "fr",
+                    0.001686596660874784
+                ],
+                [
+                    "th",
+                    0.0014694143319502473
+                ],
+                [
+                    "de",
+                    0.0013779313303530216
+                ],
+                [
+                    "nl",
+                    0.0011699526803568006
+                ],
+                [
+                    "tl",
+                    0.0011179951252415776
+                ],
+                [
+                    "mi",
+                    0.0009810306364670396
+                ],
+                [
+                    "vi",
+                    0.0009461464360356331
+                ],
+                [
+                    "tr",
+                    0.0007616658112965524
+                ],
+                [
+                    "it",
+                    0.0007581864483654499
+                ],
+                [
+                    "pl",
+                    0.0007293181261047721
+                ],
+                [
+                    "id",
+                    0.000702198245562613
+                ],
+                [
+                    "ar",
+                    0.0006179998745210469
+                ],
+                [
+                    "sa",
+                    0.0006073942640796304
+                ],
+                [
+                    "br",
+                    0.0005594900576397777
+                ],
+                [
+                    "el",
+                    0.0004839457687921822
+                ],
+                [
+                    "sn",
+                    0.00047273607924580574
+                ],
+                [
+                    "te",
+                    0.00045130090438760817
+                ],
+                [
+                    "ta",
+                    0.0004385716456454247
+                ],
+                [
+                    "ml",
+                    0.00042993389070034027
+                ],
+                [
+                    "ur",
+                    0.0004260510322637856
+                ],
+                [
+                    "sv",
+                    0.00041422309004701674
+                ],
+                [
+                    "si",
+                    0.00039022325654514134
+                ],
+                [
+                    "fi",
+                    0.00033318885834887624
+                ],
+                [
+                    "ro",
+                    0.00022418683511205018
+                ],
+                [
+                    "cs",
+                    0.00020524566934909672
+                ],
+                [
+                    "uk",
+                    0.00018086112686432898
+                ],
+                [
+                    "mn",
+                    0.00017007821588777006
+                ],
+                [
+                    "yo",
+                    0.0001573973277118057
+                ],
+                [
+                    "no",
+                    0.00014532945351675153
+                ],
+                [
+                    "af",
+                    0.00014448660658672452
+                ],
+                [
+                    "is",
+                    0.00013769677025265992
+                ],
+                [
+                    "da",
+                    0.00013598085206467658
+                ],
+                [
+                    "sl",
+                    0.00012317589425947517
+                ],
+                [
+                    "ca",
+                    0.00012288737343624234
+                ],
+                [
+                    "bn",
+                    0.00011691512918332592
+                ],
+                [
+                    "my",
+                    0.00010251841740682721
+                ],
+                [
+                    "bo",
+                    9.21610917430371e-05
+                ],
+                [
+                    "hu",
+                    9.126841905526817e-05
+                ],
+                [
+                    "gl",
+                    8.410165901295841e-05
+                ],
+                [
+                    "bg",
+                    8.266334043582901e-05
+                ],
+                [
+                    "yi",
+                    8.206260827137157e-05
+                ],
+                [
+                    "fo",
+                    7.696140528423712e-05
+                ],
+                [
+                    "eu",
+                    7.41777039365843e-05
+                ],
+                [
+                    "ht",
+                    7.136117346817628e-05
+                ],
+                [
+                    "hr",
+                    6.533891428261995e-05
+                ],
+                [
+                    "sw",
+                    6.385748565662652e-05
+                ],
+                [
+                    "sk",
+                    5.407464050222188e-05
+                ],
+                [
+                    "fa",
+                    5.157482155482285e-05
+                ],
+                [
+                    "he",
+                    5.156508268555626e-05
+                ],
+                [
+                    "lv",
+                    4.7030578571138903e-05
+                ],
+                [
+                    "oc",
+                    4.64830118289683e-05
+                ],
+                [
+                    "ne",
+                    4.0323870052816346e-05
+                ],
+                [
+                    "bs",
+                    3.866276892949827e-05
+                ],
+                [
+                    "hy",
+                    2.9902865207986906e-05
+                ],
+                [
+                    "lo",
+                    2.8691696570604108e-05
+                ],
+                [
+                    "be",
+                    2.5537256078678183e-05
+                ],
+                [
+                    "lt",
+                    2.5016013751155697e-05
+                ],
+                [
+                    "mt",
+                    2.195697743445635e-05
+                ],
+                [
+                    "sd",
+                    2.131665314664133e-05
+                ],
+                [
+                    "kk",
+                    1.7942755221156403e-05
+                ],
+                [
+                    "pa",
+                    1.576024260430131e-05
+                ],
+                [
+                    "et",
+                    1.3738452253164724e-05
+                ],
+                [
+                    "sr",
+                    1.3175386811781209e-05
+                ],
+                [
+                    "az",
+                    1.1229231859033462e-05
+                ],
+                [
+                    "sq",
+                    1.0145655323867686e-05
+                ],
+                [
+                    "ka",
+                    9.836836397880688e-06
+                ],
+                [
+                    "mr",
+                    9.316536306869239e-06
+                ],
+                [
+                    "ps",
+                    9.28439294511918e-06
+                ],
+                [
+                    "kn",
+                    7.981176167959347e-06
+                ],
+                [
+                    "gu",
+                    3.634253516793251e-06
+                ],
+                [
+                    "am",
+                    3.292401970611536e-06
+                ],
+                [
+                    "ln",
+                    2.7806731850432698e-06
+                ],
+                [
+                    "as",
+                    2.550059207351296e-06
+                ],
+                [
+                    "mk",
+                    2.341742629141663e-06
+                ],
+                [
+                    "so",
+                    1.0241052450510324e-06
+                ],
+                [
+                    "su",
+                    5.301053533912636e-07
+                ],
+                [
+                    "lb",
+                    3.411127806884906e-07
+                ],
+                [
+                    "tt",
+                    2.7731374530048924e-07
+                ],
+                [
+                    "tg",
+                    2.660841289525706e-07
+                ],
+                [
+                    "ha",
+                    9.03235104487976e-08
+                ],
+                [
+                    "uz",
+                    2.3341771182572302e-08
+                ],
+                [
+                    "ba",
+                    1.830918350265165e-08
+                ],
+                [
+                    "tk",
+                    1.6689758908228214e-08
+                ],
+                [
+                    "mg",
+                    1.1736218219482453e-08
+                ]
+            ]
+        }
+    }
+}

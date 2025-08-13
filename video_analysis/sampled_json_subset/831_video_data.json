@@ -1,0 +1,1395 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/831_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/831_video_audio.wav",
+    "language": "en",
+    "length_sec": 8.74,
+    "vad_duration_sec": 5.7226875,
+    "total_segment_length_sec": 7.449999999999999,
+    "word_count": 14,
+    "tokens": [
+        {
+            "text": "All",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "All",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 282152,
+            "word_family_frequency": 282152,
+            "phonemes": [
+                "ɔ",
+                "l"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 76.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "things",
+            "length": 6,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "things",
+                    "pos": "NNS"
+                }
+            ],
+            "frequency": 40994,
+            "word_family_frequency": 75134,
+            "phonemes": [
+                "θ",
+                "ɪ",
+                "ŋ",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "think",
+                    "rings",
+                    "wings",
+                    "kings",
+                    "sings",
+                    "thingy",
+                    "dings",
+                    "thongs",
+                    "thins",
+                    "thing",
+                    "thingies"
+                ],
+                "number": 11,
+                "frequency": 350.2139
+            },
+            "initial_consonant_fl": 21.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "I",
+            "length": 1,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "I",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 1172647,
+            "word_family_frequency": 1172647,
+            "phonemes": [
+                "aɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "a",
+                    "are",
+                    "Oh",
+                    "or",
+                    "uh",
+                    "Ah",
+                    "air",
+                    "Ooh",
+                    "owe",
+                    "eh",
+                    "Aw",
+                    "heir",
+                    "awe",
+                    "ere",
+                    "ore",
+                    "err",
+                    "oar",
+                    "Eau",
+                    "my",
+                    "Why",
+                    "by",
+                    "guy",
+                    "Hi",
+                    "die",
+                    "eyes",
+                    "high",
+                    "buy",
+                    "Bye",
+                    "lie",
+                    "ice",
+                    "tie",
+                    "pie",
+                    "thy",
+                    "shy",
+                    "Chi",
+                    "rye",
+                    "dye",
+                    "thigh",
+                    "pi",
+                    "sigh",
+                    "Thai",
+                    "Tai",
+                    "vie",
+                    "Ike",
+                    "Kai",
+                    "isle",
+                    "Lai",
+                    "Chai",
+                    "Phi",
+                    "nigh",
+                    "eyed",
+                    "Fie",
+                    "lye",
+                    "Psi"
+                ],
+                "number": 54,
+                "frequency": 834.1133
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "do",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "do",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 539713,
+            "word_family_frequency": 539713,
+            "phonemes": [
+                "d",
+                "u"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "you",
+                    "to",
+                    "who",
+                    "too",
+                    "two",
+                    "day",
+                    "new",
+                    "knew",
+                    "door",
+                    "die",
+                    "dare",
+                    "shoe",
+                    "Sue",
+                    "dough",
+                    "zoo",
+                    "Boo",
+                    "Jew",
+                    "Woo",
+                    "Dee",
+                    "Shoo",
+                    "Pooh",
+                    "Doe",
+                    "Duh",
+                    "dye",
+                    "Lew",
+                    "der",
+                    "loo",
+                    "Sioux",
+                    "goo",
+                    "Moo",
+                    "poo",
+                    "Rue",
+                    "Dar",
+                    "lieu",
+                    "Foo",
+                    "dah",
+                    "Chou",
+                    "Dow",
+                    "coo",
+                    "Dei",
+                    "Ooh",
+                    "dude",
+                    "due",
+                    "Drew",
+                    "Duke",
+                    "doom",
+                    "douche",
+                    "ado",
+                    "dune",
+                    "dupe",
+                    "doer",
+                    "Duce"
+                ],
+                "number": 52,
+                "frequency": 1387.9464
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "What",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "What",
+                    "pos": "WP"
+                }
+            ],
+            "frequency": 253809,
+            "word_family_frequency": 253809,
+            "phonemes": [
+                "w",
+                "ʌ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "was",
+                    "but",
+                    "one",
+                    "wait",
+                    "won",
+                    "Shut",
+                    "cut",
+                    "white",
+                    "wet",
+                    "butt",
+                    "weight",
+                    "nut",
+                    "hut",
+                    "gut",
+                    "wit",
+                    "wheat",
+                    "mutt",
+                    "Whit",
+                    "Watt",
+                    "rut",
+                    "wart",
+                    "putt",
+                    "Tut",
+                    "Butte"
+                ],
+                "number": 24,
+                "frequency": 649.0253
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "f",
+            "length": 1,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "f",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 9591,
+            "word_family_frequency": 9591,
+            "phonemes": [
+                "ɛ",
+                "f"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 17.0
+        },
+        {
+            "text": "k",
+            "length": 1,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "k",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 6498,
+            "word_family_frequency": 6498,
+            "phonemes": [
+                "k",
+                "eɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "F",
+            "length": 1,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "F",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 9591,
+            "word_family_frequency": 9591,
+            "phonemes": [
+                "ɛ",
+                "f"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 17.0
+        },
+        {
+            "text": "k",
+            "length": 1,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "k",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 6498,
+            "word_family_frequency": 6498,
+            "phonemes": [
+                "k",
+                "eɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "it",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "it",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 1238613,
+            "word_family_frequency": 1238613,
+            "phonemes": [
+                "ɪ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "in",
+                    "is",
+                    "out",
+                    "if",
+                    "at",
+                    "eat",
+                    "eight",
+                    "ought",
+                    "art",
+                    "ate",
+                    "ill",
+                    "inn",
+                    "itch",
+                    "oat",
+                    "aught",
+                    "shit",
+                    "sit",
+                    "hit",
+                    "bit",
+                    "its",
+                    "fit",
+                    "kit",
+                    "pit",
+                    "lit",
+                    "wit",
+                    "tit",
+                    "Whit",
+                    "knit",
+                    "writ",
+                    "mitt",
+                    "zit"
+                ],
+                "number": 31,
+                "frequency": 1018.1777
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "freezer",
+            "length": 7,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "freezer",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 451,
+            "word_family_frequency": 5103,
+            "phonemes": [
+                "f",
+                "r",
+                "i",
+                "z",
+                "ər"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Freeze",
+                    "frees"
+                ],
+                "number": 2,
+                "frequency": 16.4118
+            },
+            "initial_consonant_fl": 77.0,
+            "final_consonant_fl": -1.0
+        }
+    ],
+    "types": [
+        {
+            "text": "all",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "all",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 282152,
+            "word_family_frequency": 282152,
+            "phonemes": [
+                "ɔ",
+                "l"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "off",
+                    "ought",
+                    "oil",
+                    "ill",
+                    "Earl",
+                    "owl",
+                    "ale",
+                    "Elle",
+                    "Ole",
+                    "ell",
+                    "eel",
+                    "Auf",
+                    "isle",
+                    "aught",
+                    "Aw",
+                    "awe",
+                    "call",
+                    "fall",
+                    "ball",
+                    "Paul",
+                    "wall",
+                    "awful",
+                    "hall",
+                    "tall",
+                    "haul",
+                    "Saul",
+                    "gall",
+                    "shawl",
+                    "auld",
+                    "bawl",
+                    "Gaul",
+                    "pall"
+                ],
+                "number": 32,
+                "frequency": 88.1342
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 76.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "things",
+            "length": 6,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "things",
+                    "pos": "NNS"
+                }
+            ],
+            "frequency": 40994,
+            "word_family_frequency": 75134,
+            "phonemes": [
+                "θ",
+                "ɪ",
+                "ŋ",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "think",
+                    "rings",
+                    "wings",
+                    "kings",
+                    "sings",
+                    "thingy",
+                    "dings",
+                    "thongs",
+                    "thins",
+                    "thing",
+                    "thingies"
+                ],
+                "number": 11,
+                "frequency": 350.2139
+            },
+            "initial_consonant_fl": 21.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "i",
+            "length": 1,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "i",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 1172647,
+            "word_family_frequency": 1172647,
+            "phonemes": [
+                "aɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "do",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "do",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 539713,
+            "word_family_frequency": 539713,
+            "phonemes": [
+                "d",
+                "u"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "you",
+                    "to",
+                    "who",
+                    "too",
+                    "two",
+                    "day",
+                    "new",
+                    "knew",
+                    "door",
+                    "die",
+                    "dare",
+                    "shoe",
+                    "Sue",
+                    "dough",
+                    "zoo",
+                    "Boo",
+                    "Jew",
+                    "Woo",
+                    "Dee",
+                    "Shoo",
+                    "Pooh",
+                    "Doe",
+                    "Duh",
+                    "dye",
+                    "Lew",
+                    "der",
+                    "loo",
+                    "Sioux",
+                    "goo",
+                    "Moo",
+                    "poo",
+                    "Rue",
+                    "Dar",
+                    "lieu",
+                    "Foo",
+                    "dah",
+                    "Chou",
+                    "Dow",
+                    "coo",
+                    "Dei",
+                    "Ooh",
+                    "dude",
+                    "due",
+                    "Drew",
+                    "Duke",
+                    "doom",
+                    "douche",
+                    "ado",
+                    "dune",
+                    "dupe",
+                    "doer",
+                    "Duce"
+                ],
+                "number": 52,
+                "frequency": 1387.9464
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "what",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "what",
+                    "pos": "WP"
+                }
+            ],
+            "frequency": 253809,
+            "word_family_frequency": 253809,
+            "phonemes": [
+                "w",
+                "ʌ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "f",
+            "length": 1,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "f",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 9591,
+            "word_family_frequency": 9591,
+            "phonemes": [
+                "ɛ",
+                "f"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 17.0
+        },
+        {
+            "text": "k",
+            "length": 1,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "k",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 6498,
+            "word_family_frequency": 6498,
+            "phonemes": [
+                "k",
+                "eɪ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "it",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "it",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 1238613,
+            "word_family_frequency": 1238613,
+            "phonemes": [
+                "ɪ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "in",
+                    "is",
+                    "out",
+                    "if",
+                    "at",
+                    "eat",
+                    "eight",
+                    "ought",
+                    "art",
+                    "ate",
+                    "ill",
+                    "inn",
+                    "itch",
+                    "oat",
+                    "aught",
+                    "shit",
+                    "sit",
+                    "hit",
+                    "bit",
+                    "its",
+                    "fit",
+                    "kit",
+                    "pit",
+                    "lit",
+                    "wit",
+                    "tit",
+                    "Whit",
+                    "knit",
+                    "writ",
+                    "mitt",
+                    "zit"
+                ],
+                "number": 31,
+                "frequency": 1018.1777
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "freezer",
+            "length": 7,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "freezer",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 451,
+            "word_family_frequency": 5103,
+            "phonemes": [
+                "f",
+                "r",
+                "i",
+                "z",
+                "ər"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Freeze",
+                    "frees"
+                ],
+                "number": 2,
+                "frequency": 16.4118
+            },
+            "initial_consonant_fl": 77.0,
+            "final_consonant_fl": -1.0
+        }
+    ],
+    "mean_sentence_length_words": 4.666666666666667,
+    "wpm": 146.78418138330986,
+    "spm": 157.26876576783198,
+    "average_ptr": 0.9225136666666667,
+    "transcript_text": " All the things I do  What the f**k  F**k's it the freezer?",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.0,
+                "end": 1.6,
+                "text": " All the things I do",
+                "no_speech_prob": 0.11374526470899582,
+                "avg_logprob": -0.7971880531311035,
+                "compression_ratio": 1.0566037735849056,
+                "temperature": 0.0
+            },
+            {
+                "id": 2,
+                "start": 2.6,
+                "end": 4.16,
+                "text": " What the f**k",
+                "no_speech_prob": 0.11374526470899582,
+                "avg_logprob": -0.7971880531311035,
+                "compression_ratio": 1.0566037735849056,
+                "temperature": 0.0
+            },
+            {
+                "id": 3,
+                "start": 4.16,
+                "end": 8.45,
+                "text": " F**k's it the freezer?",
+                "no_speech_prob": 0.11374526470899582,
+                "avg_logprob": -0.7971880531311035,
+                "compression_ratio": 1.0566037735849056,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 8.7306875,
+            "duration_after_vad": 5.7226875,
+            "language_probability": 0.787854790687561,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.787854790687561
+                ],
+                [
+                    "ja",
+                    0.03512515127658844
+                ],
+                [
+                    "ko",
+                    0.023403840139508247
+                ],
+                [
+                    "tl",
+                    0.02054441347718239
+                ],
+                [
+                    "pt",
+                    0.018536752089858055
+                ],
+                [
+                    "ms",
+                    0.015255086123943329
+                ],
+                [
+                    "es",
+                    0.011420597322285175
+                ],
+                [
+                    "hi",
+                    0.010768893174827099
+                ],
+                [
+                    "vi",
+                    0.008006410673260689
+                ],
+                [
+                    "nl",
+                    0.007951774634420872
+                ],
+                [
+                    "th",
+                    0.007170831318944693
+                ],
+                [
+                    "fr",
+                    0.00506550632417202
+                ],
+                [
+                    "jw",
+                    0.004140366800129414
+                ],
+                [
+                    "ru",
+                    0.004025729838758707
+                ],
+                [
+                    "zh",
+                    0.003927894402295351
+                ],
+                [
+                    "km",
+                    0.003772126976400614
+                ],
+                [
+                    "id",
+                    0.0036650528199970722
+                ],
+                [
+                    "de",
+                    0.003278978168964386
+                ],
+                [
+                    "pl",
+                    0.0024912389926612377
+                ],
+                [
+                    "nn",
+                    0.0024719014763832092
+                ],
+                [
+                    "la",
+                    0.002055506454780698
+                ],
+                [
+                    "ta",
+                    0.0018363288836553693
+                ],
+                [
+                    "cy",
+                    0.0015836561797186732
+                ],
+                [
+                    "ar",
+                    0.0011999363778159022
+                ],
+                [
+                    "it",
+                    0.001107843592762947
+                ],
+                [
+                    "ur",
+                    0.001077905879355967
+                ],
+                [
+                    "el",
+                    0.001051996718160808
+                ],
+                [
+                    "te",
+                    0.0009557826560921967
+                ],
+                [
+                    "haw",
+                    0.0006797677488066256
+                ],
+                [
+                    "mi",
+                    0.0006256290944293141
+                ],
+                [
+                    "da",
+                    0.0006245500990189612
+                ],
+                [
+                    "sv",
+                    0.0005639338050968945
+                ],
+                [
+                    "tr",
+                    0.0005096500972285867
+                ],
+                [
+                    "cs",
+                    0.0004797633446287364
+                ],
+                [
+                    "ro",
+                    0.0004626237496268004
+                ],
+                [
+                    "ml",
+                    0.0004146094142924994
+                ],
+                [
+                    "ca",
+                    0.0003872280358336866
+                ],
+                [
+                    "no",
+                    0.0003629745333455503
+                ],
+                [
+                    "sn",
+                    0.00035528212902136147
+                ],
+                [
+                    "fi",
+                    0.0003406157484278083
+                ],
+                [
+                    "af",
+                    0.00031680523534305394
+                ],
+                [
+                    "yo",
+                    0.00031578177004121244
+                ],
+                [
+                    "br",
+                    0.0003022008459083736
+                ],
+                [
+                    "bg",
+                    0.00021155022841412574
+                ],
+                [
+                    "ht",
+                    0.000199690752197057
+                ],
+                [
+                    "sa",
+                    0.00019834547128994018
+                ],
+                [
+                    "uk",
+                    0.0001916091569000855
+                ],
+                [
+                    "bn",
+                    0.0001891681895358488
+                ],
+                [
+                    "gl",
+                    0.00018113029364030808
+                ],
+                [
+                    "is",
+                    0.00015478672867175192
+                ],
+                [
+                    "ne",
+                    0.0001536779891466722
+                ],
+                [
+                    "si",
+                    0.00014700012980028987
+                ],
+                [
+                    "mn",
+                    0.00014323175128083676
+                ],
+                [
+                    "my",
+                    0.0001249679335160181
+                ],
+                [
+                    "sl",
+                    0.00011297795572318137
+                ],
+                [
+                    "hu",
+                    0.00011191533849341795
+                ],
+                [
+                    "hr",
+                    0.0001020820636767894
+                ],
+                [
+                    "eu",
+                    9.307699656346813e-05
+                ],
+                [
+                    "sk",
+                    9.0972644102294e-05
+                ],
+                [
+                    "he",
+                    8.792842709226534e-05
+                ],
+                [
+                    "sw",
+                    8.756449824431911e-05
+                ],
+                [
+                    "lo",
+                    7.532689051004127e-05
+                ],
+                [
+                    "bs",
+                    7.453675789292902e-05
+                ],
+                [
+                    "yi",
+                    7.338558498304337e-05
+                ],
+                [
+                    "oc",
+                    6.55438270769082e-05
+                ],
+                [
+                    "bo",
+                    6.348256283672526e-05
+                ],
+                [
+                    "lv",
+                    4.834253923036158e-05
+                ],
+                [
+                    "kk",
+                    4.6334938815562055e-05
+                ],
+                [
+                    "hy",
+                    4.339878069004044e-05
+                ],
+                [
+                    "et",
+                    4.196733425487764e-05
+                ],
+                [
+                    "pa",
+                    3.921317693311721e-05
+                ],
+                [
+                    "lt",
+                    3.7771482311654836e-05
+                ],
+                [
+                    "sd",
+                    3.435507096583024e-05
+                ],
+                [
+                    "kn",
+                    3.397140608285554e-05
+                ],
+                [
+                    "fa",
+                    3.149629264953546e-05
+                ],
+                [
+                    "mt",
+                    2.8252217816771008e-05
+                ],
+                [
+                    "gu",
+                    2.7332871468388475e-05
+                ],
+                [
+                    "fo",
+                    2.6680130758904852e-05
+                ],
+                [
+                    "mr",
+                    1.879331102827564e-05
+                ],
+                [
+                    "sr",
+                    1.8209666450275108e-05
+                ],
+                [
+                    "be",
+                    1.7107098756241612e-05
+                ],
+                [
+                    "ps",
+                    1.3839674465998542e-05
+                ],
+                [
+                    "as",
+                    1.2406726455083117e-05
+                ],
+                [
+                    "ln",
+                    1.2214646631036885e-05
+                ],
+                [
+                    "sq",
+                    1.074184910976328e-05
+                ],
+                [
+                    "az",
+                    1.0228470273432322e-05
+                ],
+                [
+                    "ka",
+                    1.0099543942487799e-05
+                ],
+                [
+                    "mk",
+                    6.805227258155355e-06
+                ],
+                [
+                    "am",
+                    4.834791070607025e-06
+                ],
+                [
+                    "so",
+                    1.9474985037959414e-06
+                ],
+                [
+                    "su",
+                    8.459228411084041e-07
+                ],
+                [
+                    "lb",
+                    4.0462987271894235e-07
+                ],
+                [
+                    "tt",
+                    3.7079294656905404e-07
+                ],
+                [
+                    "tg",
+                    2.5096645117628213e-07
+                ],
+                [
+                    "ha",
+                    1.2739423027596786e-07
+                ],
+                [
+                    "ba",
+                    3.313779117775084e-08
+                ],
+                [
+                    "uz",
+                    3.218847055563856e-08
+                ],
+                [
+                    "tk",
+                    2.7506537492172356e-08
+                ],
+                [
+                    "mg",
+                    1.6909963207467626e-08
+                ]
+            ]
+        }
+    }
+}

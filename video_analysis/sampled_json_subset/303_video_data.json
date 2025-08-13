@@ -1,0 +1,872 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/303_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/303_video_audio.wav",
+    "language": "en",
+    "length_sec": 10.44,
+    "vad_duration_sec": 1.312,
+    "total_segment_length_sec": 1.2800000000000002,
+    "word_count": 4,
+    "tokens": [
+        {
+            "text": "We",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "We",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 531030,
+            "word_family_frequency": 531030,
+            "phonemes": [
+                "w",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "can",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "can",
+                    "pos": "MD"
+                }
+            ],
+            "frequency": 263030,
+            "word_family_frequency": 263030,
+            "phonemes": [
+                "k",
+                "æ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "man",
+                    "catch",
+                    "ran",
+                    "cash",
+                    "cat",
+                    "Van",
+                    "San",
+                    "Dan",
+                    "cab",
+                    "fan",
+                    "cap",
+                    "Ken",
+                    "Chan",
+                    "corn",
+                    "con",
+                    "pan",
+                    "Cal",
+                    "Kane",
+                    "coin",
+                    "tan",
+                    "cane",
+                    "Kang",
+                    "Han",
+                    "keen",
+                    "Cain",
+                    "kin",
+                    "Khan",
+                    "Cam",
+                    "Yan",
+                    "ban",
+                    "calf",
+                    "cone",
+                    "Conn",
+                    "Kat",
+                    "Nan",
+                    "Wan",
+                    "Cass",
+                    "coon",
+                    "Kern",
+                    "cad",
+                    "cache",
+                    "Carne",
+                    "Cag",
+                    "Ann",
+                    "Anne",
+                    "scan",
+                    "cans",
+                    "canned",
+                    "clan",
+                    "Kwan",
+                    "cant",
+                    "Klan"
+                ],
+                "number": 52,
+                "frequency": 51.7564
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": 75.0
+        },
+        {
+            "text": "loan",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "loan",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 6843,
+            "word_family_frequency": 6843,
+            "phonemes": [
+                "l",
+                "oʊ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "phone",
+                    "line",
+                    "known",
+                    "learn",
+                    "Lane",
+                    "load",
+                    "lower",
+                    "bone",
+                    "zone",
+                    "Joan",
+                    "tone",
+                    "shown",
+                    "lawn",
+                    "lean",
+                    "Lynn",
+                    "Lin",
+                    "loaf",
+                    "cone",
+                    "loathe",
+                    "moan",
+                    "lobe",
+                    "loon",
+                    "Layne",
+                    "lode",
+                    "hone",
+                    "lows",
+                    "lain",
+                    "Loach",
+                    "loin",
+                    "sown",
+                    "own",
+                    "low",
+                    "Lowe",
+                    "alone",
+                    "blown",
+                    "Sloan",
+                    "flown",
+                    "loner",
+                    "loans",
+                    "clone",
+                    "loaned"
+                ],
+                "number": 41,
+                "frequency": 44.5548
+            },
+            "initial_consonant_fl": 83.0,
+            "final_consonant_fl": 75.0
+        },
+        {
+            "text": "yeah",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "yeah",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 83019,
+            "word_family_frequency": 145174,
+            "phonemes": [
+                "j",
+                "æ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        }
+    ],
+    "types": [
+        {
+            "text": "we",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "we",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 531030,
+            "word_family_frequency": 531030,
+            "phonemes": [
+                "w",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "me",
+                    "he",
+                    "re",
+                    "be",
+                    "she",
+                    "see",
+                    "Why",
+                    "Where",
+                    "were",
+                    "way",
+                    "war",
+                    "Wow",
+                    "wear",
+                    "key",
+                    "sea",
+                    "tea",
+                    "Lee",
+                    "Gee",
+                    "thee",
+                    "wore",
+                    "pee",
+                    "knee",
+                    "bee",
+                    "fee",
+                    "Mae",
+                    "weigh",
+                    "Woo",
+                    "Dee",
+                    "pea",
+                    "woe",
+                    "Ware",
+                    "tee",
+                    "Shea",
+                    "Zee",
+                    "Yee",
+                    "Shi",
+                    "Tae",
+                    "mea",
+                    "nee",
+                    "Lea",
+                    "week",
+                    "weak",
+                    "wheel",
+                    "weed",
+                    "wheat",
+                    "weep",
+                    "weave",
+                    "Qui",
+                    "wheeze"
+                ],
+                "number": 49,
+                "frequency": 885.6183
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "can",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "can",
+                    "pos": "MD"
+                }
+            ],
+            "frequency": 263030,
+            "word_family_frequency": 263030,
+            "phonemes": [
+                "k",
+                "æ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "man",
+                    "catch",
+                    "ran",
+                    "cash",
+                    "cat",
+                    "Van",
+                    "San",
+                    "Dan",
+                    "cab",
+                    "fan",
+                    "cap",
+                    "Ken",
+                    "Chan",
+                    "corn",
+                    "con",
+                    "pan",
+                    "Cal",
+                    "Kane",
+                    "coin",
+                    "tan",
+                    "cane",
+                    "Kang",
+                    "Han",
+                    "keen",
+                    "Cain",
+                    "kin",
+                    "Khan",
+                    "Cam",
+                    "Yan",
+                    "ban",
+                    "calf",
+                    "cone",
+                    "Conn",
+                    "Kat",
+                    "Nan",
+                    "Wan",
+                    "Cass",
+                    "coon",
+                    "Kern",
+                    "cad",
+                    "cache",
+                    "Carne",
+                    "Cag",
+                    "Ann",
+                    "Anne",
+                    "scan",
+                    "cans",
+                    "canned",
+                    "clan",
+                    "Kwan",
+                    "cant",
+                    "Klan"
+                ],
+                "number": 52,
+                "frequency": 51.7564
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": 75.0
+        },
+        {
+            "text": "loan",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "loan",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 6843,
+            "word_family_frequency": 6843,
+            "phonemes": [
+                "l",
+                "oʊ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "phone",
+                    "line",
+                    "known",
+                    "learn",
+                    "Lane",
+                    "load",
+                    "lower",
+                    "bone",
+                    "zone",
+                    "Joan",
+                    "tone",
+                    "shown",
+                    "lawn",
+                    "lean",
+                    "Lynn",
+                    "Lin",
+                    "loaf",
+                    "cone",
+                    "loathe",
+                    "moan",
+                    "lobe",
+                    "loon",
+                    "Layne",
+                    "lode",
+                    "hone",
+                    "lows",
+                    "lain",
+                    "Loach",
+                    "loin",
+                    "sown",
+                    "own",
+                    "low",
+                    "Lowe",
+                    "alone",
+                    "blown",
+                    "Sloan",
+                    "flown",
+                    "loner",
+                    "loans",
+                    "clone",
+                    "loaned"
+                ],
+                "number": 41,
+                "frequency": 44.5548
+            },
+            "initial_consonant_fl": 83.0,
+            "final_consonant_fl": 75.0
+        },
+        {
+            "text": "yeah",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "yeah",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 83019,
+            "word_family_frequency": 145174,
+            "phonemes": [
+                "j",
+                "æ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        }
+    ],
+    "mean_sentence_length_words": 4.0,
+    "wpm": 182.9268292682927,
+    "spm": 182.9268292682927,
+    "average_ptr": 0.960938,
+    "transcript_text": " We can loan, yeah!",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 7.38,
+                "end": 8.66,
+                "text": " We can loan, yeah!",
+                "no_speech_prob": 0.09798940271139145,
+                "avg_logprob": -1.186343299018012,
+                "compression_ratio": 0.6923076923076923,
+                "temperature": 1.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 10.332875,
+            "duration_after_vad": 1.312,
+            "language_probability": 0.5508370399475098,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.5508370399475098
+                ],
+                [
+                    "nl",
+                    0.05426476150751114
+                ],
+                [
+                    "sv",
+                    0.05206158384680748
+                ],
+                [
+                    "pl",
+                    0.03479372337460518
+                ],
+                [
+                    "de",
+                    0.03355161100625992
+                ],
+                [
+                    "nn",
+                    0.0330643430352211
+                ],
+                [
+                    "no",
+                    0.016843527555465698
+                ],
+                [
+                    "cy",
+                    0.01589306630194187
+                ],
+                [
+                    "da",
+                    0.015237291343510151
+                ],
+                [
+                    "es",
+                    0.014588623307645321
+                ],
+                [
+                    "pt",
+                    0.014544475823640823
+                ],
+                [
+                    "fi",
+                    0.01365387998521328
+                ],
+                [
+                    "it",
+                    0.012494697235524654
+                ],
+                [
+                    "la",
+                    0.011517022736370564
+                ],
+                [
+                    "ar",
+                    0.011378363706171513
+                ],
+                [
+                    "ru",
+                    0.00916747935116291
+                ],
+                [
+                    "fr",
+                    0.007044251076877117
+                ],
+                [
+                    "hi",
+                    0.006627111695706844
+                ],
+                [
+                    "cs",
+                    0.006522899493575096
+                ],
+                [
+                    "hu",
+                    0.006114300340414047
+                ],
+                [
+                    "el",
+                    0.005658385343849659
+                ],
+                [
+                    "tr",
+                    0.005348134320229292
+                ],
+                [
+                    "ko",
+                    0.00411069393157959
+                ],
+                [
+                    "ja",
+                    0.0036624292843043804
+                ],
+                [
+                    "sl",
+                    0.003661336377263069
+                ],
+                [
+                    "vi",
+                    0.003550631692633033
+                ],
+                [
+                    "uk",
+                    0.0032203232403844595
+                ],
+                [
+                    "is",
+                    0.0030561748426407576
+                ],
+                [
+                    "ro",
+                    0.0025567656848579645
+                ],
+                [
+                    "af",
+                    0.0025376505218446255
+                ],
+                [
+                    "ca",
+                    0.002357302000746131
+                ],
+                [
+                    "km",
+                    0.0022958600893616676
+                ],
+                [
+                    "haw",
+                    0.002275268780067563
+                ],
+                [
+                    "jw",
+                    0.002212150953710079
+                ],
+                [
+                    "bg",
+                    0.0020601439755409956
+                ],
+                [
+                    "ur",
+                    0.0019451191183179617
+                ],
+                [
+                    "bs",
+                    0.0018200406339019537
+                ],
+                [
+                    "tl",
+                    0.0018090390367433429
+                ],
+                [
+                    "lv",
+                    0.0016948181437328458
+                ],
+                [
+                    "zh",
+                    0.0016159487422555685
+                ],
+                [
+                    "ml",
+                    0.0015214784070849419
+                ],
+                [
+                    "mi",
+                    0.0014678525039926171
+                ],
+                [
+                    "et",
+                    0.0014115095837041736
+                ],
+                [
+                    "ms",
+                    0.0014096632366999984
+                ],
+                [
+                    "br",
+                    0.0013723832089453936
+                ],
+                [
+                    "hr",
+                    0.001346430741250515
+                ],
+                [
+                    "he",
+                    0.0010166324209421873
+                ],
+                [
+                    "th",
+                    0.0010165689745917916
+                ],
+                [
+                    "lt",
+                    0.0009088503429666162
+                ],
+                [
+                    "fo",
+                    0.0008859749650582671
+                ],
+                [
+                    "mt",
+                    0.0008206503698602319
+                ],
+                [
+                    "id",
+                    0.0007720502326264977
+                ],
+                [
+                    "sk",
+                    0.000737840891815722
+                ],
+                [
+                    "mn",
+                    0.0006955214194022119
+                ],
+                [
+                    "yi",
+                    0.0006865028408356011
+                ],
+                [
+                    "ta",
+                    0.0006175724556669593
+                ],
+                [
+                    "si",
+                    0.0006168658146634698
+                ],
+                [
+                    "gl",
+                    0.0005655274726450443
+                ],
+                [
+                    "te",
+                    0.0005364309181459248
+                ],
+                [
+                    "sq",
+                    0.0003710186865646392
+                ],
+                [
+                    "sa",
+                    0.0003370103077031672
+                ],
+                [
+                    "eu",
+                    0.0003260871162638068
+                ],
+                [
+                    "sr",
+                    0.0002779888454824686
+                ],
+                [
+                    "oc",
+                    0.000249423086643219
+                ],
+                [
+                    "ht",
+                    0.00024774158373475075
+                ],
+                [
+                    "sn",
+                    0.00023109953326638788
+                ],
+                [
+                    "bo",
+                    0.00020435494661796838
+                ],
+                [
+                    "my",
+                    0.0001838939351728186
+                ],
+                [
+                    "fa",
+                    0.00017078730161301792
+                ],
+                [
+                    "pa",
+                    0.00016275266534648836
+                ],
+                [
+                    "bn",
+                    0.0001453871955163777
+                ],
+                [
+                    "az",
+                    0.00014335721789393574
+                ],
+                [
+                    "yo",
+                    0.00013587644207291305
+                ],
+                [
+                    "sd",
+                    0.00013281470455694944
+                ],
+                [
+                    "hy",
+                    0.00011619545693974942
+                ],
+                [
+                    "ne",
+                    7.353810360655189e-05
+                ],
+                [
+                    "sw",
+                    6.065173147362657e-05
+                ],
+                [
+                    "kn",
+                    4.901441570837051e-05
+                ],
+                [
+                    "lo",
+                    4.722588710137643e-05
+                ],
+                [
+                    "be",
+                    4.584918133332394e-05
+                ],
+                [
+                    "kk",
+                    3.6862253182334825e-05
+                ],
+                [
+                    "ka",
+                    3.5072414902970195e-05
+                ],
+                [
+                    "mk",
+                    3.279606971773319e-05
+                ],
+                [
+                    "am",
+                    2.9552247724495828e-05
+                ],
+                [
+                    "gu",
+                    1.812019218050409e-05
+                ],
+                [
+                    "ps",
+                    1.71736792253796e-05
+                ],
+                [
+                    "ln",
+                    1.4571123756468296e-05
+                ],
+                [
+                    "mr",
+                    1.3802097782900091e-05
+                ],
+                [
+                    "so",
+                    1.3033908544457518e-05
+                ],
+                [
+                    "lb",
+                    1.08698504845961e-05
+                ],
+                [
+                    "tt",
+                    4.6660534280817956e-06
+                ],
+                [
+                    "as",
+                    3.7312017866497627e-06
+                ],
+                [
+                    "tg",
+                    1.4084370150158065e-06
+                ],
+                [
+                    "su",
+                    1.1449353678472107e-06
+                ],
+                [
+                    "ba",
+                    1.9383516303150827e-07
+                ],
+                [
+                    "uz",
+                    1.7690784659407655e-07
+                ],
+                [
+                    "tk",
+                    1.616433280560159e-07
+                ],
+                [
+                    "ha",
+                    1.492183230311639e-07
+                ],
+                [
+                    "mg",
+                    6.501004179426673e-08
+                ]
+            ]
+        }
+    }
+}

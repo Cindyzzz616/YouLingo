@@ -1,0 +1,504 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/320_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/320_video_audio.wav",
+    "language": "nl",
+    "length_sec": 34.53,
+    "vad_duration_sec": 34.328875,
+    "total_segment_length_sec": 33.18,
+    "word_count": -1,
+    "tokens": [],
+    "types": [],
+    "mean_sentence_length_words": -1.0,
+    "wpm": -1,
+    "spm": -1,
+    "average_ptr": -1,
+    "transcript_text": " Wanneer jij d'un bent, noem mij jou een sattepricker of botje.  Wanneer jij supergespeer bent, noemt mij jou een anabol.  Wanneer jij goed kopen kleding draagt, bij je sker of bij je arm.  Wanneer jij dure kleding draagt, bij jij een dealer.  Jongens, open je ogen.  Iedereen heeft een mening over jou. Je kan het nooit goed of nooit vou doen.  Iedereen vindt altijd wel wat.  Dus focus op de positieve dingen in het leven en laag niet afleid door alle negatiefiteit.",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.18,
+                "end": 4.52,
+                "text": " Wanneer jij d'un bent, noem mij jou een sattepricker of botje.",
+                "no_speech_prob": 0.05658617243170738,
+                "avg_logprob": -0.3827266137708317,
+                "compression_ratio": 1.8636363636363635,
+                "temperature": 0.0
+            },
+            {
+                "id": 2,
+                "start": 4.52,
+                "end": 9.4,
+                "text": " Wanneer jij supergespeer bent, noemt mij jou een anabol.",
+                "no_speech_prob": 0.05658617243170738,
+                "avg_logprob": -0.3827266137708317,
+                "compression_ratio": 1.8636363636363635,
+                "temperature": 0.0
+            },
+            {
+                "id": 3,
+                "start": 9.4,
+                "end": 14.76,
+                "text": " Wanneer jij goed kopen kleding draagt, bij je sker of bij je arm.",
+                "no_speech_prob": 0.05658617243170738,
+                "avg_logprob": -0.3827266137708317,
+                "compression_ratio": 1.8636363636363635,
+                "temperature": 0.0
+            },
+            {
+                "id": 4,
+                "start": 14.76,
+                "end": 18.68,
+                "text": " Wanneer jij dure kleding draagt, bij jij een dealer.",
+                "no_speech_prob": 0.05658617243170738,
+                "avg_logprob": -0.3827266137708317,
+                "compression_ratio": 1.8636363636363635,
+                "temperature": 0.0
+            },
+            {
+                "id": 5,
+                "start": 18.68,
+                "end": 21.4,
+                "text": " Jongens, open je ogen.",
+                "no_speech_prob": 0.05658617243170738,
+                "avg_logprob": -0.3827266137708317,
+                "compression_ratio": 1.8636363636363635,
+                "temperature": 0.0
+            },
+            {
+                "id": 6,
+                "start": 21.4,
+                "end": 25.8,
+                "text": " Iedereen heeft een mening over jou. Je kan het nooit goed of nooit vou doen.",
+                "no_speech_prob": 0.05658617243170738,
+                "avg_logprob": -0.3827266137708317,
+                "compression_ratio": 1.8636363636363635,
+                "temperature": 0.0
+            },
+            {
+                "id": 7,
+                "start": 25.8,
+                "end": 27.88,
+                "text": " Iedereen vindt altijd wel wat.",
+                "no_speech_prob": 0.05658617243170738,
+                "avg_logprob": -0.3827266137708317,
+                "compression_ratio": 1.8636363636363635,
+                "temperature": 0.0
+            },
+            {
+                "id": 8,
+                "start": 27.88,
+                "end": 33.36,
+                "text": " Dus focus op de positieve dingen in het leven en laag niet afleid door alle negatiefiteit.",
+                "no_speech_prob": 0.0010904918890446424,
+                "avg_logprob": -0.4557529599578292,
+                "compression_ratio": 1.1538461538461537,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "nl",
+            "duration": 34.504875,
+            "duration_after_vad": 34.328875,
+            "language_probability": 0.9920191168785095,
+            "all_language_probs": [
+                [
+                    "nl",
+                    0.9920191168785095
+                ],
+                [
+                    "en",
+                    0.004905490670353174
+                ],
+                [
+                    "de",
+                    0.0010650166077539325
+                ],
+                [
+                    "pt",
+                    0.0006478531286120415
+                ],
+                [
+                    "fr",
+                    0.0001614646753296256
+                ],
+                [
+                    "pl",
+                    0.00014236873539630324
+                ],
+                [
+                    "af",
+                    0.00012393511133268476
+                ],
+                [
+                    "ar",
+                    8.798352791927755e-05
+                ],
+                [
+                    "nn",
+                    7.707763143116608e-05
+                ],
+                [
+                    "el",
+                    7.471025310223922e-05
+                ],
+                [
+                    "ru",
+                    7.395190914394334e-05
+                ],
+                [
+                    "la",
+                    7.045001984806731e-05
+                ],
+                [
+                    "vi",
+                    6.368909089360386e-05
+                ],
+                [
+                    "es",
+                    5.605447222478688e-05
+                ],
+                [
+                    "cy",
+                    5.082019561086781e-05
+                ],
+                [
+                    "tr",
+                    5.032934495829977e-05
+                ],
+                [
+                    "zh",
+                    3.77125215891283e-05
+                ],
+                [
+                    "ko",
+                    3.5803939681500196e-05
+                ],
+                [
+                    "ja",
+                    3.156918319291435e-05
+                ],
+                [
+                    "it",
+                    3.130499680992216e-05
+                ],
+                [
+                    "no",
+                    2.3194512323243544e-05
+                ],
+                [
+                    "jw",
+                    2.0346980818430893e-05
+                ],
+                [
+                    "hu",
+                    1.5441846699104644e-05
+                ],
+                [
+                    "ca",
+                    1.431146574759623e-05
+                ],
+                [
+                    "fi",
+                    1.3600623788079247e-05
+                ],
+                [
+                    "hi",
+                    1.3152692190487869e-05
+                ],
+                [
+                    "haw",
+                    1.1282337254669983e-05
+                ],
+                [
+                    "yi",
+                    9.597675671102479e-06
+                ],
+                [
+                    "br",
+                    9.039919859787915e-06
+                ],
+                [
+                    "ur",
+                    7.283695140358759e-06
+                ],
+                [
+                    "cs",
+                    6.0059010138502344e-06
+                ],
+                [
+                    "is",
+                    4.028626790386625e-06
+                ],
+                [
+                    "gl",
+                    3.6824526432610583e-06
+                ],
+                [
+                    "id",
+                    3.541542355378624e-06
+                ],
+                [
+                    "tl",
+                    3.5398436466493877e-06
+                ],
+                [
+                    "sn",
+                    3.5264467896922724e-06
+                ],
+                [
+                    "km",
+                    3.256109494031989e-06
+                ],
+                [
+                    "da",
+                    2.802849394356599e-06
+                ],
+                [
+                    "sv",
+                    2.7851433515024837e-06
+                ],
+                [
+                    "eu",
+                    2.1302200821082806e-06
+                ],
+                [
+                    "mi",
+                    1.9961378256994067e-06
+                ],
+                [
+                    "th",
+                    1.9235392301197862e-06
+                ],
+                [
+                    "uk",
+                    1.8590779973237659e-06
+                ],
+                [
+                    "ms",
+                    1.622583909011155e-06
+                ],
+                [
+                    "ta",
+                    1.0317775149815134e-06
+                ],
+                [
+                    "sa",
+                    9.990684475269518e-07
+                ],
+                [
+                    "oc",
+                    9.558366400597151e-07
+                ],
+                [
+                    "ro",
+                    7.695987847000652e-07
+                ],
+                [
+                    "lv",
+                    7.003842483754852e-07
+                ],
+                [
+                    "bg",
+                    6.869587423352641e-07
+                ],
+                [
+                    "ht",
+                    6.817415965088003e-07
+                ],
+                [
+                    "sl",
+                    6.624114234909939e-07
+                ],
+                [
+                    "fo",
+                    6.533568353006558e-07
+                ],
+                [
+                    "ml",
+                    5.24740698892856e-07
+                ],
+                [
+                    "he",
+                    4.975769911652606e-07
+                ],
+                [
+                    "mn",
+                    4.862754394707736e-07
+                ],
+                [
+                    "yo",
+                    4.4602765569834446e-07
+                ],
+                [
+                    "hy",
+                    3.921668678685819e-07
+                ],
+                [
+                    "sk",
+                    3.9213242075675225e-07
+                ],
+                [
+                    "mt",
+                    3.4831742823371314e-07
+                ],
+                [
+                    "bo",
+                    2.577120312707848e-07
+                ],
+                [
+                    "et",
+                    2.556813569754013e-07
+                ],
+                [
+                    "az",
+                    2.5043493678822415e-07
+                ],
+                [
+                    "pa",
+                    2.3018796468932123e-07
+                ],
+                [
+                    "fa",
+                    1.9514273219556344e-07
+                ],
+                [
+                    "sq",
+                    1.6946083292168623e-07
+                ],
+                [
+                    "be",
+                    1.5149791465773887e-07
+                ],
+                [
+                    "hr",
+                    1.498766124541362e-07
+                ],
+                [
+                    "bn",
+                    1.4894091293626843e-07
+                ],
+                [
+                    "si",
+                    1.4708220419379359e-07
+                ],
+                [
+                    "kk",
+                    1.4042500140476477e-07
+                ],
+                [
+                    "bs",
+                    1.404216618539067e-07
+                ],
+                [
+                    "my",
+                    1.2223942746913963e-07
+                ],
+                [
+                    "lt",
+                    9.181751892128887e-08
+                ],
+                [
+                    "te",
+                    8.234064807766117e-08
+                ],
+                [
+                    "sw",
+                    8.173914523013082e-08
+                ],
+                [
+                    "lo",
+                    7.780837307791444e-08
+                ],
+                [
+                    "ne",
+                    6.972675947736207e-08
+                ],
+                [
+                    "ps",
+                    6.372641792040667e-08
+                ],
+                [
+                    "sd",
+                    5.7289412325189915e-08
+                ],
+                [
+                    "ln",
+                    3.042333318603596e-08
+                ],
+                [
+                    "mk",
+                    2.286116007610417e-08
+                ],
+                [
+                    "sr",
+                    1.8144094227068308e-08
+                ],
+                [
+                    "ka",
+                    1.4399527792363642e-08
+                ],
+                [
+                    "kn",
+                    1.1220610218742877e-08
+                ],
+                [
+                    "lb",
+                    1.1199207783363363e-08
+                ],
+                [
+                    "gu",
+                    1.098332891302789e-08
+                ],
+                [
+                    "tt",
+                    9.230385344949354e-09
+                ],
+                [
+                    "mr",
+                    6.099283744731565e-09
+                ],
+                [
+                    "so",
+                    5.0664952233603344e-09
+                ],
+                [
+                    "tg",
+                    3.58962104485272e-09
+                ],
+                [
+                    "am",
+                    3.0327893529857874e-09
+                ],
+                [
+                    "as",
+                    2.448417912859213e-09
+                ],
+                [
+                    "su",
+                    7.318075589957118e-10
+                ],
+                [
+                    "uz",
+                    4.4650447228455903e-10
+                ],
+                [
+                    "ba",
+                    4.3399531191035123e-10
+                ],
+                [
+                    "ha",
+                    3.9261566220361033e-10
+                ],
+                [
+                    "tk",
+                    3.1894537011467605e-10
+                ],
+                [
+                    "mg",
+                    2.4227181372182827e-10
+                ]
+            ]
+        }
+    }
+}

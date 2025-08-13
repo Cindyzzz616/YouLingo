@@ -1,0 +1,832 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/563_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/563_video_audio.wav",
+    "language": "en",
+    "length_sec": 58.2,
+    "vad_duration_sec": 8.112,
+    "total_segment_length_sec": 1.2,
+    "word_count": 4,
+    "tokens": [
+        {
+            "text": "Sing",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "Sing",
+                    "pos": "VBG"
+                }
+            ],
+            "frequency": 9617,
+            "word_family_frequency": 9617,
+            "phonemes": [
+                "s",
+                "ɪ",
+                "ŋ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 85.0,
+            "final_consonant_fl": 21.0
+        },
+        {
+            "text": "this",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "this",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 578204,
+            "word_family_frequency": 578204,
+            "phonemes": [
+                "ð",
+                "ɪ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Miss",
+                    "kiss",
+                    "piss",
+                    "thus",
+                    "sis",
+                    "dis",
+                    "hiss"
+                ],
+                "number": 7,
+                "frequency": 90.7115
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "with",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "with",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 660232,
+            "word_family_frequency": 660232,
+            "phonemes": [
+                "w",
+                "ɪ",
+                "ð"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "will",
+                    "which",
+                    "wish",
+                    "win",
+                    "witch",
+                    "wing",
+                    "whip",
+                    "wig",
+                    "wit",
+                    "whiz",
+                    "Wick",
+                    "whiff",
+                    "whim",
+                    "Wynn",
+                    "Whit",
+                    "wiz",
+                    "wither",
+                    "Whither"
+                ],
+                "number": 18,
+                "frequency": 170.1656
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 7.0
+        },
+        {
+            "text": "me",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "me",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 131605,
+            "word_family_frequency": 1172647,
+            "phonemes": [
+                "m",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "we",
+                    "he",
+                    "my",
+                    "re",
+                    "be",
+                    "she",
+                    "see",
+                    "more",
+                    "may",
+                    "ma",
+                    "key",
+                    "sea",
+                    "tea",
+                    "Lee",
+                    "Gee",
+                    "thee",
+                    "pee",
+                    "knee",
+                    "bee",
+                    "fee",
+                    "wee",
+                    "Moore",
+                    "Moe",
+                    "Dee",
+                    "Mar",
+                    "pea",
+                    "mare",
+                    "mow",
+                    "tee",
+                    "Moo",
+                    "moor",
+                    "Shea",
+                    "Mao",
+                    "Zee",
+                    "Yee",
+                    "Shi",
+                    "Tae",
+                    "Mau",
+                    "nee",
+                    "Lea",
+                    "mean",
+                    "meet",
+                    "army",
+                    "Amy",
+                    "meat",
+                    "meal",
+                    "Emmy",
+                    "meek",
+                    "Mead",
+                    "Amie"
+                ],
+                "number": 50,
+                "frequency": 915.8141
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": -1.0
+        }
+    ],
+    "types": [
+        {
+            "text": "sing",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "sing",
+                    "pos": "VBG"
+                }
+            ],
+            "frequency": 9617,
+            "word_family_frequency": 9617,
+            "phonemes": [
+                "s",
+                "ɪ",
+                "ŋ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "thing",
+                    "sit",
+                    "sick",
+                    "king",
+                    "song",
+                    "ring",
+                    "wing",
+                    "sin",
+                    "Ling",
+                    "sang",
+                    "sis",
+                    "Ming",
+                    "Ding",
+                    "sip",
+                    "Bing",
+                    "sung",
+                    "Ping",
+                    "Jing",
+                    "Syed",
+                    "Sic",
+                    "ting",
+                    "owing",
+                    "wring",
+                    "zing",
+                    "eyeing",
+                    "sieve",
+                    "sill",
+                    "Sig",
+                    "saying",
+                    "swing",
+                    "sink",
+                    "singer",
+                    "sings",
+                    "sting",
+                    "suing",
+                    "sewing",
+                    "sync",
+                    "sling",
+                    "sighing",
+                    "icing",
+                    "sawing"
+                ],
+                "number": 41,
+                "frequency": 57.8977
+            },
+            "initial_consonant_fl": 85.0,
+            "final_consonant_fl": 21.0
+        },
+        {
+            "text": "this",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "this",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 578204,
+            "word_family_frequency": 578204,
+            "phonemes": [
+                "ð",
+                "ɪ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Miss",
+                    "kiss",
+                    "piss",
+                    "thus",
+                    "sis",
+                    "dis",
+                    "hiss"
+                ],
+                "number": 7,
+                "frequency": 90.7115
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "with",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "with",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 660232,
+            "word_family_frequency": 660232,
+            "phonemes": [
+                "w",
+                "ɪ",
+                "ð"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "will",
+                    "which",
+                    "wish",
+                    "win",
+                    "witch",
+                    "wing",
+                    "whip",
+                    "wig",
+                    "wit",
+                    "whiz",
+                    "Wick",
+                    "whiff",
+                    "whim",
+                    "Wynn",
+                    "Whit",
+                    "wiz",
+                    "wither",
+                    "Whither"
+                ],
+                "number": 18,
+                "frequency": 170.1656
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 7.0
+        },
+        {
+            "text": "me",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "me",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 131605,
+            "word_family_frequency": 1172647,
+            "phonemes": [
+                "m",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "we",
+                    "he",
+                    "my",
+                    "re",
+                    "be",
+                    "she",
+                    "see",
+                    "more",
+                    "may",
+                    "ma",
+                    "key",
+                    "sea",
+                    "tea",
+                    "Lee",
+                    "Gee",
+                    "thee",
+                    "pee",
+                    "knee",
+                    "bee",
+                    "fee",
+                    "wee",
+                    "Moore",
+                    "Moe",
+                    "Dee",
+                    "Mar",
+                    "pea",
+                    "mare",
+                    "mow",
+                    "tee",
+                    "Moo",
+                    "moor",
+                    "Shea",
+                    "Mao",
+                    "Zee",
+                    "Yee",
+                    "Shi",
+                    "Tae",
+                    "Mau",
+                    "nee",
+                    "Lea",
+                    "mean",
+                    "meet",
+                    "army",
+                    "Amy",
+                    "meat",
+                    "meal",
+                    "Emmy",
+                    "meek",
+                    "Mead",
+                    "Amie"
+                ],
+                "number": 50,
+                "frequency": 915.8141
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": -1.0
+        }
+    ],
+    "mean_sentence_length_words": 4.0,
+    "wpm": 29.585798816568047,
+    "spm": 29.585798816568047,
+    "average_ptr": 0.308333,
+    "transcript_text": " Sing this with me.",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.0,
+                "end": 1.2,
+                "text": " Sing this with me.",
+                "no_speech_prob": 0.07433155179023743,
+                "avg_logprob": -0.733748696744442,
+                "compression_ratio": 0.6923076923076923,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 58.166,
+            "duration_after_vad": 8.112,
+            "language_probability": 0.42846986651420593,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.42846986651420593
+                ],
+                [
+                    "de",
+                    0.07808732986450195
+                ],
+                [
+                    "fr",
+                    0.0654735416173935
+                ],
+                [
+                    "no",
+                    0.042263783514499664
+                ],
+                [
+                    "ko",
+                    0.03420788049697876
+                ],
+                [
+                    "sv",
+                    0.03291456401348114
+                ],
+                [
+                    "ru",
+                    0.027121247723698616
+                ],
+                [
+                    "pl",
+                    0.025102555751800537
+                ],
+                [
+                    "la",
+                    0.0210260022431612
+                ],
+                [
+                    "tr",
+                    0.020526109263300896
+                ],
+                [
+                    "bs",
+                    0.01674252562224865
+                ],
+                [
+                    "ja",
+                    0.016109852120280266
+                ],
+                [
+                    "hr",
+                    0.014486545696854591
+                ],
+                [
+                    "cs",
+                    0.01333203911781311
+                ],
+                [
+                    "it",
+                    0.012859925627708435
+                ],
+                [
+                    "pt",
+                    0.01011979952454567
+                ],
+                [
+                    "es",
+                    0.009177247993648052
+                ],
+                [
+                    "da",
+                    0.009002490900456905
+                ],
+                [
+                    "hu",
+                    0.008929102681577206
+                ],
+                [
+                    "ro",
+                    0.007603716105222702
+                ],
+                [
+                    "nl",
+                    0.007058905903249979
+                ],
+                [
+                    "zh",
+                    0.0068707577884197235
+                ],
+                [
+                    "nn",
+                    0.006757933646440506
+                ],
+                [
+                    "sk",
+                    0.006030126009136438
+                ],
+                [
+                    "jw",
+                    0.005554783158004284
+                ],
+                [
+                    "el",
+                    0.00510080810636282
+                ],
+                [
+                    "sl",
+                    0.004833812825381756
+                ],
+                [
+                    "he",
+                    0.004645554348826408
+                ],
+                [
+                    "cy",
+                    0.00401987275108695
+                ],
+                [
+                    "hi",
+                    0.003975080791860819
+                ],
+                [
+                    "fi",
+                    0.003897744230926037
+                ],
+                [
+                    "ar",
+                    0.003250286215916276
+                ],
+                [
+                    "ht",
+                    0.0030471072532236576
+                ],
+                [
+                    "fa",
+                    0.0026996182277798653
+                ],
+                [
+                    "ca",
+                    0.002252764767035842
+                ],
+                [
+                    "br",
+                    0.0019332955125719309
+                ],
+                [
+                    "bg",
+                    0.0018617428140714765
+                ],
+                [
+                    "uk",
+                    0.0017013715114444494
+                ],
+                [
+                    "th",
+                    0.0015831092605367303
+                ],
+                [
+                    "id",
+                    0.0015357380034402013
+                ],
+                [
+                    "km",
+                    0.0013539604842662811
+                ],
+                [
+                    "mn",
+                    0.0013350372901186347
+                ],
+                [
+                    "tl",
+                    0.0013130552833899856
+                ],
+                [
+                    "haw",
+                    0.0012681473745033145
+                ],
+                [
+                    "ur",
+                    0.0012608588440343738
+                ],
+                [
+                    "sr",
+                    0.0012446329928934574
+                ],
+                [
+                    "lv",
+                    0.0011922632111236453
+                ],
+                [
+                    "ms",
+                    0.001174111501313746
+                ],
+                [
+                    "lt",
+                    0.0010931212455034256
+                ],
+                [
+                    "te",
+                    0.0010836214059963822
+                ],
+                [
+                    "et",
+                    0.001029008417390287
+                ],
+                [
+                    "is",
+                    0.00095691520255059
+                ],
+                [
+                    "ta",
+                    0.0009246183908544481
+                ],
+                [
+                    "bn",
+                    0.0008372188312932849
+                ],
+                [
+                    "bo",
+                    0.0008237925358116627
+                ],
+                [
+                    "hy",
+                    0.000636108685284853
+                ],
+                [
+                    "vi",
+                    0.0006263414979912341
+                ],
+                [
+                    "az",
+                    0.0006185905658639967
+                ],
+                [
+                    "ne",
+                    0.0005969281191937625
+                ],
+                [
+                    "ka",
+                    0.0005800428916700184
+                ],
+                [
+                    "yi",
+                    0.0005126897012814879
+                ],
+                [
+                    "oc",
+                    0.00048559263814240694
+                ],
+                [
+                    "sn",
+                    0.00048437085933983326
+                ],
+                [
+                    "kk",
+                    0.0004750281514134258
+                ],
+                [
+                    "si",
+                    0.0004504494136199355
+                ],
+                [
+                    "eu",
+                    0.00043961836490780115
+                ],
+                [
+                    "mt",
+                    0.0004233025829307735
+                ],
+                [
+                    "sa",
+                    0.00042146851774305105
+                ],
+                [
+                    "ml",
+                    0.00040179910138249397
+                ],
+                [
+                    "fo",
+                    0.0003971348633058369
+                ],
+                [
+                    "yo",
+                    0.0003936016873922199
+                ],
+                [
+                    "my",
+                    0.00037799475830979645
+                ],
+                [
+                    "mi",
+                    0.00037088399403728545
+                ],
+                [
+                    "gl",
+                    0.0003351902705617249
+                ],
+                [
+                    "lo",
+                    0.0002669144014362246
+                ],
+                [
+                    "sq",
+                    0.00025279613328166306
+                ],
+                [
+                    "be",
+                    0.00021648402616847306
+                ],
+                [
+                    "mk",
+                    0.0001766353816492483
+                ],
+                [
+                    "kn",
+                    0.0001640857371967286
+                ],
+                [
+                    "sw",
+                    0.00013735337415710092
+                ],
+                [
+                    "sd",
+                    0.00013701112766284496
+                ],
+                [
+                    "am",
+                    8.446478750556707e-05
+                ],
+                [
+                    "pa",
+                    7.746009941911325e-05
+                ],
+                [
+                    "ps",
+                    7.537916098954156e-05
+                ],
+                [
+                    "ln",
+                    7.052411820041016e-05
+                ],
+                [
+                    "af",
+                    5.904205681872554e-05
+                ],
+                [
+                    "as",
+                    5.869549568160437e-05
+                ],
+                [
+                    "mr",
+                    5.336447793524712e-05
+                ],
+                [
+                    "gu",
+                    4.540457302937284e-05
+                ],
+                [
+                    "so",
+                    1.79466005647555e-05
+                ],
+                [
+                    "lb",
+                    1.0985445442202035e-05
+                ],
+                [
+                    "tt",
+                    5.322137894836487e-06
+                ],
+                [
+                    "tg",
+                    4.494294444157276e-06
+                ],
+                [
+                    "su",
+                    8.369796660190332e-07
+                ],
+                [
+                    "ba",
+                    2.615561527363752e-07
+                ],
+                [
+                    "tk",
+                    2.5640474632382393e-07
+                ],
+                [
+                    "uz",
+                    2.3480490085603378e-07
+                ],
+                [
+                    "ha",
+                    1.8760867703804252e-07
+                ],
+                [
+                    "mg",
+                    7.792491629743381e-08
+                ]
+            ]
+        }
+    }
+}

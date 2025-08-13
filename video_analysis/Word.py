@@ -1,6 +1,7 @@
 import re
 import math
 import pandas as pd
+import pickle
 import nltk
 from g2p_en import G2p
 from external_data.arpa_to_ipa_map import ARPABET_TO_IPA_MAP
@@ -13,6 +14,10 @@ CMU_DICT = nltk.corpus.cmudict.dict()
 
 # Loading the frequency dictionary
 FREQ_DICT = pd.read_csv("video_analysis/external_data/sublexus_corpus.txt", sep='\t')
+
+# Reading the word family frequency database
+with open("video_analysis/external_data/word_families.pkl", "rb") as f:
+    WORD_FAMILIES = pickle.load(f)
 
 # Getting headers for CLEARPOND data: Read each line, strip newline characters, ignore empty lines
 with open("video_analysis/external_data/clearpondHeaders_EN.txt", "r", encoding="utf-8") as f:
@@ -52,7 +57,8 @@ class Word:
         self.length = len(text)
         self.syllable_count = self.count_syllables()
         self.tags = self.get_tags()
-        self.frequency = self.calculate_frequency()
+        self.frequency = self.calculate_frequency()[0]
+        self.word_family_frequency = self.calculate_frequency()[1]
         self.phonemes = self.get_phonemes()
         self.phonological_neighbours_list = self.get_phonological_neighbours()[0]
         self.phonological_neighbours_number = self.get_phonological_neighbours()[1]
@@ -66,7 +72,8 @@ class Word:
             f"Length: {self.length}\n"
             f"Syllable count: {self.syllable_count}\n"
             f"Tags: {self.tags}\n"
-            f"Frequency: {self.frequency}\n"
+            f"Word frequency: {self.frequency}\n"
+            f"Family frequency: {self.word_family_frequency}\n"
             f"Phonemes: {self.phonemes}\n"
             f"List of phonological neighbours: {self.phonological_neighbours_list}\n"
             f"Number of phonological neighbours: {self.phonological_neighbours_number}\n"
@@ -74,6 +81,50 @@ class Word:
             f"Functional load of initial consonant: {self.initial_consonant_fl}\n"
             f"Functional load of final consonant: {self.final_consonant_fl}\n"
         )
+    
+    def to_dict(self):
+        """
+        Convert this Word into a JSON-safe dictionary.
+        Cast numpy/pandas scalars to builtins to avoid JSON errors.
+        """
+        # helpers to coerce numpy/pandas scalars into plain Python types
+        def _to_int(x, default=None):
+            try:
+                return int(x)
+            except Exception:
+                return default
+
+        def _to_float(x, default=None):
+            try:
+                return float(x)
+            except Exception:
+                return default
+
+        return {
+            "text": self.text,
+            "length": _to_int(self.length, 0),
+            "syllable_count": _to_int(self.syllable_count, 0),
+
+            # NLTK returns [(token, tag)] — keep both for clarity
+            "tags": [{"token": tok, "pos": pos} for (tok, pos) in (self.tags or [])],
+
+            # Frequencies (-1 means not found in your corpus)
+            "frequency": _to_int(self.frequency, -1),
+            "word_family_frequency": _to_int(getattr(self, "word_family_frequency", -1), -1),
+
+            # Phonology
+            "phonemes": list(self.phonemes or []),
+
+            "phonological_neighbours": {
+                "list": list(getattr(self, "phonological_neighbours_list", []) or []),
+                "number": _to_int(getattr(self, "phonological_neighbours_number", -1), -1),
+                "frequency": _to_float(getattr(self, "phonological_neighbours_frequency", -1.0), -1.0),
+            },
+
+            # Functional load (use -1 if unknown)
+            "initial_consonant_fl": _to_float(getattr(self, "initial_consonant_fl", -1.0), -1.0),
+            "final_consonant_fl": _to_float(getattr(self, "final_consonant_fl", -1.0), -1.0),
+        }
 
     def count_syllables(self) -> int:
         """
@@ -103,12 +154,23 @@ class Word:
         Returns a dictionary with words as keys and their frequencies as values.
         Returns -1 if the word is not in the corpus.
         """
-        word = self.text
-        if word in FREQ_DICT['Word'].values:
-            freq = FREQ_DICT[FREQ_DICT['Word'] == word]['FREQcount'].values[0]
-        else:
-            freq = -1
-        return freq
+        # # should probably just dump the old FREQ_DICT
+        # word = self.text
+        # if word in FREQ_DICT['Word'].values:
+        #     freq = FREQ_DICT[FREQ_DICT['Word'] == word]['FREQcount'].values[0]
+        # else:
+        #     freq = -1
+        # return freq
+
+        for level in WORD_FAMILIES.keys():
+            families = WORD_FAMILIES[level]
+            for head in families.keys():
+                for w, f in families[head]:
+                    if w.lower() == self.text.lower():
+                        word_freq = f
+                        fam_freq = families[head][0][1]
+                        return word_freq, fam_freq
+        return -1, -1
     
     def get_phonemes(self):
         """
@@ -170,5 +232,7 @@ class Word:
 
 ##### Example usage #####
 if __name__ == '__main__':
-    word = Word("without")
+    word = Word("prettier")
     print(word)
+    word_dict = word.to_dict()
+    print(word_dict)

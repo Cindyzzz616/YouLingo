@@ -1,0 +1,524 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/296_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/296_video_audio.wav",
+    "language": "nl",
+    "length_sec": 28.73,
+    "vad_duration_sec": 28.723125,
+    "total_segment_length_sec": 28.0,
+    "word_count": -1,
+    "tokens": [],
+    "types": [],
+    "mean_sentence_length_words": -1.0,
+    "wpm": -1,
+    "spm": -1,
+    "average_ptr": -1,
+    "transcript_text": " Wil jij grotere schouders?  In deze video ga ik je aan mijn top 3 schouderoefeningen laten zien.  We beginnen met de Single Arm Shoulder Press.  Het kans er zijn dat je 1 schouder sterker is dan de ander.  Deze oefening is dus ideal om bij de schouders effectief te trainen.  Vervolgens gaan we door met de Military Press.  Naast wat deze oefening goed voor de schouders is,  is deze ook top voor de bovenkant van de borst.  En tot slot gaan we door naar mijn favoriet, de Arnold Press.  Deze variatie op de solderpress is ideal voor honderschouders.",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.0,
+                "end": 2.0,
+                "text": " Wil jij grotere schouders?",
+                "no_speech_prob": 0.14850342273712158,
+                "avg_logprob": -0.2339935244006269,
+                "compression_ratio": 1.7737704918032786,
+                "temperature": 0.0
+            },
+            {
+                "id": 2,
+                "start": 2.0,
+                "end": 5.0,
+                "text": " In deze video ga ik je aan mijn top 3 schouderoefeningen laten zien.",
+                "no_speech_prob": 0.14850342273712158,
+                "avg_logprob": -0.2339935244006269,
+                "compression_ratio": 1.7737704918032786,
+                "temperature": 0.0
+            },
+            {
+                "id": 3,
+                "start": 5.0,
+                "end": 7.0,
+                "text": " We beginnen met de Single Arm Shoulder Press.",
+                "no_speech_prob": 0.14850342273712158,
+                "avg_logprob": -0.2339935244006269,
+                "compression_ratio": 1.7737704918032786,
+                "temperature": 0.0
+            },
+            {
+                "id": 4,
+                "start": 7.0,
+                "end": 10.0,
+                "text": " Het kans er zijn dat je 1 schouder sterker is dan de ander.",
+                "no_speech_prob": 0.14850342273712158,
+                "avg_logprob": -0.2339935244006269,
+                "compression_ratio": 1.7737704918032786,
+                "temperature": 0.0
+            },
+            {
+                "id": 5,
+                "start": 10.0,
+                "end": 14.0,
+                "text": " Deze oefening is dus ideal om bij de schouders effectief te trainen.",
+                "no_speech_prob": 0.14850342273712158,
+                "avg_logprob": -0.2339935244006269,
+                "compression_ratio": 1.7737704918032786,
+                "temperature": 0.0
+            },
+            {
+                "id": 6,
+                "start": 14.0,
+                "end": 16.0,
+                "text": " Vervolgens gaan we door met de Military Press.",
+                "no_speech_prob": 0.14850342273712158,
+                "avg_logprob": -0.2339935244006269,
+                "compression_ratio": 1.7737704918032786,
+                "temperature": 0.0
+            },
+            {
+                "id": 7,
+                "start": 16.0,
+                "end": 18.0,
+                "text": " Naast wat deze oefening goed voor de schouders is,",
+                "no_speech_prob": 0.14850342273712158,
+                "avg_logprob": -0.2339935244006269,
+                "compression_ratio": 1.7737704918032786,
+                "temperature": 0.0
+            },
+            {
+                "id": 8,
+                "start": 18.0,
+                "end": 20.0,
+                "text": " is deze ook top voor de bovenkant van de borst.",
+                "no_speech_prob": 0.14850342273712158,
+                "avg_logprob": -0.2339935244006269,
+                "compression_ratio": 1.7737704918032786,
+                "temperature": 0.0
+            },
+            {
+                "id": 9,
+                "start": 20.0,
+                "end": 24.0,
+                "text": " En tot slot gaan we door naar mijn favoriet, de Arnold Press.",
+                "no_speech_prob": 0.14850342273712158,
+                "avg_logprob": -0.2339935244006269,
+                "compression_ratio": 1.7737704918032786,
+                "temperature": 0.0
+            },
+            {
+                "id": 10,
+                "start": 24.0,
+                "end": 28.0,
+                "text": " Deze variatie op de solderpress is ideal voor honderschouders.",
+                "no_speech_prob": 0.14850342273712158,
+                "avg_logprob": -0.2339935244006269,
+                "compression_ratio": 1.7737704918032786,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "nl",
+            "duration": 28.723125,
+            "duration_after_vad": 28.723125,
+            "language_probability": 0.9640623331069946,
+            "all_language_probs": [
+                [
+                    "nl",
+                    0.9640623331069946
+                ],
+                [
+                    "en",
+                    0.017284048721194267
+                ],
+                [
+                    "de",
+                    0.0035019100178033113
+                ],
+                [
+                    "pt",
+                    0.0023295602295547724
+                ],
+                [
+                    "pl",
+                    0.0018522638129070401
+                ],
+                [
+                    "fr",
+                    0.0016808629734441638
+                ],
+                [
+                    "es",
+                    0.0016069435514509678
+                ],
+                [
+                    "nn",
+                    0.0009576510637998581
+                ],
+                [
+                    "ja",
+                    0.0009137029410339892
+                ],
+                [
+                    "tr",
+                    0.0006590582197532058
+                ],
+                [
+                    "ru",
+                    0.0006040647276677191
+                ],
+                [
+                    "it",
+                    0.0005476994556374848
+                ],
+                [
+                    "la",
+                    0.000484343443531543
+                ],
+                [
+                    "el",
+                    0.0004378763260319829
+                ],
+                [
+                    "fi",
+                    0.00029719938174821436
+                ],
+                [
+                    "jw",
+                    0.0002836764615494758
+                ],
+                [
+                    "br",
+                    0.00023975686053745449
+                ],
+                [
+                    "vi",
+                    0.00017095998919103295
+                ],
+                [
+                    "ca",
+                    0.00015963635814841837
+                ],
+                [
+                    "id",
+                    0.0001457397738704458
+                ],
+                [
+                    "hi",
+                    0.0001431099371984601
+                ],
+                [
+                    "ko",
+                    0.00013825234782416373
+                ],
+                [
+                    "cy",
+                    0.00013758640852756798
+                ],
+                [
+                    "zh",
+                    0.00012214673915877938
+                ],
+                [
+                    "af",
+                    0.00011307655950076878
+                ],
+                [
+                    "hu",
+                    0.00010232533531961963
+                ],
+                [
+                    "cs",
+                    9.932240209309384e-05
+                ],
+                [
+                    "ar",
+                    8.867181168170646e-05
+                ],
+                [
+                    "haw",
+                    8.581598376622424e-05
+                ],
+                [
+                    "km",
+                    8.399210491916165e-05
+                ],
+                [
+                    "gl",
+                    6.933748227311298e-05
+                ],
+                [
+                    "eu",
+                    6.376311648637056e-05
+                ],
+                [
+                    "ms",
+                    6.322396075120196e-05
+                ],
+                [
+                    "ur",
+                    6.282689719228074e-05
+                ],
+                [
+                    "no",
+                    5.401121234172024e-05
+                ],
+                [
+                    "da",
+                    3.922592441085726e-05
+                ],
+                [
+                    "sn",
+                    3.489801019895822e-05
+                ],
+                [
+                    "sv",
+                    3.235692929592915e-05
+                ],
+                [
+                    "tl",
+                    2.989816857734695e-05
+                ],
+                [
+                    "is",
+                    2.705010774661787e-05
+                ],
+                [
+                    "ro",
+                    1.5836618331377394e-05
+                ],
+                [
+                    "oc",
+                    1.3717521142098121e-05
+                ],
+                [
+                    "uk",
+                    1.3566488632932305e-05
+                ],
+                [
+                    "mi",
+                    1.2132749361626338e-05
+                ],
+                [
+                    "th",
+                    1.0353579455113504e-05
+                ],
+                [
+                    "bg",
+                    9.761060027813073e-06
+                ],
+                [
+                    "sk",
+                    9.633117770135868e-06
+                ],
+                [
+                    "lv",
+                    8.265338692581281e-06
+                ],
+                [
+                    "et",
+                    8.194168913178146e-06
+                ],
+                [
+                    "yi",
+                    7.5277935138728935e-06
+                ],
+                [
+                    "sl",
+                    6.572894108103355e-06
+                ],
+                [
+                    "yo",
+                    6.519809630844975e-06
+                ],
+                [
+                    "ml",
+                    6.288046279223636e-06
+                ],
+                [
+                    "ta",
+                    6.024642061674967e-06
+                ],
+                [
+                    "mn",
+                    5.850497927895049e-06
+                ],
+                [
+                    "sa",
+                    5.6295893955393694e-06
+                ],
+                [
+                    "ht",
+                    4.513840849540429e-06
+                ],
+                [
+                    "hr",
+                    3.5330813261680305e-06
+                ],
+                [
+                    "bn",
+                    2.9107104637660086e-06
+                ],
+                [
+                    "si",
+                    2.891104259106214e-06
+                ],
+                [
+                    "fo",
+                    2.5482827368250582e-06
+                ],
+                [
+                    "hy",
+                    2.1888040464546066e-06
+                ],
+                [
+                    "he",
+                    2.1536127405852312e-06
+                ],
+                [
+                    "my",
+                    2.0824575130973244e-06
+                ],
+                [
+                    "be",
+                    1.8762033278107992e-06
+                ],
+                [
+                    "az",
+                    1.7396764633303974e-06
+                ],
+                [
+                    "bs",
+                    1.504622900938557e-06
+                ],
+                [
+                    "sq",
+                    1.4571821793651907e-06
+                ],
+                [
+                    "pa",
+                    1.4484644452750217e-06
+                ],
+                [
+                    "sw",
+                    1.4170256008583237e-06
+                ],
+                [
+                    "te",
+                    1.4145141449262155e-06
+                ],
+                [
+                    "ne",
+                    1.2800318245353992e-06
+                ],
+                [
+                    "bo",
+                    1.1776292012655176e-06
+                ],
+                [
+                    "fa",
+                    1.1200405651834444e-06
+                ],
+                [
+                    "mt",
+                    1.0356843631598167e-06
+                ],
+                [
+                    "sd",
+                    9.58211444412882e-07
+                ],
+                [
+                    "lt",
+                    9.224217478731589e-07
+                ],
+                [
+                    "kk",
+                    9.08487322703877e-07
+                ],
+                [
+                    "lo",
+                    5.543444672184705e-07
+                ],
+                [
+                    "ps",
+                    5.293906610859267e-07
+                ],
+                [
+                    "ln",
+                    5.234361424300005e-07
+                ],
+                [
+                    "mk",
+                    3.726046315932763e-07
+                ],
+                [
+                    "sr",
+                    3.4307132068533974e-07
+                ],
+                [
+                    "ka",
+                    1.917682368457463e-07
+                ],
+                [
+                    "mr",
+                    1.4068102416331385e-07
+                ],
+                [
+                    "kn",
+                    1.3023678491208557e-07
+                ],
+                [
+                    "lb",
+                    7.714302086014868e-08
+                ],
+                [
+                    "gu",
+                    7.634017862301334e-08
+                ],
+                [
+                    "as",
+                    4.4301540214064516e-08
+                ],
+                [
+                    "am",
+                    4.1271920991903244e-08
+                ],
+                [
+                    "tt",
+                    3.838654549781495e-08
+                ],
+                [
+                    "so",
+                    3.548753113591374e-08
+                ],
+                [
+                    "tg",
+                    1.948212968727603e-08
+                ],
+                [
+                    "su",
+                    1.3761906281217762e-08
+                ],
+                [
+                    "ha",
+                    3.042079255166641e-09
+                ],
+                [
+                    "ba",
+                    1.946473870972909e-09
+                ],
+                [
+                    "tk",
+                    1.4187595542836107e-09
+                ],
+                [
+                    "uz",
+                    1.3211083338404706e-09
+                ],
+                [
+                    "mg",
+                    1.2371573765435073e-09
+                ]
+            ]
+        }
+    }
+}

@@ -1,0 +1,1100 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/333_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/333_video_audio.wav",
+    "language": "en",
+    "length_sec": 7.97,
+    "vad_duration_sec": 5.22125,
+    "total_segment_length_sec": 2.0,
+    "word_count": 8,
+    "tokens": [
+        {
+            "text": "So",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "So",
+                    "pos": "RB"
+                }
+            ],
+            "frequency": 242541,
+            "word_family_frequency": 242541,
+            "phonemes": [
+                "s",
+                "oʊ"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 85.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "curious",
+            "length": 7,
+            "syllable_count": 3,
+            "tags": [
+                {
+                    "token": "curious",
+                    "pos": "JJ"
+                }
+            ],
+            "frequency": 4133,
+            "word_family_frequency": 4133,
+            "phonemes": [
+                "k",
+                "j",
+                "ʊ",
+                "r",
+                "i",
+                "ʌ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": 0,
+                "frequency": 0.0
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "like",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "like",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 156796,
+            "word_family_frequency": 156796,
+            "phonemes": [
+                "l",
+                "aɪ",
+                "k"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "look",
+                    "life",
+                    "live",
+                    "line",
+                    "light",
+                    "luck",
+                    "Mike",
+                    "Luke",
+                    "lock",
+                    "lied",
+                    "lies",
+                    "lake",
+                    "liar",
+                    "bike",
+                    "lack",
+                    "lick",
+                    "leak",
+                    "psych",
+                    "hike",
+                    "Pike",
+                    "lime",
+                    "dyke",
+                    "lice",
+                    "lark",
+                    "lac",
+                    "Nike",
+                    "Lite",
+                    "tyke",
+                    "kike",
+                    "lurk",
+                    "dike",
+                    "lire",
+                    "lie",
+                    "Ike",
+                    "Lai",
+                    "lye",
+                    "liked",
+                    "likes",
+                    "alike"
+                ],
+                "number": 39,
+                "frequency": 112.359
+            },
+            "initial_consonant_fl": 83.0,
+            "final_consonant_fl": 65.0
+        },
+        {
+            "text": "what",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "what",
+                    "pos": "WP"
+                }
+            ],
+            "frequency": 253809,
+            "word_family_frequency": 253809,
+            "phonemes": [
+                "w",
+                "ʌ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "could",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "could",
+                    "pos": "MD"
+                }
+            ],
+            "frequency": 160197,
+            "word_family_frequency": 160197,
+            "phonemes": [
+                "k",
+                "ʊ",
+                "d"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "good",
+                    "would",
+                    "should",
+                    "kid",
+                    "card",
+                    "code",
+                    "cook",
+                    "wood",
+                    "hood",
+                    "cared",
+                    "cord",
+                    "Cod",
+                    "chord",
+                    "cad",
+                    "keyed",
+                    "curd"
+                ],
+                "number": 16,
+                "frequency": 377.0723
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "have",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "have",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 1344286,
+            "word_family_frequency": 1344286,
+            "phonemes": [
+                "h",
+                "æ",
+                "v"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "had",
+                    "has",
+                    "half",
+                    "hang",
+                    "hat",
+                    "hatch",
+                    "ham",
+                    "hack",
+                    "Han",
+                    "hath",
+                    "Heave",
+                    "hash",
+                    "hag",
+                    "hive",
+                    "Hap",
+                    "Ave",
+                    "halves"
+                ],
+                "number": 17,
+                "frequency": 192.8812
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": 22.0
+        },
+        {
+            "text": "gone",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "gone",
+                    "pos": "VBN"
+                }
+            ],
+            "frequency": 18512,
+            "word_family_frequency": 244339,
+            "phonemes": [
+                "g",
+                "ɔ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "gun",
+                    "dawn",
+                    "gain",
+                    "lawn",
+                    "Shawn",
+                    "gown",
+                    "pawn",
+                    "Gong",
+                    "goon",
+                    "gall",
+                    "gauze",
+                    "yawn",
+                    "Fawn",
+                    "faun",
+                    "Gaul"
+                ],
+                "number": 15,
+                "frequency": 19.8288
+            },
+            "initial_consonant_fl": 71.0,
+            "final_consonant_fl": 75.0
+        },
+        {
+            "text": "wrong",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "wrong",
+                    "pos": "JJ"
+                }
+            ],
+            "frequency": 16900,
+            "word_family_frequency": 16900,
+            "phonemes": [
+                "r",
+                "ɔ",
+                "ŋ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "song",
+                    "ring",
+                    "Ross",
+                    "rang",
+                    "Gong",
+                    "rung",
+                    "wring",
+                    "wrought",
+                    "raw",
+                    "wronged",
+                    "wrongs"
+                ],
+                "number": 11,
+                "frequency": 21.7469
+            },
+            "initial_consonant_fl": 83.0,
+            "final_consonant_fl": 21.0
+        }
+    ],
+    "types": [
+        {
+            "text": "so",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "so",
+                    "pos": "RB"
+                }
+            ],
+            "frequency": 242541,
+            "word_family_frequency": 242541,
+            "phonemes": [
+                "s",
+                "oʊ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "No",
+                    "know",
+                    "go",
+                    "see",
+                    "say",
+                    "sir",
+                    "show",
+                    "saw",
+                    "though",
+                    "Joe",
+                    "sea",
+                    "low",
+                    "ho",
+                    "Sue",
+                    "row",
+                    "bow",
+                    "dough",
+                    "sore",
+                    "toe",
+                    "Moe",
+                    "Beau",
+                    "tow",
+                    "Co",
+                    "Doe",
+                    "Poe",
+                    "sigh",
+                    "Cho",
+                    "woe",
+                    "soy",
+                    "mow",
+                    "Sioux",
+                    "foe",
+                    "soar",
+                    "Lowe",
+                    "Roe",
+                    "hoe",
+                    "Sao",
+                    "Psi",
+                    "Oh",
+                    "owe",
+                    "Eau",
+                    "soul",
+                    "slow",
+                    "snow",
+                    "soap",
+                    "sole",
+                    "Seoul",
+                    "soak",
+                    "sewed",
+                    "stow",
+                    "sown"
+                ],
+                "number": 51,
+                "frequency": 505.183
+            },
+            "initial_consonant_fl": 85.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "curious",
+            "length": 7,
+            "syllable_count": 3,
+            "tags": [
+                {
+                    "token": "curious",
+                    "pos": "JJ"
+                }
+            ],
+            "frequency": 4133,
+            "word_family_frequency": 4133,
+            "phonemes": [
+                "k",
+                "j",
+                "ʊ",
+                "r",
+                "i",
+                "ʌ",
+                "s"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": 0,
+                "frequency": 0.0
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": 57.0
+        },
+        {
+            "text": "like",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "like",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 156796,
+            "word_family_frequency": 156796,
+            "phonemes": [
+                "l",
+                "aɪ",
+                "k"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "look",
+                    "life",
+                    "live",
+                    "line",
+                    "light",
+                    "luck",
+                    "Mike",
+                    "Luke",
+                    "lock",
+                    "lied",
+                    "lies",
+                    "lake",
+                    "liar",
+                    "bike",
+                    "lack",
+                    "lick",
+                    "leak",
+                    "psych",
+                    "hike",
+                    "Pike",
+                    "lime",
+                    "dyke",
+                    "lice",
+                    "lark",
+                    "lac",
+                    "Nike",
+                    "Lite",
+                    "tyke",
+                    "kike",
+                    "lurk",
+                    "dike",
+                    "lire",
+                    "lie",
+                    "Ike",
+                    "Lai",
+                    "lye",
+                    "liked",
+                    "likes",
+                    "alike"
+                ],
+                "number": 39,
+                "frequency": 112.359
+            },
+            "initial_consonant_fl": 83.0,
+            "final_consonant_fl": 65.0
+        },
+        {
+            "text": "what",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "what",
+                    "pos": "WP"
+                }
+            ],
+            "frequency": 253809,
+            "word_family_frequency": 253809,
+            "phonemes": [
+                "w",
+                "ʌ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 76.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "could",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "could",
+                    "pos": "MD"
+                }
+            ],
+            "frequency": 160197,
+            "word_family_frequency": 160197,
+            "phonemes": [
+                "k",
+                "ʊ",
+                "d"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "good",
+                    "would",
+                    "should",
+                    "kid",
+                    "card",
+                    "code",
+                    "cook",
+                    "wood",
+                    "hood",
+                    "cared",
+                    "cord",
+                    "Cod",
+                    "chord",
+                    "cad",
+                    "keyed",
+                    "curd"
+                ],
+                "number": 16,
+                "frequency": 377.0723
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": 100.0
+        },
+        {
+            "text": "have",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "have",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 1344286,
+            "word_family_frequency": 1344286,
+            "phonemes": [
+                "h",
+                "æ",
+                "v"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "had",
+                    "has",
+                    "half",
+                    "hang",
+                    "hat",
+                    "hatch",
+                    "ham",
+                    "hack",
+                    "Han",
+                    "hath",
+                    "Heave",
+                    "hash",
+                    "hag",
+                    "hive",
+                    "Hap",
+                    "Ave",
+                    "halves"
+                ],
+                "number": 17,
+                "frequency": 192.8812
+            },
+            "initial_consonant_fl": 100.0,
+            "final_consonant_fl": 22.0
+        },
+        {
+            "text": "gone",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "gone",
+                    "pos": "VBN"
+                }
+            ],
+            "frequency": 18512,
+            "word_family_frequency": 244339,
+            "phonemes": [
+                "g",
+                "ɔ",
+                "n"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "gun",
+                    "dawn",
+                    "gain",
+                    "lawn",
+                    "Shawn",
+                    "gown",
+                    "pawn",
+                    "Gong",
+                    "goon",
+                    "gall",
+                    "gauze",
+                    "yawn",
+                    "Fawn",
+                    "faun",
+                    "Gaul"
+                ],
+                "number": 15,
+                "frequency": 19.8288
+            },
+            "initial_consonant_fl": 71.0,
+            "final_consonant_fl": 75.0
+        },
+        {
+            "text": "wrong",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "wrong",
+                    "pos": "JJ"
+                }
+            ],
+            "frequency": 16900,
+            "word_family_frequency": 16900,
+            "phonemes": [
+                "r",
+                "ɔ",
+                "ŋ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "song",
+                    "ring",
+                    "Ross",
+                    "rang",
+                    "Gong",
+                    "rung",
+                    "wring",
+                    "wrought",
+                    "raw",
+                    "wronged",
+                    "wrongs"
+                ],
+                "number": 11,
+                "frequency": 21.7469
+            },
+            "initial_consonant_fl": 83.0,
+            "final_consonant_fl": 21.0
+        }
+    ],
+    "mean_sentence_length_words": 8.0,
+    "wpm": 91.9320086186258,
+    "spm": 114.91501077328225,
+    "average_ptr": 1.0,
+    "transcript_text": " So curious like what could have gone wrong",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.0,
+                "end": 2.0,
+                "text": " So curious like what could have gone wrong",
+                "no_speech_prob": 0.06248845160007477,
+                "avg_logprob": -0.3015546907078136,
+                "compression_ratio": 0.8571428571428571,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 7.94125,
+            "duration_after_vad": 5.22125,
+            "language_probability": 0.9936336278915405,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.9936336278915405
+                ],
+                [
+                    "ja",
+                    0.0006347030866891146
+                ],
+                [
+                    "ko",
+                    0.0005375657347030938
+                ],
+                [
+                    "tl",
+                    0.0004312386445235461
+                ],
+                [
+                    "pt",
+                    0.0004023717192467302
+                ],
+                [
+                    "pl",
+                    0.0004019854823127389
+                ],
+                [
+                    "de",
+                    0.0004019571060780436
+                ],
+                [
+                    "fr",
+                    0.00034938627504743636
+                ],
+                [
+                    "es",
+                    0.00025352544616907835
+                ],
+                [
+                    "la",
+                    0.0002491895866114646
+                ],
+                [
+                    "km",
+                    0.00022153618920128793
+                ],
+                [
+                    "th",
+                    0.00020955649961251765
+                ],
+                [
+                    "hi",
+                    0.00020515221694950014
+                ],
+                [
+                    "nn",
+                    0.00020425108959898353
+                ],
+                [
+                    "tr",
+                    0.00018975252169184387
+                ],
+                [
+                    "ru",
+                    0.00017515983199700713
+                ],
+                [
+                    "zh",
+                    0.00015575933502987027
+                ],
+                [
+                    "nl",
+                    0.00015568728849757463
+                ],
+                [
+                    "it",
+                    0.00013097164628561586
+                ],
+                [
+                    "haw",
+                    9.712568135000765e-05
+                ],
+                [
+                    "cy",
+                    9.399676491739228e-05
+                ],
+                [
+                    "id",
+                    6.241395749384537e-05
+                ],
+                [
+                    "el",
+                    5.9430367400636896e-05
+                ],
+                [
+                    "jw",
+                    5.9334714023862034e-05
+                ],
+                [
+                    "da",
+                    5.441013490781188e-05
+                ],
+                [
+                    "vi",
+                    5.2937866712454706e-05
+                ],
+                [
+                    "fi",
+                    5.12457154400181e-05
+                ],
+                [
+                    "mi",
+                    3.766379086300731e-05
+                ],
+                [
+                    "sv",
+                    3.756575097213499e-05
+                ],
+                [
+                    "ur",
+                    3.5335589927854016e-05
+                ],
+                [
+                    "ta",
+                    3.4403696190565825e-05
+                ],
+                [
+                    "ml",
+                    3.412115256651305e-05
+                ],
+                [
+                    "ms",
+                    3.2380488846683875e-05
+                ],
+                [
+                    "ar",
+                    2.8452062906580977e-05
+                ],
+                [
+                    "sn",
+                    2.5232864572899416e-05
+                ],
+                [
+                    "cs",
+                    2.4161186956916936e-05
+                ],
+                [
+                    "no",
+                    2.2821204765932634e-05
+                ],
+                [
+                    "hu",
+                    2.0124303773627616e-05
+                ],
+                [
+                    "bs",
+                    1.536664967716206e-05
+                ],
+                [
+                    "br",
+                    1.3479260815074667e-05
+                ],
+                [
+                    "hr",
+                    1.3243545254226774e-05
+                ],
+                [
+                    "yi",
+                    1.1991241080977488e-05
+                ],
+                [
+                    "si",
+                    1.1934653230127878e-05
+                ],
+                [
+                    "te",
+                    8.81120558915427e-06
+                ],
+                [
+                    "my",
+                    8.425482519669458e-06
+                ],
+                [
+                    "bo",
+                    7.706069482082967e-06
+                ],
+                [
+                    "ht",
+                    7.4377740020281635e-06
+                ],
+                [
+                    "he",
+                    7.249815098475665e-06
+                ],
+                [
+                    "ro",
+                    6.456271876231767e-06
+                ],
+                [
+                    "yo",
+                    6.132726866781013e-06
+                ],
+                [
+                    "bn",
+                    5.637063622998539e-06
+                ],
+                [
+                    "af",
+                    5.53492782273679e-06
+                ],
+                [
+                    "mn",
+                    5.391670583776431e-06
+                ],
+                [
+                    "sl",
+                    4.915998033538926e-06
+                ],
+                [
+                    "sa",
+                    4.78504898637766e-06
+                ],
+                [
+                    "is",
+                    4.484912096813787e-06
+                ],
+                [
+                    "ne",
+                    3.902159733115695e-06
+                ],
+                [
+                    "uk",
+                    3.4449378745193826e-06
+                ],
+                [
+                    "eu",
+                    3.2480061236128677e-06
+                ],
+                [
+                    "sk",
+                    2.9213647394499276e-06
+                ],
+                [
+                    "fa",
+                    2.561977908044355e-06
+                ],
+                [
+                    "bg",
+                    2.5584349714335985e-06
+                ],
+                [
+                    "ca",
+                    2.510309968783986e-06
+                ],
+                [
+                    "lv",
+                    2.3731486180622596e-06
+                ],
+                [
+                    "pa",
+                    2.182189291488612e-06
+                ],
+                [
+                    "gl",
+                    1.963737076948746e-06
+                ],
+                [
+                    "sr",
+                    1.8351287280893303e-06
+                ],
+                [
+                    "lt",
+                    1.7439142538933083e-06
+                ],
+                [
+                    "mt",
+                    1.4480132222161046e-06
+                ],
+                [
+                    "sd",
+                    1.434199589311902e-06
+                ],
+                [
+                    "sw",
+                    1.355709514427872e-06
+                ],
+                [
+                    "lo",
+                    1.1608777867877507e-06
+                ],
+                [
+                    "hy",
+                    1.0217331691819709e-06
+                ],
+                [
+                    "fo",
+                    8.963060054156813e-07
+                ],
+                [
+                    "et",
+                    7.833294830561499e-07
+                ],
+                [
+                    "kn",
+                    7.731454161330475e-07
+                ],
+                [
+                    "oc",
+                    7.238398893605336e-07
+                ],
+                [
+                    "az",
+                    6.052408707546419e-07
+                ],
+                [
+                    "gu",
+                    6.016526867824723e-07
+                ],
+                [
+                    "kk",
+                    5.559778628594358e-07
+                ],
+                [
+                    "ka",
+                    3.6040526651959226e-07
+                ],
+                [
+                    "mr",
+                    3.2554595463807345e-07
+                ],
+                [
+                    "sq",
+                    3.162873554174439e-07
+                ],
+                [
+                    "be",
+                    2.8861501277788193e-07
+                ],
+                [
+                    "ln",
+                    1.2945903904437728e-07
+                ],
+                [
+                    "as",
+                    1.2325766363119328e-07
+                ],
+                [
+                    "mk",
+                    1.2147559402819752e-07
+                ],
+                [
+                    "am",
+                    1.095002559736713e-07
+                ],
+                [
+                    "ps",
+                    9.567300907065146e-08
+                ],
+                [
+                    "so",
+                    4.971740708015204e-08
+                ],
+                [
+                    "su",
+                    2.031102752653169e-08
+                ],
+                [
+                    "lb",
+                    1.9893192870767962e-08
+                ],
+                [
+                    "tt",
+                    8.813620944181366e-09
+                ],
+                [
+                    "tg",
+                    8.721462663174862e-09
+                ],
+                [
+                    "ha",
+                    3.5978231505140457e-09
+                ],
+                [
+                    "ba",
+                    1.6929527779652176e-09
+                ],
+                [
+                    "tk",
+                    1.6594071672315636e-09
+                ],
+                [
+                    "uz",
+                    1.6522316848011087e-09
+                ],
+                [
+                    "mg",
+                    7.353721520608758e-10
+                ]
+            ]
+        }
+    }
+}

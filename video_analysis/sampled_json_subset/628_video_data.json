@@ -1,0 +1,574 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/628_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/628_video_audio.wav",
+    "language": "nl",
+    "length_sec": 45.02,
+    "vad_duration_sec": 44.7529375,
+    "total_segment_length_sec": 43.0,
+    "word_count": -1,
+    "tokens": [],
+    "types": [],
+    "mean_sentence_length_words": -1.0,
+    "wpm": -1,
+    "spm": -1,
+    "average_ptr": -1,
+    "transcript_text": " Wie heeft de meeste krapen van je gehad?  Wie heeft de beste kleingstel?  Wie heeft de liefste persoonlijkheid?  Wie zal als eerste opgepakt worden voor mord?  Wie eet het meest?  Wie krijgt het eerst kinder?  Wie is de grootste vechten spaas?  Wie is het meest kreatief?  Wie kan het slecht met geld omgaan?  Wie is het grappig?  Wie is de meest laujepersoon?  Wie wordt het meest succesvol?  Wie is de grootste vizerek?  Wie raakt de meeste spullen kwijt?  Wie wordt het snelste boos?",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.27,
+                "end": 3.27,
+                "text": " Wie heeft de meeste krapen van je gehad?",
+                "no_speech_prob": 0.16003695130348206,
+                "avg_logprob": -0.22646517599267618,
+                "compression_ratio": 1.7857142857142858,
+                "temperature": 0.0
+            },
+            {
+                "id": 2,
+                "start": 3.27,
+                "end": 6.27,
+                "text": " Wie heeft de beste kleingstel?",
+                "no_speech_prob": 0.16003695130348206,
+                "avg_logprob": -0.22646517599267618,
+                "compression_ratio": 1.7857142857142858,
+                "temperature": 0.0
+            },
+            {
+                "id": 3,
+                "start": 6.27,
+                "end": 9.27,
+                "text": " Wie heeft de liefste persoonlijkheid?",
+                "no_speech_prob": 0.16003695130348206,
+                "avg_logprob": -0.22646517599267618,
+                "compression_ratio": 1.7857142857142858,
+                "temperature": 0.0
+            },
+            {
+                "id": 4,
+                "start": 9.27,
+                "end": 13.27,
+                "text": " Wie zal als eerste opgepakt worden voor mord?",
+                "no_speech_prob": 0.16003695130348206,
+                "avg_logprob": -0.22646517599267618,
+                "compression_ratio": 1.7857142857142858,
+                "temperature": 0.0
+            },
+            {
+                "id": 5,
+                "start": 13.27,
+                "end": 15.27,
+                "text": " Wie eet het meest?",
+                "no_speech_prob": 0.16003695130348206,
+                "avg_logprob": -0.22646517599267618,
+                "compression_ratio": 1.7857142857142858,
+                "temperature": 0.0
+            },
+            {
+                "id": 6,
+                "start": 15.27,
+                "end": 18.27,
+                "text": " Wie krijgt het eerst kinder?",
+                "no_speech_prob": 0.16003695130348206,
+                "avg_logprob": -0.22646517599267618,
+                "compression_ratio": 1.7857142857142858,
+                "temperature": 0.0
+            },
+            {
+                "id": 7,
+                "start": 18.27,
+                "end": 21.27,
+                "text": " Wie is de grootste vechten spaas?",
+                "no_speech_prob": 0.16003695130348206,
+                "avg_logprob": -0.22646517599267618,
+                "compression_ratio": 1.7857142857142858,
+                "temperature": 0.0
+            },
+            {
+                "id": 8,
+                "start": 21.27,
+                "end": 24.27,
+                "text": " Wie is het meest kreatief?",
+                "no_speech_prob": 0.16003695130348206,
+                "avg_logprob": -0.22646517599267618,
+                "compression_ratio": 1.7857142857142858,
+                "temperature": 0.0
+            },
+            {
+                "id": 9,
+                "start": 24.27,
+                "end": 27.27,
+                "text": " Wie kan het slecht met geld omgaan?",
+                "no_speech_prob": 0.16003695130348206,
+                "avg_logprob": -0.22646517599267618,
+                "compression_ratio": 1.7857142857142858,
+                "temperature": 0.0
+            },
+            {
+                "id": 10,
+                "start": 27.27,
+                "end": 29.27,
+                "text": " Wie is het grappig?",
+                "no_speech_prob": 0.0056581031531095505,
+                "avg_logprob": -0.2731025288070458,
+                "compression_ratio": 1.5688073394495412,
+                "temperature": 0.0
+            },
+            {
+                "id": 11,
+                "start": 29.27,
+                "end": 32.27,
+                "text": " Wie is de meest laujepersoon?",
+                "no_speech_prob": 0.0056581031531095505,
+                "avg_logprob": -0.2731025288070458,
+                "compression_ratio": 1.5688073394495412,
+                "temperature": 0.0
+            },
+            {
+                "id": 12,
+                "start": 32.27,
+                "end": 35.27,
+                "text": " Wie wordt het meest succesvol?",
+                "no_speech_prob": 0.0056581031531095505,
+                "avg_logprob": -0.2731025288070458,
+                "compression_ratio": 1.5688073394495412,
+                "temperature": 0.0
+            },
+            {
+                "id": 13,
+                "start": 35.27,
+                "end": 37.27,
+                "text": " Wie is de grootste vizerek?",
+                "no_speech_prob": 0.0056581031531095505,
+                "avg_logprob": -0.2731025288070458,
+                "compression_ratio": 1.5688073394495412,
+                "temperature": 0.0
+            },
+            {
+                "id": 14,
+                "start": 37.27,
+                "end": 40.27,
+                "text": " Wie raakt de meeste spullen kwijt?",
+                "no_speech_prob": 0.0056581031531095505,
+                "avg_logprob": -0.2731025288070458,
+                "compression_ratio": 1.5688073394495412,
+                "temperature": 0.0
+            },
+            {
+                "id": 15,
+                "start": 40.27,
+                "end": 43.27,
+                "text": " Wie wordt het snelste boos?",
+                "no_speech_prob": 0.0056581031531095505,
+                "avg_logprob": -0.2731025288070458,
+                "compression_ratio": 1.5688073394495412,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "nl",
+            "duration": 45.0249375,
+            "duration_after_vad": 44.7529375,
+            "language_probability": 0.9537621736526489,
+            "all_language_probs": [
+                [
+                    "nl",
+                    0.9537621736526489
+                ],
+                [
+                    "en",
+                    0.018498295918107033
+                ],
+                [
+                    "af",
+                    0.002978378441184759
+                ],
+                [
+                    "de",
+                    0.002925334731116891
+                ],
+                [
+                    "pl",
+                    0.002801251597702503
+                ],
+                [
+                    "cy",
+                    0.002455540234223008
+                ],
+                [
+                    "pt",
+                    0.0023140707053244114
+                ],
+                [
+                    "el",
+                    0.0019855895079672337
+                ],
+                [
+                    "la",
+                    0.0017188236815854907
+                ],
+                [
+                    "fr",
+                    0.0017063083359971642
+                ],
+                [
+                    "nn",
+                    0.001471998984925449
+                ],
+                [
+                    "ar",
+                    0.0007452908321283758
+                ],
+                [
+                    "tr",
+                    0.0006461831508204341
+                ],
+                [
+                    "es",
+                    0.0006212836597114801
+                ],
+                [
+                    "ja",
+                    0.0006107468507252634
+                ],
+                [
+                    "ru",
+                    0.0003720178210642189
+                ],
+                [
+                    "fi",
+                    0.0003383892762940377
+                ],
+                [
+                    "ko",
+                    0.0003101272159256041
+                ],
+                [
+                    "sv",
+                    0.0003035481204278767
+                ],
+                [
+                    "zh",
+                    0.0002767321129795164
+                ],
+                [
+                    "ca",
+                    0.00027512063388712704
+                ],
+                [
+                    "hi",
+                    0.00025497624301351607
+                ],
+                [
+                    "it",
+                    0.00023841812799219042
+                ],
+                [
+                    "vi",
+                    0.00022666163567919284
+                ],
+                [
+                    "cs",
+                    0.00018459191778674722
+                ],
+                [
+                    "no",
+                    0.00016952793521340936
+                ],
+                [
+                    "br",
+                    0.00015975463611539453
+                ],
+                [
+                    "gl",
+                    0.0001581977412570268
+                ],
+                [
+                    "is",
+                    0.00015568647359032184
+                ],
+                [
+                    "hu",
+                    0.0001429284893674776
+                ],
+                [
+                    "jw",
+                    0.00013739544374402612
+                ],
+                [
+                    "haw",
+                    0.00013681594282388687
+                ],
+                [
+                    "ur",
+                    0.00013177112850826234
+                ],
+                [
+                    "mi",
+                    0.00010025660594692454
+                ],
+                [
+                    "yi",
+                    9.718019282445312e-05
+                ],
+                [
+                    "ms",
+                    4.1458562918705866e-05
+                ],
+                [
+                    "sl",
+                    3.752222619368695e-05
+                ],
+                [
+                    "ro",
+                    3.729219679371454e-05
+                ],
+                [
+                    "tl",
+                    3.2285806810250506e-05
+                ],
+                [
+                    "km",
+                    3.0469591365545057e-05
+                ],
+                [
+                    "da",
+                    2.8500386179075576e-05
+                ],
+                [
+                    "uk",
+                    2.7565152777242474e-05
+                ],
+                [
+                    "eu",
+                    2.678390228538774e-05
+                ],
+                [
+                    "oc",
+                    2.595692603790667e-05
+                ],
+                [
+                    "id",
+                    2.3564774892292917e-05
+                ],
+                [
+                    "sn",
+                    2.167130514862947e-05
+                ],
+                [
+                    "bg",
+                    2.105500789184589e-05
+                ],
+                [
+                    "he",
+                    1.7471169485361315e-05
+                ],
+                [
+                    "sq",
+                    1.713208621367812e-05
+                ],
+                [
+                    "sa",
+                    1.4471557733486407e-05
+                ],
+                [
+                    "ta",
+                    1.3609312190965284e-05
+                ],
+                [
+                    "hy",
+                    1.3348552784009371e-05
+                ],
+                [
+                    "th",
+                    1.3327577107702382e-05
+                ],
+                [
+                    "lv",
+                    1.1422457646403927e-05
+                ],
+                [
+                    "yo",
+                    1.1220815395063255e-05
+                ],
+                [
+                    "et",
+                    9.977869012800511e-06
+                ],
+                [
+                    "fa",
+                    9.356495866086334e-06
+                ],
+                [
+                    "fo",
+                    9.181827408610843e-06
+                ],
+                [
+                    "bn",
+                    8.429399713349994e-06
+                ],
+                [
+                    "mn",
+                    7.947035555844195e-06
+                ],
+                [
+                    "ml",
+                    7.660335541004315e-06
+                ],
+                [
+                    "az",
+                    7.588952030346263e-06
+                ],
+                [
+                    "mt",
+                    7.259946869453415e-06
+                ],
+                [
+                    "ht",
+                    6.634857072640443e-06
+                ],
+                [
+                    "sk",
+                    6.087906058382941e-06
+                ],
+                [
+                    "te",
+                    4.081859060534043e-06
+                ],
+                [
+                    "bs",
+                    3.917373760486953e-06
+                ],
+                [
+                    "pa",
+                    3.7569257074210327e-06
+                ],
+                [
+                    "bo",
+                    3.4961672099598218e-06
+                ],
+                [
+                    "hr",
+                    3.36885250362684e-06
+                ],
+                [
+                    "kk",
+                    2.6377697395219e-06
+                ],
+                [
+                    "be",
+                    2.6127509045181796e-06
+                ],
+                [
+                    "si",
+                    2.36796768149361e-06
+                ],
+                [
+                    "sd",
+                    2.131509518221719e-06
+                ],
+                [
+                    "my",
+                    1.6999191529976088e-06
+                ],
+                [
+                    "ps",
+                    1.6180232478291146e-06
+                ],
+                [
+                    "sw",
+                    1.5690947066104854e-06
+                ],
+                [
+                    "mk",
+                    1.4540262327500386e-06
+                ],
+                [
+                    "ne",
+                    1.2383237617541454e-06
+                ],
+                [
+                    "lt",
+                    1.2046003803334315e-06
+                ],
+                [
+                    "sr",
+                    1.0837439958777395e-06
+                ],
+                [
+                    "ka",
+                    9.76928390628018e-07
+                ],
+                [
+                    "lo",
+                    8.337063377439335e-07
+                ],
+                [
+                    "ln",
+                    7.051922352729889e-07
+                ],
+                [
+                    "mr",
+                    2.3544849625523057e-07
+                ],
+                [
+                    "gu",
+                    2.0912025888719654e-07
+                ],
+                [
+                    "tt",
+                    1.9443619692083303e-07
+                ],
+                [
+                    "kn",
+                    1.9072636803230125e-07
+                ],
+                [
+                    "lb",
+                    1.6595963359122834e-07
+                ],
+                [
+                    "am",
+                    1.3468175552588946e-07
+                ],
+                [
+                    "tg",
+                    8.868281042850867e-08
+                ],
+                [
+                    "so",
+                    7.61428893270022e-08
+                ],
+                [
+                    "as",
+                    7.478075048084065e-08
+                ],
+                [
+                    "su",
+                    1.896622947583637e-08
+                ],
+                [
+                    "ha",
+                    7.617684261163049e-09
+                ],
+                [
+                    "uz",
+                    7.361404374961467e-09
+                ],
+                [
+                    "ba",
+                    6.61545618285686e-09
+                ],
+                [
+                    "tk",
+                    5.4782161029720555e-09
+                ],
+                [
+                    "mg",
+                    3.904016221412121e-09
+                ]
+            ]
+        }
+    }
+}

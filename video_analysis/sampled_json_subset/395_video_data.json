@@ -1,0 +1,764 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/395_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/395_video_audio.wav",
+    "language": "nl",
+    "length_sec": 59.03,
+    "vad_duration_sec": 58.492875,
+    "total_segment_length_sec": 58.199999999999996,
+    "word_count": -1,
+    "tokens": [],
+    "types": [],
+    "mean_sentence_length_words": -1.0,
+    "wpm": -1,
+    "spm": -1,
+    "average_ptr": -1,
+    "transcript_text": " KFC kippenpouten, daar gaan we.  En we wilden daar het zellen, bloemen we in deponeren.  Twee e-lepels, zwak de peipa.  Twee e-lepels, gima laia saat.  E-lepels, noef het poeja.  E-lepels, uië poeja.  E-lepels, baardicapoeja.  En voor mixen met je eigen klouwtje.  Die keaia schaal, 340 milie de melk.  Goed verelijkt.  Een eitje erbij, aardpakken en roeren.  Stit het resultaat.  Vette vijf aflippen.  Balans, balans.  Vier pitte aan, olie drianken.  Kippenpouten.  Door de aiamelijk mix.  Door de bloemkrijge mix.  Effe aan de kant.  Kijk.  Alle pouten nog een keer door die mannenmoe zijn.  Heb je van die flinke flinke kletzas.  De vetvijverin.  Vetvijver heeft een chaatgeoje.  Pikkie zo'n geven.  Maar baardicapoeja.  Houd dat ding in bedwankt, chef.  Bijk, benengelen.  Goud bruine c voorl.  Uitlaten lekker op het bood.  Goeie cirkel neerleggen.  Sasi naar keuze in het midden.  Konijnen voelde tussen en rovenin.  Baardicapoeja.",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.46,
+                "end": 3.14,
+                "text": " KFC kippenpouten, daar gaan we.",
+                "no_speech_prob": 0.06044760346412659,
+                "avg_logprob": -0.6165870239568311,
+                "compression_ratio": 1.6553030303030303,
+                "temperature": 0.0
+            },
+            {
+                "id": 2,
+                "start": 3.14,
+                "end": 6.06,
+                "text": " En we wilden daar het zellen, bloemen we in deponeren.",
+                "no_speech_prob": 0.06044760346412659,
+                "avg_logprob": -0.6165870239568311,
+                "compression_ratio": 1.6553030303030303,
+                "temperature": 0.0
+            },
+            {
+                "id": 3,
+                "start": 6.06,
+                "end": 8.3,
+                "text": " Twee e-lepels, zwak de peipa.",
+                "no_speech_prob": 0.06044760346412659,
+                "avg_logprob": -0.6165870239568311,
+                "compression_ratio": 1.6553030303030303,
+                "temperature": 0.0
+            },
+            {
+                "id": 4,
+                "start": 8.3,
+                "end": 10.46,
+                "text": " Twee e-lepels, gima laia saat.",
+                "no_speech_prob": 0.06044760346412659,
+                "avg_logprob": -0.6165870239568311,
+                "compression_ratio": 1.6553030303030303,
+                "temperature": 0.0
+            },
+            {
+                "id": 5,
+                "start": 10.46,
+                "end": 11.9,
+                "text": " E-lepels, noef het poeja.",
+                "no_speech_prob": 0.06044760346412659,
+                "avg_logprob": -0.6165870239568311,
+                "compression_ratio": 1.6553030303030303,
+                "temperature": 0.0
+            },
+            {
+                "id": 6,
+                "start": 11.9,
+                "end": 13.34,
+                "text": " E-lepels, uië poeja.",
+                "no_speech_prob": 0.06044760346412659,
+                "avg_logprob": -0.6165870239568311,
+                "compression_ratio": 1.6553030303030303,
+                "temperature": 0.0
+            },
+            {
+                "id": 7,
+                "start": 13.34,
+                "end": 15.06,
+                "text": " E-lepels, baardicapoeja.",
+                "no_speech_prob": 0.06044760346412659,
+                "avg_logprob": -0.6165870239568311,
+                "compression_ratio": 1.6553030303030303,
+                "temperature": 0.0
+            },
+            {
+                "id": 8,
+                "start": 15.06,
+                "end": 17.06,
+                "text": " En voor mixen met je eigen klouwtje.",
+                "no_speech_prob": 0.06044760346412659,
+                "avg_logprob": -0.6165870239568311,
+                "compression_ratio": 1.6553030303030303,
+                "temperature": 0.0
+            },
+            {
+                "id": 9,
+                "start": 17.06,
+                "end": 19.78,
+                "text": " Die keaia schaal, 340 milie de melk.",
+                "no_speech_prob": 0.06044760346412659,
+                "avg_logprob": -0.6165870239568311,
+                "compression_ratio": 1.6553030303030303,
+                "temperature": 0.0
+            },
+            {
+                "id": 10,
+                "start": 19.78,
+                "end": 20.58,
+                "text": " Goed verelijkt.",
+                "no_speech_prob": 0.06044760346412659,
+                "avg_logprob": -0.6165870239568311,
+                "compression_ratio": 1.6553030303030303,
+                "temperature": 0.0
+            },
+            {
+                "id": 11,
+                "start": 20.58,
+                "end": 23.5,
+                "text": " Een eitje erbij, aardpakken en roeren.",
+                "no_speech_prob": 0.06044760346412659,
+                "avg_logprob": -0.6165870239568311,
+                "compression_ratio": 1.6553030303030303,
+                "temperature": 0.0
+            },
+            {
+                "id": 12,
+                "start": 23.5,
+                "end": 24.98,
+                "text": " Stit het resultaat.",
+                "no_speech_prob": 0.06044760346412659,
+                "avg_logprob": -0.6165870239568311,
+                "compression_ratio": 1.6553030303030303,
+                "temperature": 0.0
+            },
+            {
+                "id": 13,
+                "start": 24.98,
+                "end": 26.14,
+                "text": " Vette vijf aflippen.",
+                "no_speech_prob": 0.06044760346412659,
+                "avg_logprob": -0.6165870239568311,
+                "compression_ratio": 1.6553030303030303,
+                "temperature": 0.0
+            },
+            {
+                "id": 14,
+                "start": 26.14,
+                "end": 27.46,
+                "text": " Balans, balans.",
+                "no_speech_prob": 0.06044760346412659,
+                "avg_logprob": -0.6165870239568311,
+                "compression_ratio": 1.6553030303030303,
+                "temperature": 0.0
+            },
+            {
+                "id": 15,
+                "start": 27.46,
+                "end": 29.46,
+                "text": " Vier pitte aan, olie drianken.",
+                "no_speech_prob": 0.06044760346412659,
+                "avg_logprob": -0.6165870239568311,
+                "compression_ratio": 1.6553030303030303,
+                "temperature": 0.0
+            },
+            {
+                "id": 16,
+                "start": 29.46,
+                "end": 30.82,
+                "text": " Kippenpouten.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 17,
+                "start": 30.82,
+                "end": 32.34,
+                "text": " Door de aiamelijk mix.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 18,
+                "start": 32.34,
+                "end": 33.7,
+                "text": " Door de bloemkrijge mix.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 19,
+                "start": 33.7,
+                "end": 34.82,
+                "text": " Effe aan de kant.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 20,
+                "start": 34.82,
+                "end": 36.14,
+                "text": " Kijk.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 21,
+                "start": 36.14,
+                "end": 38.18,
+                "text": " Alle pouten nog een keer door die mannenmoe zijn.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 22,
+                "start": 38.18,
+                "end": 40.58,
+                "text": " Heb je van die flinke flinke kletzas.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 23,
+                "start": 40.58,
+                "end": 41.94,
+                "text": " De vetvijverin.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 24,
+                "start": 41.94,
+                "end": 43.34,
+                "text": " Vetvijver heeft een chaatgeoje.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 25,
+                "start": 43.34,
+                "end": 44.3,
+                "text": " Pikkie zo'n geven.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 26,
+                "start": 44.3,
+                "end": 44.94,
+                "text": " Maar baardicapoeja.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 27,
+                "start": 44.94,
+                "end": 46.62,
+                "text": " Houd dat ding in bedwankt, chef.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 28,
+                "start": 46.62,
+                "end": 48.46,
+                "text": " Bijk, benengelen.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 29,
+                "start": 48.46,
+                "end": 50.14,
+                "text": " Goud bruine c voorl.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 30,
+                "start": 50.14,
+                "end": 52.34,
+                "text": " Uitlaten lekker op het bood.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 31,
+                "start": 52.34,
+                "end": 54.02,
+                "text": " Goeie cirkel neerleggen.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 32,
+                "start": 54.02,
+                "end": 55.66,
+                "text": " Sasi naar keuze in het midden.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 33,
+                "start": 55.66,
+                "end": 57.46,
+                "text": " Konijnen voelde tussen en rovenin.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            },
+            {
+                "id": 34,
+                "start": 57.46,
+                "end": 58.66,
+                "text": " Baardicapoeja.",
+                "no_speech_prob": 0.25001224875450134,
+                "avg_logprob": -0.6074605399259815,
+                "compression_ratio": 1.604810996563574,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "nl",
+            "duration": 58.956875,
+            "duration_after_vad": 58.492875,
+            "language_probability": 0.9951360821723938,
+            "all_language_probs": [
+                [
+                    "nl",
+                    0.9951360821723938
+                ],
+                [
+                    "el",
+                    0.0009559671161696315
+                ],
+                [
+                    "pl",
+                    0.0005937801324762404
+                ],
+                [
+                    "en",
+                    0.0005519395926967263
+                ],
+                [
+                    "pt",
+                    0.000432787521276623
+                ],
+                [
+                    "af",
+                    0.00028928156825713813
+                ],
+                [
+                    "de",
+                    0.0002694141585379839
+                ],
+                [
+                    "fr",
+                    0.00023237269488163292
+                ],
+                [
+                    "nn",
+                    0.00021715255570597947
+                ],
+                [
+                    "tr",
+                    0.00021382384875323623
+                ],
+                [
+                    "ar",
+                    0.00013232787023298442
+                ],
+                [
+                    "it",
+                    0.00012445144238881767
+                ],
+                [
+                    "la",
+                    9.504613990429789e-05
+                ],
+                [
+                    "ja",
+                    8.312150748679414e-05
+                ],
+                [
+                    "fi",
+                    6.762398697901517e-05
+                ],
+                [
+                    "cy",
+                    6.375627708621323e-05
+                ],
+                [
+                    "br",
+                    5.644647899316624e-05
+                ],
+                [
+                    "ko",
+                    5.492057971423492e-05
+                ],
+                [
+                    "is",
+                    4.4115578930359334e-05
+                ],
+                [
+                    "es",
+                    4.343705586506985e-05
+                ],
+                [
+                    "hi",
+                    2.9072371034999378e-05
+                ],
+                [
+                    "cs",
+                    2.7972308089374565e-05
+                ],
+                [
+                    "da",
+                    2.7741369194700383e-05
+                ],
+                [
+                    "jw",
+                    2.511363163648639e-05
+                ],
+                [
+                    "km",
+                    2.107190084643662e-05
+                ],
+                [
+                    "hu",
+                    2.0809549823752604e-05
+                ],
+                [
+                    "eu",
+                    1.886347308754921e-05
+                ],
+                [
+                    "zh",
+                    1.7068728993763216e-05
+                ],
+                [
+                    "no",
+                    1.4328679753816687e-05
+                ],
+                [
+                    "ca",
+                    1.24666867122869e-05
+                ],
+                [
+                    "sv",
+                    9.982836672861595e-06
+                ],
+                [
+                    "vi",
+                    9.903893442242406e-06
+                ],
+                [
+                    "ro",
+                    8.636186976218596e-06
+                ],
+                [
+                    "oc",
+                    7.883784746809397e-06
+                ],
+                [
+                    "gl",
+                    7.611305136379087e-06
+                ],
+                [
+                    "ru",
+                    7.104889391484903e-06
+                ],
+                [
+                    "et",
+                    6.804191798437387e-06
+                ],
+                [
+                    "haw",
+                    5.83763812755933e-06
+                ],
+                [
+                    "yi",
+                    5.593336027231999e-06
+                ],
+                [
+                    "id",
+                    5.562891146837501e-06
+                ],
+                [
+                    "sn",
+                    5.2501204663713e-06
+                ],
+                [
+                    "yo",
+                    4.6816462599963415e-06
+                ],
+                [
+                    "ur",
+                    3.9555902731081005e-06
+                ],
+                [
+                    "lv",
+                    3.834690232906723e-06
+                ],
+                [
+                    "ht",
+                    3.5775678952632006e-06
+                ],
+                [
+                    "tl",
+                    2.8939496132807108e-06
+                ],
+                [
+                    "mi",
+                    2.661471398823778e-06
+                ],
+                [
+                    "ta",
+                    2.1732905679527903e-06
+                ],
+                [
+                    "th",
+                    2.1181838292250177e-06
+                ],
+                [
+                    "bg",
+                    2.103564838762395e-06
+                ],
+                [
+                    "sq",
+                    1.9680442164826673e-06
+                ],
+                [
+                    "he",
+                    1.9401027202547994e-06
+                ],
+                [
+                    "uk",
+                    1.8036759001915925e-06
+                ],
+                [
+                    "ms",
+                    1.6526192894161795e-06
+                ],
+                [
+                    "bn",
+                    1.5572328493362875e-06
+                ],
+                [
+                    "ml",
+                    1.1725040849341894e-06
+                ],
+                [
+                    "sl",
+                    1.0212678489551763e-06
+                ],
+                [
+                    "hy",
+                    9.416161219633068e-07
+                ],
+                [
+                    "fo",
+                    8.309875170198211e-07
+                ],
+                [
+                    "lt",
+                    6.338880780276668e-07
+                ],
+                [
+                    "my",
+                    5.509268703463022e-07
+                ],
+                [
+                    "pa",
+                    5.432770535662712e-07
+                ],
+                [
+                    "si",
+                    5.338081336958567e-07
+                ],
+                [
+                    "mn",
+                    4.8516488959649e-07
+                ],
+                [
+                    "sa",
+                    4.670802695727616e-07
+                ],
+                [
+                    "hr",
+                    4.3487452217050304e-07
+                ],
+                [
+                    "bo",
+                    3.5102470974379685e-07
+                ],
+                [
+                    "sk",
+                    2.8631720283556206e-07
+                ],
+                [
+                    "mt",
+                    2.577480131549237e-07
+                ],
+                [
+                    "bs",
+                    2.470973470281024e-07
+                ],
+                [
+                    "te",
+                    2.3922311243040895e-07
+                ],
+                [
+                    "kk",
+                    2.3571921303755516e-07
+                ],
+                [
+                    "ne",
+                    2.3025745576887857e-07
+                ],
+                [
+                    "az",
+                    1.8996774997503962e-07
+                ],
+                [
+                    "fa",
+                    1.4413706139748683e-07
+                ],
+                [
+                    "sd",
+                    1.3851865787728457e-07
+                ],
+                [
+                    "ln",
+                    1.2005547489479795e-07
+                ],
+                [
+                    "lo",
+                    9.604656980854998e-08
+                ],
+                [
+                    "sw",
+                    7.302978133338911e-08
+                ],
+                [
+                    "lb",
+                    7.003889379575412e-08
+                ],
+                [
+                    "be",
+                    6.196338375730193e-08
+                ],
+                [
+                    "ps",
+                    6.124288631781383e-08
+                ],
+                [
+                    "mk",
+                    3.597297748569872e-08
+                ],
+                [
+                    "am",
+                    3.452289476513215e-08
+                ],
+                [
+                    "ka",
+                    2.4732614178901713e-08
+                ],
+                [
+                    "sr",
+                    2.322753900330099e-08
+                ],
+                [
+                    "kn",
+                    1.3537964527188251e-08
+                ],
+                [
+                    "mr",
+                    1.2676593996729935e-08
+                ],
+                [
+                    "so",
+                    1.192276233297207e-08
+                ],
+                [
+                    "gu",
+                    1.1545671085855247e-08
+                ],
+                [
+                    "tt",
+                    1.1207536232404891e-08
+                ],
+                [
+                    "as",
+                    5.018490512043172e-09
+                ],
+                [
+                    "tg",
+                    3.2576745745416247e-09
+                ],
+                [
+                    "su",
+                    2.6321842483412183e-09
+                ],
+                [
+                    "uz",
+                    1.2755193568025902e-09
+                ],
+                [
+                    "ha",
+                    9.452928440012442e-10
+                ],
+                [
+                    "mg",
+                    7.572843463421464e-10
+                ],
+                [
+                    "ba",
+                    6.771777028014014e-10
+                ],
+                [
+                    "tk",
+                    5.883512010917968e-10
+                ]
+            ]
+        }
+    }
+}

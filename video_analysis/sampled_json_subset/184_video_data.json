@@ -1,0 +1,584 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/184_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/184_video_audio.wav",
+    "language": "nl",
+    "length_sec": 53.1,
+    "vad_duration_sec": 52.7360625,
+    "total_segment_length_sec": 53.0,
+    "word_count": -1,
+    "tokens": [],
+    "types": [],
+    "mean_sentence_length_words": -1.0,
+    "wpm": -1,
+    "spm": -1,
+    "average_ptr": -1,
+    "transcript_text": " Ik ben het trouwensaat, dat mannen en kinderen maar moeten vragen wat ik ben, of ik een vrouw ben, of ik een man ben.  Verst of al, dat is dan een jouw business what I want to be.  Ik heb duidelijk geen vnor, ik heb duidelijk geen baat  en op deze leeftijd zal ik die zeker wel hebben, oké.  Van de kindjes vind ik niet erg.  Geleg jou graag uit wat ik ben, die verschat.  Van de mannen?  Wil je zijn boos?  Omdat je weet dat ik je vrouw kan steelen, daarom.  Daarom vragen we dat, hè?  Maar wacht, ik heb een liedje voor je gemaakt.  Volgens je me jou, breng me je vrouw.  Ik zou half vertellen dat ik wel vanaar hou.  En voor mij reis te brein.  O, wat zullen die doosjes meelen voor mij?  Fuck, Eiland!",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.37,
+                "end": 8.37,
+                "text": " Ik ben het trouwensaat, dat mannen en kinderen maar moeten vragen wat ik ben, of ik een vrouw ben, of ik een man ben.",
+                "no_speech_prob": 0.028082363307476044,
+                "avg_logprob": -0.4082618670598153,
+                "compression_ratio": 1.68348623853211,
+                "temperature": 0.0
+            },
+            {
+                "id": 2,
+                "start": 8.37,
+                "end": 14.37,
+                "text": " Verst of al, dat is dan een jouw business what I want to be.",
+                "no_speech_prob": 0.028082363307476044,
+                "avg_logprob": -0.4082618670598153,
+                "compression_ratio": 1.68348623853211,
+                "temperature": 0.0
+            },
+            {
+                "id": 3,
+                "start": 14.37,
+                "end": 19.37,
+                "text": " Ik heb duidelijk geen vnor, ik heb duidelijk geen baat",
+                "no_speech_prob": 0.028082363307476044,
+                "avg_logprob": -0.4082618670598153,
+                "compression_ratio": 1.68348623853211,
+                "temperature": 0.0
+            },
+            {
+                "id": 4,
+                "start": 19.37,
+                "end": 23.37,
+                "text": " en op deze leeftijd zal ik die zeker wel hebben, oké.",
+                "no_speech_prob": 0.028082363307476044,
+                "avg_logprob": -0.4082618670598153,
+                "compression_ratio": 1.68348623853211,
+                "temperature": 0.0
+            },
+            {
+                "id": 5,
+                "start": 23.37,
+                "end": 25.37,
+                "text": " Van de kindjes vind ik niet erg.",
+                "no_speech_prob": 0.028082363307476044,
+                "avg_logprob": -0.4082618670598153,
+                "compression_ratio": 1.68348623853211,
+                "temperature": 0.0
+            },
+            {
+                "id": 6,
+                "start": 25.37,
+                "end": 28.37,
+                "text": " Geleg jou graag uit wat ik ben, die verschat.",
+                "no_speech_prob": 0.028082363307476044,
+                "avg_logprob": -0.4082618670598153,
+                "compression_ratio": 1.68348623853211,
+                "temperature": 0.0
+            },
+            {
+                "id": 7,
+                "start": 28.37,
+                "end": 30.37,
+                "text": " Van de mannen?",
+                "no_speech_prob": 0.006578095722943544,
+                "avg_logprob": -0.4307548352113859,
+                "compression_ratio": 1.4727272727272727,
+                "temperature": 0.0
+            },
+            {
+                "id": 8,
+                "start": 30.37,
+                "end": 31.37,
+                "text": " Wil je zijn boos?",
+                "no_speech_prob": 0.006578095722943544,
+                "avg_logprob": -0.4307548352113859,
+                "compression_ratio": 1.4727272727272727,
+                "temperature": 0.0
+            },
+            {
+                "id": 9,
+                "start": 31.37,
+                "end": 33.37,
+                "text": " Omdat je weet dat ik je vrouw kan steelen, daarom.",
+                "no_speech_prob": 0.006578095722943544,
+                "avg_logprob": -0.4307548352113859,
+                "compression_ratio": 1.4727272727272727,
+                "temperature": 0.0
+            },
+            {
+                "id": 10,
+                "start": 33.37,
+                "end": 35.37,
+                "text": " Daarom vragen we dat, hè?",
+                "no_speech_prob": 0.006578095722943544,
+                "avg_logprob": -0.4307548352113859,
+                "compression_ratio": 1.4727272727272727,
+                "temperature": 0.0
+            },
+            {
+                "id": 11,
+                "start": 35.37,
+                "end": 37.37,
+                "text": " Maar wacht, ik heb een liedje voor je gemaakt.",
+                "no_speech_prob": 0.006578095722943544,
+                "avg_logprob": -0.4307548352113859,
+                "compression_ratio": 1.4727272727272727,
+                "temperature": 0.0
+            },
+            {
+                "id": 12,
+                "start": 37.37,
+                "end": 41.37,
+                "text": " Volgens je me jou, breng me je vrouw.",
+                "no_speech_prob": 0.006578095722943544,
+                "avg_logprob": -0.4307548352113859,
+                "compression_ratio": 1.4727272727272727,
+                "temperature": 0.0
+            },
+            {
+                "id": 13,
+                "start": 41.37,
+                "end": 44.37,
+                "text": " Ik zou half vertellen dat ik wel vanaar hou.",
+                "no_speech_prob": 0.006578095722943544,
+                "avg_logprob": -0.4307548352113859,
+                "compression_ratio": 1.4727272727272727,
+                "temperature": 0.0
+            },
+            {
+                "id": 14,
+                "start": 44.37,
+                "end": 47.37,
+                "text": " En voor mij reis te brein.",
+                "no_speech_prob": 0.006578095722943544,
+                "avg_logprob": -0.4307548352113859,
+                "compression_ratio": 1.4727272727272727,
+                "temperature": 0.0
+            },
+            {
+                "id": 15,
+                "start": 47.37,
+                "end": 51.37,
+                "text": " O, wat zullen die doosjes meelen voor mij?",
+                "no_speech_prob": 0.006578095722943544,
+                "avg_logprob": -0.4307548352113859,
+                "compression_ratio": 1.4727272727272727,
+                "temperature": 0.0
+            },
+            {
+                "id": 16,
+                "start": 51.37,
+                "end": 53.37,
+                "text": " Fuck, Eiland!",
+                "no_speech_prob": 0.006578095722943544,
+                "avg_logprob": -0.4307548352113859,
+                "compression_ratio": 1.4727272727272727,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "nl",
+            "duration": 53.1040625,
+            "duration_after_vad": 52.7360625,
+            "language_probability": 0.9321728944778442,
+            "all_language_probs": [
+                [
+                    "nl",
+                    0.9321728944778442
+                ],
+                [
+                    "en",
+                    0.02528836391866207
+                ],
+                [
+                    "af",
+                    0.022440601140260696
+                ],
+                [
+                    "ar",
+                    0.0065577165223658085
+                ],
+                [
+                    "de",
+                    0.0025138789787888527
+                ],
+                [
+                    "yi",
+                    0.0022024710197001696
+                ],
+                [
+                    "pt",
+                    0.0020125017035752535
+                ],
+                [
+                    "ur",
+                    0.000930042180698365
+                ],
+                [
+                    "pl",
+                    0.0008914025384001434
+                ],
+                [
+                    "cy",
+                    0.0006602531066164374
+                ],
+                [
+                    "el",
+                    0.0005372434388846159
+                ],
+                [
+                    "hi",
+                    0.0005319626070559025
+                ],
+                [
+                    "fr",
+                    0.0004183114506304264
+                ],
+                [
+                    "la",
+                    0.0003479777369648218
+                ],
+                [
+                    "tr",
+                    0.00019975972827523947
+                ],
+                [
+                    "haw",
+                    0.0001934961910592392
+                ],
+                [
+                    "he",
+                    0.00019321792933624238
+                ],
+                [
+                    "mi",
+                    0.00016355478146579117
+                ],
+                [
+                    "ru",
+                    0.00015933526447042823
+                ],
+                [
+                    "cs",
+                    0.00014532357454299927
+                ],
+                [
+                    "ko",
+                    0.0001139552186941728
+                ],
+                [
+                    "nn",
+                    0.00010536421177675948
+                ],
+                [
+                    "mt",
+                    9.076693095266819e-05
+                ],
+                [
+                    "ht",
+                    8.771086140768602e-05
+                ],
+                [
+                    "es",
+                    8.407876885030419e-05
+                ],
+                [
+                    "ja",
+                    7.481566717615351e-05
+                ],
+                [
+                    "tl",
+                    6.499638402601704e-05
+                ],
+                [
+                    "sn",
+                    6.475928967120126e-05
+                ],
+                [
+                    "sl",
+                    6.088343434385024e-05
+                ],
+                [
+                    "it",
+                    5.0229242333443835e-05
+                ],
+                [
+                    "br",
+                    4.3490726966410875e-05
+                ],
+                [
+                    "sv",
+                    3.837208714685403e-05
+                ],
+                [
+                    "uk",
+                    3.564654616639018e-05
+                ],
+                [
+                    "vi",
+                    3.1120067433221266e-05
+                ],
+                [
+                    "yo",
+                    3.043598189833574e-05
+                ],
+                [
+                    "no",
+                    2.8560047212522477e-05
+                ],
+                [
+                    "jw",
+                    2.610012234072201e-05
+                ],
+                [
+                    "da",
+                    2.519910594855901e-05
+                ],
+                [
+                    "is",
+                    2.2263981009018607e-05
+                ],
+                [
+                    "mn",
+                    2.182937714678701e-05
+                ],
+                [
+                    "hy",
+                    2.178080285375472e-05
+                ],
+                [
+                    "id",
+                    2.1282845409587026e-05
+                ],
+                [
+                    "bg",
+                    2.051222327281721e-05
+                ],
+                [
+                    "pa",
+                    1.960454392246902e-05
+                ],
+                [
+                    "zh",
+                    1.634810905670747e-05
+                ],
+                [
+                    "ms",
+                    1.5978757801349275e-05
+                ],
+                [
+                    "oc",
+                    1.5830479242140427e-05
+                ],
+                [
+                    "ca",
+                    1.5620567864971235e-05
+                ],
+                [
+                    "fa",
+                    1.4511230801872443e-05
+                ],
+                [
+                    "km",
+                    1.2797302588296589e-05
+                ],
+                [
+                    "az",
+                    1.249587057827739e-05
+                ],
+                [
+                    "ro",
+                    1.2398697435855865e-05
+                ],
+                [
+                    "fo",
+                    1.2289030564716086e-05
+                ],
+                [
+                    "ta",
+                    1.00444494819385e-05
+                ],
+                [
+                    "sa",
+                    8.789713319856673e-06
+                ],
+                [
+                    "ml",
+                    8.70675103215035e-06
+                ],
+                [
+                    "th",
+                    8.180702934623696e-06
+                ],
+                [
+                    "bn",
+                    8.090678420558106e-06
+                ],
+                [
+                    "bs",
+                    6.809364094806369e-06
+                ],
+                [
+                    "lv",
+                    6.585476512555033e-06
+                ],
+                [
+                    "ps",
+                    5.774222699983511e-06
+                ],
+                [
+                    "sq",
+                    5.74031855649082e-06
+                ],
+                [
+                    "sw",
+                    5.207027697906597e-06
+                ],
+                [
+                    "ka",
+                    4.819306013814639e-06
+                ],
+                [
+                    "sd",
+                    4.734595677291509e-06
+                ],
+                [
+                    "gl",
+                    4.263654318492627e-06
+                ],
+                [
+                    "sk",
+                    4.137775704293745e-06
+                ],
+                [
+                    "kk",
+                    4.08449432143243e-06
+                ],
+                [
+                    "si",
+                    3.113026195933344e-06
+                ],
+                [
+                    "hu",
+                    3.0491080451611197e-06
+                ],
+                [
+                    "bo",
+                    2.752961563601275e-06
+                ],
+                [
+                    "hr",
+                    2.1257903881632956e-06
+                ],
+                [
+                    "my",
+                    2.052727950285771e-06
+                ],
+                [
+                    "lb",
+                    1.750704996084096e-06
+                ],
+                [
+                    "ln",
+                    1.700768507362227e-06
+                ],
+                [
+                    "fi",
+                    1.5639849380022497e-06
+                ],
+                [
+                    "eu",
+                    1.5508685464737937e-06
+                ],
+                [
+                    "lt",
+                    1.4293376580098993e-06
+                ],
+                [
+                    "lo",
+                    1.424862716703501e-06
+                ],
+                [
+                    "be",
+                    1.4088119542066124e-06
+                ],
+                [
+                    "et",
+                    1.1839018725368078e-06
+                ],
+                [
+                    "mk",
+                    1.1544899507498485e-06
+                ],
+                [
+                    "ne",
+                    8.269902309621102e-07
+                ],
+                [
+                    "tt",
+                    7.65723314088973e-07
+                ],
+                [
+                    "am",
+                    6.764900035705068e-07
+                ],
+                [
+                    "sr",
+                    5.445820647764776e-07
+                ],
+                [
+                    "te",
+                    4.6527651420547045e-07
+                ],
+                [
+                    "so",
+                    4.4217159711479326e-07
+                ],
+                [
+                    "gu",
+                    3.85612310083161e-07
+                ],
+                [
+                    "mr",
+                    3.340934711104637e-07
+                ],
+                [
+                    "tg",
+                    3.12610865194074e-07
+                ],
+                [
+                    "kn",
+                    2.796027445128857e-07
+                ],
+                [
+                    "as",
+                    2.0586357152296841e-07
+                ],
+                [
+                    "uz",
+                    3.262575631879372e-08
+                ],
+                [
+                    "ha",
+                    3.162824313562851e-08
+                ],
+                [
+                    "ba",
+                    2.375551311217805e-08
+                ],
+                [
+                    "su",
+                    2.2063188609422468e-08
+                ],
+                [
+                    "tk",
+                    2.0453704507872317e-08
+                ],
+                [
+                    "mg",
+                    1.0506257197562263e-08
+                ]
+            ]
+        }
+    }
+}

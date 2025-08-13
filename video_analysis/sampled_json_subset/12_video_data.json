@@ -1,0 +1,564 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/12_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/12_video_audio.wav",
+    "language": "id",
+    "length_sec": 42.83,
+    "vad_duration_sec": 42.794375,
+    "total_segment_length_sec": 42.68000000000001,
+    "word_count": -1,
+    "tokens": [],
+    "types": [],
+    "mean_sentence_length_words": -1.0,
+    "wpm": -1,
+    "spm": -1,
+    "average_ptr": -1,
+    "transcript_text": " Perpustokannya ini tersesitas di belanda lima lantai, gede banget  Tuh lihat deh ini holnya  Banyak tempat duduk orang duduk duduk, nah ini buku-buduknya tuh udah banyak banget  Ini cuma sebagian dari semua buku-buduknya guys  Gede aja deh bayangin lima lantai kayak beginian tuh  Yaa, bikin itu semua aku sih nih bagiannya  Nah, kalau ini tempat duduk duduk tuh buat bajar, belajar  Kalau itu tempat buat ujian  Sekarang ngomong pinjem buku nih, nah ini cara minjemnya  Salah service guys, kita tinggal pencet-tencet nih  Terus aja suka kita scan buku-nya  Pakai alat yang dari sedia itu  Nah, terus kalau udah udah tinggal 5xin, tas deh bau pulang  Yay!",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.0,
+                "end": 3.68,
+                "text": " Perpustokannya ini tersesitas di belanda lima lantai, gede banget",
+                "no_speech_prob": 0.19517546892166138,
+                "avg_logprob": -0.4842900412157178,
+                "compression_ratio": 1.81496062992126,
+                "temperature": 0.0
+            },
+            {
+                "id": 2,
+                "start": 3.68,
+                "end": 5.52,
+                "text": " Tuh lihat deh ini holnya",
+                "no_speech_prob": 0.19517546892166138,
+                "avg_logprob": -0.4842900412157178,
+                "compression_ratio": 1.81496062992126,
+                "temperature": 0.0
+            },
+            {
+                "id": 3,
+                "start": 5.52,
+                "end": 10.24,
+                "text": " Banyak tempat duduk orang duduk duduk, nah ini buku-buduknya tuh udah banyak banget",
+                "no_speech_prob": 0.19517546892166138,
+                "avg_logprob": -0.4842900412157178,
+                "compression_ratio": 1.81496062992126,
+                "temperature": 0.0
+            },
+            {
+                "id": 4,
+                "start": 10.24,
+                "end": 13.6,
+                "text": " Ini cuma sebagian dari semua buku-buduknya guys",
+                "no_speech_prob": 0.19517546892166138,
+                "avg_logprob": -0.4842900412157178,
+                "compression_ratio": 1.81496062992126,
+                "temperature": 0.0
+            },
+            {
+                "id": 5,
+                "start": 13.6,
+                "end": 17.24,
+                "text": " Gede aja deh bayangin lima lantai kayak beginian tuh",
+                "no_speech_prob": 0.19517546892166138,
+                "avg_logprob": -0.4842900412157178,
+                "compression_ratio": 1.81496062992126,
+                "temperature": 0.0
+            },
+            {
+                "id": 6,
+                "start": 17.24,
+                "end": 20.56,
+                "text": " Yaa, bikin itu semua aku sih nih bagiannya",
+                "no_speech_prob": 0.19517546892166138,
+                "avg_logprob": -0.4842900412157178,
+                "compression_ratio": 1.81496062992126,
+                "temperature": 0.0
+            },
+            {
+                "id": 7,
+                "start": 20.56,
+                "end": 24.48,
+                "text": " Nah, kalau ini tempat duduk duduk tuh buat bajar, belajar",
+                "no_speech_prob": 0.19517546892166138,
+                "avg_logprob": -0.4842900412157178,
+                "compression_ratio": 1.81496062992126,
+                "temperature": 0.0
+            },
+            {
+                "id": 8,
+                "start": 24.48,
+                "end": 26.48,
+                "text": " Kalau itu tempat buat ujian",
+                "no_speech_prob": 0.19517546892166138,
+                "avg_logprob": -0.4842900412157178,
+                "compression_ratio": 1.81496062992126,
+                "temperature": 0.0
+            },
+            {
+                "id": 9,
+                "start": 26.48,
+                "end": 29.84,
+                "text": " Sekarang ngomong pinjem buku nih, nah ini cara minjemnya",
+                "no_speech_prob": 0.19517546892166138,
+                "avg_logprob": -0.4842900412157178,
+                "compression_ratio": 1.81496062992126,
+                "temperature": 0.0
+            },
+            {
+                "id": 10,
+                "start": 30.08,
+                "end": 33.28,
+                "text": " Salah service guys, kita tinggal pencet-tencet nih",
+                "no_speech_prob": 0.008202661760151386,
+                "avg_logprob": -0.8091699083646139,
+                "compression_ratio": 1.3533834586466165,
+                "temperature": 0.0
+            },
+            {
+                "id": 11,
+                "start": 33.28,
+                "end": 35.92,
+                "text": " Terus aja suka kita scan buku-nya",
+                "no_speech_prob": 0.008202661760151386,
+                "avg_logprob": -0.8091699083646139,
+                "compression_ratio": 1.3533834586466165,
+                "temperature": 0.0
+            },
+            {
+                "id": 12,
+                "start": 35.92,
+                "end": 37.92,
+                "text": " Pakai alat yang dari sedia itu",
+                "no_speech_prob": 0.008202661760151386,
+                "avg_logprob": -0.8091699083646139,
+                "compression_ratio": 1.3533834586466165,
+                "temperature": 0.0
+            },
+            {
+                "id": 13,
+                "start": 37.92,
+                "end": 41.92,
+                "text": " Nah, terus kalau udah udah tinggal 5xin, tas deh bau pulang",
+                "no_speech_prob": 0.008202661760151386,
+                "avg_logprob": -0.8091699083646139,
+                "compression_ratio": 1.3533834586466165,
+                "temperature": 0.0
+            },
+            {
+                "id": 14,
+                "start": 41.92,
+                "end": 42.92,
+                "text": " Yay!",
+                "no_speech_prob": 0.008202661760151386,
+                "avg_logprob": -0.8091699083646139,
+                "compression_ratio": 1.3533834586466165,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "id",
+            "duration": 42.794375,
+            "duration_after_vad": 42.794375,
+            "language_probability": 0.9816684126853943,
+            "all_language_probs": [
+                [
+                    "id",
+                    0.9816684126853943
+                ],
+                [
+                    "jw",
+                    0.009122717194259167
+                ],
+                [
+                    "ms",
+                    0.0011372460285201669
+                ],
+                [
+                    "en",
+                    0.0011274439748376608
+                ],
+                [
+                    "tr",
+                    0.0009210568969137967
+                ],
+                [
+                    "ko",
+                    0.0008105834131129086
+                ],
+                [
+                    "tl",
+                    0.0006030458025634289
+                ],
+                [
+                    "th",
+                    0.0005055516376160085
+                ],
+                [
+                    "km",
+                    0.00047203779104165733
+                ],
+                [
+                    "nn",
+                    0.00045139301801100373
+                ],
+                [
+                    "ja",
+                    0.0004348806687630713
+                ],
+                [
+                    "pl",
+                    0.0003123849746771157
+                ],
+                [
+                    "hi",
+                    0.0002287585666636005
+                ],
+                [
+                    "zh",
+                    0.00021041130821686238
+                ],
+                [
+                    "ru",
+                    0.00019939133198931813
+                ],
+                [
+                    "haw",
+                    0.0001971687306649983
+                ],
+                [
+                    "es",
+                    0.00018153799464926124
+                ],
+                [
+                    "fi",
+                    0.00017845458933152258
+                ],
+                [
+                    "pt",
+                    0.0001721864682622254
+                ],
+                [
+                    "vi",
+                    0.0001708121271803975
+                ],
+                [
+                    "nl",
+                    0.00014647460193373263
+                ],
+                [
+                    "it",
+                    8.559952402720228e-05
+                ],
+                [
+                    "el",
+                    5.4551794164581224e-05
+                ],
+                [
+                    "de",
+                    5.398421490099281e-05
+                ],
+                [
+                    "te",
+                    5.0056056352332234e-05
+                ],
+                [
+                    "ta",
+                    4.923852611682378e-05
+                ],
+                [
+                    "la",
+                    4.672987051890232e-05
+                ],
+                [
+                    "ro",
+                    4.31469852628652e-05
+                ],
+                [
+                    "fr",
+                    3.660450965980999e-05
+                ],
+                [
+                    "cs",
+                    2.5907318558893166e-05
+                ],
+                [
+                    "ar",
+                    2.55414197454229e-05
+                ],
+                [
+                    "br",
+                    2.5276760425185785e-05
+                ],
+                [
+                    "si",
+                    2.0957430024282075e-05
+                ],
+                [
+                    "sn",
+                    2.050397415587213e-05
+                ],
+                [
+                    "ml",
+                    1.894337583507877e-05
+                ],
+                [
+                    "ur",
+                    1.6698668332537636e-05
+                ],
+                [
+                    "hr",
+                    1.6030919141485356e-05
+                ],
+                [
+                    "cy",
+                    1.3320247489900794e-05
+                ],
+                [
+                    "hu",
+                    1.2277368114155252e-05
+                ],
+                [
+                    "yo",
+                    9.391137609782163e-06
+                ],
+                [
+                    "bn",
+                    9.3153366833576e-06
+                ],
+                [
+                    "eu",
+                    8.498884199070744e-06
+                ],
+                [
+                    "be",
+                    7.703479241172317e-06
+                ],
+                [
+                    "ca",
+                    7.339237981796032e-06
+                ],
+                [
+                    "ne",
+                    7.1966660470934585e-06
+                ],
+                [
+                    "sk",
+                    7.133704912121175e-06
+                ],
+                [
+                    "he",
+                    6.237325578695163e-06
+                ],
+                [
+                    "sa",
+                    6.158606083772611e-06
+                ],
+                [
+                    "uk",
+                    5.82465418119682e-06
+                ],
+                [
+                    "my",
+                    4.351142251834972e-06
+                ],
+                [
+                    "da",
+                    4.254103259881958e-06
+                ],
+                [
+                    "mi",
+                    3.980525434599258e-06
+                ],
+                [
+                    "sv",
+                    3.9586061575391795e-06
+                ],
+                [
+                    "bg",
+                    3.130610593871097e-06
+                ],
+                [
+                    "lo",
+                    2.9602622362290276e-06
+                ],
+                [
+                    "mn",
+                    2.784839807645767e-06
+                ],
+                [
+                    "gl",
+                    2.682008471310837e-06
+                ],
+                [
+                    "sw",
+                    2.0137933915975736e-06
+                ],
+                [
+                    "bo",
+                    1.7208797089551808e-06
+                ],
+                [
+                    "ht",
+                    1.6901332173802075e-06
+                ],
+                [
+                    "mr",
+                    1.68702194969228e-06
+                ],
+                [
+                    "bs",
+                    1.5233388239721535e-06
+                ],
+                [
+                    "fa",
+                    1.4368371239470434e-06
+                ],
+                [
+                    "yi",
+                    1.4122857692200341e-06
+                ],
+                [
+                    "no",
+                    1.3897222288505873e-06
+                ],
+                [
+                    "sr",
+                    1.3867155530533637e-06
+                ],
+                [
+                    "et",
+                    1.3028911780565977e-06
+                ],
+                [
+                    "oc",
+                    1.2938733107148437e-06
+                ],
+                [
+                    "fo",
+                    1.2534253528428962e-06
+                ],
+                [
+                    "af",
+                    1.1700067261699587e-06
+                ],
+                [
+                    "sd",
+                    1.0831571444214205e-06
+                ],
+                [
+                    "lv",
+                    1.0438737945150933e-06
+                ],
+                [
+                    "kn",
+                    1.015501993606449e-06
+                ],
+                [
+                    "lt",
+                    9.930229225574294e-07
+                ],
+                [
+                    "hy",
+                    9.604829074305599e-07
+                ],
+                [
+                    "az",
+                    8.104244670903427e-07
+                ],
+                [
+                    "as",
+                    6.447959322031238e-07
+                ],
+                [
+                    "sl",
+                    6.251901254472614e-07
+                ],
+                [
+                    "kk",
+                    5.904482804908184e-07
+                ],
+                [
+                    "ps",
+                    5.840999506290245e-07
+                ],
+                [
+                    "pa",
+                    3.2082192547022714e-07
+                ],
+                [
+                    "is",
+                    3.12927767254223e-07
+                ],
+                [
+                    "ka",
+                    2.7004529101759545e-07
+                ],
+                [
+                    "su",
+                    2.4447052737741615e-07
+                ],
+                [
+                    "gu",
+                    2.13505472856923e-07
+                ],
+                [
+                    "ln",
+                    2.0057441929566266e-07
+                ],
+                [
+                    "sq",
+                    1.7578685174157727e-07
+                ],
+                [
+                    "mk",
+                    1.7460027379456733e-07
+                ],
+                [
+                    "am",
+                    9.65979367606451e-08
+                ],
+                [
+                    "so",
+                    9.634070607944523e-08
+                ],
+                [
+                    "mt",
+                    5.7000011821628505e-08
+                ],
+                [
+                    "tg",
+                    1.8077040309094627e-08
+                ],
+                [
+                    "tt",
+                    1.3000377663274776e-08
+                ],
+                [
+                    "ha",
+                    5.711414452491681e-09
+                ],
+                [
+                    "lb",
+                    1.647697644990842e-09
+                ],
+                [
+                    "uz",
+                    1.3336312054690325e-09
+                ],
+                [
+                    "ba",
+                    8.65981619746492e-10
+                ],
+                [
+                    "mg",
+                    6.597786761375346e-10
+                ],
+                [
+                    "tk",
+                    6.47884301763213e-10
+                ]
+            ]
+        }
+    }
+}

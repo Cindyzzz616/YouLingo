@@ -1,0 +1,720 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/955_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/955_video_audio.wav",
+    "language": "en",
+    "length_sec": 11.7,
+    "vad_duration_sec": 1.152,
+    "total_segment_length_sec": 1.0,
+    "word_count": 4,
+    "tokens": [
+        {
+            "text": "Thank",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "Thank",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 20053,
+            "word_family_frequency": 20053,
+            "phonemes": [
+                "θ",
+                "æ",
+                "ŋ",
+                "k"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "think",
+                    "bank",
+                    "tank",
+                    "Hank",
+                    "rank",
+                    "Yank",
+                    "sank",
+                    "shank",
+                    "dank",
+                    "Thanks",
+                    "thanked"
+                ],
+                "number": 11,
+                "frequency": 315.6061
+            },
+            "initial_consonant_fl": 21.0,
+            "final_consonant_fl": 65.0
+        },
+        {
+            "text": "you",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "you",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 821635,
+            "word_family_frequency": 821635,
+            "phonemes": [
+                "j",
+                "u"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "very",
+            "length": 4,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "very",
+                    "pos": "RB"
+                }
+            ],
+            "frequency": 119652,
+            "word_family_frequency": 119652,
+            "phonemes": [
+                "v",
+                "ɛ",
+                "r",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Jerry",
+                    "Merry",
+                    "Terry",
+                    "bury",
+                    "Sherry",
+                    "cherry",
+                    "Perry",
+                    "Kerry",
+                    "ferry",
+                    "Berry",
+                    "vary",
+                    "Derry",
+                    "veggie"
+                ],
+                "number": 13,
+                "frequency": 15.1448
+            },
+            "initial_consonant_fl": 29.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "much",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "much",
+                    "pos": "JJ"
+                }
+            ],
+            "frequency": 90827,
+            "word_family_frequency": 90827,
+            "phonemes": [
+                "m",
+                "ʌ",
+                "tʃ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "such",
+                    "touch",
+                    "match",
+                    "march",
+                    "Mum",
+                    "Mitch",
+                    "Dutch",
+                    "mud",
+                    "mug",
+                    "mutt",
+                    "Hutch",
+                    "mush",
+                    "muck",
+                    "Mach",
+                    "Muff",
+                    "mooch",
+                    "muss",
+                    "mull",
+                    "munch",
+                    "mulch"
+                ],
+                "number": 20,
+                "frequency": 30.349
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": 31.0
+        }
+    ],
+    "types": [
+        {
+            "text": "thank",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "thank",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 20053,
+            "word_family_frequency": 20053,
+            "phonemes": [
+                "θ",
+                "æ",
+                "ŋ",
+                "k"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 21.0,
+            "final_consonant_fl": 65.0
+        },
+        {
+            "text": "you",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "you",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 821635,
+            "word_family_frequency": 821635,
+            "phonemes": [
+                "j",
+                "u"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "very",
+            "length": 4,
+            "syllable_count": 2,
+            "tags": [
+                {
+                    "token": "very",
+                    "pos": "RB"
+                }
+            ],
+            "frequency": 119652,
+            "word_family_frequency": 119652,
+            "phonemes": [
+                "v",
+                "ɛ",
+                "r",
+                "i"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "Jerry",
+                    "Merry",
+                    "Terry",
+                    "bury",
+                    "Sherry",
+                    "cherry",
+                    "Perry",
+                    "Kerry",
+                    "ferry",
+                    "Berry",
+                    "vary",
+                    "Derry",
+                    "veggie"
+                ],
+                "number": 13,
+                "frequency": 15.1448
+            },
+            "initial_consonant_fl": 29.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "much",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "much",
+                    "pos": "JJ"
+                }
+            ],
+            "frequency": 90827,
+            "word_family_frequency": 90827,
+            "phonemes": [
+                "m",
+                "ʌ",
+                "tʃ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "such",
+                    "touch",
+                    "match",
+                    "march",
+                    "Mum",
+                    "Mitch",
+                    "Dutch",
+                    "mud",
+                    "mug",
+                    "mutt",
+                    "Hutch",
+                    "mush",
+                    "muck",
+                    "Mach",
+                    "Muff",
+                    "mooch",
+                    "muss",
+                    "mull",
+                    "munch",
+                    "mulch"
+                ],
+                "number": 20,
+                "frequency": 30.349
+            },
+            "initial_consonant_fl": 59.0,
+            "final_consonant_fl": 31.0
+        }
+    ],
+    "mean_sentence_length_words": 4.0,
+    "wpm": 208.33333333333334,
+    "spm": 260.4166666666667,
+    "average_ptr": 0.92,
+    "transcript_text": " Thank you very much.",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 0.05,
+                "end": 1.05,
+                "text": " Thank you very much.",
+                "no_speech_prob": 0.2621196508407593,
+                "avg_logprob": -0.9709277004003525,
+                "compression_ratio": 0.7142857142857143,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 11.702875,
+            "duration_after_vad": 1.152,
+            "language_probability": 0.4232538342475891,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.4232538342475891
+                ],
+                [
+                    "ru",
+                    0.06077845022082329
+                ],
+                [
+                    "de",
+                    0.0496380589902401
+                ],
+                [
+                    "fr",
+                    0.040639981627464294
+                ],
+                [
+                    "pl",
+                    0.034296851605176926
+                ],
+                [
+                    "nl",
+                    0.032273005694150925
+                ],
+                [
+                    "es",
+                    0.028755605220794678
+                ],
+                [
+                    "pt",
+                    0.026700736954808235
+                ],
+                [
+                    "cy",
+                    0.02411516010761261
+                ],
+                [
+                    "nn",
+                    0.02278057672083378
+                ],
+                [
+                    "it",
+                    0.021254049614071846
+                ],
+                [
+                    "el",
+                    0.019731443375349045
+                ],
+                [
+                    "ja",
+                    0.018265768885612488
+                ],
+                [
+                    "ar",
+                    0.018227919936180115
+                ],
+                [
+                    "hi",
+                    0.017226506024599075
+                ],
+                [
+                    "la",
+                    0.013935782946646214
+                ],
+                [
+                    "zh",
+                    0.013618739321827888
+                ],
+                [
+                    "he",
+                    0.013162840157747269
+                ],
+                [
+                    "tr",
+                    0.011057215742766857
+                ],
+                [
+                    "ko",
+                    0.010922612622380257
+                ],
+                [
+                    "sv",
+                    0.00706135481595993
+                ],
+                [
+                    "ur",
+                    0.00647834362462163
+                ],
+                [
+                    "ro",
+                    0.005064303521066904
+                ],
+                [
+                    "uk",
+                    0.00498069915920496
+                ],
+                [
+                    "cs",
+                    0.004438306204974651
+                ],
+                [
+                    "sl",
+                    0.00399367418140173
+                ],
+                [
+                    "no",
+                    0.003966908901929855
+                ],
+                [
+                    "hu",
+                    0.00310356542468071
+                ],
+                [
+                    "jw",
+                    0.002830103039741516
+                ],
+                [
+                    "ca",
+                    0.0027739719953387976
+                ],
+                [
+                    "sa",
+                    0.0027653533034026623
+                ],
+                [
+                    "vi",
+                    0.0026490814052522182
+                ],
+                [
+                    "tl",
+                    0.0025316989049315453
+                ],
+                [
+                    "ms",
+                    0.0025132191367447376
+                ],
+                [
+                    "km",
+                    0.0024811362382024527
+                ],
+                [
+                    "da",
+                    0.002462517935782671
+                ],
+                [
+                    "bg",
+                    0.002267844509333372
+                ],
+                [
+                    "haw",
+                    0.0022609622683376074
+                ],
+                [
+                    "th",
+                    0.002049909671768546
+                ],
+                [
+                    "sk",
+                    0.001966223120689392
+                ],
+                [
+                    "mi",
+                    0.001734982244670391
+                ],
+                [
+                    "ml",
+                    0.0015284450491890311
+                ],
+                [
+                    "hr",
+                    0.0015080730663612485
+                ],
+                [
+                    "fa",
+                    0.0014816670445725322
+                ],
+                [
+                    "ta",
+                    0.0014530173502862453
+                ],
+                [
+                    "fi",
+                    0.0014391328440979123
+                ],
+                [
+                    "gl",
+                    0.0014069421449676156
+                ],
+                [
+                    "bn",
+                    0.0013840598985552788
+                ],
+                [
+                    "si",
+                    0.0013820313615724444
+                ],
+                [
+                    "br",
+                    0.0013498775660991669
+                ],
+                [
+                    "te",
+                    0.0013385325437411666
+                ],
+                [
+                    "id",
+                    0.0012713934993371367
+                ],
+                [
+                    "bs",
+                    0.0012073240941390395
+                ],
+                [
+                    "sn",
+                    0.0011337120085954666
+                ],
+                [
+                    "af",
+                    0.0007143709226511419
+                ],
+                [
+                    "yi",
+                    0.0006620563217438757
+                ],
+                [
+                    "lv",
+                    0.0006603223155252635
+                ],
+                [
+                    "oc",
+                    0.0006554760620929301
+                ],
+                [
+                    "sw",
+                    0.0005936394445598125
+                ],
+                [
+                    "sq",
+                    0.0005830236477777362
+                ],
+                [
+                    "lt",
+                    0.0005505761946551502
+                ],
+                [
+                    "eu",
+                    0.00046302139526233077
+                ],
+                [
+                    "sr",
+                    0.0004340931191109121
+                ],
+                [
+                    "bo",
+                    0.00043312841444276273
+                ],
+                [
+                    "be",
+                    0.0004330934607423842
+                ],
+                [
+                    "mt",
+                    0.0004319453437346965
+                ],
+                [
+                    "hy",
+                    0.0004260314744897187
+                ],
+                [
+                    "my",
+                    0.00039336009649559855
+                ],
+                [
+                    "mn",
+                    0.00032239858410321176
+                ],
+                [
+                    "pa",
+                    0.00032162436400540173
+                ],
+                [
+                    "is",
+                    0.00031157967168837786
+                ],
+                [
+                    "az",
+                    0.00027819222304970026
+                ],
+                [
+                    "sd",
+                    0.0002740867203101516
+                ],
+                [
+                    "ka",
+                    0.00025140834623016417
+                ],
+                [
+                    "yo",
+                    0.00024377278168685734
+                ],
+                [
+                    "fo",
+                    0.0002227264194516465
+                ],
+                [
+                    "ht",
+                    0.00020325930381659418
+                ],
+                [
+                    "ne",
+                    0.0001937207707669586
+                ],
+                [
+                    "ps",
+                    0.00014795016613788903
+                ],
+                [
+                    "kk",
+                    0.0001411249686498195
+                ],
+                [
+                    "mk",
+                    0.00013887224486097693
+                ],
+                [
+                    "et",
+                    0.0001261155994143337
+                ],
+                [
+                    "kn",
+                    0.00012045619951095432
+                ],
+                [
+                    "lo",
+                    0.0001057950357790105
+                ],
+                [
+                    "mr",
+                    8.59932042658329e-05
+                ],
+                [
+                    "gu",
+                    4.9691268941387534e-05
+                ],
+                [
+                    "ln",
+                    4.47963502665516e-05
+                ],
+                [
+                    "as",
+                    3.3032520150300115e-05
+                ],
+                [
+                    "am",
+                    2.8974738597753458e-05
+                ],
+                [
+                    "so",
+                    1.3178884728404228e-05
+                ],
+                [
+                    "tt",
+                    5.073451575299259e-06
+                ],
+                [
+                    "tg",
+                    3.807213715845137e-06
+                ],
+                [
+                    "lb",
+                    3.380897851457121e-06
+                ],
+                [
+                    "su",
+                    6.910412935212662e-07
+                ],
+                [
+                    "ha",
+                    2.3319832109791605e-07
+                ],
+                [
+                    "uz",
+                    2.0301449410453642e-07
+                ],
+                [
+                    "ba",
+                    1.539513192483355e-07
+                ],
+                [
+                    "tk",
+                    1.320816380712131e-07
+                ],
+                [
+                    "mg",
+                    6.612207670286807e-08
+                ]
+            ]
+        }
+    }
+}

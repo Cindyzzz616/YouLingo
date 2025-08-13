@@ -1,0 +1,1032 @@
+{
+    "path": "/Users/cindyzhang/YouLingo/video_analysis/sampled_videos_subset/816_video.mp4",
+    "audio_path": "video_analysis/sampled_audios_subset/816_video_audio.wav",
+    "language": "en",
+    "length_sec": 9.2,
+    "vad_duration_sec": 2.435875,
+    "total_segment_length_sec": 2.0,
+    "word_count": 7,
+    "tokens": [
+        {
+            "text": "Stop",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "Stop",
+                    "pos": "VB"
+                }
+            ],
+            "frequency": 28170,
+            "word_family_frequency": 28170,
+            "phonemes": [
+                "s",
+                "t",
+                "ɑ",
+                "p"
+            ],
+            "phonological_neighbours": {
+                "list": [],
+                "number": -1,
+                "frequency": -1.0
+            },
+            "initial_consonant_fl": 85.0,
+            "final_consonant_fl": 43.0
+        },
+        {
+            "text": "them",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "them",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 167474,
+            "word_family_frequency": 868761,
+            "phonemes": [
+                "ð",
+                "ɛ",
+                "m"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "then",
+                    "gem",
+                    "Rem",
+                    "femme",
+                    "hem"
+                ],
+                "number": 5,
+                "frequency": 299.1176
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 42.0
+        },
+        {
+            "text": "at",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "at",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 524402,
+            "word_family_frequency": 524402,
+            "phonemes": [
+                "æ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "it",
+                    "out",
+                    "as",
+                    "am",
+                    "eat",
+                    "ass",
+                    "eight",
+                    "ought",
+                    "art",
+                    "ate",
+                    "add",
+                    "Ann",
+                    "Anne",
+                    "ad",
+                    "Ash",
+                    "Ave",
+                    "oat",
+                    "aught",
+                    "that",
+                    "act",
+                    "fat",
+                    "cat",
+                    "hat",
+                    "Aunt",
+                    "rat",
+                    "Matt",
+                    "sat",
+                    "bat",
+                    "Pat",
+                    "chat",
+                    "ant",
+                    "Nat",
+                    "aft",
+                    "mat",
+                    "Kat",
+                    "apt",
+                    "vat",
+                    "tat",
+                    "gat",
+                    "shat",
+                    "gnat"
+                ],
+                "number": 41,
+                "frequency": 1014.8656
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "death",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "death",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 22861,
+            "word_family_frequency": 22861,
+            "phonemes": [
+                "d",
+                "ɛ",
+                "θ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "dead",
+                    "deck",
+                    "Seth",
+                    "Beth",
+                    "deaf",
+                    "debt",
+                    "Del",
+                    "Deb",
+                    "den",
+                    "Des",
+                    "Dell",
+                    "meth",
+                    "doth",
+                    "depth",
+                    "deaths"
+                ],
+                "number": 15,
+                "frequency": 39.1216
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": 27.0
+        },
+        {
+            "text": "date",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "date",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 24032,
+            "word_family_frequency": 24032,
+            "phonemes": [
+                "d",
+                "eɪ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "wait",
+                    "days",
+                    "late",
+                    "hate",
+                    "doubt",
+                    "Dave",
+                    "weight",
+                    "gate",
+                    "mate",
+                    "fate",
+                    "dirt",
+                    "rate",
+                    "debt",
+                    "dame",
+                    "bait",
+                    "Dale",
+                    "dot",
+                    "Dane",
+                    "Tate",
+                    "dart",
+                    "Dade",
+                    "fait",
+                    "daze",
+                    "Dort",
+                    "day",
+                    "eight",
+                    "ate",
+                    "Dei",
+                    "data",
+                    "dates"
+                ],
+                "number": 30,
+                "frequency": 98.0915
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "dogs",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "dogs",
+                    "pos": "NNS"
+                }
+            ],
+            "frequency": 4402,
+            "word_family_frequency": 12966,
+            "phonemes": [
+                "d",
+                "ɑ",
+                "g",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "dolls",
+                    "doggy",
+                    "doggie",
+                    "digs",
+                    "hogs",
+                    "Dongs",
+                    "cogs",
+                    "jogs",
+                    "dog",
+                    "doggies"
+                ],
+                "number": 10,
+                "frequency": 21.302
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": 100.0
+        }
+    ],
+    "types": [
+        {
+            "text": "stop",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "stop",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 28170,
+            "word_family_frequency": 28170,
+            "phonemes": [
+                "s",
+                "t",
+                "ɑ",
+                "p"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "step",
+                    "stock",
+                    "swap",
+                    "stoop",
+                    "steep",
+                    "slop",
+                    "atop",
+                    "Steppe",
+                    "top",
+                    "stopped",
+                    "stops",
+                    "stomp",
+                    "stopper"
+                ],
+                "number": 13,
+                "frequency": 29.9759
+            },
+            "initial_consonant_fl": 85.0,
+            "final_consonant_fl": 43.0
+        },
+        {
+            "text": "them",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "them",
+                    "pos": "PRP"
+                }
+            ],
+            "frequency": 167474,
+            "word_family_frequency": 868761,
+            "phonemes": [
+                "ð",
+                "ɛ",
+                "m"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "then",
+                    "gem",
+                    "Rem",
+                    "femme",
+                    "hem"
+                ],
+                "number": 5,
+                "frequency": 299.1176
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": 42.0
+        },
+        {
+            "text": "at",
+            "length": 2,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "at",
+                    "pos": "IN"
+                }
+            ],
+            "frequency": 524402,
+            "word_family_frequency": 524402,
+            "phonemes": [
+                "æ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "it",
+                    "out",
+                    "as",
+                    "am",
+                    "eat",
+                    "ass",
+                    "eight",
+                    "ought",
+                    "art",
+                    "ate",
+                    "add",
+                    "Ann",
+                    "Anne",
+                    "ad",
+                    "Ash",
+                    "Ave",
+                    "oat",
+                    "aught",
+                    "that",
+                    "act",
+                    "fat",
+                    "cat",
+                    "hat",
+                    "Aunt",
+                    "rat",
+                    "Matt",
+                    "sat",
+                    "bat",
+                    "Pat",
+                    "chat",
+                    "ant",
+                    "Nat",
+                    "aft",
+                    "mat",
+                    "Kat",
+                    "apt",
+                    "vat",
+                    "tat",
+                    "gat",
+                    "shat",
+                    "gnat"
+                ],
+                "number": 41,
+                "frequency": 1014.8656
+            },
+            "initial_consonant_fl": -1.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "the",
+            "length": 3,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "the",
+                    "pos": "DT"
+                }
+            ],
+            "frequency": 6056782,
+            "word_family_frequency": 6056782,
+            "phonemes": [
+                "ð",
+                "ʌ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "there",
+                    "they",
+                    "their",
+                    "though",
+                    "hour",
+                    "thee",
+                    "thy",
+                    "thou",
+                    "than"
+                ],
+                "number": 9,
+                "frequency": 1140.2309
+            },
+            "initial_consonant_fl": 19.0,
+            "final_consonant_fl": -1.0
+        },
+        {
+            "text": "death",
+            "length": 5,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "death",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 22861,
+            "word_family_frequency": 22861,
+            "phonemes": [
+                "d",
+                "ɛ",
+                "θ"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "dead",
+                    "deck",
+                    "Seth",
+                    "Beth",
+                    "deaf",
+                    "debt",
+                    "Del",
+                    "Deb",
+                    "den",
+                    "Des",
+                    "Dell",
+                    "meth",
+                    "doth",
+                    "depth",
+                    "deaths"
+                ],
+                "number": 15,
+                "frequency": 39.1216
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": 27.0
+        },
+        {
+            "text": "date",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "date",
+                    "pos": "NN"
+                }
+            ],
+            "frequency": 24032,
+            "word_family_frequency": 24032,
+            "phonemes": [
+                "d",
+                "eɪ",
+                "t"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "wait",
+                    "days",
+                    "late",
+                    "hate",
+                    "doubt",
+                    "Dave",
+                    "weight",
+                    "gate",
+                    "mate",
+                    "fate",
+                    "dirt",
+                    "rate",
+                    "debt",
+                    "dame",
+                    "bait",
+                    "Dale",
+                    "dot",
+                    "Dane",
+                    "Tate",
+                    "dart",
+                    "Dade",
+                    "fait",
+                    "daze",
+                    "Dort",
+                    "day",
+                    "eight",
+                    "ate",
+                    "Dei",
+                    "data",
+                    "dates"
+                ],
+                "number": 30,
+                "frequency": 98.0915
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": 72.0
+        },
+        {
+            "text": "dogs",
+            "length": 4,
+            "syllable_count": 1,
+            "tags": [
+                {
+                    "token": "dogs",
+                    "pos": "NNS"
+                }
+            ],
+            "frequency": 4402,
+            "word_family_frequency": 12966,
+            "phonemes": [
+                "d",
+                "ɑ",
+                "g",
+                "z"
+            ],
+            "phonological_neighbours": {
+                "list": [
+                    "dolls",
+                    "doggy",
+                    "doggie",
+                    "digs",
+                    "hogs",
+                    "Dongs",
+                    "cogs",
+                    "jogs",
+                    "dog",
+                    "doggies"
+                ],
+                "number": 10,
+                "frequency": 21.302
+            },
+            "initial_consonant_fl": 82.0,
+            "final_consonant_fl": 100.0
+        }
+    ],
+    "mean_sentence_length_words": 7.0,
+    "wpm": 172.42264073484887,
+    "spm": 172.42264073484887,
+    "average_ptr": 0.92,
+    "transcript_text": " Stop them at the death date, dogs!",
+    "transcript": {
+        "segments": [
+            {
+                "id": 1,
+                "start": 6.74,
+                "end": 8.74,
+                "text": " Stop them at the death date, dogs!",
+                "no_speech_prob": 0.1895960569381714,
+                "avg_logprob": -0.9560804764429728,
+                "compression_ratio": 0.8717948717948718,
+                "temperature": 0.0
+            }
+        ],
+        "info": {
+            "language": "en",
+            "duration": 9.171875,
+            "duration_after_vad": 2.435875,
+            "language_probability": 0.3112027943134308,
+            "all_language_probs": [
+                [
+                    "en",
+                    0.3112027943134308
+                ],
+                [
+                    "el",
+                    0.1529998779296875
+                ],
+                [
+                    "nl",
+                    0.15019892156124115
+                ],
+                [
+                    "pt",
+                    0.059487681835889816
+                ],
+                [
+                    "tr",
+                    0.034170448780059814
+                ],
+                [
+                    "de",
+                    0.030667928978800774
+                ],
+                [
+                    "nn",
+                    0.029241614043712616
+                ],
+                [
+                    "la",
+                    0.025409407913684845
+                ],
+                [
+                    "ar",
+                    0.01758159138262272
+                ],
+                [
+                    "cy",
+                    0.017122194170951843
+                ],
+                [
+                    "da",
+                    0.015995707362890244
+                ],
+                [
+                    "es",
+                    0.015613026916980743
+                ],
+                [
+                    "sv",
+                    0.0151911536231637
+                ],
+                [
+                    "is",
+                    0.009989564307034016
+                ],
+                [
+                    "pl",
+                    0.009113427251577377
+                ],
+                [
+                    "fi",
+                    0.007829324342310429
+                ],
+                [
+                    "hu",
+                    0.00702225835993886
+                ],
+                [
+                    "af",
+                    0.00671260803937912
+                ],
+                [
+                    "ru",
+                    0.0065560974180698395
+                ],
+                [
+                    "bg",
+                    0.004227827303111553
+                ],
+                [
+                    "fr",
+                    0.003712293691933155
+                ],
+                [
+                    "ro",
+                    0.0035601940471678972
+                ],
+                [
+                    "bs",
+                    0.0031022492330521345
+                ],
+                [
+                    "hi",
+                    0.0029701166786253452
+                ],
+                [
+                    "cs",
+                    0.002917221514508128
+                ],
+                [
+                    "he",
+                    0.0028762288857251406
+                ],
+                [
+                    "ja",
+                    0.002805671887472272
+                ],
+                [
+                    "lv",
+                    0.0027266046963632107
+                ],
+                [
+                    "sl",
+                    0.0027189250104129314
+                ],
+                [
+                    "it",
+                    0.0024582857731729746
+                ],
+                [
+                    "yi",
+                    0.0023049451410770416
+                ],
+                [
+                    "tl",
+                    0.002254475373774767
+                ],
+                [
+                    "et",
+                    0.0022402838803827763
+                ],
+                [
+                    "hr",
+                    0.00221182219684124
+                ],
+                [
+                    "jw",
+                    0.0022055325098335743
+                ],
+                [
+                    "uk",
+                    0.002203896641731262
+                ],
+                [
+                    "no",
+                    0.0021625375375151634
+                ],
+                [
+                    "gl",
+                    0.002160109346732497
+                ],
+                [
+                    "ur",
+                    0.0021046041510999203
+                ],
+                [
+                    "ca",
+                    0.001956641674041748
+                ],
+                [
+                    "haw",
+                    0.0019101678626611829
+                ],
+                [
+                    "br",
+                    0.001565954415127635
+                ],
+                [
+                    "sq",
+                    0.0012508837971836329
+                ],
+                [
+                    "fo",
+                    0.0012147632660344243
+                ],
+                [
+                    "ko",
+                    0.0010014856234192848
+                ],
+                [
+                    "te",
+                    0.0009638548363000154
+                ],
+                [
+                    "ml",
+                    0.0009302989928983152
+                ],
+                [
+                    "mi",
+                    0.0008733758586458862
+                ],
+                [
+                    "km",
+                    0.0008410848677158356
+                ],
+                [
+                    "yo",
+                    0.0007942529628053308
+                ],
+                [
+                    "ms",
+                    0.0007194859790615737
+                ],
+                [
+                    "lt",
+                    0.0006998273893259466
+                ],
+                [
+                    "mt",
+                    0.0006989529356360435
+                ],
+                [
+                    "mn",
+                    0.0006844058516435325
+                ],
+                [
+                    "fa",
+                    0.0006045995396561921
+                ],
+                [
+                    "az",
+                    0.0005308092222549021
+                ],
+                [
+                    "zh",
+                    0.0004777973226737231
+                ],
+                [
+                    "vi",
+                    0.00045340339420363307
+                ],
+                [
+                    "oc",
+                    0.00042805849807336926
+                ],
+                [
+                    "sn",
+                    0.0004225702432449907
+                ],
+                [
+                    "ht",
+                    0.00040822476148605347
+                ],
+                [
+                    "sa",
+                    0.000405753351515159
+                ],
+                [
+                    "si",
+                    0.00040084568900056183
+                ],
+                [
+                    "bn",
+                    0.00038435671012848616
+                ],
+                [
+                    "sr",
+                    0.0003474594559520483
+                ],
+                [
+                    "eu",
+                    0.00033288559643551707
+                ],
+                [
+                    "ta",
+                    0.00033069076016545296
+                ],
+                [
+                    "sk",
+                    0.0002494083601050079
+                ],
+                [
+                    "sd",
+                    0.0002487928722985089
+                ],
+                [
+                    "id",
+                    0.000220092770177871
+                ],
+                [
+                    "pa",
+                    0.0001961452217074111
+                ],
+                [
+                    "ka",
+                    0.00019052466086577624
+                ],
+                [
+                    "th",
+                    0.00018671418365556747
+                ],
+                [
+                    "hy",
+                    0.00017725965881254524
+                ],
+                [
+                    "ne",
+                    0.00012472095841076225
+                ],
+                [
+                    "bo",
+                    0.0001238337135873735
+                ],
+                [
+                    "mk",
+                    9.259908983949572e-05
+                ],
+                [
+                    "my",
+                    8.847856952343136e-05
+                ],
+                [
+                    "kk",
+                    7.226619345601648e-05
+                ],
+                [
+                    "sw",
+                    6.899016443639994e-05
+                ],
+                [
+                    "kn",
+                    5.7682322221808136e-05
+                ],
+                [
+                    "ps",
+                    3.894741166732274e-05
+                ],
+                [
+                    "be",
+                    2.8364478566800244e-05
+                ],
+                [
+                    "am",
+                    2.68084022536641e-05
+                ],
+                [
+                    "lo",
+                    2.5923327484633774e-05
+                ],
+                [
+                    "ln",
+                    2.583842069725506e-05
+                ],
+                [
+                    "lb",
+                    2.581059015938081e-05
+                ],
+                [
+                    "mr",
+                    1.8275866750627756e-05
+                ],
+                [
+                    "gu",
+                    1.4467249457084108e-05
+                ],
+                [
+                    "tt",
+                    9.957779184333049e-06
+                ],
+                [
+                    "so",
+                    9.187141586153302e-06
+                ],
+                [
+                    "as",
+                    7.933940651128069e-06
+                ],
+                [
+                    "tg",
+                    5.2683412832266185e-06
+                ],
+                [
+                    "su",
+                    1.7303119648204301e-06
+                ],
+                [
+                    "uz",
+                    4.218382230192219e-07
+                ],
+                [
+                    "ha",
+                    3.456728450146329e-07
+                ],
+                [
+                    "ba",
+                    3.14317276206566e-07
+                ],
+                [
+                    "tk",
+                    2.8351252012726036e-07
+                ],
+                [
+                    "mg",
+                    1.401335509854107e-07
+                ]
+            ]
+        }
+    }
+}
