@@ -416,6 +416,155 @@ def plot_correlations(metadata_json_path):
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.show()
 
+def get_word_data(folder_path, metadata_json_path, destination_path):
+
+    with open(metadata_json_path, "r", encoding="utf-8") as f:
+        metadata = json.load(f)
+    
+    metadata["token_data"] = []
+    metadata["type_data"] = []
+    metadata["all_word_data"] = {}
+
+    token_keys = ["token_lengths", 
+                        "token_syllable_counts", 
+                        "token_frequencies", 
+                        "token_family_frequencies",
+                        "token_neighbour_counts",
+                        "token_neighbour_frequencies",
+                        "token_initial_consonant_fls",
+                        "token_final_consonant_fls"
+                        ]
+
+    type_keys = ["type_lengths", 
+                        "type_syllable_counts", 
+                        "type_frequencies", 
+                        "type_family_frequencies",
+                        "type_neighbour_counts",
+                        "type_neighbour_frequencies",
+                        "type_initial_consonant_fls",
+                        "type_final_consonant_fls"
+                        ]
+    
+    for key in token_keys:
+                metadata["all_word_data"][key] = []
+
+    for filename in os.listdir(folder_path):
+
+        if filename.endswith(".json"):
+            file_path = os.path.join(folder_path, filename)
+            
+            with open(file_path, "r", encoding="utf-8") as f:
+                data = json.load(f)
+
+                # Get data on tokens
+                token_data = {}
+                
+                for key in token_keys:
+                    token_data[key] = []
+                for token in data["tokens"]:
+                    # data["tokens"] is a list of dictionaries
+                    token_data["token_lengths"].append(token["length"]) if token["length"] > 0 else None
+                    token_data["token_syllable_counts"].append(token["syllable_count"]) if token["syllable_count"] > 0 else None
+                    token_data["token_frequencies"].append(token["frequency"]) if token["frequency"] > 0 else None
+                    token_data["token_family_frequencies"].append(token["word_family_frequency"]) if token["word_family_frequency"] > 0 else None
+                    token_data["token_neighbour_counts"].append(token["phonological_neighbours"]["number"]) if token["phonological_neighbours"]["number"] > 0 else None
+                    token_data["token_neighbour_frequencies"].append(token["phonological_neighbours"]["frequency"]) if token["phonological_neighbours"]["frequency"] > 0 else None
+                    token_data["token_initial_consonant_fls"].append(token["initial_consonant_fl"]) if token["initial_consonant_fl"] > 0 else None
+                    token_data["token_final_consonant_fls"].append(token["final_consonant_fl"]) if token["final_consonant_fl"] > 0 else None
+                    
+                # Get data on types
+                type_data = {}
+                
+                for key in type_keys:
+                    type_data[key] = []
+                for type in data["types"]:
+                    # data["types"] is a list of dictionaries
+                    type_data["type_lengths"].append(type["length"]) if type["length"] > 0 else None
+                    type_data["type_syllable_counts"].append(type["syllable_count"]) if type["syllable_count"] > 0 else None
+                    type_data["type_frequencies"].append(type["frequency"]) if type["frequency"] > 0 else None
+                    type_data["type_family_frequencies"].append(type["word_family_frequency"]) if type["word_family_frequency"] > 0 else None
+                    type_data["type_neighbour_counts"].append(type["phonological_neighbours"]["number"]) if type["phonological_neighbours"]["number"] > 0 else None
+                    type_data["type_neighbour_frequencies"].append(type["phonological_neighbours"]["frequency"]) if type["phonological_neighbours"]["frequency"] > 0 else None
+                    type_data["type_initial_consonant_fls"].append(type["initial_consonant_fl"]) if type["initial_consonant_fl"] > 0 else None
+                    type_data["type_final_consonant_fls"].append(type["final_consonant_fl"]) if type["final_consonant_fl"] > 0 else None
+
+            metadata["token_data"].append(token_data)
+            metadata["type_data"].append(type_data)
+
+            
+            for key in token_keys:
+                metadata["all_word_data"][key].extend(token_data[key])
+
+    # Summarize token data
+    metadata["token_data_summary"] = {}
+    for key in token_keys:
+        metadata["token_data_summary"][key] = []
+
+    for video in metadata["token_data"]:
+        for key in video.keys():
+            average = sum(video[key]) / len(video[key]) if video[key] else -1
+            metadata["token_data_summary"][key].append(average)
+
+    # Summarize type data
+    metadata["type_data_summary"] = {}
+    for key in type_keys:
+        metadata["type_data_summary"][key] = []
+
+    for video in metadata["type_data"]:
+        for key in video.keys():
+            average = sum(video[key]) / len(video[key]) if video[key] else -1
+            metadata["type_data_summary"][key].append(average)
+
+    # Save the metadata dictionary as a json file
+    with open(f"{destination_path}/metadata_summary.json", "w", encoding="utf-8") as f:
+        json.dump(metadata, f, ensure_ascii=False, indent=4)
+
+def analyze_word_data(metadata_json_path):
+    with open(metadata_json_path, "r", encoding="utf-8") as f:
+        data = json.load(f)
+
+    plt.style.use('seaborn-v0_8-whitegrid')  # or 'ggplot', 'fivethirtyeight'
+
+    for key in data["token_data_summary"]:
+        token_data = data["token_data_summary"][key]
+        mean_val = np.mean(token_data)
+        median_val = np.median(token_data)
+        plt.hist(token_data, bins=50, color=YELLOW, edgecolor='black')
+        plt.axvline(mean_val, color=DARK_GRAY, linestyle='dashed', linewidth=2, label=f'Mean: {mean_val:.2f}')
+        plt.axvline(median_val, color=LIGHT_GRAY, linestyle='dashed', linewidth=2, label=f'Median: {median_val:.2f}')
+        plt.xlabel(key)
+        plt.ylabel('Number of videos')
+        plt.title(f'Distribution of average {key} across videos')
+        plt.legend()
+        plt.show()
+
+    for key in data["type_data_summary"]:
+        type_data = data["type_data_summary"][key]
+        mean_val = np.mean(type_data)
+        median_val = np.median(type_data)
+        plt.hist(type_data, bins=50, color=YELLOW, edgecolor='black')
+        plt.axvline(mean_val, color=DARK_GRAY, linestyle='dashed', linewidth=2, label=f'Mean: {mean_val:.2f}')
+        plt.axvline(median_val, color=LIGHT_GRAY, linestyle='dashed', linewidth=2, label=f'Median: {median_val:.2f}')
+        plt.xlabel(key)
+        plt.ylabel('Number of videos')
+        plt.title(f'Distribution of average {key} across videos')
+        plt.legend()
+        plt.show()
+    
+    for key in data["all_word_data"].keys():
+        token_data = data["all_word_data"][key]
+        mean_val = np.mean(token_data)
+        median_val = np.median(token_data)
+        # bin_edges = np.arange(0, max(token_data), 1) # only works for the smaller values
+        plt.hist(token_data, bins=50, color=YELLOW, edgecolor='black')
+        plt.axvline(mean_val, color=DARK_GRAY, linestyle='dashed', linewidth=2, label=f'Mean: {mean_val:.2f}')
+        plt.axvline(median_val, color=LIGHT_GRAY, linestyle='dashed', linewidth=2, label=f'Median: {median_val:.2f}')
+        plt.xlabel(key)
+        plt.ylabel('Number of words')
+        plt.title(f'Distribution of {key} across videos')
+        plt.legend()
+        plt.show()
+
 
 if __name__ == '__main__':
     # move_no_speech_videos("video_analysis/sampled_json_subset", "video_analysis/no_speech_json")
@@ -423,4 +572,6 @@ if __name__ == '__main__':
     # get_metadata("video_analysis/sampled_json_subset", "video_analysis")
     # plot_speech_and_language(ENGLISH_FOLDER, NO_SPEECH_FOLDER, NON_ENGLISH_FOLDER)
     # analyze_metadata(METADATA_JSON)
-    plot_correlations(METADATA_JSON)
+    # plot_correlations(METADATA_JSON)
+    get_word_data(ENGLISH_FOLDER, METADATA_JSON, "video_analysis")
+    analyze_word_data(METADATA_JSON)
