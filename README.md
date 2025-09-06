@@ -1,17 +1,13 @@
-# YouLingo: YouTube Language Acquisition
+# YouLingo: authentic language acquisition from user-generated short-form videos
 <div style="display: flex; align-items: center;">
     <img src="you-jujube/src/assets/yuo.svg" alt="YouLingo Logo" style="height: 120px;" />
     <img src="you-jujube/src/assets/youlingo.svg" alt="YouLingo Logo" style="height: 100px;" />
 </div>
 
-This project was created for the UofTHacks 12 Hackathon and was the winner of Best University of Toronto Hack.
+Many language learners struggle to find materials that align with both their  interests and proficiency level. YouLingo addresses this gap by leveraging the popularity and appeal of short-form videos, with premises of authentic materials, comprehensible input, and an emphasis on listening and speaking. It allows users to generate content in their native language and interact with target language videos made by others.Throughout stages of design, development, testing, and eventual commercialization, YouLingo translates evidence-based principles into a self-sustaining language exchange platform.
 
-Our take on this year's theme, Perspective, is an application that takes a different look
-at media consumption beyond a form of entertainment, and challenges pre-conceived ideas about language learning - that it has to be confined to
-textbooks and classrooms. The result of this is YouLingo, a web application designed to help users learn new languages by making YouTube videos into 
-custom language lessons. Users can explore various videos, add their own video URLs, and manage their favorite videos.
-
-## Creators
+## Contributors
+### UofTHacks team: the YouLinGOATs
 - Adrien Mery
   - https://github.com/NOBODIDI
 - Rui Weng
@@ -21,14 +17,62 @@ custom language lessons. Users can explore various videos, add their own video U
 - Cindy Zhang
   - https://github.com/Cindyzzz616
 
-## Table of Contents
-1. [Background](#1-background)
-2. [Features](#2-features)
-3. [Technologies Used](#3-technologies-used)
-4. [Getting Started](#4-getting-started)
-5. [Potential Improvements](#5-potential-improvements)
+### MVP building: Roi Digital
+- Nirdesh Shrestha
+  - https://github.com/Nightking25
+- Shishir Shrestha
+  - https://github.com/sthz31
 
-## 1. Background
+## Table of Contents
+1. [About the Project](#1-about-the-project)
+2. [Theoretical Background](#2-theoretical-background)
+3. [Features](#3-features)
+4. [Technologies Used](#4-technologies-used)
+5. [Getting Started](#5-getting-started)
+6. [Potential Improvements](#6-potential-improvements)
+
+## 1. About the Project
+
+This project was initially created for the UofTHacks 12 Hackathon and was the winner of Best University of Toronto Hack.
+
+The team's take on this year's theme, Perspective, is an application that takes a different look
+at media consumption beyond a form of entertainment, and challenges pre-conceived ideas about language learning - that it has to be confined to
+textbooks and classrooms. The result of this is YouLingo, a web application designed to help users learn new languages by making YouTube videos into 
+custom language lessons. Users can explore various videos, add their own video URLs, and manage their favorite videos.
+
+### From Hackathon Idea to Research-Driven Innovation
+
+Since then, YouLingo has grown into a research-backed language learning project grounded in both theory and practice. In the summer of 2025, its conceptual foundation was developed through two parallel research programs that explored how to evaluate and modify the difficulty of videos for language learners—specifically focusing on what affects intelligibility, comprehensibility, and vocabulary retention.
+
+### Dual Research Streams
+
+One research stream was funded by the University of Toronto Excellence Award ($7500) and supervised by Professor Lyn Tieu in the Department of French. This project focused on lexical-syntactic variables, including lexical coverage, vocabulary size, and pause structure.
+
+The second was part of the Research Opportunity Program at UTM, conducted under Professor Jessamyn Schertz in the Sounds of UTM Lab. Here, the focus shifted to acoustic-phonological variables such as speech rate, phonemic overlap, and phonological neighborhood density. Together, these studies built a rigorous theoretical model of video difficulty that directly informs YouLingo’s next phase.
+
+### A Shift Toward User-Generated Short-Form Content
+
+Drawing from insights about learner engagement and current digital trends, YouLingo has pivoted toward a novel and, to our knowledge, unprecedented design in the language learning space: leveraging user-generated short-form videos, similar to those seen on platforms like TikTok or Instagram Reels. While many apps use pre-recorded content or scripted dialogues, no existing language learning app currently centers its experience around short-form videos created by users themselves. This approach harnesses the widespread popularity, accessibility, and entertainment value of short-form content, while embedding it directly into a pedagogical framework.
+
+In this model, users would record short videos in their native language—sharing personal stories, cultural insights, or everyday moments—and watch videos in their target language created by speakers of that language. This creates a mutual language exchange environment, where learners are not only passive recipients of curated input but active participants in a multilingual community. The design also encourages interaction through comment threads, enabling users to ask questions, clarify meaning, and build connections across linguistic boundaries. Altogether, the platform merges authentic input, peer-to-peer learning, and community-driven content—a combination that promises both pedagogical depth and high user engagement.
+
+### Current Development with Roi Digital
+
+YouLingo is now moving from theory to practice. An MVP (Minimum Viable Product) is currently in development in partnership with [Roi Digital](https://roidigital.ca/), a Quebec-based software development company. The MVP will incorporate research insights on difficulty modeling and serve as a testing ground for new features and potential follow-up studies.
+
+### Public Showcase
+
+YouLingo’s summer research and MVP will be publicly showcased at the [Experiential Education Fair at the University of Toronto Mississauga](https://www.utm.utoronto.ca/experience/events/experiential-education-fair) on September 25, 2025, marking its first major milestone on the path from hackathon prototype to real-world application.
+
+### Looking Ahead: New Research and Engagement Tools
+
+Next steps include a follow-up study to further validate the difficulty model within the context of the app and to begin tackling YouLingo’s second core research question:
+“How do we facilitate language acquisition based on our materials?”
+This will involve the design of interactive practice and engagement features tailored to the cognitive and motivational needs of learners.
+
+_The sections below pertain to the version of the application developed during UofTHacks._
+
+## 2. Theoretical Background
 ### Hypotheses of Language Acquisition
 This application is based on the language acquisition theory posited by Stephen Krashen, a renowned American linguist who has written more than 500 articles and books on the second language acquisition and related fields. [1]
 In his theory, he outlined six hypotheses about how to effectively gain fluency in a second language. They are:  
@@ -89,7 +133,7 @@ In the application, these levels are represented by floating point numbers, whic
 [2] https://sites.ualberta.ca/~obilash/krashen.html#:~:text=Application%20for%20Teaching-,The%20Acquisition%2DLearning%20hypothesis,of%20just%20'learning'%20it  
 [3] https://www.coe.int/en/web/common-european-framework-reference-languages/level-descriptions
 
-## 2. Features
+## 3. Features
 _NOTE: due to time constraints, some of these features have not been fully implemented. The following is a description of the intended design of the application
 with the core features available for demonstration._
 
@@ -159,7 +203,7 @@ allowed to add newer, more challenging videos to their rotation.
 A short quiz is generated for each video, and the user can input their answer to be assessed on their reading and writing abilities.
 
 
-## 3. Technologies Used
+## 4. Technologies Used
 ### Libraries
 - React
 - React Router
@@ -180,7 +224,7 @@ A short quiz is generated for each video, and the user can input their answer to
 - OpenAI GPT-4 API
   - https://platform.openai.com
 
-## 4. Getting Started
+## 5. Getting Started
 ### Prerequisites
 Make sure you have the following installed on your machine:
 
@@ -248,7 +292,7 @@ This will start the Flask server. Make sure you have your `serviceAccountKey.jso
 ### Authentication
 This application uses Auth0 for authentication. Make sure to configure your Auth0 credentials in the application.
 
-## 5. Potential Improvements
+## 6. Potential Improvements
 There are some features we did not have time to implement, but we look forward to growing this project in the future!
 - Transcript highlighting: the transcript can be colour-coded according to the user's familiarity with the words, as well
 as words that are far beyond the user's current level. The same can be done with difficult sentence structures and
