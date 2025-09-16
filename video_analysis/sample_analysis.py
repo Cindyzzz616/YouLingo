@@ -254,10 +254,26 @@ def plot_correlations(metadata_json_path):
     # NOTE positive correlation
     plt.figure(figsize=(8, 6))
     plt.scatter(durations, word_counts, s=30, color=LIGHT_GRAY, alpha=0.7, edgecolor='black')
+
+    # Fit a regression line (1st-degree polynomial = straight line)
+    m, b = np.polyfit(durations, word_counts, 1)
+    x_vals = np.linspace(min(durations), max(durations), 100)
+    y_vals = m * x_vals + b
+    plt.plot(x_vals, y_vals, color="red", linewidth=2, label=f"y = {m:.2f}x + {b:.2f}")
+
+    # Compute R^2
+    y_pred = m * np.array(durations) + b
+    ss_res = np.sum((word_counts - y_pred) ** 2)
+    ss_tot = np.sum((word_counts - np.mean(word_counts)) ** 2)
+    r2 = 1 - (ss_res / ss_tot)
+
+    # Add R^2 to legend
+    plt.legend(title=f"R² = {r2:.3f}")
+
+    # Labels and style
     plt.title('Word Count vs. Video Length', fontsize=14, fontweight='bold')
     plt.xlabel('Video Length (seconds)', fontsize=12)
     plt.ylabel('Word Count', fontsize=12)
-    # Optional grid and style tweaks
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.show()
 
@@ -306,11 +322,32 @@ def plot_correlations(metadata_json_path):
     # Plot word count as a function of mean sentence length
     # NOTE positive correlation
     plt.figure(figsize=(8, 6))
-    plt.scatter(mean_sentence_length_words, word_counts, s=30, color=LIGHT_GRAY, alpha=0.7, edgecolor='black')
+    plt.scatter(mean_sentence_length_words, word_counts,
+                s=30, color=LIGHT_GRAY, alpha=0.7, edgecolor='black')
+
+    # Fit a regression line (degree=1 for straight line)
+    m, b = np.polyfit(mean_sentence_length_words, word_counts, 1)
+
+    # Generate x values for line
+    x_vals = np.linspace(min(mean_sentence_length_words), max(mean_sentence_length_words), 100)
+    y_vals = m * x_vals + b
+
+    # Plot regression line
+    plt.plot(x_vals, y_vals, color="red", linewidth=2, label=f"y = {m:.2f}x + {b:.2f}")
+
+    # Compute R^2
+    y_pred = m * np.array(mean_sentence_length_words) + b
+    ss_res = np.sum((word_counts - y_pred) ** 2)
+    ss_tot = np.sum((word_counts - np.mean(word_counts)) ** 2)
+    r2 = 1 - (ss_res / ss_tot)
+
+    # Add R^2 to legend
+    plt.legend(title=f"R² = {r2:.3f}")
+
     plt.title('Word Count vs. Mean Sentence Length', fontsize=14, fontweight='bold')
     plt.xlabel('Mean Sentence Length (words)', fontsize=12)
     plt.ylabel('Word Count', fontsize=12)
-    # Optional grid and style tweaks
+
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.show()
 
@@ -318,10 +355,26 @@ def plot_correlations(metadata_json_path):
     # NOTE positive correlation
     plt.figure(figsize=(8, 6))
     plt.scatter(mean_sentence_length_words, wpm, s=30, color=LIGHT_GRAY, alpha=0.7, edgecolor='black')
+
+    # Fit a regression line
+    m, b = np.polyfit(mean_sentence_length_words, wpm, 1)
+    x_vals = np.linspace(min(mean_sentence_length_words), max(mean_sentence_length_words), 100)
+    y_vals = m * x_vals + b
+    plt.plot(x_vals, y_vals, color="red", linewidth=2, label=f"y = {m:.2f}x + {b:.2f}")
+
+    # Compute R^2
+    y_pred = m * np.array(mean_sentence_length_words) + b
+    ss_res = np.sum((wpm - y_pred) ** 2)
+    ss_tot = np.sum((wpm - np.mean(wpm)) ** 2)
+    r2 = 1 - (ss_res / ss_tot)
+
+    # Add R^2 to legend
+    plt.legend(title=f"R² = {r2:.3f}")
+
+    # Labels and style
     plt.title('Speech Rate (words/minute) vs. Mean Sentence Length', fontsize=14, fontweight='bold')
     plt.xlabel('Mean Sentence Length (words)', fontsize=12)
     plt.ylabel('Speech Rate (words/minute)', fontsize=12)
-    # Optional grid and style tweaks
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.show()
 
@@ -329,10 +382,26 @@ def plot_correlations(metadata_json_path):
     # NOTE positive correlation
     plt.figure(figsize=(8, 6))
     plt.scatter(mean_sentence_length_words, spm, s=30, color=LIGHT_GRAY, alpha=0.7, edgecolor='black')
+
+    # Fit a regression line
+    m, b = np.polyfit(mean_sentence_length_words, spm, 1)
+    x_vals = np.linspace(min(mean_sentence_length_words), max(mean_sentence_length_words), 100)
+    y_vals = m * x_vals + b
+    plt.plot(x_vals, y_vals, color="red", linewidth=2, label=f"y = {m:.2f}x + {b:.2f}")
+
+    # Compute R^2
+    y_pred = m * np.array(mean_sentence_length_words) + b
+    ss_res = np.sum((spm - y_pred) ** 2)
+    ss_tot = np.sum((spm - np.mean(spm)) ** 2)
+    r2 = 1 - (ss_res / ss_tot)
+
+    # Add R^2 to legend
+    plt.legend(title=f"R² = {r2:.3f}")
+
+    # Labels and style
     plt.title('Speech Rate (syllables/minute) vs. Mean Sentence Length', fontsize=14, fontweight='bold')
     plt.xlabel('Mean Sentence Length (words)', fontsize=12)
-    plt.ylabel('Speech Rate (spm)', fontsize=12)
-    # Optional grid and style tweaks
+    plt.ylabel('Speech Rate (syllables/minute)', fontsize=12)
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.show()
 
@@ -352,10 +421,26 @@ def plot_correlations(metadata_json_path):
     # NOTE positive correlation
     plt.figure(figsize=(8, 6))
     plt.scatter(wpm, word_counts, s=30, color=LIGHT_GRAY, alpha=0.7, edgecolor='black')
+
+    # Fit regression line
+    m, b = np.polyfit(wpm, word_counts, 1)
+    x_vals = np.linspace(min(wpm), max(wpm), 100)
+    y_vals = m * x_vals + b
+    plt.plot(x_vals, y_vals, color="red", linewidth=2, label=f"y = {m:.2f}x + {b:.2f}")
+
+    # Compute R^2
+    y_pred = m * np.array(wpm) + b
+    ss_res = np.sum((word_counts - y_pred) ** 2)
+    ss_tot = np.sum((word_counts - np.mean(word_counts)) ** 2)
+    r2 = 1 - (ss_res / ss_tot)
+
+    # Add R^2 to legend
+    plt.legend(title=f"R² = {r2:.3f}")
+
+    # Labels and styling
     plt.title('Word Count vs. Speech Rate (words/minute)', fontsize=14, fontweight='bold')
     plt.xlabel('Speech Rate (words/minute)', fontsize=12)
     plt.ylabel('Word Count', fontsize=12)
-    # Optional grid and style tweaks
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.show()
 
@@ -363,10 +448,26 @@ def plot_correlations(metadata_json_path):
     # NOTE positive correlation
     plt.figure(figsize=(8, 6))
     plt.scatter(wpm, spm, s=30, color=LIGHT_GRAY, alpha=0.7, edgecolor='black')
+
+    # Fit regression line
+    m, b = np.polyfit(wpm, spm, 1)
+    x_vals = np.linspace(min(wpm), max(wpm), 100)
+    y_vals = m * x_vals + b
+    plt.plot(x_vals, y_vals, color="red", linewidth=2, label=f"y = {m:.2f}x + {b:.2f}")
+
+    # Compute R^2
+    y_pred = m * np.array(wpm) + b
+    ss_res = np.sum((spm - y_pred) ** 2)
+    ss_tot = np.sum((spm - np.mean(spm)) ** 2)
+    r2 = 1 - (ss_res / ss_tot)
+
+    # Add R^2 to legend
+    plt.legend(title=f"R² = {r2:.3f}")
+
+    # Labels and styling
     plt.title('Speech Rate (syllables/minute) vs. Speech Rate (words/minute)', fontsize=14, fontweight='bold')
     plt.xlabel('Speech Rate (words/minute)', fontsize=12)
     plt.ylabel('Speech Rate (syllables/minute)', fontsize=12)
-    # Optional grid and style tweaks
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.show()
 
@@ -386,10 +487,26 @@ def plot_correlations(metadata_json_path):
     # NOTE positive correlation
     plt.figure(figsize=(8, 6))
     plt.scatter(spm, word_counts, s=30, color=LIGHT_GRAY, alpha=0.7, edgecolor='black')
+
+    # Fit regression line
+    m, b = np.polyfit(spm, word_counts, 1)
+    x_vals = np.linspace(min(spm), max(spm), 100)
+    y_vals = m * x_vals + b
+    plt.plot(x_vals, y_vals, color="red", linewidth=2, label=f"y = {m:.2f}x + {b:.2f}")
+
+    # Compute R^2
+    y_pred = m * np.array(spm) + b
+    ss_res = np.sum((word_counts - y_pred) ** 2)
+    ss_tot = np.sum((word_counts - np.mean(word_counts)) ** 2)
+    r2 = 1 - (ss_res / ss_tot)
+
+    # Add R^2 to legend
+    plt.legend(title=f"R² = {r2:.3f}")
+
+    # Labels and styling
     plt.title('Word Count vs. Speech Rate (syllables/minute)', fontsize=14, fontweight='bold')
     plt.xlabel('Speech Rate (syllables/minute)', fontsize=12)
     plt.ylabel('Word Count', fontsize=12)
-    # Optional grid and style tweaks
     plt.grid(True, linestyle='--', alpha=0.6)
     plt.show()
 
@@ -572,6 +689,6 @@ if __name__ == '__main__':
     # get_metadata("video_analysis/sampled_json_subset", "video_analysis")
     # plot_speech_and_language(ENGLISH_FOLDER, NO_SPEECH_FOLDER, NON_ENGLISH_FOLDER)
     # analyze_metadata(METADATA_JSON)
-    # plot_correlations(METADATA_JSON)
-    get_word_data(ENGLISH_FOLDER, METADATA_JSON, "video_analysis")
-    analyze_word_data(METADATA_JSON)
+    plot_correlations(METADATA_JSON)
+    # get_word_data(ENGLISH_FOLDER, METADATA_JSON, "video_analysis")
+    # analyze_word_data(METADATA_JSON)
