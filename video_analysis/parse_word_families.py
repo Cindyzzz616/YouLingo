@@ -1,3 +1,5 @@
+# For a description of the word family corpus, visit this website: https://www.wgtn.ac.nz/lals/resources/paul-nations-resources/vocabulary-lists.
+
 import re
 from pathlib import Path
 from collections import defaultdict
